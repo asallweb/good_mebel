@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230222160715">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230224101457">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,6 +52,7 @@
 			<div class="header-main">
 				<div class="header-main__container">
 					<div class="header-main__col">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<a href="" class="header-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
 						<div class="header-main__catalog">
 							<button class="header-main__catalog-button btn _blue">
@@ -61,7 +62,7 @@
 								Каталог
 							</button>
 						</div>
-						<div class="header-main__search">
+						<div class="header-main__search" data-da="._mobile-search,1180,0">
 							<form action="" method="" class="header-main__search-form">
 								<input type="text" name="search" placeholder="Поиск по сайту" class="input">
 								<button type="submit" class="button"><svg width="17" height="17">
@@ -70,9 +71,9 @@
 							</form>
 						</div>
 					</div>
-					<div class="header-main__col">
+					<div class="header-main__col _mobile-search">
 						<div class="header-main__buttons">
-							<a href="#" class="header-main__button">
+							<a href="#" class="header-main__button _profile">
 								<svg width="20" height="26">
 									<use xlink:href="img/icons/icons.svg#svg-profile"></use>
 								</svg>
@@ -95,7 +96,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header-menu">
+			<div class="header-menu mMenu">
 				<div class="header-menu__container">
 					<ul class="header-menu__list">
 						<li class="header-menu__item">
@@ -239,126 +240,165 @@
 			</div>
 			<section class="categories-grid">
 				<div class="categories-grid__container">
-					<div class="categories-grid__item _col-3">
-						<div class="categories-grid__content">
-							<div class="categories-grid__title">Диваны</div>
-							<div class="categories-grid__list">
-								<a href="">Прямые диваны</a>
-								<a href="">Угловые диваны</a>
-								<a href="">Модульные диваны</a>
-								<a href="">Кресла</a>
+					<div class="categories__slider swiper">
+						<div class="categories__wrapper swiper-wrapper">
+							<div class="categories-grid__item _col-3 categories__slide swiper-slide">
+								<div class="categories-grid__content">
+									<div class="categories-grid__title">Диваны</div>
+									<div class="categories-grid__list">
+										<a href="">Прямые диваны</a>
+										<a href="">Угловые диваны</a>
+										<a href="">Модульные диваны</a>
+										<a href="">Кресла</a>
+									</div>
+									<a href="" class="categories-grid__link btn _yellow">
+										<span>Смотреть все</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="categories-grid__image _image-1">
+									<picture><source srcset="img/content/categories-1.webp" type="image/webp"><img src="img/content/categories-1.png" alt="categories"></picture>
+								</div>
+								<svg class="categories-grid__icon _icon-1">
+									<use xlink:href="img/icons/icons.svg#svg-categories-1-icon"></use>
+								</svg>
 							</div>
-							<a href="" class="categories-grid__link btn _yellow">Смотреть все</a>
-						</div>
-						<div class="categories-grid__image">
-							<picture><source srcset="img/content/categories-1.webp" type="image/webp"><img src="img/content/categories-1.png" alt="categories"></picture>
-						</div>
-						<svg class="categories-grid__icon _icon-1">
-							<use xlink:href="img/icons/icons.svg#svg-categories-1-icon"></use>
-						</svg>
-					</div>
-					<div class="categories-grid__item _col-3">
-						<div class="categories-grid__content">
-							<div class="categories-grid__title">Шкафы</div>
-							<div class="categories-grid__list">
-								<a href="">Шкафы-купе</a>
-								<a href="">Распашные шкафы</a>
-								<a href="">Угловые шкафы</a>
+							<div class="categories-grid__item _col-3 categories__slide swiper-slide">
+								<div class="categories-grid__content">
+									<div class="categories-grid__title">Шкафы</div>
+									<div class="categories-grid__list">
+										<a href="">Шкафы-купе</a>
+										<a href="">Распашные шкафы</a>
+										<a href="">Угловые шкафы</a>
+									</div>
+									<a href="" class="categories-grid__link btn _yellow">
+										<span>Смотреть все</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="categories-grid__image _image-2">
+									<picture><source srcset="img/content/categories-2.webp" type="image/webp"><img src="img/content/categories-2.png" alt="categories-2"></picture>
+								</div>
+								<svg class="categories-grid__icon _icon-2">
+									<use xlink:href="img/icons/icons.svg#svg-categories-2-icon"></use>
+								</svg>
 							</div>
-							<a href="" class="categories-grid__link btn _yellow">Смотреть все</a>
-						</div>
-						<div class="categories-grid__image" style="right: 69px;">
-							<picture><source srcset="img/content/categories-2.webp" type="image/webp"><img src="img/content/categories-2.png" alt="categories-2"></picture>
-						</div>
-						<svg class="categories-grid__icon _icon-2">
-							<use xlink:href="img/icons/icons.svg#svg-categories-2-icon"></use>
-						</svg>
-					</div>
-					<div class="categories-grid__item _col-3">
-						<div class="categories-grid__content">
-							<div class="categories-grid__title">Кровати</div>
-							<div class="categories-grid__list">
-								<a href="">Односпальные</a>
-								<a href="">Двуспальные</a>
-								<a href="">Матрасы</a>
-								<a href="">Товары для сна</a>
+							<div class="categories-grid__item _col-3 categories__slide swiper-slide">
+								<div class="categories-grid__content">
+									<div class="categories-grid__title">Кровати</div>
+									<div class="categories-grid__list">
+										<a href="">Односпальные</a>
+										<a href="">Двуспальные</a>
+										<a href="">Матрасы</a>
+										<a href="">Товары для сна</a>
+									</div>
+									<a href="" class="categories-grid__link btn _yellow">
+										<span>Смотреть все</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="categories-grid__image _image-3">
+									<picture><source srcset="img/content/categories-3.webp" type="image/webp"><img src="img/content/categories-3.png" alt="categories-3"></picture>
+								</div>
+								<svg class="categories-grid__icon _icon-3">
+									<use xlink:href="img/icons/icons.svg#svg-categories-3-icon"></use>
+								</svg>
 							</div>
-							<a href="" class="categories-grid__link btn _yellow">Смотреть все</a>
-						</div>
-						<div class="categories-grid__image">
-							<picture><source srcset="img/content/categories-3.webp" type="image/webp"><img src="img/content/categories-3.png" alt="categories-3"></picture>
-						</div>
-						<svg class="categories-grid__icon _icon-3">
-							<use xlink:href="img/icons/icons.svg#svg-categories-3-icon"></use>
-						</svg>
-					</div>
-					<div class="categories-grid__item _col-4">
-						<div class="categories-grid__content">
-							<div class="categories-grid__title">Гостиные</div>
-							<div class="categories-grid__list">
-								<a href="">Журнальные столики</a>
-								<a href="">Стеллажи</a>
-								<a href="">Тумбы ТВ</a>
+							<div class="categories-grid__item _col-4 categories__slide swiper-slide">
+								<div class="categories-grid__content">
+									<div class="categories-grid__title">Гостиные</div>
+									<div class="categories-grid__list">
+										<a href="">Журнальные столики</a>
+										<a href="">Стеллажи</a>
+										<a href="">Тумбы ТВ</a>
+									</div>
+									<a href="" class="categories-grid__link btn _yellow">
+										<span>Смотреть все</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="categories-grid__image _image-4">
+									<picture><source srcset="img/content/categories-4.webp" type="image/webp"><img src="img/content/categories-4.png" alt="categories-4"></picture>
+								</div>
+								<svg class="categories-grid__icon _icon-4">
+									<use xlink:href="img/icons/icons.svg#svg-categories-4-icon"></use>
+								</svg>
 							</div>
-							<a href="" class="categories-grid__link btn _yellow">Смотреть все</a>
-						</div>
-						<div class="categories-grid__image">
-							<picture><source srcset="img/content/categories-4.webp" type="image/webp"><img src="img/content/categories-4.png" alt="categories-4"></picture>
-						</div>
-						<svg class="categories-grid__icon _icon-4">
-							<use xlink:href="img/icons/icons.svg#svg-categories-4-icon"></use>
-						</svg>
-					</div>
-					<div class="categories-grid__item _col-4">
-						<div class="categories-grid__content">
-							<div class="categories-grid__title">Комоды</div>
-							<div class="categories-grid__list">
-								<a href="">С зеркалом</a>
-								<a href="">Для белья</a>
-								<a href="">Для обуви</a>
+							<div class="categories-grid__item _col-4 categories__slide swiper-slide">
+								<div class="categories-grid__content">
+									<div class="categories-grid__title">Комоды</div>
+									<div class="categories-grid__list">
+										<a href="">С зеркалом</a>
+										<a href="">Для белья</a>
+										<a href="">Для обуви</a>
+									</div>
+									<a href="" class="categories-grid__link btn _yellow">
+										<span>Смотреть все</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="categories-grid__image _image-5">
+									<picture><source srcset="img/content/categories-5.webp" type="image/webp"><img src="img/content/categories-5.png" alt="categories-5"></picture>
+								</div>
+								<svg class="categories-grid__icon _icon-5">
+									<use xlink:href="img/icons/icons.svg#svg-categories-5-icon"></use>
+								</svg>
 							</div>
-							<a href="" class="categories-grid__link btn _yellow">Смотреть все</a>
-						</div>
-						<div class="categories-grid__image" style="right: 24px;">
-							<picture><source srcset="img/content/categories-5.webp" type="image/webp"><img src="img/content/categories-5.png" alt="categories-5"></picture>
-						</div>
-						<svg class="categories-grid__icon _icon-5">
-							<use xlink:href="img/icons/icons.svg#svg-categories-5-icon"></use>
-						</svg>
-					</div>
-					<div class="categories-grid__item _col-4">
-						<div class="categories-grid__content">
-							<div class="categories-grid__title">Прихожие</div>
-							<div class="categories-grid__list">
-								<a href="">В коридор</a>
-								<a href="">Угловые</a>
-								<a href="">Модульные</a>
+							<div class="categories-grid__item _col-4 categories__slide swiper-slide">
+								<div class="categories-grid__content">
+									<div class="categories-grid__title">Прихожие</div>
+									<div class="categories-grid__list">
+										<a href="">В коридор</a>
+										<a href="">Угловые</a>
+										<a href="">Модульные</a>
+									</div>
+									<a href="" class="categories-grid__link btn _yellow">
+										<span>Смотреть все</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="categories-grid__image  _image-6">
+									<picture><source srcset="img/content/categories-6.webp" type="image/webp"><img src="img/content/categories-6.png" alt="categories-6"></picture>
+								</div>
+								<svg class="categories-grid__icon _icon-6">
+									<use xlink:href="img/icons/icons.svg#svg-categories-6-icon"></use>
+								</svg>
 							</div>
-							<a href="" class="categories-grid__link btn _yellow">Смотреть все</a>
-						</div>
-						<div class="categories-grid__image" style="right: 61px;">
-							<picture><source srcset="img/content/categories-6.webp" type="image/webp"><img src="img/content/categories-6.png" alt="categories-6"></picture>
-						</div>
-						<svg class="categories-grid__icon _icon-6">
-							<use xlink:href="img/icons/icons.svg#svg-categories-6-icon"></use>
-						</svg>
-					</div>
-					<div class="categories-grid__item _col-4">
-						<div class="categories-grid__content">
-							<div class="categories-grid__title">Кухня</div>
-							<div class="categories-grid__list">
-								<a href="">Кухонные гарнитуры</a>
-								<a href="">Кухонные столы</a>
-								<a href="">Кухонные уголки</a>
+							<div class="categories-grid__item _col-4 categories__slide swiper-slide">
+								<div class="categories-grid__content">
+									<div class="categories-grid__title">Кухня</div>
+									<div class="categories-grid__list">
+										<a href="">Кухонные гарнитуры</a>
+										<a href="">Кухонные столы</a>
+										<a href="">Кухонные уголки</a>
+									</div>
+									<a href="" class="categories-grid__link btn _yellow">
+										<span>Смотреть все</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="categories-grid__image  _image-7">
+									<picture><source srcset="img/content/categories-7.webp" type="image/webp"><img src="img/content/categories-7.png" alt="categories-7"></picture>
+								</div>
+								<svg class="categories-grid__icon _icon-7" width="52" height="104">
+									<use xlink:href="img/icons/icons.svg#svg-categories-7-icon"></use>
+								</svg>
 							</div>
-							<a href="" class="categories-grid__link btn _yellow">Смотреть все</a>
 						</div>
-						<div class="categories-grid__image">
-							<picture><source srcset="img/content/categories-7.webp" type="image/webp"><img src="img/content/categories-7.png" alt="categories-7"></picture>
-						</div>
-						<svg class="categories-grid__icon _icon-7" width="52" height="104">
-							<use xlink:href="img/icons/icons.svg#svg-categories-7-icon"></use>
-						</svg>
 					</div>
 				</div>
 			</section>
@@ -389,13 +429,13 @@
 					</div>
 					<div class="mebel-zakaz__slider swiper">
 						<div class="mebel-zakaz__wrapper swiper-wrapper">
-							<div class="mebel-zakaz__slide swiper-slide product-slide">
+							<div class="mebel-zakaz__slide swiper-slide product-slide _category-slide">
 								<div class="product-slide__image">
 									<div class="product-slide__image-inner">
 										<picture><source srcset="img/content/mebel-zakaz-1.webp" type="image/webp"><img src="img/content/mebel-zakaz-1.png" alt="mebel-zakaz-1" class="product-slide__image-src"></picture>
 									</div>
 									<div class="product-slide__tooltip-list tooltip">
-										<div class="tooltip__item" style="left: 120px; top: 240px;">
+										<div class="tooltip__item" style="left: 17%; top: 62%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -417,7 +457,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item" style="left: 160px; top: 150px;">
+										<div class="tooltip__item" style="left: 27%; top: 36%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -439,7 +479,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item _open-right" style="left: 445px; top: 190px;">
+										<div class="tooltip__item _open-right" style="left: 75%; top: 45%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -518,13 +558,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-slide__slide swiper-slide product-slide">
+							<div class="product-slide__slide swiper-slide product-slide _category-slide">
 								<div class="product-slide__image">
 									<div class="product-slide__image-inner">
 										<picture><source srcset="img/content/mebel-zakaz-2.webp" type="image/webp"><img src="img/content/mebel-zakaz-2.png" alt="mebel-zakaz-2" class="product-slide__image-src"></picture>
 									</div>
 									<div class="product-slide__tooltip-list tooltip">
-										<div class="tooltip__item" style="left: 120px; top: 240px;">
+										<div class="tooltip__item" style="left: 17%; top: 62%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -546,7 +586,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item" style="left: 160px; top: 150px;">
+										<div class="tooltip__item" style="left: 27%; top: 36%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -568,7 +608,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item _open-right" style="left: 445px; top: 190px;">
+										<div class="tooltip__item _open-right" style="left: 75%; top: 45%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -648,13 +688,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-slide__slide swiper-slide product-slide">
+							<div class="product-slide__slide swiper-slide product-slide _category-slide">
 								<div class="product-slide__image">
 									<div class="product-slide__image-inner">
 										<picture><source srcset="img/content/mebel-zakaz-3.webp" type="image/webp"><img src="img/content/mebel-zakaz-3.png" alt="mebel-zakaz-3" class="product-slide__image-src"></picture>
 									</div>
 									<div class="product-slide__tooltip-list tooltip">
-										<div class="tooltip__item" style="left: 120px; top: 240px;">
+										<div class="tooltip__item" style="left: 17%; top: 62%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -676,7 +716,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item" style="left: 160px; top: 150px;">
+										<div class="tooltip__item" style="left: 27%; top: 36%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -698,7 +738,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item _open-right" style="left: 445px; top: 190px;">
+										<div class="tooltip__item _open-right" style="left: 75%; top: 45%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -777,13 +817,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-slide__slide swiper-slide product-slide">
+							<div class="product-slide__slide swiper-slide product-slide _category-slide">
 								<div class="product-slide__image">
 									<div class="product-slide__image-inner">
 										<picture><source srcset="img/content/mebel-zakaz-2.webp" type="image/webp"><img src="img/content/mebel-zakaz-2.png" alt="mebel-zakaz-2" class="product-slide__image-src"></picture>
 									</div>
 									<div class="product-slide__tooltip-list tooltip">
-										<div class="tooltip__item" style="left: 120px; top: 240px;">
+										<div class="tooltip__item" style="left: 17%; top: 62%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -805,7 +845,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item" style="left: 160px; top: 150px;">
+										<div class="tooltip__item" style="left: 27%; top: 36%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -827,7 +867,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item _open-right" style="left: 445px; top: 190px;">
+										<div class="tooltip__item _open-right" style="left: 75%; top: 45%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -905,13 +945,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-slide__slide swiper-slide product-slide">
+							<div class="product-slide__slide swiper-slide product-slide _category-slide">
 								<div class="product-slide__image">
 									<div class="product-slide__image-inner">
 										<picture><source srcset="img/content/mebel-zakaz-3.webp" type="image/webp"><img src="img/content/mebel-zakaz-3.png" alt="mebel-zakaz-3" class="product-slide__image-src"></picture>
 									</div>
 									<div class="product-slide__tooltip-list tooltip">
-										<div class="tooltip__item" style="left: 120px; top: 240px;">
+										<div class="tooltip__item" style="left: 17%; top: 62%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -933,7 +973,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item" style="left: 160px; top: 150px;">
+										<div class="tooltip__item" style="left: 27%; top: 36%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -955,7 +995,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="tooltip__item _open-right" style="left: 445px; top: 190px;">
+										<div class="tooltip__item _open-right" style="left: 75%; top: 45%;">
 											<button class="tooltip__btn"></button>
 											<div class="tooltip__body">
 												<div class="tooltip__image">
@@ -1061,7 +1101,7 @@
 						<div class="slider-4items__wrapper swiper-wrapper">
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1136,7 +1176,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-2" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1208,7 +1248,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-3" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1283,7 +1323,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-4" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1363,7 +1403,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-5" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1459,7 +1499,7 @@
 						<div class="slider-4items__wrapper swiper-wrapper">
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1534,7 +1574,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-6.webp" type="image/webp"><img src="img/content/product-6.png" alt="product-2" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1606,7 +1646,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-3" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1681,7 +1721,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-8.webp" type="image/webp"><img src="img/content/product-8.png" alt="product-4" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1761,7 +1801,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-9.webp" type="image/webp"><img src="img/content/product-9.png" alt="product-5" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1857,7 +1897,7 @@
 						<div class="slider-4items__wrapper swiper-wrapper">
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-9.webp" type="image/webp"><img src="img/content/product-9.png" alt="product-1" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -1932,7 +1972,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-10.webp" type="image/webp"><img src="img/content/product-10.png" alt="product-2" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -2004,7 +2044,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-11.webp" type="image/webp"><img src="img/content/product-11.png" alt="product-3" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -2079,7 +2119,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-12.webp" type="image/webp"><img src="img/content/product-12.png" alt="product-4" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -2159,7 +2199,7 @@
 							</div>
 							<div class="slider-4items__slide swiper-slide product-slide">
 								<div class="product-slide__image">
-									<div class="product-slide__image-inner">
+									<div class="product-slide__image-inner _min-height">
 										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-5" class="product-slide__image-src"></picture>
 									</div>
 									<button class="product-slide__like-btn like-btn"><svg>
@@ -2338,7 +2378,7 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer-main">
-					<div class="footer-main__column">
+					<div class="footer-main__column _first">
 						<a href="" class="footer-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
 						<div class="footer-main__phone">
 							<a href="" class="footer-main__phone-number">8 800 222 09 87</a>
@@ -2388,11 +2428,11 @@
 							</svg>
 							Ежедневно с 9:30 до 21:30
 						</div>
-						<div class="footer-main__yandex">
+						<div class="footer-main__yandex" data-da="._ya-mobile,1180">
 							<picture><source srcset="img/content/yandex.webp" type="image/webp"><img src="img/content/yandex.png" alt=""></picture>
 						</div>
 					</div>
-					<div class="footer-main__column">
+					<div class="footer-main__column _ya-mobile">
 						<div class="footer-main__title">Шоу-рум</div>
 						<div class="footer-main__info-item _adress">
 							<svg>
@@ -2439,7 +2479,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230222160715"></script>
+	<script src="js/app.min.js?_v=20230224101457"></script>
 </body>
 
 </html>
