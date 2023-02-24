@@ -2336,6 +2336,10 @@ h6 {
     margin-bottom: 1.875rem;
   }
 
+  .footer-main__info-item {
+    font-size: 0.9375rem;
+  }
+
   .footer-main__yandex {
     margin-top: 2.5rem;
   }
@@ -3463,6 +3467,10 @@ h6 {
     margin-bottom: 0.9375rem;
   }
 
+  .footer-main__info-item {
+    font-size: 0.8125rem;
+  }
+
   .footer-main__yandex {
     margin-top: 1.875rem;
   }
@@ -4212,6 +4220,18 @@ h6 {
 @supports not (margin-bottom: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem )) {
     .footer-main__info-item {
       margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 0.8125rem , 0.7860099338rem  +  0.1324503311vw , 0.9375rem )) {
+    .footer-main__info-item {
+      font-size: clamp( 0.8125rem , 0.7860099338rem  +  0.1324503311vw , 0.9375rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.8125rem , 0.7860099338rem  +  0.1324503311vw , 0.9375rem )) {
+    .footer-main__info-item {
+      font-size: calc(0.8125rem + 0.125 * (100vw - 20rem) / 94.375);
     }
 }
 
