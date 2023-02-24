@@ -3012,7 +3012,7 @@ h6 {
 
   .categories-grid__link {
     margin-top: 0;
-    width: 30px;
+    width: 30px !important;
     height: 30px;
   }
 
