@@ -2743,7 +2743,7 @@ h6 {
   }
 
   .header-main__search-form {
-    width: 25px;
+    width: 25px !important;
     border: 1px solid transparent;
     margin-right: 15px;
   }
