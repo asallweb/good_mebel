@@ -4070,17 +4070,13 @@
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1,
-                spaceBetween: 50,
-                autoHeight: true,
-                speed: 800,
-                preloadImages: false,
-                navigation: {
-                    prevEl: ".slider-main__slider .swiper-button-prev",
-                    nextEl: ".slider-main__slider .swiper-button-next"
-                },
                 effect: "fade",
                 fadeEffect: {
                     crossFade: true
+                },
+                navigation: {
+                    prevEl: ".slider-main__slider .swiper-button-prev",
+                    nextEl: ".slider-main__slider .swiper-button-next"
                 },
                 pagination: {
                     el: ".swiper-pagination",
@@ -4091,11 +4087,8 @@
                 modules: [ Navigation, Pagination ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 3,
+                slidesPerView: "auto",
                 spaceBetween: 15,
-                autoHeight: true,
-                speed: 800,
-                preloadImages: false,
                 navigation: {
                     prevEl: ".mebel-zakaz .swiper-button-prev",
                     nextEl: ".mebel-zakaz .swiper-button-next"
@@ -4103,14 +4096,6 @@
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
-                },
-                breakpoints: {
-                    320: {
-                        slidesPerView: "auto"
-                    },
-                    1830: {
-                        slidesPerView: 3
-                    }
                 }
             });
             if (document.querySelector(".slider-4items__slider-1")) new core(".slider-4items__slider-1", {
@@ -4119,9 +4104,6 @@
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 15,
-                autoHeight: true,
-                speed: 800,
-                preloadImages: false,
                 navigation: {
                     prevEl: ".swiper-button-prev-slider-1",
                     nextEl: ".swiper-button-next-slider-1"
@@ -4137,9 +4119,6 @@
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 15,
-                autoHeight: true,
-                speed: 800,
-                preloadImages: false,
                 navigation: {
                     prevEl: ".swiper-button-prev-slider-2",
                     nextEl: ".swiper-button-next-slider-2"
@@ -4155,9 +4134,6 @@
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 15,
-                autoHeight: true,
-                speed: 800,
-                preloadImages: false,
                 navigation: {
                     prevEl: ".swiper-button-prev-slider-3",
                     nextEl: ".swiper-button-next-slider-3"
@@ -4179,10 +4155,7 @@
                                 observer: true,
                                 observeParents: true,
                                 slidesPerView: "auto",
-                                spaceBetween: 20,
-                                autoHeight: true,
-                                speed: 800,
-                                preloadImages: false
+                                spaceBetween: 20
                             });
                         }
                     } else if (init) {
