@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @font-face {
   font-family: SuisseIntl;
   font-display: swap;
@@ -134,13 +132,6 @@ h6 {
 .wrapper > * {
   min-width: 0;
 }
-
-/*
-(i) Стилі будуть застосовуватись до
-всіх класів, що містять *__container
-Наприклад header__container, main__container і т.п.
-Сніппет (HTML): cnt
-*/
 
 [class*=__container] {
   max-width: 114.375rem;
