@@ -4229,7 +4229,7 @@
             observeParents: true,
             slidesPerView: 1,
             effect: "fade",
-            autoHeight: true,
+            autoHeight: false,
             preloadImages: false,
             lazy: {
                 loadPrevNext: true,
