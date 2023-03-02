@@ -1033,14 +1033,31 @@ h6 {
   width: 140px;
 }
 
+.header-main {
+  height: 85px;
+}
+
+._header-scroll .header-main__container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 85px;
+}
+
 .header-main__container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 85px;
   color: #707070;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -2649,8 +2666,21 @@ h6 {
     display: none;
   }
 
-  .header-main__container {
+  .header-main {
     height: 65px;
+  }
+
+  ._header-scroll .header-main__container {
+    height: 55px;
+    bottom: 0;
+    top: auto;
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+  }
+
+  ._header-scroll .header-main__logo,
+  ._header-scroll .header-main__search-form {
+    display: none;
   }
 
   .header-main__logo {
@@ -2677,14 +2707,27 @@ h6 {
   }
 
   .header-main__buttons svg {
-    max-width: 20px;
     max-height: 20px;
   }
 
+  .header-main__button._profile,
   .header-main .button._profile {
     display: none;
   }
 
+  .header-main__button._heart svg,
+  .header-main .button._heart svg {
+    max-width: 100%;
+    width: 22px;
+  }
+
+  .header-main__button._bag svg,
+  .header-main .button._bag svg {
+    max-width: 100%;
+    width: 21px;
+  }
+
+  .header-main__button svg,
   .header-main .button svg {
     fill: #000;
   }
