@@ -334,19 +334,29 @@
             if (!selectOptions.classList.contains("_slide")) {
                 selectItem.classList.remove(this.selectClasses.classSelectOpen);
                 _slideUp(selectOptions, originalSelect.dataset.speed);
+                setTimeout((() => {
+                    selectItem.style.zIndex = "";
+                }), originalSelect.dataset.speed);
             }
         }
         selectAction(selectItem) {
             const originalSelect = this.getSelectElement(selectItem).originalSelect;
             const selectOptions = this.getSelectElement(selectItem, this.selectClasses.classSelectOptions).selectElement;
+            const selectOpenzIndex = originalSelect.dataset.zIndex ? originalSelect.dataset.zIndex : 3;
+            this.setOptionsPosition(selectItem);
             if (originalSelect.closest("[data-one-select]")) {
                 const selectOneGroup = originalSelect.closest("[data-one-select]");
                 this.selectsСlose(selectOneGroup);
             }
-            if (!selectOptions.classList.contains("_slide")) {
-                selectItem.classList.toggle(this.selectClasses.classSelectOpen);
-                _slideToggle(selectOptions, originalSelect.dataset.speed);
-            }
+            setTimeout((() => {
+                if (!selectOptions.classList.contains("_slide")) {
+                    selectItem.classList.toggle(this.selectClasses.classSelectOpen);
+                    _slideToggle(selectOptions, originalSelect.dataset.speed);
+                    if (selectItem.classList.contains(this.selectClasses.classSelectOpen)) selectItem.style.zIndex = selectOpenzIndex; else setTimeout((() => {
+                        selectItem.style.zIndex = "";
+                    }), originalSelect.dataset.speed);
+                }
+            }), 0);
         }
         setSelectTitleValue(selectItem, originalSelect) {
             const selectItemBody = this.getSelectElement(selectItem, this.selectClasses.classSelectBody).selectElement;
@@ -413,16 +423,15 @@
         }
         getOptions(originalSelect) {
             let selectOptionsScroll = originalSelect.hasAttribute("data-scroll") ? `data-simplebar` : "";
-            let selectOptionsScrollHeight = originalSelect.dataset.scroll ? `style="max-height:${originalSelect.dataset.scroll}px"` : "";
             let selectOptions = Array.from(originalSelect.options);
             if (selectOptions.length > 0) {
                 let selectOptionsHTML = ``;
                 if (this.getSelectPlaceholder(originalSelect) && !this.getSelectPlaceholder(originalSelect).show || originalSelect.multiple) selectOptions = selectOptions.filter((option => option.value));
-                selectOptionsHTML += selectOptionsScroll ? `<div ${selectOptionsScroll} ${selectOptionsScrollHeight} class="${this.selectClasses.classSelectOptionsScroll}">` : "";
+                selectOptionsHTML += `<div ${selectOptionsScroll} class="${this.selectClasses.classSelectOptionsScroll}">`;
                 selectOptions.forEach((selectOption => {
                     selectOptionsHTML += this.getOption(selectOption, originalSelect);
                 }));
-                selectOptionsHTML += selectOptionsScroll ? `</div>` : "";
+                selectOptionsHTML += `</div>`;
                 return selectOptionsHTML;
             }
         }
@@ -442,6 +451,37 @@
             const selectItemOptions = this.getSelectElement(selectItem, this.selectClasses.classSelectOptions).selectElement;
             selectItemOptions.innerHTML = this.getOptions(originalSelect);
         }
+        setOptionsPosition(selectItem) {
+            const originalSelect = this.getSelectElement(selectItem).originalSelect;
+            const selectOptions = this.getSelectElement(selectItem, this.selectClasses.classSelectOptions).selectElement;
+            const selectItemScroll = this.getSelectElement(selectItem, this.selectClasses.classSelectOptionsScroll).selectElement;
+            const customMaxHeightValue = +originalSelect.dataset.scroll ? `${+originalSelect.dataset.scroll}px` : ``;
+            const selectOptionsPosMargin = +originalSelect.dataset.optionsMargin ? +originalSelect.dataset.optionsMargin : 10;
+            if (!selectItem.classList.contains(this.selectClasses.classSelectOpen)) {
+                selectOptions.hidden = false;
+                const selectItemScrollHeight = selectItemScroll.offsetHeight ? selectItemScroll.offsetHeight : parseInt(window.getComputedStyle(selectItemScroll).getPropertyValue("max-height"));
+                const selectOptionsHeight = selectOptions.offsetHeight > selectItemScrollHeight ? selectOptions.offsetHeight : selectItemScrollHeight + selectOptions.offsetHeight;
+                const selectOptionsScrollHeight = selectOptionsHeight - selectItemScrollHeight;
+                selectOptions.hidden = true;
+                const selectItemHeight = selectItem.offsetHeight;
+                const selectItemPos = selectItem.getBoundingClientRect().top;
+                const selectItemTotal = selectItemPos + selectOptionsHeight + selectItemHeight + selectOptionsScrollHeight;
+                const selectItemResult = window.innerHeight - (selectItemTotal + selectOptionsPosMargin);
+                if (selectItemResult < 0) {
+                    const newMaxHeightValue = selectOptionsHeight + selectItemResult;
+                    if (newMaxHeightValue < 100) {
+                        selectItem.classList.add("select_show-top");
+                        selectItemScroll.style.maxHeight = selectItemPos < selectOptionsHeight ? `${selectItemPos - (selectOptionsHeight - selectItemPos)}px` : customMaxHeightValue;
+                    } else {
+                        selectItem.classList.remove("select_show-top");
+                        selectItemScroll.style.maxHeight = `${newMaxHeightValue}px`;
+                    }
+                }
+            } else setTimeout((() => {
+                selectItem.classList.remove("select_show-top");
+                selectItemScroll.style.maxHeight = customMaxHeightValue;
+            }), +originalSelect.dataset.speed);
+        }
         optionAction(selectItem, originalSelect, optionItem) {
             if (originalSelect.multiple) {
                 optionItem.classList.toggle(this.selectClasses.classSelectOptionSelected);
@@ -451,11 +491,11 @@
                 }));
                 const selectSelectedItems = selectItem.querySelectorAll(this.getSelectClass(this.selectClasses.classSelectOptionSelected));
                 selectSelectedItems.forEach((selectSelectedItems => {
-                    originalSelect.querySelector(`option[value="${selectSelectedItems.dataset.value}"]`).setAttribute("selected", "selected");
+                    originalSelect.querySelector(`option[value = "${selectSelectedItems.dataset.value}"]`).setAttribute("selected", "selected");
                 }));
             } else {
                 if (!originalSelect.hasAttribute("data-show-selected")) {
-                    if (selectItem.querySelector(`${this.getSelectClass(this.selectClasses.classSelectOption)}[hidden]`)) selectItem.querySelector(`${this.getSelectClass(this.selectClasses.classSelectOption)}[hidden]`).hidden = false;
+                    if (selectItem.querySelector(`${this.getSelectClass(this.selectClasses.classSelectOption)} [hidden]`)) selectItem.querySelector(`${this.getSelectClass(this.selectClasses.classSelectOption)} [hidden]`).hidden = false;
                     optionItem.hidden = true;
                 }
                 originalSelect.value = optionItem.hasAttribute("data-value") ? optionItem.dataset.value : optionItem.textContent;
@@ -494,7 +534,7 @@
             this.getSelectElement(selectItem).originalSelect;
             const selectInput = this.getSelectElement(selectItem, this.selectClasses.classSelectInput).selectElement;
             const selectOptions = this.getSelectElement(selectItem, this.selectClasses.classSelectOptions).selectElement;
-            const selectOptionsItems = selectOptions.querySelectorAll(`.${this.selectClasses.classSelectOption}`);
+            const selectOptionsItems = selectOptions.querySelectorAll(`.${this.selectClasses.classSelectOption} `);
             const _this = this;
             selectInput.addEventListener("input", (function() {
                 selectOptionsItems.forEach((selectOptionsItem => {
@@ -511,7 +551,7 @@
             }));
         }
         setLogging(message) {
-            this.config.logging ? functions_FLS(`[select]: ${message}`) : null;
+            this.config.logging ? functions_FLS(`[select]: ${message} `) : null;
         }
     }
     modules_flsModules.select = new SelectConstructor({});

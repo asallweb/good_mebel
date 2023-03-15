@@ -1,0 +1,3048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ListingPage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<style>
+		.pre-loader {
+			background-color: #fff;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: 999;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+	<script>
+		window.addEventListener('load', function() {
+			document.querySelector('.pre-loader').style.display = 'none';
+			document.querySelector('html').classList.remove("lock");
+		});
+	</script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230315114433">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="pre-loader">
+		<div class="loader">
+			<img src="img/icons/main-logo.svg" alt="">
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header" data-scroll="40">
+			<div class="header-top">
+				<div class="header-top__container">
+					<div class="header-top__col">
+						<div class="header-top__city">
+							<svg width="13" height="15">
+								<use xlink:href="img/icons/icons.svg#svg-location"></use>
+							</svg>
+							Ваш город:
+							<a href="#" class="header-top__city-choose">Москва</a>
+						</div>
+						<div class="header-top__menu">
+							<a href="">О фабрике</a>
+							<a href="">Доставка и оплата</a>
+							<a href="">Гарантия</a>
+							<a href="">Дизайнерам, для бизнеса</a>
+							<a href="">Контакты</a>
+						</div>
+					</div>
+					<div class="header-top__col">
+						<div class="header-top__showroom">
+							<b>Шоурумы:</b>
+							<select name="form[]">
+								<option value="1" selected>м. Автозаводская</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</div>
+						<div class="header-top__schedule">
+							с 09:00 до 22:00
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="header-main__container">
+					<div class="header-main__col">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<a href="" class="header-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
+						<div class="header-main__catalog">
+							<button class="header-main__catalog-button btn _blue">
+								<svg width="15" height="17">
+									<use xlink:href="img/icons/icons.svg#svg-catalog"></use>
+								</svg>
+								Каталог
+							</button>
+						</div>
+						<div class="header-main__search" data-da="._mobile-search,1180,0">
+							<form action="" method="" class="header-main__search-form">
+								<input type="text" name="search" placeholder="Поиск по сайту" class="input">
+								<button type="submit" class="button"><svg width="17" height="17">
+										<use xlink:href="img/icons/icons.svg#svg-search"></use>
+									</svg></button>
+							</form>
+						</div>
+					</div>
+					<div class="header-main__col _mobile-search">
+						<div class="header-main__buttons">
+							<a href="#" class="header-main__button _profile">
+								<svg width="20" height="26">
+									<use xlink:href="img/icons/icons.svg#svg-profile"></use>
+								</svg>
+							</a>
+							<a href="#" class="header-main__button _heart">
+								<svg width="25" height="24">
+									<use xlink:href="img/icons/icons.svg#svg-heart"></use>
+								</svg>
+							</a>
+							<a href="#" class="header-main__button _bag">
+								<svg width="22" height="25">
+									<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="header-main__contact">
+							<a href="tel:+74951542377" class="header-main__phone">+7(495) 154-23-77</a>
+							<button class="header-main__call">Заказать обратный звонок</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-menu mMenu">
+				<div class="header-menu__container">
+					<ul class="header-menu__list">
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link _akciya _svg">
+								<svg width="17" height="17">
+									<use xlink:href="img/icons/icons.svg#svg-akciya"></use>
+								</svg>
+								Акции
+							</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Диваны и кресла</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Шкафы и стеллажи</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Кровати и матрасы</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Столы и стулья</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Аксессуары</a>
+						</li>
+						<li class="header-menu__item _tour-3d">
+							<a href="" class="header-menu__link _svg">
+								<img src="img/icons/tour-3d.svg" alt="tour-3d">
+								Записатья на 3D
+							</a>
+						</li>
+						<li class="header-menu__item _svg">
+							<img src="img/icons/sizes.svg" alt="sizes">
+							<select name="form[]" data-class-modif="sizes">
+								<option value="0" selected>Мебель на заказ</option>
+								<option value="1">Пункт №1</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="breadcrumbs __container">
+				<a href="">Главная</a> &mdash;
+				<a href="">Каталог</a> &mdash;
+				<a href="">Диваны и кресла</a>
+			</section>
+			<section class="__container">
+				<div class="content-section__h1">Диваны и кресла <sup>825 товаров</sup></div>
+			</section>
+			<section class="category-list __container">
+				<a href="" class="category-list__item">
+					<svg width="55" height="29">
+						<use xlink:href="img/icons/icons.svg#svg-category_1"></use>
+					</svg>
+					Прямые диваны
+				</a>
+				<a href="" class="category-list__item">
+					<img src="img/icons/category_2.svg" alt="category-icon-2" width="71" height="30">
+					Распродажа
+				</a>
+				<a href="" class="category-list__item">
+					<svg width="63" height="32">
+						<use xlink:href="img/icons/icons.svg#svg-category_3"></use>
+					</svg>
+					Угловые диваны
+				</a>
+				<a href="" class="category-list__item">
+					<svg width="37" height="29">
+						<use xlink:href="img/icons/icons.svg#svg-category_4"></use>
+					</svg>
+					Кресла
+				</a>
+				<a href="" class="category-list__item">
+					<svg width="34" height="21">
+						<use xlink:href="img/icons/icons.svg#svg-category_5"></use>
+					</svg>
+					Пуфы
+				</a>
+				<a href="" class="category-list__item">
+					<svg width="56" height="31">
+						<use xlink:href="img/icons/icons.svg#svg-category_6"></use>
+					</svg>
+					Кушетки
+				</a>
+			</section>
+			<div class="__container">
+				<hr />
+			</div>
+			<section class="filter">
+				<div class="filter__inner __container">
+					<button class="btn _yellow filter__main-btn">
+						<svg width="14" height="16">
+							<use xlink:href="img/icons/icons.svg#svg-filter"></use>
+						</svg>
+						Все фильтры
+					</button>
+					<div class="filter__list">
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Ширина дивана</option>
+							<option value="2">Ширина №2</option>
+							<option value="3">Ширина №3</option>
+							<option value="4">Ширина №4</option>
+						</select>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Ширина спального места</option>
+							<option value="2">Ширина места №2</option>
+							<option value="3">Ширина места №3</option>
+							<option value="4">Ширина места №4</option>
+						</select>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Цвет</option>
+							<option value="2">Цвет №2</option>
+							<option value="3">Цвет №3</option>
+							<option value="4">Цвет №4</option>
+						</select>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Ширина спального места</option>
+							<option value="2">Ширина спального места №2</option>
+							<option value="3">Ширина спального места №3</option>
+							<option value="4">Ширина спального места №4</option>
+						</select>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Тип ткани</option>
+							<option value="2">Тип ткани №2</option>
+							<option value="3">Тип ткани №3</option>
+							<option value="4">Тип ткани №4</option>
+						</select>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Механизм трансформации</option>
+							<option value="2">Механизм трансформации №2</option>
+							<option value="3">Механизм трансформации №3</option>
+							<option value="4">Механизм трансформации №4</option>
+						</select>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Бренд</option>
+							<option value="2">Бренд №2</option>
+							<option value="3">Бренд №3</option>
+							<option value="4">Бренд №4</option>
+						</select>
+					</div>
+					<div class="filter__sorting">
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Самые популярные</option>
+							<option value="2">Самые дешевые</option>
+							<option value="3">Самые дорогие</option>
+						</select>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Наличие</option>
+							<option value="2">В наличии</option>
+							<option value="3">Под заказ</option>
+							<option value="4">Скоро будет</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<section class="product-list __container">
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item">В тренде</div>
+							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Стул Светло-ЗЕЛЕНЫЙ
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+						<div class="product__colors-list colors-list">
+							<button class="colors-list__item _navy-green _active"></button>
+							<button class="colors-list__item _navy-blue"></button>
+							<button class="colors-list__item _blue"></button>
+							<button class="colors-list__item _dark-green"></button>
+							<span>+6</span>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Еще одно название товара на сайте
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__old-price">32 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Маркус Изумруд
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__old-price">
+								<svg width="14" height="8">
+									<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+								</svg>
+								32 890 ₽
+							</span>
+							<div class="product__price-economy">
+								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px">
+								<span>Экономия 1799 руб (4%)</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _svg-percent">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+								</svg>
+								2 акции
+							</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Анита Еллоу
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item">В тренде</div>
+							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Название очередного товара
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+						<div class="product__colors-list colors-list">
+							<button class="colors-list__item _navy-green _active"></button>
+							<button class="colors-list__item _navy-blue"></button>
+							<button class="colors-list__item _blue"></button>
+							<button class="colors-list__item _dark-green"></button>
+							<span>+6</span>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-10.webp" type="image/webp"><img src="img/content/product-10.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Еще одно название товара на сайте
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-13.webp" type="image/webp"><img src="img/content/product-13.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Маркус Изумруд
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _svg-percent">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+								</svg>
+								2 акции
+							</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Анита Еллоу
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="slider-4items _grey-bg">
+				<div class="__container">
+					<div class="slider-head">
+						<div class="content-section__h2 _width-100p _mb-25">Подобрано для вас</div>
+						<div class="slider-head__toggler toggler">
+							<button class="toggler__btn btn _active">Хиты продаж</button>
+							<button class="toggler__btn btn">Новинки</button>
+						</div>
+						<div class="slider-head__navigation">
+							<button type="button" class="swiper-button-prev swiper-button-prev-slider-1"><svg width="12" height="7">
+									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+								</svg></button>
+							<button type="button" class="swiper-button-next swiper-button-next-slider-1"><svg width="12" height="7">
+									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+								</svg></button>
+						</div>
+					</div>
+					<div class="slider-4items__slider swiper slider-4items__slider-1">
+						<div class="slider-4items__wrapper swiper-wrapper">
+							<div class="slider-4items__slide swiper-slide product _in-slider">
+								<div class="product__image">
+									<div class="product__image-inner _min-height">
+										<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+									</div>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
+									<div class="product__tag-list tag-list">
+										<div class="product__tag-item tag-list__item">В тренде</div>
+										<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+									</div>
+								</div>
+								<div class="product__body">
+									<div class="product__name">Стул Светло-ЗЕЛЕНЫЙ</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback">25 отзывов</a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price">26 890 ₽</span>
+									</div>
+								</div>
+								<div class="product__footer">
+									<button class="btn _yellow">
+										КУПИТЬ
+										<svg width="15" height="17">
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+									<div class="product__colors-list colors-list">
+										<button class="colors-list__item _navy-green _active"></button>
+										<button class="colors-list__item _navy-blue"></button>
+										<button class="colors-list__item _blue"></button>
+										<button class="colors-list__item _dark-green"></button>
+										<span>+6</span>
+									</div>
+								</div>
+							</div>
+							<div class="slider-4items__slide swiper-slide product _in-slider">
+								<div class="product__image">
+									<div class="product__image-inner _min-height">
+										<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-2" class="product__image-src swiper-lazy"></picture>
+									</div>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
+									<div class="product__discount-round discount-round">-15%</div>
+								</div>
+								<div class="product__body">
+									<div class="product__name">Диван прямой Лофт (мини) Бирюза</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback">25 отзывов</a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price">26 890 ₽</span>
+									</div>
+								</div>
+								<div class="product__footer">
+									<button class="btn _yellow">
+										КУПИТЬ
+										<svg width="15" height="17">
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+									<div class="product__colors-list colors-list">
+										<button class="colors-list__item _navy-green _active"></button>
+										<button class="colors-list__item _navy-blue"></button>
+										<button class="colors-list__item _blue"></button>
+										<button class="colors-list__item _dark-green"></button>
+										<span>+6</span>
+									</div>
+								</div>
+							</div>
+							<div class="slider-4items__slide swiper-slide product _in-slider">
+								<div class="product__image">
+									<div class="product__image-inner _min-height">
+										<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-3" class="product__image-src swiper-lazy"></picture>
+									</div>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
+									<div class="product__discount-round discount-round">-15%</div>
+									<div class="product__tag-list tag-list">
+										<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+									</div>
+								</div>
+								<div class="product__body">
+									<div class="product__name">Диван прямой Маркус Изумруд</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback">25 отзывов</a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price">26 890 ₽</span>
+									</div>
+								</div>
+								<div class="product__footer">
+									<button class="btn _yellow">
+										КУПИТЬ
+										<svg width="15" height="17">
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+									<div class="product__colors-list colors-list">
+										<button class="colors-list__item _navy-green _active"></button>
+										<button class="colors-list__item _navy-blue"></button>
+										<button class="colors-list__item _blue"></button>
+										<button class="colors-list__item _dark-green"></button>
+										<span>+6</span>
+									</div>
+								</div>
+							</div>
+							<div class="slider-4items__slide swiper-slide product _in-slider">
+								<div class="product__image">
+									<div class="product__image-inner _min-height">
+										<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-4" class="product__image-src swiper-lazy"></picture>
+									</div>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
+									<div class="product__discount-round discount-round">-15%</div>
+									<div class="product__tag-list tag-list">
+										<div class="product__tag-item tag-list__item _svg-percent">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+											</svg>
+											2 акции
+										</div>
+									</div>
+								</div>
+								<div class="product__body">
+									<div class="product__name">Диван прямой Анита Еллоу</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback">25 отзывов</a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price">26 890 ₽</span>
+									</div>
+								</div>
+								<div class="product__footer">
+									<button class="btn _yellow">
+										КУПИТЬ
+										<svg width="15" height="17">
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+									<div class="product__colors-list colors-list">
+										<button class="colors-list__item _navy-green _active"></button>
+										<button class="colors-list__item _navy-blue"></button>
+										<button class="colors-list__item _blue"></button>
+										<button class="colors-list__item _dark-green"></button>
+										<span>+6</span>
+									</div>
+								</div>
+							</div>
+							<div class="slider-4items__slide swiper-slide product _in-slider">
+								<div class="product__image">
+									<div class="product__image-inner _min-height">
+										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-5" class="product__image-src swiper-lazy"></picture>
+									</div>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
+									<div class="product__discount-round discount-round">-15%</div>
+									<div class="product__tag-list tag-list">
+										<div class="product__tag-item tag-list__item">В тренде</div>
+										<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+									</div>
+								</div>
+								<div class="product__body">
+									<div class="product__name">Стул Светло-ЗЕЛЕНЫЙ</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback">25 отзывов</a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price">26 890 ₽</span>
+									</div>
+								</div>
+								<div class="product__footer">
+									<button class="btn _yellow">
+										КУПИТЬ
+										<svg width="15" height="17">
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+									<div class="product__colors-list colors-list">
+										<button class="colors-list__item _navy-green _active"></button>
+										<button class="colors-list__item _navy-blue"></button>
+										<button class="colors-list__item _blue"></button>
+										<button class="colors-list__item _dark-green"></button>
+										<span>+6</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination swiper-pagination-1"></div>
+					</div>
+				</div>
+			</section>
+			<section class="product-list __container">
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item">В тренде</div>
+							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Стул Светло-ЗЕЛЕНЫЙ
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+						<div class="product__colors-list colors-list">
+							<button class="colors-list__item _navy-green _active"></button>
+							<button class="colors-list__item _navy-blue"></button>
+							<button class="colors-list__item _blue"></button>
+							<button class="colors-list__item _dark-green"></button>
+							<span>+6</span>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Еще одно название товара на сайте
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__old-price">32 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Маркус Изумруд
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__old-price">
+								<svg width="14" height="8">
+									<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+								</svg>
+								32 890 ₽
+							</span>
+							<div class="product__price-economy">
+								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px">
+								<span>Экономия 1799 руб (4%)</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _svg-percent">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+								</svg>
+								2 акции
+							</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Анита Еллоу
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item">В тренде</div>
+							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Название очередного товара
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+						<div class="product__colors-list colors-list">
+							<button class="colors-list__item _navy-green _active"></button>
+							<button class="colors-list__item _navy-blue"></button>
+							<button class="colors-list__item _blue"></button>
+							<button class="colors-list__item _dark-green"></button>
+							<span>+6</span>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-10.webp" type="image/webp"><img src="img/content/product-10.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Еще одно название товара на сайте
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-13.webp" type="image/webp"><img src="img/content/product-13.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Маркус Изумруд
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _svg-percent">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+								</svg>
+								2 акции
+							</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Анита Еллоу
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="zakaz-bnr __container">
+				<div class="zakaz-bnr__image-outer __container"><picture><source srcset="img/content/content-1.webp" type="image/webp"><img src="img/content/content-1.jpg" alt="content-1" class="zakaz-bnr__image"></picture></div>
+				<div class="zakaz-bnr__content">
+					<div class="zakaz-bnr__title">Мебель на заказ.</div>
+					<div class="zakaz-bnr__subtitle">Для тех, кто выходит за рамки стандартов</div>
+					<div class="zakaz-bnr__button-list">
+						<a href="" class="zakaz-bnr__button btn _white">3D проект</a>
+						<a href="" class="zakaz-bnr__button btn _white">Замерщик</a>
+						<a href="" class="zakaz-bnr__button btn _white">Сроки от пяти дней</a>
+					</div>
+				</div>
+			</section>
+			<section class="product-list __container">
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item">В тренде</div>
+							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Стул Светло-ЗЕЛЕНЫЙ
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+						<div class="product__colors-list colors-list">
+							<button class="colors-list__item _navy-green _active"></button>
+							<button class="colors-list__item _navy-blue"></button>
+							<button class="colors-list__item _blue"></button>
+							<button class="colors-list__item _dark-green"></button>
+							<span>+6</span>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Еще одно название товара на сайте
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__old-price">32 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Маркус Изумруд
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__old-price">
+								<svg width="14" height="8">
+									<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+								</svg>
+								32 890 ₽
+							</span>
+							<div class="product__price-economy">
+								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px">
+								<span>Экономия 1799 руб (4%)</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _svg-percent">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+								</svg>
+								2 акции
+							</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Анита Еллоу
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item">В тренде</div>
+							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Название очередного товара
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+						<div class="product__colors-list colors-list">
+							<button class="colors-list__item _navy-green _active"></button>
+							<button class="colors-list__item _navy-blue"></button>
+							<button class="colors-list__item _blue"></button>
+							<button class="colors-list__item _dark-green"></button>
+							<span>+6</span>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-10.webp" type="image/webp"><img src="img/content/product-10.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Еще одно название товара на сайте
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-13.webp" type="image/webp"><img src="img/content/product-13.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__discount-round discount-round">-15%</div>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Маркус Изумруд
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__image">
+						<div class="product__image-inner _min-height">
+							<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+						</div>
+						<button class="product__like-btn like-btn"><svg>
+								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+							</svg></button>
+						<div class="product__tag-list tag-list">
+							<div class="product__tag-item tag-list__item _svg-percent">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+								</svg>
+								2 акции
+							</div>
+						</div>
+					</div>
+					<div class="product__body">
+						<div class="product__name">
+							<div class="product__name-top">
+								<div class="product__category-name">Название категории</div>
+								<div class="product__articul">Арт. 23376728</div>
+							</div>
+							Диван прямой Анита Еллоу
+						</div>
+						<div class="product__rating">
+							<div class="rating">
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star _active">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+								<a href="" class="rating__star">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-star"></use>
+									</svg>
+								</a>
+							</div>
+							<a href="" class="product__count-feedback">25 отзывов</a>
+						</div>
+						<div class="product__production-time">
+							<svg class="product__production-svg _check">
+								<use xlink:href="img/icons/icons.svg#svg-check"></use>
+							</svg>
+							В наличии, 2-4 дня
+						</div>
+						<div class="product__technikal-specs">
+							<table>
+								<tbody>
+									<tr>
+										<td>Обивка:</td>
+										<td>рогожка</td>
+									</tr>
+									<tr>
+										<td>Наполнитель:</td>
+										<td>ДВП, ППУ, поролоновая крошка</td>
+									</tr>
+									<tr>
+										<td>Пружинный блок:</td>
+										<td>нет</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="" class="show-more">Показать еще</a>
+						</div>
+						<div class="product__price">
+							<span class="product__curent-price">26 890 ₽</span>
+						</div>
+					</div>
+					<div class="product__footer">
+						<button class="btn _yellow">
+							КУПИТЬ
+							<svg width="15" height="17">
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<button class="load-more btn">Показать еще</button>
+			<div class="pagging">
+				<a href="" class="pagging__arrow _not-active _prev">
+					<svg width="13" height="11">
+						<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+					</svg>
+					НАЗАД
+				</a>
+				<ul class="pagging__list">
+					<li>
+						<a href="" class="pagging__item _active">1</a>
+					</li>
+					<li>
+						<a href="" class="pagging__item">2</a>
+					</li>
+					<li>
+						<a href="" class="pagging__item">3</a>
+					</li>
+					<li>
+						<a href="" class="pagging__item">4</a>
+					</li>
+					<li>
+						<a href="" class="pagging__item">5</a>
+					</li>
+					<li>
+						<span class="pagging__item _no-bg">...</span>
+					</li>
+					<li>
+						<a href="" class="pagging__item">35</a>
+					</li>
+				</ul>
+				<a href="" class="pagging__arrow _next">
+					ДАЛЕЕ
+					<svg width="13" height="11">
+						<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+					</svg>
+				</a>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-main">
+					<div class="footer-main__column _first">
+						<a href="" class="footer-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
+						<div class="footer-main__phone">
+							<a href="" class="footer-main__phone-number">8 800 222 09 87</a>
+							<span>Бесплатно для жителей России</span>
+						</div>
+						<div class="footer-main__tools">
+							<a href="" class="footer-main__tools-item">
+								<svg width="18" height="19">
+									<use xlink:href="img/icons/icons.svg#svg-setting"></use>
+								</svg>
+								Гуд сервис
+							</a>
+							<a href="" class="footer-main__tools-item">
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#svg-chat"></use>
+								</svg>
+								Написать отзыв
+							</a>
+						</div>
+					</div>
+					<div class="footer-main__column">
+						<div class="footer-main__title">Это Гуд!</div>
+						<div class="footer-main__menu">
+							<a href="" class="footer-main__menu-link">О фабрике</a>
+							<a href="" class="footer-main__menu-link">Блог</a>
+							<a href="" class="footer-main__menu-link">Отзывы о магазине</a>
+							<a href="" class="footer-main__menu-link">Акции</a>
+							<a href="" class="footer-main__menu-link">Оплата и доставка</a>
+							<a href="" class="footer-main__menu-link">Как с нами связаться</a>
+							<a href="" class="footer-main__menu-link">Галарея тканей</a>
+							<a href="" class="footer-main__menu-link">Наши реквизиты</a>
+							<a href="" class="footer-main__menu-link">Мебель в кредит</a>
+
+						</div>
+					</div>
+					<div class="footer-main__column">
+						<div class="footer-main__title">Интернет магазин</div>
+						<a href="tel:+74951542377" class="footer-main__info-item _phone">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+							</svg>
+							+7 (495) 154-23-77
+						</a>
+						<div class="footer-main__info-item _schedule">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-clock"></use>
+							</svg>
+							Ежедневно с 9:30 до 21:30
+						</div>
+						<div class="footer-main__yandex" data-da="._ya-mobile,1180">
+							<picture><source srcset="img/content/yandex.webp" type="image/webp"><img src="img/content/yandex.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="footer-main__column _ya-mobile">
+						<div class="footer-main__title">Шоу-рум</div>
+						<div class="footer-main__info-item _adress">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-location"></use>
+							</svg>
+							ул. Велозаводская, д. 13, стр. 1, здание Велозаводского Рынка, цокольный этаж, павильон 315
+						</div>
+						<a href="tel:+74951542377" class="footer-main__info-item _phone">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+							</svg>
+							+7 (495) 154-23-77
+						</a>
+						<div class="footer-main__info-item _schedule">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-clock"></use>
+							</svg>
+							Ежедневно с 9:30 до 21:30
+						</div>
+
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-bottom__column">© 2008-2023 «Good-Mebel» интернет-магазин мебели</div>
+					<div class="footer-bottom__column"><a href="">Политика конфиденциальности</a></div>
+					<div class="footer-bottom__column _links">
+						<a href="">Публичная оферта</a>
+						<a href="">Карта сайта</a>
+					</div>
+					<div class="footer-bottom__column _socials">
+						<span>Мы в соц.сетях:</span>
+						<a href="" class="social-link">
+							<svg width="14" height="9">
+								<use xlink:href="img/icons/icons.svg#svg-vk"></use>
+							</svg>
+						</a>
+						<a href="" class="social-link">
+							<svg width="14" height="12">
+								<use xlink:href="img/icons/icons.svg#svg-tg"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230315114433"></script>
+</body>
+
+</html>
