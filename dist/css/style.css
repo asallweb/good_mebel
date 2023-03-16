@@ -318,7 +318,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 11px;
+  gap: 10px;
 }
 
 .pagging__arrow._prev svg {
@@ -334,12 +334,9 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 13px;
-  margin: 0 70px;
 }
 
 .pagging__item {
-  width: 45px;
-  height: 45px;
   border-radius: 50%;
   background: #eee;
   display: -webkit-box;
@@ -1219,7 +1216,6 @@ hr {
 }
 
 .header-main__catalog-button {
-  width: 120px;
   height: 45px;
   gap: 11px;
 }
@@ -2320,7 +2316,6 @@ hr {
 
 .filter__main-btn {
   height: 45px;
-  width: 150px;
   border-radius: 22.5px;
   gap: 8px;
   -ms-flex-negative: 0;
@@ -2380,7 +2375,7 @@ hr {
 .filter-list__next-button {
   background-color: #eee;
   position: relative;
-  right: auto;
+  right: auto !important;
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
           transform: translate(0);
@@ -2452,7 +2447,7 @@ hr {
   border-radius: 23.5px;
   padding: 0 22px;
   white-space: nowrap;
-  width: auto;
+  width: auto !important;
 }
 
 .tags-buttons {
@@ -2587,6 +2582,22 @@ hr {
 
   .pagging {
     margin-bottom: 2.5rem;
+  }
+
+  .pagging__list {
+    margin-right: 4.375rem;
+  }
+
+  .pagging__list {
+    margin-left: 4.375rem;
+  }
+
+  .pagging__item {
+    width: 2.8125rem;
+  }
+
+  .pagging__item {
+    height: 2.8125rem;
   }
 
   .btn {
@@ -2731,6 +2742,10 @@ hr {
 
   .header {
     margin-bottom: 0.9375rem;
+  }
+
+  .header-main__catalog-button {
+    width: 7.5rem;
   }
 
   .footer {
@@ -3087,6 +3102,10 @@ hr {
 
   .category-list {
     gap: 3.125rem;
+  }
+
+  .filter__main-btn {
+    width: 9.375rem;
   }
 
   .product-list {
@@ -3908,11 +3927,6 @@ hr {
     width: 300px;
   }
 
-  .product__body,
-  .product__footer {
-    padding: 0 10px;
-  }
-
   .product__articul,
   .product__technikal-specs {
     display: none;
@@ -4008,6 +4022,22 @@ hr {
 
   .pagging {
     margin-bottom: 1.25rem;
+  }
+
+  .pagging__list {
+    margin-right: 1.875rem;
+  }
+
+  .pagging__list {
+    margin-left: 1.875rem;
+  }
+
+  .pagging__item {
+    width: 2.1875rem;
+  }
+
+  .pagging__item {
+    height: 2.1875rem;
   }
 
   .btn {
@@ -4147,11 +4177,15 @@ hr {
   }
 
   .load-more {
-    width: 12.5rem;
+    width: 20.3125rem;
   }
 
   .header {
     margin-bottom: 0.0000000625rem;
+  }
+
+  .header-main__catalog-button {
+    width: 7.5rem;
   }
 
   .footer {
@@ -4371,11 +4405,11 @@ hr {
   }
 
   .product__body {
-    padding-left: 0.0000000625rem;
+    padding-left: 0.625rem;
   }
 
   .product__body {
-    padding-right: 0.0000000625rem;
+    padding-right: 0.625rem;
   }
 
   .product__body {
@@ -4447,11 +4481,11 @@ hr {
   }
 
   .product__footer {
-    padding-left: 0.0000000625rem;
+    padding-left: 0.625rem;
   }
 
   .product__footer {
-    padding-right: 0.0000000625rem;
+    padding-right: 0.625rem;
   }
 
   .product__footer {
@@ -4508,6 +4542,10 @@ hr {
 
   .category-list {
     gap: 1.875rem;
+  }
+
+  .filter__main-btn {
+    width: 10rem;
   }
 
   .product-list {
@@ -4623,6 +4661,54 @@ hr {
 @supports not (margin-bottom: clamp( 1.25rem , 0.9850993377rem  +  1.3245033113vw , 2.5rem )) {
     .pagging {
       margin-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-right: clamp( 1.875rem , 1.3451986755rem  +  2.6490066225vw , 4.375rem )) {
+    .pagging__list {
+      margin-right: clamp( 1.875rem , 1.3451986755rem  +  2.6490066225vw , 4.375rem );
+    }
+}
+
+@supports not (margin-right: clamp( 1.875rem , 1.3451986755rem  +  2.6490066225vw , 4.375rem )) {
+    .pagging__list {
+      margin-right: calc(1.875rem + 2.5 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-left: clamp( 1.875rem , 1.3451986755rem  +  2.6490066225vw , 4.375rem )) {
+    .pagging__list {
+      margin-left: clamp( 1.875rem , 1.3451986755rem  +  2.6490066225vw , 4.375rem );
+    }
+}
+
+@supports not (margin-left: clamp( 1.875rem , 1.3451986755rem  +  2.6490066225vw , 4.375rem )) {
+    .pagging__list {
+      margin-left: calc(1.875rem + 2.5 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (width: clamp( 2.1875rem , 2.0550496689rem  +  0.6622516556vw , 2.8125rem )) {
+    .pagging__item {
+      width: clamp( 2.1875rem , 2.0550496689rem  +  0.6622516556vw , 2.8125rem );
+    }
+}
+
+@supports not (width: clamp( 2.1875rem , 2.0550496689rem  +  0.6622516556vw , 2.8125rem )) {
+    .pagging__item {
+      width: calc(2.1875rem + 0.625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (height: clamp( 2.1875rem , 2.0550496689rem  +  0.6622516556vw , 2.8125rem )) {
+    .pagging__item {
+      height: clamp( 2.1875rem , 2.0550496689rem  +  0.6622516556vw , 2.8125rem );
+    }
+}
+
+@supports not (height: clamp( 2.1875rem , 2.0550496689rem  +  0.6622516556vw , 2.8125rem )) {
+    .pagging__item {
+      height: calc(2.1875rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
@@ -5034,15 +5120,15 @@ hr {
     }
 }
 
-@supports (width: clamp( 12.5rem , 10.0496688742rem  +  12.2516556291vw , 24.0625rem )) {
+@supports (width: clamp( 20.3125rem , 19.5177980132rem  +  3.9735099338vw , 24.0625rem )) {
     .load-more {
-      width: clamp( 12.5rem , 10.0496688742rem  +  12.2516556291vw , 24.0625rem );
+      width: clamp( 20.3125rem , 19.5177980132rem  +  3.9735099338vw , 24.0625rem );
     }
 }
 
-@supports not (width: clamp( 12.5rem , 10.0496688742rem  +  12.2516556291vw , 24.0625rem )) {
+@supports not (width: clamp( 20.3125rem , 19.5177980132rem  +  3.9735099338vw , 24.0625rem )) {
     .load-more {
-      width: calc(12.5rem + 11.5625 * (100vw - 20rem) / 94.375);
+      width: calc(20.3125rem + 3.75 * (100vw - 20rem) / 94.375);
     }
 }
 
@@ -5055,6 +5141,18 @@ hr {
 @supports not (margin-bottom: clamp( 0.0000000625rem , -0.1986754209rem  +  0.9933774172vw , 0.9375rem )) {
     .header {
       margin-bottom: calc(0.0000000625rem + 0.9374999375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (width: clamp( 7.5rem , 7.5rem  +  0vw , 7.5rem )) {
+    .header-main__catalog-button {
+      width: clamp( 7.5rem , 7.5rem  +  0vw , 7.5rem );
+    }
+}
+
+@supports not (width: clamp( 7.5rem , 7.5rem  +  0vw , 7.5rem )) {
+    .header-main__catalog-button {
+      width: calc(7.5rem + 0 * (100vw - 20rem) / 94.375);
     }
 }
 
@@ -5706,27 +5804,27 @@ hr {
     }
 }
 
-@supports (padding-left: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports (padding-left: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__body {
-      padding-left: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem );
+      padding-left: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem );
     }
 }
 
-@supports not (padding-left: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports not (padding-left: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__body {
-      padding-left: calc(0.0000000625rem + 1.2499999375 * (100vw - 20rem) / 94.375);
+      padding-left: calc(0.625rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
-@supports (padding-right: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports (padding-right: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__body {
-      padding-right: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem );
+      padding-right: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem );
     }
 }
 
-@supports not (padding-right: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports not (padding-right: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__body {
-      padding-right: calc(0.0000000625rem + 1.2499999375 * (100vw - 20rem) / 94.375);
+      padding-right: calc(0.625rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
@@ -5934,27 +6032,27 @@ hr {
     }
 }
 
-@supports (padding-left: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports (padding-left: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__footer {
-      padding-left: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem );
+      padding-left: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem );
     }
 }
 
-@supports not (padding-left: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports not (padding-left: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__footer {
-      padding-left: calc(0.0000000625rem + 1.2499999375 * (100vw - 20rem) / 94.375);
+      padding-left: calc(0.625rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
-@supports (padding-right: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports (padding-right: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__footer {
-      padding-right: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem );
+      padding-right: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem );
     }
 }
 
-@supports not (padding-right: clamp( 0.0000000625rem , -0.2649005865rem  +  1.324503245vw , 1.25rem )) {
+@supports not (padding-right: clamp( 0.625rem , 0.4925496689rem  +  0.6622516556vw , 1.25rem )) {
     .product__footer {
-      padding-right: calc(0.0000000625rem + 1.2499999375 * (100vw - 20rem) / 94.375);
+      padding-right: calc(0.625rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
@@ -6123,6 +6221,18 @@ hr {
 @supports not (gap: clamp( 1.875rem , 1.6100993377rem  +  1.3245033113vw , 3.125rem )) {
     .category-list {
       gap: calc(1.875rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (width: clamp( 9.375rem , 10.1324503311rem  +  -0.6622516556vw , 10rem )) {
+    .filter__main-btn {
+      width: clamp( 9.375rem , 10.1324503311rem  +  -0.6622516556vw , 10rem );
+    }
+}
+
+@supports not (width: clamp( 9.375rem , 10.1324503311rem  +  -0.6622516556vw , 10rem )) {
+    .filter__main-btn {
+      width: calc(10rem + -0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
