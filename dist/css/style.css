@@ -1041,6 +1041,10 @@ hr {
   display: none;
 }
 
+.icon-menu .icon-text {
+  display: none;
+}
+
 .header .select {
   width: 140px;
 }
@@ -1174,19 +1178,6 @@ hr {
   height: 85px;
 }
 
-._header-scroll .header-main__container {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  z-index: 9;
-  background-color: #fff;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 85px;
-}
-
 .header-main__container {
   height: 100%;
   display: -webkit-box;
@@ -1279,11 +1270,37 @@ hr {
           align-items: center;
 }
 
+.header-main__button {
+  position: relative;
+}
+
 .header-main__button:hover svg {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   fill: #0391a2;
+}
+
+.header-main__button-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+  width: 19px;
+  height: 19px;
+  background: #f7b905;
+  font-weight: 300;
+  font-size: 10px;
+  color: #000;
 }
 
 .header-main__contact {
@@ -1375,6 +1392,27 @@ hr {
 
 .header-menu ._tour-3d {
   margin-left: 22px;
+}
+
+.bag-info {
+  display: none;
+}
+
+._header-scroll .header-main__container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 85px;
+}
+
+._header-scroll .icon-menu {
+  margin-right: 15px;
 }
 
 .footer {
@@ -3272,6 +3310,13 @@ hr {
     height: 0.875rem;
     z-index: 5;
     margin-right: 20px;
+    font-weight: 300;
+    font-size: 10px;
+    color: #000;
+  }
+
+  .icon-menu .icon-text {
+    display: none;
   }
 
   .icon-menu span,
@@ -3326,19 +3371,6 @@ hr {
     height: 65px;
   }
 
-  ._header-scroll .header-main__container {
-    height: 55px;
-    bottom: 0;
-    top: auto;
-    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
-  }
-
-  ._header-scroll .header-main__logo,
-  ._header-scroll .header-main__search-form {
-    display: none;
-  }
-
   .header-main__logo {
     max-width: 150px;
   }
@@ -3381,6 +3413,12 @@ hr {
   .header-main .button._bag svg {
     max-width: 100%;
     width: 21px;
+  }
+
+  .header-main__button._search-ico svg,
+  .header-main .button._search-ico svg {
+    width: 20px;
+    height: 20px;
   }
 
   .header-main__button svg,
@@ -3543,6 +3581,78 @@ hr {
 
   .header-menu ._tour-3d {
     margin-left: 0;
+  }
+
+  ._header-scroll .icon-menu {
+    top: -7px;
+  }
+
+  ._header-scroll .icon-menu .icon-text {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 21px;
+    left: -3px;
+    background-color: transparent;
+  }
+
+  ._header-scroll .header-main__container {
+    height: 55px;
+    bottom: 0;
+    top: auto;
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+  }
+
+  ._header-scroll .header-main__button._heart {
+    margin-right: 20px;
+  }
+
+  ._header-scroll .header-main__button._heart::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -17px;
+    width: 1px;
+    height: 55px;
+    background-color: #e1e1e1;
+  }
+
+  ._header-scroll .header-main__button._heart::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: -17px;
+    width: 1px;
+    height: 55px;
+    background-color: #e1e1e1;
+  }
+
+  ._header-scroll .header-main__logo,
+  ._header-scroll .header-main__search-form {
+    display: none;
+  }
+
+  ._header-scroll .bag-info {
+    display: block;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 14px;
+    color: #000;
+  }
+
+  ._header-scroll .bag-info__price {
+    font-size: 12px;
+  }
+
+  ._header-scroll .bag-info__price-parts {
+    display: inline-block;
+    height: 15px;
+    border-radius: 7.5px;
+    background: #191818;
+    color: #fff;
+    padding: 0 5px;
+    margin: 0 5px;
   }
 
   .footer-main {

@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230316162007">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230316171908">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +77,10 @@
 			<div class="header-main">
 				<div class="header-main__container">
 					<div class="header-main__col">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+							<span class="icon-text">Каталог</span>
+						</button>
 						<a href="" class="header-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
 						<div class="header-main__catalog">
 							<button class="header-main__catalog-button btn _blue">
@@ -90,7 +93,7 @@
 						<div class="header-main__search" data-da="._mobile-search,1180,0">
 							<form action="" method="" class="header-main__search-form">
 								<input type="text" name="search" placeholder="Поиск по сайту" class="input">
-								<button type="submit" class="button"><svg width="17" height="17">
+								<button type="submit" class="button _search-ico"><svg width="17" height="17">
 										<use xlink:href="img/icons/icons.svg#svg-search"></use>
 									</svg></button>
 							</form>
@@ -107,12 +110,19 @@
 								<svg width="25" height="24">
 									<use xlink:href="img/icons/icons.svg#svg-heart"></use>
 								</svg>
+								<span class="header-main__button-count">3</span>
 							</a>
 							<a href="#" class="header-main__button _bag">
 								<svg width="22" height="25">
 									<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 								</svg>
+								<span class="header-main__button-count">2</span>
 							</a>
+							<div class="bag-info">
+								<span class="bag-info__price">32 690 ₽ </span>
+								<span class="bag-info__price-parts">4200х6 ₽</span>
+								в рассрочку <br> Доставка 990 ₽ , до бесплатной 4000 ₽
+							</div>
 						</div>
 						<div class="header-main__contact">
 							<a href="tel:+74951542377" class="header-main__phone">+7(495) 154-23-77</a>
@@ -2424,7 +2434,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230316162007"></script>
+	<script src="js/app.min.js?_v=20230316171908"></script>
 </body>
 
 </html>
