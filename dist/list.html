@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230315114949">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230316155759">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -224,68 +224,147 @@
 						Все фильтры
 					</button>
 					<div class="filter__list">
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Ширина дивана</option>
-							<option value="2">Ширина №2</option>
-							<option value="3">Ширина №3</option>
-							<option value="4">Ширина №4</option>
-						</select>
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Ширина спального места</option>
-							<option value="2">Ширина места №2</option>
-							<option value="3">Ширина места №3</option>
-							<option value="4">Ширина места №4</option>
-						</select>
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Цвет</option>
-							<option value="2">Цвет №2</option>
-							<option value="3">Цвет №3</option>
-							<option value="4">Цвет №4</option>
-						</select>
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Ширина спального места</option>
-							<option value="2">Ширина спального места №2</option>
-							<option value="3">Ширина спального места №3</option>
-							<option value="4">Ширина спального места №4</option>
-						</select>
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Тип ткани</option>
-							<option value="2">Тип ткани №2</option>
-							<option value="3">Тип ткани №3</option>
-							<option value="4">Тип ткани №4</option>
-						</select>
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Механизм трансформации</option>
-							<option value="2">Механизм трансформации №2</option>
-							<option value="3">Механизм трансформации №3</option>
-							<option value="4">Механизм трансформации №4</option>
-						</select>
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Бренд</option>
-							<option value="2">Бренд №2</option>
-							<option value="3">Бренд №3</option>
-							<option value="4">Бренд №4</option>
-						</select>
+						<div class="filter-list__slider swiper">
+							<div class="filter-list__wrapper swiper-wrapper">
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Ширина дивана</option>
+										<option value="2">Ширина №2</option>
+										<option value="3">Ширина №3</option>
+										<option value="4">Ширина №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Ширина спального места</option>
+										<option value="2">Ширина места №2</option>
+										<option value="3">Ширина места №3</option>
+										<option value="4">Ширина места №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Цвет</option>
+										<option value="2">Цвет №2</option>
+										<option value="3">Цвет №3</option>
+										<option value="4">Цвет №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Ширина спального места</option>
+										<option value="2">Ширина спального места №2</option>
+										<option value="3">Ширина спального места №3</option>
+										<option value="4">Ширина спального места №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Тип ткани</option>
+										<option value="2">Тип ткани №2</option>
+										<option value="3">Тип ткани №3</option>
+										<option value="4">Тип ткани №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Механизм трансформации</option>
+										<option value="2">Механизм трансформации №2</option>
+										<option value="3">Механизм трансформации №3</option>
+										<option value="4">Механизм трансформации №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Бренд</option>
+										<option value="2">Бренд №2</option>
+										<option value="3">Бренд №3</option>
+										<option value="4">Бренд №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Ширина дивана</option>
+										<option value="2">Ширина №2</option>
+										<option value="3">Ширина №3</option>
+										<option value="4">Ширина №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Ширина спального места</option>
+										<option value="2">Ширина места №2</option>
+										<option value="3">Ширина места №3</option>
+										<option value="4">Ширина места №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Цвет</option>
+										<option value="2">Цвет №2</option>
+										<option value="3">Цвет №3</option>
+										<option value="4">Цвет №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Ширина спального места</option>
+										<option value="2">Ширина спального места №2</option>
+										<option value="3">Ширина спального места №3</option>
+										<option value="4">Ширина спального места №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Тип ткани</option>
+										<option value="2">Тип ткани №2</option>
+										<option value="3">Тип ткани №3</option>
+										<option value="4">Тип ткани №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Механизм трансформации</option>
+										<option value="2">Механизм трансформации №2</option>
+										<option value="3">Механизм трансформации №3</option>
+										<option value="4">Механизм трансформации №4</option>
+									</select>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Бренд</option>
+										<option value="2">Бренд №2</option>
+										<option value="3">Бренд №3</option>
+										<option value="4">Бренд №4</option>
+									</select>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="filter__sorting">
+					<button type="button" class="swiper-button-next filter-list__next-button"><svg width="12" height="7">
+							<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+						</svg></button>
+					<div class="filter__sorting _only-mobile">
 						<select name="form[]" data-class-modif="form">
 							<option value="1" selected>Самые популярные</option>
 							<option value="2">Самые дешевые</option>
 							<option value="3">Самые дорогие</option>
 						</select>
-						<select name="form[]" data-class-modif="form">
-							<option value="1" selected>Наличие</option>
-							<option value="2">В наличии</option>
-							<option value="3">Под заказ</option>
-							<option value="4">Скоро будет</option>
-						</select>
 					</div>
 				</div>
+			</section>
+			<section class="tags-buttons __container">
+				<button class="btn tags-buttons__item">На ножках</button>
+				<button class="btn tags-buttons__item">Недорогие</button>
+				<button class="btn tags-buttons__item">Прямые диваны</button>
+				<button class="btn tags-buttons__item">Прямые кожаные диваны</button>
+				<button class="btn tags-buttons__item">Кухонные прямые диваны</button>
+				<button class="btn tags-buttons__item">Ортопедические</button>
 			</section>
 			<section class="product-list __container">
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -293,7 +372,7 @@
 							</svg></button>
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
-							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
 					</div>
 					<div class="product__body">
@@ -332,7 +411,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -360,28 +439,28 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
 						<div class="product__colors-list colors-list">
 							<button class="colors-list__item _navy-green _active"></button>
 							<button class="colors-list__item _navy-blue"></button>
-							<button class="colors-list__item _blue"></button>
-							<button class="colors-list__item _dark-green"></button>
+							<button class="colors-list__item _blue _only-desktop"></button>
+							<button class="colors-list__item _dark-green _only-desktop"></button>
 							<span>+6</span>
 						</div>
 					</div>
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -425,7 +504,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -453,14 +532,14 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
-							<span class="product__old-price">32 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+							<span class="product__old-price _mobile-smaller">32 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -468,7 +547,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -515,7 +594,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -543,23 +622,24 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
-							<span class="product__old-price">
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+							<span class="product__old-price _mobile-smaller">
 								<svg width="14" height="8">
 									<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
 								</svg>
 								32 890 ₽
 							</span>
 							<div class="product__price-economy">
-								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px">
-								<span>Экономия 1799 руб (4%)</span>
+								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px" class="_only-desktop">
+								<img src="img/icons/economy-mobile.svg" alt="economy" width="31px" height="15px" class="_only-mobile">
+								<span class="product__economy-outer"><span class="_only-desktop">Экономия 1799 руб (</span>11%<span class="_only-desktop">)</span></span>
 							</div>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -567,7 +647,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -618,7 +698,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -646,13 +726,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -660,7 +740,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -668,7 +748,7 @@
 							</svg></button>
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
-							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
 					</div>
 					<div class="product__body">
@@ -707,7 +787,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -735,28 +815,28 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
 						<div class="product__colors-list colors-list">
 							<button class="colors-list__item _navy-green _active"></button>
 							<button class="colors-list__item _navy-blue"></button>
-							<button class="colors-list__item _blue"></button>
-							<button class="colors-list__item _dark-green"></button>
+							<button class="colors-list__item _blue _only-desktop"></button>
+							<button class="colors-list__item _dark-green _only-desktop"></button>
 							<span>+6</span>
 						</div>
 					</div>
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-10.webp" type="image/webp"><img src="img/content/product-10.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -800,7 +880,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -828,13 +908,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -842,7 +922,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-13.webp" type="image/webp"><img src="img/content/product-13.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -889,7 +969,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -917,13 +997,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -931,7 +1011,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -982,7 +1062,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -1010,13 +1090,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -1044,7 +1124,7 @@
 						<div class="slider-4items__wrapper swiper-wrapper">
 							<div class="slider-4items__slide swiper-slide product _in-slider">
 								<div class="product__image">
-									<div class="product__image-inner _min-height">
+									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 									</div>
 									<button class="product__like-btn like-btn"><svg>
@@ -1085,7 +1165,7 @@
 												</svg>
 											</a>
 										</div>
-										<a href="" class="product__count-feedback">25 отзывов</a>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 									</div>
 									<div class="product__production-time">
 										<svg class="product__production-svg _check">
@@ -1098,24 +1178,24 @@
 									</div>
 								</div>
 								<div class="product__footer">
-									<button class="btn _yellow">
+									<button class="btn _yellow _buy">
 										КУПИТЬ
-										<svg width="15" height="17">
+										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 										</svg>
 									</button>
 									<div class="product__colors-list colors-list">
 										<button class="colors-list__item _navy-green _active"></button>
 										<button class="colors-list__item _navy-blue"></button>
-										<button class="colors-list__item _blue"></button>
-										<button class="colors-list__item _dark-green"></button>
+										<button class="colors-list__item _blue _only-desktop"></button>
+										<button class="colors-list__item _dark-green _only-desktop"></button>
 										<span>+6</span>
 									</div>
 								</div>
 							</div>
 							<div class="slider-4items__slide swiper-slide product _in-slider">
 								<div class="product__image">
-									<div class="product__image-inner _min-height">
+									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-2" class="product__image-src swiper-lazy"></picture>
 									</div>
 									<button class="product__like-btn like-btn"><svg>
@@ -1153,7 +1233,7 @@
 												</svg>
 											</a>
 										</div>
-										<a href="" class="product__count-feedback">25 отзывов</a>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 									</div>
 									<div class="product__production-time">
 										<svg class="product__production-svg _check">
@@ -1166,24 +1246,24 @@
 									</div>
 								</div>
 								<div class="product__footer">
-									<button class="btn _yellow">
+									<button class="btn _yellow _buy">
 										КУПИТЬ
-										<svg width="15" height="17">
+										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 										</svg>
 									</button>
 									<div class="product__colors-list colors-list">
 										<button class="colors-list__item _navy-green _active"></button>
 										<button class="colors-list__item _navy-blue"></button>
-										<button class="colors-list__item _blue"></button>
-										<button class="colors-list__item _dark-green"></button>
+										<button class="colors-list__item _blue _only-desktop"></button>
+										<button class="colors-list__item _dark-green _only-desktop"></button>
 										<span>+6</span>
 									</div>
 								</div>
 							</div>
 							<div class="slider-4items__slide swiper-slide product _in-slider">
 								<div class="product__image">
-									<div class="product__image-inner _min-height">
+									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-3" class="product__image-src swiper-lazy"></picture>
 									</div>
 									<button class="product__like-btn like-btn"><svg>
@@ -1224,7 +1304,7 @@
 												</svg>
 											</a>
 										</div>
-										<a href="" class="product__count-feedback">25 отзывов</a>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 									</div>
 									<div class="product__production-time">
 										<svg class="product__production-svg _check">
@@ -1237,24 +1317,24 @@
 									</div>
 								</div>
 								<div class="product__footer">
-									<button class="btn _yellow">
+									<button class="btn _yellow _buy">
 										КУПИТЬ
-										<svg width="15" height="17">
+										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 										</svg>
 									</button>
 									<div class="product__colors-list colors-list">
 										<button class="colors-list__item _navy-green _active"></button>
 										<button class="colors-list__item _navy-blue"></button>
-										<button class="colors-list__item _blue"></button>
-										<button class="colors-list__item _dark-green"></button>
+										<button class="colors-list__item _blue _only-desktop"></button>
+										<button class="colors-list__item _dark-green _only-desktop"></button>
 										<span>+6</span>
 									</div>
 								</div>
 							</div>
 							<div class="slider-4items__slide swiper-slide product _in-slider">
 								<div class="product__image">
-									<div class="product__image-inner _min-height">
+									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-4" class="product__image-src swiper-lazy"></picture>
 									</div>
 									<button class="product__like-btn like-btn"><svg>
@@ -1300,7 +1380,7 @@
 												</svg>
 											</a>
 										</div>
-										<a href="" class="product__count-feedback">25 отзывов</a>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 									</div>
 									<div class="product__production-time">
 										<svg class="product__production-svg _check">
@@ -1313,24 +1393,24 @@
 									</div>
 								</div>
 								<div class="product__footer">
-									<button class="btn _yellow">
+									<button class="btn _yellow _buy">
 										КУПИТЬ
-										<svg width="15" height="17">
+										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 										</svg>
 									</button>
 									<div class="product__colors-list colors-list">
 										<button class="colors-list__item _navy-green _active"></button>
 										<button class="colors-list__item _navy-blue"></button>
-										<button class="colors-list__item _blue"></button>
-										<button class="colors-list__item _dark-green"></button>
+										<button class="colors-list__item _blue _only-desktop"></button>
+										<button class="colors-list__item _dark-green _only-desktop"></button>
 										<span>+6</span>
 									</div>
 								</div>
 							</div>
 							<div class="slider-4items__slide swiper-slide product _in-slider">
 								<div class="product__image">
-									<div class="product__image-inner _min-height">
+									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-5" class="product__image-src swiper-lazy"></picture>
 									</div>
 									<button class="product__like-btn like-btn"><svg>
@@ -1372,7 +1452,7 @@
 												</svg>
 											</a>
 										</div>
-										<a href="" class="product__count-feedback">25 отзывов</a>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 									</div>
 									<div class="product__production-time">
 										<svg class="product__production-svg _check">
@@ -1385,17 +1465,17 @@
 									</div>
 								</div>
 								<div class="product__footer">
-									<button class="btn _yellow">
+									<button class="btn _yellow _buy">
 										КУПИТЬ
-										<svg width="15" height="17">
+										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 										</svg>
 									</button>
 									<div class="product__colors-list colors-list">
 										<button class="colors-list__item _navy-green _active"></button>
 										<button class="colors-list__item _navy-blue"></button>
-										<button class="colors-list__item _blue"></button>
-										<button class="colors-list__item _dark-green"></button>
+										<button class="colors-list__item _blue _only-desktop"></button>
+										<button class="colors-list__item _dark-green _only-desktop"></button>
 										<span>+6</span>
 									</div>
 								</div>
@@ -1408,7 +1488,7 @@
 			<section class="product-list __container">
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -1416,7 +1496,7 @@
 							</svg></button>
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
-							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
 					</div>
 					<div class="product__body">
@@ -1455,7 +1535,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -1483,28 +1563,28 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
 						<div class="product__colors-list colors-list">
 							<button class="colors-list__item _navy-green _active"></button>
 							<button class="colors-list__item _navy-blue"></button>
-							<button class="colors-list__item _blue"></button>
-							<button class="colors-list__item _dark-green"></button>
+							<button class="colors-list__item _blue _only-desktop"></button>
+							<button class="colors-list__item _dark-green _only-desktop"></button>
 							<span>+6</span>
 						</div>
 					</div>
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -1548,7 +1628,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -1576,14 +1656,14 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
-							<span class="product__old-price">32 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+							<span class="product__old-price _mobile-smaller">32 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -1591,7 +1671,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -1638,7 +1718,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -1666,23 +1746,24 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
-							<span class="product__old-price">
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+							<span class="product__old-price _mobile-smaller">
 								<svg width="14" height="8">
 									<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
 								</svg>
 								32 890 ₽
 							</span>
 							<div class="product__price-economy">
-								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px">
-								<span>Экономия 1799 руб (4%)</span>
+								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px" class="_only-desktop">
+								<img src="img/icons/economy-mobile.svg" alt="economy" width="31px" height="15px" class="_only-mobile">
+								<span class="product__economy-outer"><span class="_only-desktop">Экономия 1799 руб (</span>11%<span class="_only-desktop">)</span></span>
 							</div>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -1690,7 +1771,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -1741,7 +1822,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -1769,13 +1850,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -1783,7 +1864,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -1791,7 +1872,7 @@
 							</svg></button>
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
-							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
 					</div>
 					<div class="product__body">
@@ -1830,7 +1911,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -1858,28 +1939,28 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
 						<div class="product__colors-list colors-list">
 							<button class="colors-list__item _navy-green _active"></button>
 							<button class="colors-list__item _navy-blue"></button>
-							<button class="colors-list__item _blue"></button>
-							<button class="colors-list__item _dark-green"></button>
+							<button class="colors-list__item _blue _only-desktop"></button>
+							<button class="colors-list__item _dark-green _only-desktop"></button>
 							<span>+6</span>
 						</div>
 					</div>
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-10.webp" type="image/webp"><img src="img/content/product-10.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -1923,7 +2004,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -1951,13 +2032,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -1965,7 +2046,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-13.webp" type="image/webp"><img src="img/content/product-13.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2012,7 +2093,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2040,13 +2121,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -2054,7 +2135,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2105,7 +2186,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2133,13 +2214,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -2161,7 +2242,7 @@
 			<section class="product-list __container">
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2169,7 +2250,7 @@
 							</svg></button>
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
-							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
 					</div>
 					<div class="product__body">
@@ -2208,7 +2289,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2236,28 +2317,28 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
 						<div class="product__colors-list colors-list">
 							<button class="colors-list__item _navy-green _active"></button>
 							<button class="colors-list__item _navy-blue"></button>
-							<button class="colors-list__item _blue"></button>
-							<button class="colors-list__item _dark-green"></button>
+							<button class="colors-list__item _blue _only-desktop"></button>
+							<button class="colors-list__item _dark-green _only-desktop"></button>
 							<span>+6</span>
 						</div>
 					</div>
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2301,7 +2382,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2329,14 +2410,14 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
-							<span class="product__old-price">32 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+							<span class="product__old-price _mobile-smaller">32 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -2344,7 +2425,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2391,7 +2472,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2419,23 +2500,24 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
-							<span class="product__old-price">
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+							<span class="product__old-price _mobile-smaller">
 								<svg width="14" height="8">
 									<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
 								</svg>
 								32 890 ₽
 							</span>
 							<div class="product__price-economy">
-								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px">
-								<span>Экономия 1799 руб (4%)</span>
+								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px" class="_only-desktop">
+								<img src="img/icons/economy-mobile.svg" alt="economy" width="31px" height="15px" class="_only-mobile">
+								<span class="product__economy-outer"><span class="_only-desktop">Экономия 1799 руб (</span>11%<span class="_only-desktop">)</span></span>
 							</div>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -2443,7 +2525,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2494,7 +2576,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2522,13 +2604,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -2536,7 +2618,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2544,7 +2626,7 @@
 							</svg></button>
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
-							<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
 					</div>
 					<div class="product__body">
@@ -2583,7 +2665,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2611,28 +2693,28 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
 						<div class="product__colors-list colors-list">
 							<button class="colors-list__item _navy-green _active"></button>
 							<button class="colors-list__item _navy-blue"></button>
-							<button class="colors-list__item _blue"></button>
-							<button class="colors-list__item _dark-green"></button>
+							<button class="colors-list__item _blue _only-desktop"></button>
+							<button class="colors-list__item _dark-green _only-desktop"></button>
 							<span>+6</span>
 						</div>
 					</div>
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-10.webp" type="image/webp"><img src="img/content/product-10.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2676,7 +2758,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2704,13 +2786,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -2718,7 +2800,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-13.webp" type="image/webp"><img src="img/content/product-13.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2765,7 +2847,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2793,13 +2875,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -2807,7 +2889,7 @@
 				</div>
 				<div class="product">
 					<div class="product__image">
-						<div class="product__image-inner _min-height">
+						<div class="product__image-inner _height-270-115">
 							<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 						</div>
 						<button class="product__like-btn like-btn"><svg>
@@ -2858,7 +2940,7 @@
 									</svg>
 								</a>
 							</div>
-							<a href="" class="product__count-feedback">25 отзывов</a>
+							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
 						</div>
 						<div class="product__production-time">
 							<svg class="product__production-svg _check">
@@ -2886,13 +2968,13 @@
 							<a href="" class="show-more">Показать еще</a>
 						</div>
 						<div class="product__price">
-							<span class="product__curent-price">26 890 ₽</span>
+							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow">
+						<button class="btn _yellow _buy">
 							КУПИТЬ
-							<svg width="15" height="17">
+							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
@@ -3042,7 +3124,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230315114949"></script>
+	<script src="js/app.min.js?_v=20230316155759"></script>
 </body>
 
 </html>

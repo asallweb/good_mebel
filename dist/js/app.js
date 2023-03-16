@@ -4400,6 +4400,17 @@
             swiperCard();
             window.addEventListener("resize", swiperCard);
         }
+        if (document.querySelector(".filter-list__slider")) new core(".filter-list__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            centerInsufficientSlides: true,
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".filter-list__next-button"
+            }
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
