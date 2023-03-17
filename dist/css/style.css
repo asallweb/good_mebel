@@ -2516,6 +2516,34 @@ hr {
   color: #000;
 }
 
+.product-swiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 99%;
+}
+
+.product-swiper .swiper-pagination {
+  margin: 0;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.product-swiper .swiper-pagination-bullet {
+  max-width: 20px;
+  height: 2px;
+  border-radius: 1px;
+}
+
 .swiper {
   overflow: hidden;
 }

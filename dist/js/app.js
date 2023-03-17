@@ -4411,6 +4411,34 @@
                 nextEl: ".filter-list__next-button"
             }
         });
+        if (document.querySelector(".product-swiper__slider")) ;
+        const productSwiper = new core(".product-swiper__slider", {
+            modules: [ Pagination ],
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+        function sliderMouseSlideInit() {
+            document.addEventListener("mousemove", (function(e) {
+                const targetElement = e.target;
+                if (targetElement.closest("[data-mousemove-swipe]")) {
+                    const sliderElement = targetElement.closest("[data-mousemove-swipe]");
+                    const idAttr = sliderElement.getAttribute("data-mousemove-swipe");
+                    const sliderItem = productSwiper[idAttr];
+                    const parentElement = targetElement.closest(".product__image");
+                    const sliderLength = sliderItem.slides.length;
+                    if (sliderLength > 1) {
+                        const sliderWidth = sliderItem.width;
+                        const sliderPath = Math.round(sliderWidth / sliderLength);
+                        const sliderMousePos = e.clientX - parentElement.offsetLeft;
+                        const sliderSlide = Math.floor(sliderMousePos / sliderPath);
+                        sliderItem.slideTo(sliderSlide);
+                    }
+                }
+            }));
+        }
+        if (document.querySelector("[data-mousemove-swipe]")) sliderMouseSlideInit();
     }
     window.addEventListener("load", (function(e) {
         initSliders();
