@@ -6508,11 +6508,11 @@ PERFORMANCE OF THIS SOFTWARE.
         sessionStorage.setItem("view-items", attribute);
     };
     let countItems = sessionStorage.getItem("view-items");
-    document.documentElement.classList.add("view-items-" + countItems);
+    if (countItems) document.documentElement.classList.add("view-items-" + countItems);
     let toggleBtn = document.querySelectorAll("[data-view]");
     for (i = 0; i < toggleBtn.length; i++) {
         toggleBtn[i].addEventListener("click", toggleViewProduct, false);
-        if (toggleBtn[i].getAttribute("data-view") == countItems) toggleBtn[i].classList.add("_active"); else toggleBtn[i].classList.remove("_active");
+        if (countItems) if (toggleBtn[i].getAttribute("data-view") == countItems) toggleBtn[i].classList.add("_active"); else toggleBtn[i].classList.remove("_active");
     }
     window["FLS"] = true;
     isWebp();

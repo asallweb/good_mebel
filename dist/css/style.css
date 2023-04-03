@@ -2620,7 +2620,7 @@ hr {
   border-radius: 22.5px;
   padding: 0 0.9375rem;
   white-space: nowrap;
-  width: auto;
+  width: auto !important;
   font-size: 15px;
 }
 
@@ -2745,7 +2745,7 @@ hr {
 }
 
 .filter__popup-btn {
-  width: auto;
+  width: auto !important;
   height: 30px;
   border-radius: 15px;
   white-space: nowrap;
