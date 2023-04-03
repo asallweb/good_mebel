@@ -6457,7 +6457,10 @@ PERFORMANCE OF THIS SOFTWARE.
         const attribute = this.getAttribute("data-popupId");
         hideAllFilterPopup();
         hideAll_activeClass();
-        if (this.classList.contains("_active")) hideCurrentFilterPopup(attribute); else showCurrentFilterPopup(attribute);
+        if (this.classList.contains("_active")) hideCurrentFilterPopup(attribute); else {
+            showCurrentFilterPopup(attribute);
+            document.querySelectorAll(".toggle-view")[0].style.display = "none";
+        }
         this.classList.toggle("_active");
     };
     const hideAllFilterPopup = function(e) {
@@ -6502,9 +6505,15 @@ PERFORMANCE OF THIS SOFTWARE.
         document.documentElement.classList.remove("view-items-1");
         document.documentElement.classList.remove("view-items-2");
         document.documentElement.classList.add("view-items-" + attribute);
+        sessionStorage.setItem("view-items", attribute);
     };
+    let countItems = sessionStorage.getItem("view-items");
+    document.documentElement.classList.add("view-items-" + countItems);
     let toggleBtn = document.querySelectorAll("[data-view]");
-    for (i = 0; i < toggleBtn.length; i++) toggleBtn[i].addEventListener("click", toggleViewProduct, false);
+    for (i = 0; i < toggleBtn.length; i++) {
+        toggleBtn[i].addEventListener("click", toggleViewProduct, false);
+        if (toggleBtn[i].getAttribute("data-view") == countItems) toggleBtn[i].classList.add("_active"); else toggleBtn[i].classList.remove("_active");
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();

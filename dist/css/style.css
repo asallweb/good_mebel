@@ -2556,6 +2556,11 @@ hr {
   border: 1px solid #e1dfdf;
 }
 
+.filter__list .select__title:hover {
+  background: #ededed;
+  border: 1px solid #e1dfdf;
+}
+
 .filter__sorting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2580,11 +2585,6 @@ hr {
 .filter .select__title {
   height: 45px;
   color: #000;
-}
-
-.filter .select__title:hover {
-  background: #ededed;
-  border: 1px solid #e1dfdf;
 }
 
 .filter ._select-open .select__title {
