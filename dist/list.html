@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230330103202">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230403145423">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -237,6 +237,87 @@
 						<div class="filter-list__slider swiper">
 							<div class="filter-list__wrapper swiper-wrapper">
 								<div class="filter-list__slide swiper-slide">
+									<button class="btn _grey filter__btn" data-popupId="filter__popup-3">Цвет</button>
+									<div class="filter__popup" id="filter__popup-3" style="display: none;">
+										<button class="filter__popup-close"></button>
+										<div class="filter__popup-title">
+											Цвет
+										</div>
+										<div class="filter__popup-buttons">
+											<button class="btn _grey filter__popup-btn">
+												<span class="filter__popup-btn-color" style="background-color: #ffa500;"></span>
+												Желтый
+											</button>
+											<button class="btn _grey filter__popup-btn">
+												<span class="filter__popup-btn-color" style="background-color: green;"></span>
+												Зеленый
+											</button>
+											<button class="btn _grey filter__popup-btn">
+												<span class="filter__popup-btn-color" style="background-color: #30d5c8;"></span>
+												Бирюзовый
+											</button>
+											<button class="btn _grey filter__popup-btn">
+												<span class="filter__popup-btn-color" style="background-color: #fff; border: 1px solid #b9b9b9;"></span>
+												Белый
+											</button>
+											<button class="btn _grey filter__popup-btn">
+												<span class="filter__popup-btn-color" style="background-color: #8b00ff;"></span>
+												Фиолетовый
+											</button>
+										</div>
+										<div class="filter__accept">
+											<button class="filter__accept-btn btn _yellow">ПРИМЕНИТЬ</button>
+										</div>
+									</div>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<button class="btn _grey filter__btn" data-popupId="filter__popup-1">Ширина спального места</button>
+									<div class="filter__popup" id="filter__popup-1" style="display: none;">
+										<button class="filter__popup-close"></button>
+										<div class="filter__popup-title">
+											Ширина спального места, см.
+										</div>
+										<div class="filter__popup-inputs">
+											от
+											<input type="text" placeholder="180" class="filter__popup-input">
+											до
+											<input type="text" placeholder="200" class="filter__popup-input">
+										</div>
+										<div class="filter__accept">
+											<button class="filter__accept-btn btn">ПРИМЕНИТЬ</button>
+										</div>
+									</div>
+								</div>
+								<div class="filter-list__slide swiper-slide">
+									<button class="btn _grey filter__btn" data-popupId="filter__popup-2">Механизм трансформации</button>
+									<div class="filter__popup" id="filter__popup-2" style="display: none;">
+										<button class="filter__popup-close"></button>
+										<div class="filter__popup-title">
+											Механизм трансформации
+										</div>
+										<div class="filter__popup-buttons">
+											<button class="btn _grey filter__popup-btn">Аккордеон</button>
+											<button class="btn _grey filter__popup-btn">Американская раскладушка</button>
+											<button class="btn _grey filter__popup-btn">Выкатной</button>
+											<button class="btn _grey filter__popup-btn">Дельфин</button>
+											<button class="btn _grey filter__popup-btn">Еврокнижка</button>
+											<button class="btn _grey filter__popup-btn">Итальянская раскладушка</button>
+											<button class="btn _grey filter__popup-btn">Аккордеон</button>
+											<button class="btn _grey filter__popup-btn">Американская раскладушка</button>
+											<button class="btn _grey filter__popup-btn">Выкатной</button>
+											<button class="btn _grey filter__popup-btn">Дельфин</button>
+											<button class="btn _grey filter__popup-btn">Еврокнижка</button>
+											<button class="btn _grey filter__popup-btn">Итальянская раскладушка</button>
+											<button class="btn _grey filter__popup-btn">Аккордеон</button>
+											<button class="btn _grey filter__popup-btn">Американская раскладушка</button>
+											<button class="btn _grey filter__popup-btn">Выкатной</button>
+											<button class="btn _grey filter__popup-btn">Дельфин</button>
+											<button class="btn _grey filter__popup-btn">Еврокнижка</button>
+											<button class="btn _grey filter__popup-btn">Итальянская раскладушка</button>
+										</div>
+									</div>
+								</div>
+								<div class="filter-list__slide swiper-slide">
 									<select name="form[]" data-class-modif="form">
 										<option value="1" selected>Ширина дивана</option>
 										<option value="2">Ширина №2</option>
@@ -246,42 +327,10 @@
 								</div>
 								<div class="filter-list__slide swiper-slide">
 									<select name="form[]" data-class-modif="form">
-										<option value="1" selected>Ширина спального места</option>
-										<option value="2">Ширина места №2</option>
-										<option value="3">Ширина места №3</option>
-										<option value="4">Ширина места №4</option>
-									</select>
-								</div>
-								<div class="filter-list__slide swiper-slide">
-									<select name="form[]" data-class-modif="form">
-										<option value="1" selected>Цвет</option>
-										<option value="2">Цвет №2</option>
-										<option value="3">Цвет №3</option>
-										<option value="4">Цвет №4</option>
-									</select>
-								</div>
-								<div class="filter-list__slide swiper-slide">
-									<select name="form[]" data-class-modif="form">
-										<option value="1" selected>Ширина спального места</option>
-										<option value="2">Ширина спального места №2</option>
-										<option value="3">Ширина спального места №3</option>
-										<option value="4">Ширина спального места №4</option>
-									</select>
-								</div>
-								<div class="filter-list__slide swiper-slide">
-									<select name="form[]" data-class-modif="form">
 										<option value="1" selected>Тип ткани</option>
 										<option value="2">Тип ткани №2</option>
 										<option value="3">Тип ткани №3</option>
 										<option value="4">Тип ткани №4</option>
-									</select>
-								</div>
-								<div class="filter-list__slide swiper-slide">
-									<select name="form[]" data-class-modif="form">
-										<option value="1" selected>Механизм трансформации</option>
-										<option value="2">Механизм трансформации №2</option>
-										<option value="3">Механизм трансформации №3</option>
-										<option value="4">Механизм трансформации №4</option>
 									</select>
 								</div>
 								<div class="filter-list__slide swiper-slide">
@@ -371,6 +420,40 @@
 				<button class="btn tags-buttons__item">Кухонные прямые диваны</button>
 				<button class="btn tags-buttons__item">Ортопедические</button>
 			</section>
+			<section class="choosed-filters __container">
+				<div class="choosed-filters__item">
+					<b>Цвет:</b> желтый, зеленый
+					<button class="choosed-filters__close">
+						<svg width="14" height="14">
+							<use xlink:href="img/icons/icons.svg#svg-filter-choose-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="choosed-filters__item">
+					<b>Механизм трансформации:</b> клик-кляк
+					<button class="choosed-filters__close">
+						<svg width="14" height="14">
+							<use xlink:href="img/icons/icons.svg#svg-filter-choose-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="choosed-filters__item">
+					<b>Доставка:</b> экспресс
+					<button class="choosed-filters__close">
+						<svg width="14" height="14">
+							<use xlink:href="img/icons/icons.svg#svg-filter-choose-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="choosed-filters__item">
+					<b>Акция:</b> Летние дни
+					<button class="choosed-filters__close">
+						<svg width="14" height="14">
+							<use xlink:href="img/icons/icons.svg#svg-filter-choose-close"></use>
+						</svg>
+					</button>
+				</div>
+			</section>
 			<section class="product-list __container">
 				<div class="product">
 					<div class="product__image">
@@ -380,12 +463,12 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
 							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -508,6 +591,8 @@
 						<div class="product__discount-round discount-round">-15%</div>
 					</div>
 					<div class="product__body">
+						<div class="product__tag-list tag-list">
+						</div>
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -592,7 +677,13 @@
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow _buy">
+						<select name="form[]" data-class-modif="choose-size">
+							<option value="1" selected>90 x 200 см</option>
+							<option value="2">120 x 220 см</option>
+							<option value="3">140 x 240 см</option>
+							<option value="4">160 x 260 см</option>
+						</select>
+						<button class="btn _yellow _buy _mr-auto">
 							КУПИТЬ
 							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
@@ -622,11 +713,11 @@
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
 						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -741,6 +832,8 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _svg-percent">
 								<svg>
@@ -749,8 +842,6 @@
 								2 акции
 							</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -834,7 +925,13 @@
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow _buy">
+						<select name="form[]" data-class-modif="choose-size">
+							<option value="1" selected>90 x 200 см</option>
+							<option value="2">120 x 220 см</option>
+							<option value="3">140 x 240 см</option>
+							<option value="4">160 x 260 см</option>
+						</select>
+						<button class="btn _yellow _buy _mr-auto">
 							КУПИТЬ
 							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
@@ -863,12 +960,12 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
 							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -978,6 +1075,8 @@
 						<div class="product__discount-round discount-round">-15%</div>
 					</div>
 					<div class="product__body">
+						<div class="product__tag-list tag-list">
+						</div>
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -1078,11 +1177,11 @@
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
 						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -1182,6 +1281,8 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _svg-percent">
 								<svg>
@@ -1190,8 +1291,6 @@
 								2 акции
 							</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -1311,12 +1410,12 @@
 									<button class="product__like-btn like-btn"><svg>
 											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 										</svg></button>
+								</div>
+								<div class="product__body">
 									<div class="product__tag-list tag-list">
 										<div class="product__tag-item tag-list__item">В тренде</div>
 										<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
 									</div>
-								</div>
-								<div class="product__body">
 									<div class="product__name">Стул Светло-ЗЕЛЕНЫЙ</div>
 									<div class="product__rating">
 										<div class="rating">
@@ -1385,6 +1484,7 @@
 									<div class="product__discount-round discount-round">-15%</div>
 								</div>
 								<div class="product__body">
+									<div class="product__tag-list tag-list"></div>
 									<div class="product__name">Диван прямой Лофт (мини) Бирюза</div>
 									<div class="product__rating">
 										<div class="rating">
@@ -1451,11 +1551,11 @@
 											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 										</svg></button>
 									<div class="product__discount-round discount-round">-15%</div>
+								</div>
+								<div class="product__body">
 									<div class="product__tag-list tag-list">
 										<div class="product__tag-item tag-list__item _red">Последняя цена</div>
 									</div>
-								</div>
-								<div class="product__body">
 									<div class="product__name">Диван прямой Маркус Изумруд</div>
 									<div class="product__rating">
 										<div class="rating">
@@ -1522,6 +1622,8 @@
 											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 										</svg></button>
 									<div class="product__discount-round discount-round">-15%</div>
+								</div>
+								<div class="product__body">
 									<div class="product__tag-list tag-list">
 										<div class="product__tag-item tag-list__item _svg-percent">
 											<svg>
@@ -1530,8 +1632,6 @@
 											2 акции
 										</div>
 									</div>
-								</div>
-								<div class="product__body">
 									<div class="product__name">Диван прямой Анита Еллоу</div>
 									<div class="product__rating">
 										<div class="rating">
@@ -1598,12 +1698,12 @@
 											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 										</svg></button>
 									<div class="product__discount-round discount-round">-15%</div>
+								</div>
+								<div class="product__body">
 									<div class="product__tag-list tag-list">
 										<div class="product__tag-item tag-list__item">В тренде</div>
 										<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
 									</div>
-								</div>
-								<div class="product__body">
 									<div class="product__name">Стул Светло-ЗЕЛЕНЫЙ</div>
 									<div class="product__rating">
 										<div class="rating">
@@ -1666,7 +1766,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="product-list _3-in-row __container">
+			<section class="product-list __container">
 				<div class="product">
 					<div class="product__image">
 						<a href="" class="product__image-inner _height-270-115" data-gallery>
@@ -1675,12 +1775,12 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
 							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -1803,6 +1903,8 @@
 						<div class="product__discount-round discount-round">-15%</div>
 					</div>
 					<div class="product__body">
+						<div class="product__tag-list tag-list">
+						</div>
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -1887,7 +1989,13 @@
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow _buy">
+						<select name="form[]" data-class-modif="choose-size">
+							<option value="1" selected>90 x 200 см</option>
+							<option value="2">120 x 220 см</option>
+							<option value="3">140 x 240 см</option>
+							<option value="4">160 x 260 см</option>
+						</select>
+						<button class="btn _yellow _buy _mr-auto">
 							КУПИТЬ
 							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
@@ -1917,11 +2025,11 @@
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
 						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2036,6 +2144,8 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _svg-percent">
 								<svg>
@@ -2044,8 +2154,6 @@
 								2 акции
 							</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2129,7 +2237,13 @@
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow _buy">
+						<select name="form[]" data-class-modif="choose-size">
+							<option value="1" selected>90 x 200 см</option>
+							<option value="2">120 x 220 см</option>
+							<option value="3">140 x 240 см</option>
+							<option value="4">160 x 260 см</option>
+						</select>
+						<button class="btn _yellow _buy _mr-auto">
 							КУПИТЬ
 							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
@@ -2158,12 +2272,12 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
 							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2273,6 +2387,8 @@
 						<div class="product__discount-round discount-round">-15%</div>
 					</div>
 					<div class="product__body">
+						<div class="product__tag-list tag-list">
+						</div>
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2373,11 +2489,11 @@
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
 						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2477,6 +2593,8 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _svg-percent">
 								<svg>
@@ -2485,8 +2603,6 @@
 								2 акции
 							</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2576,18 +2692,6 @@
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
-					</div>
-				</div>
-			</section>
-			<section class="zakaz-bnr __container">
-				<div class="zakaz-bnr__image-outer __container"><picture><source srcset="img/content/content-1.webp" type="image/webp"><img src="img/content/content-1.jpg" alt="content-1" class="zakaz-bnr__image"></picture></div>
-				<div class="zakaz-bnr__content">
-					<div class="zakaz-bnr__title">Мебель на заказ.</div>
-					<div class="zakaz-bnr__subtitle">Для тех, кто выходит за рамки стандартов</div>
-					<div class="zakaz-bnr__button-list">
-						<a href="" class="zakaz-bnr__button btn _white">3D проект</a>
-						<a href="" class="zakaz-bnr__button btn _white">Замерщик</a>
-						<a href="" class="zakaz-bnr__button btn _white">Сроки от пяти дней</a>
 					</div>
 				</div>
 			</section>
@@ -2600,12 +2704,12 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
 							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2728,6 +2832,8 @@
 						<div class="product__discount-round discount-round">-15%</div>
 					</div>
 					<div class="product__body">
+						<div class="product__tag-list tag-list">
+						</div>
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2812,7 +2918,13 @@
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow _buy">
+						<select name="form[]" data-class-modif="choose-size">
+							<option value="1" selected>90 x 200 см</option>
+							<option value="2">120 x 220 см</option>
+							<option value="3">140 x 240 см</option>
+							<option value="4">160 x 260 см</option>
+						</select>
+						<button class="btn _yellow _buy _mr-auto">
 							КУПИТЬ
 							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
@@ -2842,11 +2954,11 @@
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
 						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -2961,6 +3073,8 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _svg-percent">
 								<svg>
@@ -2969,8 +3083,6 @@
 								2 акции
 							</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -3054,7 +3166,13 @@
 						</div>
 					</div>
 					<div class="product__footer">
-						<button class="btn _yellow _buy">
+						<select name="form[]" data-class-modif="choose-size">
+							<option value="1" selected>90 x 200 см</option>
+							<option value="2">120 x 220 см</option>
+							<option value="3">140 x 240 см</option>
+							<option value="4">160 x 260 см</option>
+						</select>
+						<button class="btn _yellow _buy _mr-auto">
 							КУПИТЬ
 							<svg>
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
@@ -3083,12 +3201,12 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item">В тренде</div>
 							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -3198,6 +3316,8 @@
 						<div class="product__discount-round discount-round">-15%</div>
 					</div>
 					<div class="product__body">
+						<div class="product__tag-list tag-list">
+						</div>
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -3298,11 +3418,11 @@
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
 						<div class="product__discount-round discount-round">-15%</div>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -3402,6 +3522,8 @@
 						<button class="product__like-btn like-btn"><svg>
 								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
 							</svg></button>
+					</div>
+					<div class="product__body">
 						<div class="product__tag-list tag-list">
 							<div class="product__tag-item tag-list__item _svg-percent">
 								<svg>
@@ -3410,8 +3532,6 @@
 								2 акции
 							</div>
 						</div>
-					</div>
-					<div class="product__body">
 						<div class="product__name">
 							<div class="product__name-top">
 								<a href="" class="product__category-name">Название категории</a>
@@ -3542,6 +3662,23 @@
 					</svg>
 				</a>
 			</div>
+			<section class="zakaz-bnr __container">
+				<div class="zakaz-bnr__image-outer __container"><picture><source srcset="img/content/content-1.webp" type="image/webp"><img src="img/content/content-1.jpg" alt="content-1" class="zakaz-bnr__image"></picture></div>
+				<div class="zakaz-bnr__content">
+					<div class="zakaz-bnr__title">Мебель на заказ.</div>
+					<div class="zakaz-bnr__subtitle">Для тех, кто выходит за рамки стандартов</div>
+					<div class="zakaz-bnr__button-list">
+						<a href="" class="zakaz-bnr__button btn _white">3D проект</a>
+						<a href="" class="zakaz-bnr__button btn _white">Замерщик</a>
+						<a href="" class="zakaz-bnr__button btn _white">Сроки от пяти дней</a>
+					</div>
+				</div>
+			</section>
+			<section class="toggle-view">
+				<button class="toggle-view__btn _two-item _active" data-view="2"></button>
+				<span class="toggle-view__delimeter"></span>
+				<button class="toggle-view__btn _one-item" data-view="1"></button>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -3647,7 +3784,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230330103202"></script>
+	<script src="js/app.min.js?_v=20230403145423"></script>
 </body>
 
 </html>
