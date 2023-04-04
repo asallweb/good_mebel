@@ -6512,6 +6512,32 @@ PERFORMANCE OF THIS SOFTWARE.
         toggleBtn[i].addEventListener("click", toggleViewProduct, false);
         if (countItems) if (toggleBtn[i].getAttribute("data-view") == countItems) toggleBtn[i].classList.add("_active"); else toggleBtn[i].classList.remove("_active");
     }
+    const tagButtons = document.querySelectorAll(".tag-list__item._havePopup");
+    const tagPopups = document.querySelectorAll(".tag__popup");
+    tagButtons.forEach((tagButton => {
+        tagButton.addEventListener("click", (() => {
+            const popupId = tagButton.dataset.tagpopup;
+            const popupToShow = document.getElementById(popupId);
+            if ("none" === popupToShow.style.display) {
+                popupToShow.style.display = "block";
+                console.log(popupToShow);
+            }
+        }));
+    }));
+    tagPopups.forEach((popup => {
+        const closeBtn = popup.querySelector(".tag__popup-close");
+        closeBtn.addEventListener("click", (() => {
+            popup.style.display = "none";
+        }));
+        document.addEventListener("click", (e => {
+            const clickedOnButton = Array.from(tagButtons).some((btn => btn.contains(e.target)));
+            if (!popup.contains(e.target) && !clickedOnButton) {
+                popup.style.display = "none";
+                const activeButton = document.querySelector(".filter__btn._active");
+                if (activeButton) activeButton.classList.remove("_active");
+            }
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

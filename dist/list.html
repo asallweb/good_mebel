@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230404144409">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230404153841">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -239,7 +239,7 @@
 								<div class="filter-list__slide swiper-slide">
 									<button class="btn _grey filter__btn" data-popupId="filter__popup-3">Цвет</button>
 									<div class="filter__popup" id="filter__popup-3" style="display: none;">
-										<button class="filter__popup-close"></button>
+										<button class="filter__popup-close close-btn"></button>
 										<div class="filter__popup-title">
 											Цвет
 										</div>
@@ -273,7 +273,7 @@
 								<div class="filter-list__slide swiper-slide">
 									<button class="btn _grey filter__btn" data-popupId="filter__popup-1">Ширина спального места</button>
 									<div class="filter__popup" id="filter__popup-1" style="display: none;">
-										<button class="filter__popup-close"></button>
+										<button class="filter__popup-close close-btn"></button>
 										<div class="filter__popup-title">
 											Ширина спального места, см.
 										</div>
@@ -291,7 +291,7 @@
 								<div class="filter-list__slide swiper-slide">
 									<button class="btn _grey filter__btn" data-popupId="filter__popup-2">Механизм трансформации</button>
 									<div class="filter__popup" id="filter__popup-2" style="display: none;">
-										<button class="filter__popup-close"></button>
+										<button class="filter__popup-close close-btn"></button>
 										<div class="filter__popup-title">
 											Механизм трансформации
 										</div>
@@ -410,6 +410,13 @@
 							<option value="3">Самые дорогие</option>
 						</select>
 					</div>
+				</div>
+			</section>
+			<section class="mobile-filter">
+				<div class="mobile-filter__head">
+					<div class="mobile-filter__title">Фильтр</div>
+					<div class="mobile-filter__clear-btn">Очистить фильтр</div>
+					<button class="mobile-filter__close-btn close-btn"></button>
 				</div>
 			</section>
 			<section class="tags-buttons __container">
@@ -835,11 +842,27 @@
 					</div>
 					<div class="product__body">
 						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item _svg-percent">
+							<div class="product__tag-item tag-list__item _svg-percent _havePopup" data-tagPopup="tag__popup-1">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
 								</svg>
 								2 акции
+							</div>
+						</div>
+						<div class="tag__popup" id="tag__popup-1" style="display: none;">
+							<button class="tag__popup-close close-btn"></button>
+							<div class="tag__popup-content">
+								<div class="tag__popup-title">
+									Товар участвует в акциях:
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Бесплатная доставка заказов от 5000 рублей»</a>
+									с 20 по 31 марта 2023
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Купи матрас и получи подушку для сна в подарок»</a>
+									до конца акции 11 часов 55 минут
+								</div>
 							</div>
 						</div>
 						<div class="product__name">
@@ -1284,11 +1307,27 @@
 					</div>
 					<div class="product__body">
 						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item _svg-percent">
+							<div class="product__tag-item tag-list__item _svg-percent _havePopup" data-tagPopup="tag__popup-2">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
 								</svg>
 								2 акции
+							</div>
+						</div>
+						<div class="tag__popup" id="tag__popup-2" style="display: none;">
+							<button class="tag__popup-close close-btn"></button>
+							<div class="tag__popup-content">
+								<div class="tag__popup-title">
+									Товар участвует в акциях:
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Бесплатная доставка заказов от 5000 рублей»</a>
+									с 20 по 31 марта 2023
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Купи матрас и получи подушку для сна в подарок»</a>
+									до конца акции 11 часов 55 минут
+								</div>
 							</div>
 						</div>
 						<div class="product__name">
@@ -2147,11 +2186,27 @@
 					</div>
 					<div class="product__body">
 						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item _svg-percent">
+							<div class="product__tag-item tag-list__item _svg-percent _havePopup" data-tagPopup="tag__popup-1">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
 								</svg>
 								2 акции
+							</div>
+						</div>
+						<div class="tag__popup" id="tag__popup-1" style="display: none;">
+							<button class="tag__popup-close close-btn"></button>
+							<div class="tag__popup-content">
+								<div class="tag__popup-title">
+									Товар участвует в акциях:
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Бесплатная доставка заказов от 5000 рублей»</a>
+									с 20 по 31 марта 2023
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Купи матрас и получи подушку для сна в подарок»</a>
+									до конца акции 11 часов 55 минут
+								</div>
 							</div>
 						</div>
 						<div class="product__name">
@@ -2596,11 +2651,27 @@
 					</div>
 					<div class="product__body">
 						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item _svg-percent">
+							<div class="product__tag-item tag-list__item _svg-percent _havePopup" data-tagPopup="tag__popup-2">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
 								</svg>
 								2 акции
+							</div>
+						</div>
+						<div class="tag__popup" id="tag__popup-2" style="display: none;">
+							<button class="tag__popup-close close-btn"></button>
+							<div class="tag__popup-content">
+								<div class="tag__popup-title">
+									Товар участвует в акциях:
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Бесплатная доставка заказов от 5000 рублей»</a>
+									с 20 по 31 марта 2023
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Купи матрас и получи подушку для сна в подарок»</a>
+									до конца акции 11 часов 55 минут
+								</div>
 							</div>
 						</div>
 						<div class="product__name">
@@ -3076,11 +3147,27 @@
 					</div>
 					<div class="product__body">
 						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item _svg-percent">
+							<div class="product__tag-item tag-list__item _svg-percent _havePopup" data-tagPopup="tag__popup-1">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
 								</svg>
 								2 акции
+							</div>
+						</div>
+						<div class="tag__popup" id="tag__popup-1" style="display: none;">
+							<button class="tag__popup-close close-btn"></button>
+							<div class="tag__popup-content">
+								<div class="tag__popup-title">
+									Товар участвует в акциях:
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Бесплатная доставка заказов от 5000 рублей»</a>
+									с 20 по 31 марта 2023
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Купи матрас и получи подушку для сна в подарок»</a>
+									до конца акции 11 часов 55 минут
+								</div>
 							</div>
 						</div>
 						<div class="product__name">
@@ -3525,11 +3612,27 @@
 					</div>
 					<div class="product__body">
 						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item _svg-percent">
+							<div class="product__tag-item tag-list__item _svg-percent _havePopup" data-tagPopup="tag__popup-2">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
 								</svg>
 								2 акции
+							</div>
+						</div>
+						<div class="tag__popup" id="tag__popup-2" style="display: none;">
+							<button class="tag__popup-close close-btn"></button>
+							<div class="tag__popup-content">
+								<div class="tag__popup-title">
+									Товар участвует в акциях:
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Бесплатная доставка заказов от 5000 рублей»</a>
+									с 20 по 31 марта 2023
+								</div>
+								<div class="tag__popup-item">
+									&mdash; <a href="">«Купи матрас и получи подушку для сна в подарок»</a>
+									до конца акции 11 часов 55 минут
+								</div>
 							</div>
 						</div>
 						<div class="product__name">
@@ -3784,7 +3887,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230404144409"></script>
+	<script src="js/app.min.js?_v=20230404153841"></script>
 </body>
 
 </html>
