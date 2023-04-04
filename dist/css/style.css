@@ -5241,6 +5241,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     z-index: 2;
   }
 
+  ._body-scroll .filter__popup {
+    bottom: 55px;
+  }
+
   .filter__accept {
     display: block;
   }
