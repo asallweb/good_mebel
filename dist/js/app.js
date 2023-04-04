@@ -6453,64 +6453,59 @@ PERFORMANCE OF THIS SOFTWARE.
     }
     const da = new DynamicAdapt("max");
     da.init();
-    const showFilterPopup = function(e) {
-        const attribute = this.getAttribute("data-popupId");
-        hideAllFilterPopup();
-        hideAll_activeClass();
-        if (this.classList.contains("_active")) hideCurrentFilterPopup(attribute); else {
-            showCurrentFilterPopup(attribute);
-            document.querySelectorAll(".toggle-view")[0].style.display = "none";
-        }
-        this.classList.toggle("_active");
-    };
-    const hideAllFilterPopup = function(e) {
-        let filterPopupList = document.querySelectorAll(".filter__popup");
-        for (var i = 0; i < filterPopupList.length; i++) filterPopupList[i].style.display = "none";
-    };
-    const closeFilterPopup = function(e) {
-        const element = e.target.closest(".filter__popup");
-        const button = e.target.closest(".filter-list__slide").getElementsByClassName("filter__btn")[0];
-        element.style.display = "none";
-        button.classList.remove("_active");
-    };
-    const hideCurrentFilterPopup = function(attribute) {
-        const element = document.getElementById(attribute);
-        element.style.display = "none";
-    };
-    const showCurrentFilterPopup = function(attribute) {
-        const element = document.getElementById(attribute);
-        if ("none" === element.style.display) element.style.display = "block";
-    };
-    const hideAll_activeClass = function(e) {
-        let filterBtn = document.querySelectorAll("[data-popupId]");
-        for (var i = 0; i < filterBtn.length; i++) filterBtn[i].classList.remove("_active");
-    };
-    let filterBtn = document.querySelectorAll("[data-popupId]");
-    for (var i = 0; i < filterBtn.length; i++) filterBtn[i].addEventListener("click", showFilterPopup, false);
-    let filterCloseBtn = document.querySelectorAll(".filter__popup-close");
-    for (i = 0; i < filterCloseBtn.length; i++) filterCloseBtn[i].addEventListener("click", closeFilterPopup, false);
-    document.addEventListener("click", (function(event) {
-        let isClickInsideBlock = event.target.closest(".filter__popup");
-        let isClickInsideFilterBtn = event.target.closest(".filter__btn");
-        if (!isClickInsideBlock && !isClickInsideFilterBtn) {
-            hideAllFilterPopup();
-            hideAll_activeClass();
-        }
+    const buttons = document.querySelectorAll(".filter__btn");
+    const popups = document.querySelectorAll(".filter__popup");
+    buttons.forEach((button => {
+        button.addEventListener("click", (() => {
+            const popupId = button.dataset.popupid;
+            const popupToShow = document.getElementById(popupId);
+            if ("block" === popupToShow.style.display) {
+                popupToShow.style.display = "none";
+                button.classList.remove("_active");
+            } else {
+                popups.forEach((popup => {
+                    if ("block" === popup.style.display) popup.style.display = "none";
+                }));
+                popupToShow.style.display = "block";
+                buttons.forEach((b => {
+                    b.classList.remove("_active");
+                }));
+                button.classList.add("_active");
+                popupToShow.addEventListener("click", (function(event) {
+                    event.stopPropagation();
+                }));
+            }
+        }));
+    }));
+    popups.forEach((popup => {
+        const closeBtn = popup.querySelector(".filter__popup-close");
+        closeBtn.addEventListener("click", (() => {
+            popup.style.display = "none";
+            const activeButton = document.querySelector(".filter__btn._active");
+            if (activeButton) activeButton.classList.remove("_active");
+        }));
+        document.addEventListener("click", (e => {
+            const clickedOnButton = Array.from(buttons).some((btn => btn.contains(e.target)));
+            if (!popup.contains(e.target) && !clickedOnButton) {
+                popup.style.display = "none";
+                const activeButton = document.querySelector(".filter__btn._active");
+                if (activeButton) activeButton.classList.remove("_active");
+            }
+        }));
     }));
     const toggleViewProduct = function(e) {
         const attribute = this.getAttribute("data-view");
         let toggleBtn = document.querySelectorAll("[data-view]");
         for (var i = 0; i < toggleBtn.length; i++) toggleBtn[i].classList.remove("_active");
         this.classList.toggle("_active");
-        document.documentElement.classList.remove("view-items-1");
-        document.documentElement.classList.remove("view-items-2");
+        document.documentElement.classList.remove("view-items-1", "view-items-2");
         document.documentElement.classList.add("view-items-" + attribute);
         sessionStorage.setItem("view-items", attribute);
     };
     let countItems = sessionStorage.getItem("view-items");
     if (countItems) document.documentElement.classList.add("view-items-" + countItems);
     let toggleBtn = document.querySelectorAll("[data-view]");
-    for (i = 0; i < toggleBtn.length; i++) {
+    for (var i = 0; i < toggleBtn.length; i++) {
         toggleBtn[i].addEventListener("click", toggleViewProduct, false);
         if (countItems) if (toggleBtn[i].getAttribute("data-view") == countItems) toggleBtn[i].classList.add("_active"); else toggleBtn[i].classList.remove("_active");
     }

@@ -1143,12 +1143,10 @@ hr {
 }
 
 .toggle-view {
+  display: none;
   position: fixed;
   z-index: 1;
   bottom: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5021,6 +5019,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: none !important;
   }
 
+  .toggle-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .slider-main__container {
     padding: 0;
   }
@@ -5199,10 +5203,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 100%;
+    right: 0;
+    position: relative;
+    width: calc(100% + 15px);
   }
 
   .filter-list__wrapper {
+    position: initial !important;
     padding-bottom: 5px;
     margin-bottom: -5px;
     gap: 10px;
@@ -5231,6 +5238,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     bottom: 0;
     left: 0;
     max-width: 100%;
+    z-index: 2;
   }
 
   .filter__accept {
