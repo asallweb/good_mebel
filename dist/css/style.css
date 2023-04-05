@@ -5588,6 +5588,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding: 0 5px;
   }
 
+  .select_choose-size .select__options {
+    font-size: 11px;
+  }
+
   .btn._buy {
     font-size: 11px;
     width: 95px;
