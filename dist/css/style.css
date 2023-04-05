@@ -3087,7 +3087,6 @@ hr {
   max-width: 410px;
   height: 100vh;
   z-index: 9;
-  overflow-y: auto;
   color: #000;
   font-size: 13px;
   display: flex;
