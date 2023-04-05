@@ -3099,13 +3099,13 @@ hr {
   -o-transition: left 0.5s ease-in-out;
   transition: left 0.5s ease-in-out;
   left: -100vw;
-  -webkit-box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
-          box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
 }
 
 .mobile-filter._active {
   left: 0;
   overflow-y: auto;
+  -webkit-box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
 }
 
 .mobile-filter__head {
@@ -5318,6 +5318,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin: 0 5px;
   }
 
+  ._body-scroll .footer {
+    padding-bottom: 70px;
+  }
+
   .footer-main {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -5735,6 +5739,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .product._in-slider {
     width: 300px;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .product._category-slide {
@@ -5873,10 +5879,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 768px) and (max-width: 20em) {
-  .view-items-1 .product__image-inner._height-270-180 img {
-    height: 14.375rem;
-  }
-
   .view-items-1 .product__image-inner._height-270-115 img {
     height: 14.375rem;
   }
@@ -8369,28 +8371,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 768px) and (min-width: 114.375em) {
-  .view-items-1 .product__image-inner._height-270-180 img {
-    height: 16.875rem;
-  }
-
   .view-items-1 .product__image-inner._height-270-115 img {
     height: 16.875rem;
   }
 }
 
 @media (max-width: 768px) and (min-width: 20em) and (max-width: 114.375em) {
-@supports (height: clamp( 14.375rem , 13.8451986755rem  +  2.6490066225vw , 16.875rem )) {
-    .view-items-1 .product__image-inner._height-270-180 img {
-      height: clamp( 14.375rem , 13.8451986755rem  +  2.6490066225vw , 16.875rem );
-    }
-}
-
-@supports not (height: clamp( 14.375rem , 13.8451986755rem  +  2.6490066225vw , 16.875rem )) {
-    .view-items-1 .product__image-inner._height-270-180 img {
-      height: calc(14.375rem + 2.5 * (100vw - 20rem) / 94.375);
-    }
-}
-
 @supports (height: clamp( 14.375rem , 13.8451986755rem  +  2.6490066225vw , 16.875rem )) {
     .view-items-1 .product__image-inner._height-270-115 img {
       height: clamp( 14.375rem , 13.8451986755rem  +  2.6490066225vw , 16.875rem );
