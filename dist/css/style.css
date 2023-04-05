@@ -385,6 +385,266 @@ h6 {
   display: block;
 }
 
+/* Functional styling;
+* These styles are required for noUiSlider to function.
+* You don't need to change these rules to apply your design.
+*/
+
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+}
+
+.noUi-base,
+.noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Wrapper for all connect elements.
+*/
+
+.noUi-connects {
+  overflow: hidden;
+  z-index: 0;
+}
+
+.noUi-connect,
+.noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  -webkit-transform-style: flat;
+          transform-style: flat;
+}
+
+/* Offset direction
+*/
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+  left: 0;
+  right: auto;
+}
+
+/* Give origins 0 height/width so they don't interfere with clicking the
+* connect elements.
+*/
+
+.noUi-vertical .noUi-origin {
+  top: -100%;
+  width: 0;
+}
+
+.noUi-horizontal .noUi-origin {
+  height: 0;
+}
+
+.noUi-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.noUi-touch-area {
+  height: 100%;
+  width: 100%;
+}
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Slider size and handle placement;
+*/
+
+.noUi-horizontal {
+  height: 2px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: -9px;
+}
+
+.noUi-vertical {
+  width: 18px;
+}
+
+.noUi-vertical .noUi-handle {
+  width: 28px;
+  height: 34px;
+  right: -6px;
+  bottom: -17px;
+}
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+  left: -17px;
+  right: auto;
+}
+
+/* Styling;
+* Giving the connect element a border radius causes issues with using transform: scale
+*/
+
+.noUi-target {
+  background: #e1e1e1;
+}
+
+.noUi-connect {
+  background: #0391a2;
+}
+
+/* Handles and cursors;
+*/
+
+.noUi-draggable {
+  cursor: ew-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize;
+}
+
+.noUi-handle {
+  border: 5px solid #0391a2;
+  border-radius: 50%;
+  background: #FFF;
+  cursor: default;
+}
+
+/* Disabled state;
+*/
+
+[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+
+/* Base;
+*
+*/
+
+.noUi-pips,
+.noUi-pips * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.noUi-pips {
+  position: absolute;
+  color: #999;
+}
+
+/* Values;
+*
+*/
+
+.noUi-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.noUi-value-sub {
+  color: #ccc;
+  font-size: 10px;
+}
+
+/* Markings;
+*
+*/
+
+.noUi-marker {
+  position: absolute;
+  background: #CCC;
+}
+
+.noUi-marker-sub {
+  background: #AAA;
+}
+
+.noUi-marker-large {
+  background: #AAA;
+}
+
+/* Horizontal layout;
+*
+*/
+
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.noUi-value-horizontal {
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+      transform: translate(-50%, 50%);
+}
+
+.noUi-rtl .noUi-value-horizontal {
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+      transform: translate(50%, 50%);
+}
+
+.noUi-marker-horizontal.noUi-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px;
+}
+
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 10px;
+}
+
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 15px;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -2817,15 +3077,283 @@ hr {
 }
 
 .mobile-filter {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
-  left: 0;
   top: 0;
   background-color: #fff;
-  width: 100vh;
+  width: 100vw;
+  max-width: 410px;
   height: 100vh;
   z-index: 9;
   overflow-y: auto;
+  color: #000;
+  font-size: 13px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: left 0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+  left: -100vw;
+  -webkit-box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
+}
+
+.mobile-filter._active {
+  left: 0;
+  overflow-y: auto;
+}
+
+.mobile-filter__head {
+  padding: 20px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid #CBCBCB;
+}
+
+.mobile-filter__title {
+  font-size: 22px;
+}
+
+.mobile-filter__clear-btn {
+  margin-left: auto;
+  text-decoration: underline;
+  color: #a1a1a1;
+}
+
+.mobile-filter__clear-btn:hover {
+  text-decoration: none;
+}
+
+.mobile-filter__close-btn {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+.mobile-filter__item {
+  border-bottom: 1px solid #CBCBCB;
+  padding: 18px 15px;
+}
+
+.mobile-filter__item._no-border {
+  border-bottom: none;
+}
+
+.mobile-filter__item-head {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.mobile-filter__item-toggle {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  border-radius: 1px;
+  rotate: -135deg;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 2px;
+}
+
+._opened .mobile-filter__item-toggle {
+  rotate: 45deg;
+  margin-top: 5px;
+}
+
+.mobile-filter__item-body {
+  visibility: hidden;
+  height: 0;
+  position: relative;
+}
+
+._opened .mobile-filter__item-body {
+  visibility: visible;
+  height: auto;
+  padding: 10px 0 20px;
+}
+
+.mobile-filter__item-radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-filter__item-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  padding-bottom: 10px;
+}
+
+.mobile-filter__item-radio::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+
+.mobile-filter__item-radio._color {
+  padding-bottom: 5px;
+}
+
+.mobile-filter__item-radio._color::before {
+  display: none;
+}
+
+.mobile-filter__item-radio._checkbox._active {
+  position: relative;
+}
+
+.mobile-filter__item-radio._checkbox._active::before {
+  background-color: #0391a2;
+  border-color: #0391a2;
+}
+
+.mobile-filter__item-radio._checkbox._active::after {
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI3LjQ1NyIgdmlld0JveD0iMCAwIDEwIDcuNDU3Ij48cGF0aCBkPSJNMy40LDExLjg4OC4xNDYsOC42MzhhLjUuNSwwLDAsMSwwLS43MDdsLjcwNy0uNzA3YS41LjUsMCwwLDEsLjcwNywwTDMuNzUsOS40MTMsOC40MzksNC43MjRhLjUuNSwwLDAsMSwuNzA3LDBsLjcwNy43MDdhLjUuNSwwLDAsMSwwLC43MDdMNC4xLDExLjg4OEEuNS41LDAsMCwxLDMuNCwxMS44ODhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC00LjU3NykiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mobile-filter__item-radio._checkbox::before {
+  border-radius: 3px;
+}
+
+.mobile-filter__item-color-ico {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-filter__item-color-ico._active {
+  border: 1px solid #e1e1e1;
+}
+
+.mobile-filter__item-color {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid transparent;
+}
+
+.mobile-filter__range-slider-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  color: #7f7f7f;
+  margin-bottom: 20px;
+}
+
+.mobile-filter__input {
+  width: 125px;
+  height: 40px;
+  border-radius: 12px;
+  background: #efefef;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.mobile-filter__range-slider {
+  padding: 0 7px;
+  margin-bottom: 30px;
+}
+
+.mobile-filter__range-slider:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-filter__range-subtitle {
+  margin-bottom: 15px;
+}
+
+.mobile-filter__search-brand {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.mobile-filter__search-brand-input {
+  width: 100%;
+  height: 45px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e1dfdf;
+  padding: 0 15px;
+}
+
+.mobile-filter__search-brand-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 45px;
+  width: 50px;
+  background: url("../img/icons/search.svg") center center no-repeat;
+  background-size: 17px 17px;
+  cursor: pointer;
+}
+
+.mobile-filter__footer {
+  border-top: 1px solid #CBCBCB;
+  padding: 20px 15px;
+  margin-top: auto;
+}
+
+.mobile-filter__footer .btn {
+  width: 100%;
 }
 
 .product-list {
