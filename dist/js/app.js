@@ -6065,33 +6065,24 @@
                 swiperCard();
                 window.addEventListener("resize", swiperCard);
             }
-            if (document.querySelector(".filter-list__slider")) {
-                init = false;
-                swiper = false;
-                function swiperCard() {
-                    if (window.innerWidth >= 768) {
-                        if (!init) {
-                            init = true;
-                            swiper = new core(".filter-list__slider", {
-                                modules: [ Navigation ],
-                                observer: true,
-                                observeParents: true,
-                                centerInsufficientSlides: true,
-                                slidesPerView: "auto",
-                                spaceBetween: 10,
-                                navigation: {
-                                    nextEl: ".filter-list__next-button"
-                                }
-                            });
-                        }
-                    } else if (init) {
-                        swiper.destroy();
-                        init = false;
-                    }
+            if (document.querySelector(".category-list__slider")) new core(".category-list__slider", {
+                modules: [ Navigation ],
+                slidesPerView: "auto",
+                navigation: {
+                    nextEl: ".category-list__slider-next-button"
                 }
-                swiperCard();
-                window.addEventListener("resize", swiperCard);
-            }
+            });
+            if (document.querySelector(".filter-list__slider")) swiper = new core(".filter-list__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                centerInsufficientSlides: true,
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".filter-list__next-button"
+                }
+            });
             if (document.querySelector(".product-swiper__slider")) {
                 const productSwiper = new core(".product-swiper__slider", {
                     modules: [ EffectFade, Pagination ],
@@ -7990,6 +7981,22 @@ PERFORMANCE OF THIS SOFTWARE.
                     popups.forEach((popup => {
                         if ("block" === popup.style.display) popup.style.display = "none";
                     }));
+                    function filterPopupPosition() {
+                        if (window.innerWidth >= 768) {
+                            const btnRect = button.getBoundingClientRect();
+                            const screenWidth = window.innerWidth;
+                            const blockWidth = 390;
+                            let left = btnRect.left;
+                            if (left + blockWidth > screenWidth) left = screenWidth - blockWidth - 10;
+                            popupToShow.style.top = btnRect.bottom + 10 + "px";
+                            popupToShow.style.left = left + "px";
+                        } else {
+                            popupToShow.style.top = "auto";
+                            popupToShow.style.left = 0;
+                        }
+                    }
+                    filterPopupPosition();
+                    window.addEventListener("resize", filterPopupPosition);
                     popupToShow.style.display = "block";
                     buttons.forEach((b => {
                         b.classList.remove("_active");
