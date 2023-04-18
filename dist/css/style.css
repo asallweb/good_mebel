@@ -385,11 +385,6 @@ h6 {
   display: block;
 }
 
-/* Functional styling;
-* These styles are required for noUiSlider to function.
-* You don't need to change these rules to apply your design.
-*/
-
 .noUi-target,
 .noUi-target * {
   -webkit-touch-callout: none;
@@ -416,9 +411,6 @@ h6 {
   z-index: 1;
 }
 
-/* Wrapper for all connect elements.
-*/
-
 .noUi-connects {
   overflow: hidden;
   z-index: 0;
@@ -441,17 +433,10 @@ h6 {
           transform-style: flat;
 }
 
-/* Offset direction
-*/
-
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
   left: 0;
   right: auto;
 }
-
-/* Give origins 0 height/width so they don't interfere with clicking the
-* connect elements.
-*/
 
 .noUi-vertical .noUi-origin {
   top: -100%;
@@ -487,9 +472,6 @@ h6 {
   cursor: inherit !important;
 }
 
-/* Slider size and handle placement;
-*/
-
 .noUi-horizontal {
   height: 2px;
 }
@@ -517,10 +499,6 @@ h6 {
   right: auto;
 }
 
-/* Styling;
-* Giving the connect element a border radius causes issues with using transform: scale
-*/
-
 .noUi-target {
   background: #e1e1e1;
 }
@@ -528,9 +506,6 @@ h6 {
 .noUi-connect {
   background: #0391a2;
 }
-
-/* Handles and cursors;
-*/
 
 .noUi-draggable {
   cursor: ew-resize;
@@ -947,6 +922,24 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  font-size: 12px;
+}
+
+.rating span {
+  margin-left: 6px;
+}
+
+.rating__outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rating__star {
@@ -4332,6 +4325,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     gap: 0.3125rem;
   }
 
+  .rating__outer {
+    gap: 1.875rem;
+  }
+
   .rating__star svg {
     width: 0.875rem;
   }
@@ -4381,7 +4378,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .content-section__h1 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5625rem;
   }
 
   .content-section__h1 sup {
@@ -4809,7 +4806,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .category-list {
-    margin-top: 2.8125rem;
+    margin-top: 1.875rem;
   }
 
   .category-list__item {
@@ -5954,6 +5951,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     gap: 0.1875rem;
   }
 
+  .rating__outer {
+    gap: 1.375rem;
+  }
+
   .rating__star svg {
     width: 0.6875rem;
   }
@@ -6003,7 +6004,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .content-section__h1 {
-    margin-bottom: 0.9375rem;
+    margin-bottom: 0.75rem;
   }
 
   .content-section__h1 sup {
@@ -6650,6 +6651,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+@supports (gap: clamp( 1.375rem , 1.2690397351rem  +  0.5298013245vw , 1.875rem )) {
+    .rating__outer {
+      gap: clamp( 1.375rem , 1.2690397351rem  +  0.5298013245vw , 1.875rem );
+    }
+}
+
+@supports not (gap: clamp( 1.375rem , 1.2690397351rem  +  0.5298013245vw , 1.875rem )) {
+    .rating__outer {
+      gap: calc(1.375rem + 0.5 * (100vw - 20rem) / 94.375);
+    }
+}
+
 @supports (width: clamp( 0.6875rem , 0.6477649007rem  +  0.1986754967vw , 0.875rem )) {
     .rating__star svg {
       width: clamp( 0.6875rem , 0.6477649007rem  +  0.1986754967vw , 0.875rem );
@@ -6794,15 +6807,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (margin-bottom: clamp( 0.9375rem , 0.6063741722rem  +  1.6556291391vw , 2.5rem )) {
+@supports (margin-bottom: clamp( 0.75rem , 0.5778145695rem  +  0.8609271523vw , 1.5625rem )) {
     .content-section__h1 {
-      margin-bottom: clamp( 0.9375rem , 0.6063741722rem  +  1.6556291391vw , 2.5rem );
+      margin-bottom: clamp( 0.75rem , 0.5778145695rem  +  0.8609271523vw , 1.5625rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 0.9375rem , 0.6063741722rem  +  1.6556291391vw , 2.5rem )) {
+@supports not (margin-bottom: clamp( 0.75rem , 0.5778145695rem  +  0.8609271523vw , 1.5625rem )) {
     .content-section__h1 {
-      margin-bottom: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 94.375);
+      margin-bottom: calc(0.75rem + 0.8125 * (100vw - 20rem) / 94.375);
     }
 }
 
@@ -8078,15 +8091,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (margin-top: clamp( 1.25rem , 0.9188741722rem  +  1.6556291391vw , 2.8125rem )) {
+@supports (margin-top: clamp( 1.25rem , 1.1175496689rem  +  0.6622516556vw , 1.875rem )) {
     .category-list {
-      margin-top: clamp( 1.25rem , 0.9188741722rem  +  1.6556291391vw , 2.8125rem );
+      margin-top: clamp( 1.25rem , 1.1175496689rem  +  0.6622516556vw , 1.875rem );
     }
 }
 
-@supports not (margin-top: clamp( 1.25rem , 0.9188741722rem  +  1.6556291391vw , 2.8125rem )) {
+@supports not (margin-top: clamp( 1.25rem , 1.1175496689rem  +  0.6622516556vw , 1.875rem )) {
     .category-list {
-      margin-top: calc(1.25rem + 1.5625 * (100vw - 20rem) / 94.375);
+      margin-top: calc(1.25rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
