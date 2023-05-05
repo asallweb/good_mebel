@@ -2220,12 +2220,12 @@
             }
         }
         modules_flsModules.select = new SelectConstructor({});
-        function ssr_window_esm_isObject(obj) {
+        function isObject(obj) {
             return null !== obj && "object" === typeof obj && "constructor" in obj && obj.constructor === Object;
         }
         function extend(target = {}, src = {}) {
             Object.keys(src).forEach((key => {
-                if ("undefined" === typeof target[key]) target[key] = src[key]; else if (ssr_window_esm_isObject(src[key]) && ssr_window_esm_isObject(target[key]) && Object.keys(src[key]).length > 0) extend(target[key], src[key]);
+                if ("undefined" === typeof target[key]) target[key] = src[key]; else if (isObject(src[key]) && isObject(target[key]) && Object.keys(src[key]).length > 0) extend(target[key], src[key]);
             }));
         }
         const ssrDocument = {
@@ -5808,6 +5808,134 @@
                 loadInSlide
             });
         }
+        function Thumb(_ref) {
+            let {swiper, extendParams, on} = _ref;
+            extendParams({
+                thumbs: {
+                    swiper: null,
+                    multipleActiveThumbs: true,
+                    autoScrollOffset: 0,
+                    slideThumbActiveClass: "swiper-slide-thumb-active",
+                    thumbsContainerClass: "swiper-thumbs"
+                }
+            });
+            let initialized = false;
+            let swiperCreated = false;
+            swiper.thumbs = {
+                swiper: null
+            };
+            function onThumbClick() {
+                const thumbsSwiper = swiper.thumbs.swiper;
+                if (!thumbsSwiper || thumbsSwiper.destroyed) return;
+                const clickedIndex = thumbsSwiper.clickedIndex;
+                const clickedSlide = thumbsSwiper.clickedSlide;
+                if (clickedSlide && dom(clickedSlide).hasClass(swiper.params.thumbs.slideThumbActiveClass)) return;
+                if ("undefined" === typeof clickedIndex || null === clickedIndex) return;
+                let slideToIndex;
+                if (thumbsSwiper.params.loop) slideToIndex = parseInt(dom(thumbsSwiper.clickedSlide).attr("data-swiper-slide-index"), 10); else slideToIndex = clickedIndex;
+                if (swiper.params.loop) {
+                    let currentIndex = swiper.activeIndex;
+                    if (swiper.slides.eq(currentIndex).hasClass(swiper.params.slideDuplicateClass)) {
+                        swiper.loopFix();
+                        swiper._clientLeft = swiper.$wrapperEl[0].clientLeft;
+                        currentIndex = swiper.activeIndex;
+                    }
+                    const prevIndex = swiper.slides.eq(currentIndex).prevAll(`[data-swiper-slide-index="${slideToIndex}"]`).eq(0).index();
+                    const nextIndex = swiper.slides.eq(currentIndex).nextAll(`[data-swiper-slide-index="${slideToIndex}"]`).eq(0).index();
+                    if ("undefined" === typeof prevIndex) slideToIndex = nextIndex; else if ("undefined" === typeof nextIndex) slideToIndex = prevIndex; else if (nextIndex - currentIndex < currentIndex - prevIndex) slideToIndex = nextIndex; else slideToIndex = prevIndex;
+                }
+                swiper.slideTo(slideToIndex);
+            }
+            function init() {
+                const {thumbs: thumbsParams} = swiper.params;
+                if (initialized) return false;
+                initialized = true;
+                const SwiperClass = swiper.constructor;
+                if (thumbsParams.swiper instanceof SwiperClass) {
+                    swiper.thumbs.swiper = thumbsParams.swiper;
+                    Object.assign(swiper.thumbs.swiper.originalParams, {
+                        watchSlidesProgress: true,
+                        slideToClickedSlide: false
+                    });
+                    Object.assign(swiper.thumbs.swiper.params, {
+                        watchSlidesProgress: true,
+                        slideToClickedSlide: false
+                    });
+                } else if (utils_isObject(thumbsParams.swiper)) {
+                    const thumbsSwiperParams = Object.assign({}, thumbsParams.swiper);
+                    Object.assign(thumbsSwiperParams, {
+                        watchSlidesProgress: true,
+                        slideToClickedSlide: false
+                    });
+                    swiper.thumbs.swiper = new SwiperClass(thumbsSwiperParams);
+                    swiperCreated = true;
+                }
+                swiper.thumbs.swiper.$el.addClass(swiper.params.thumbs.thumbsContainerClass);
+                swiper.thumbs.swiper.on("tap", onThumbClick);
+                return true;
+            }
+            function update(initial) {
+                const thumbsSwiper = swiper.thumbs.swiper;
+                if (!thumbsSwiper || thumbsSwiper.destroyed) return;
+                const slidesPerView = "auto" === thumbsSwiper.params.slidesPerView ? thumbsSwiper.slidesPerViewDynamic() : thumbsSwiper.params.slidesPerView;
+                let thumbsToActivate = 1;
+                const thumbActiveClass = swiper.params.thumbs.slideThumbActiveClass;
+                if (swiper.params.slidesPerView > 1 && !swiper.params.centeredSlides) thumbsToActivate = swiper.params.slidesPerView;
+                if (!swiper.params.thumbs.multipleActiveThumbs) thumbsToActivate = 1;
+                thumbsToActivate = Math.floor(thumbsToActivate);
+                thumbsSwiper.slides.removeClass(thumbActiveClass);
+                if (thumbsSwiper.params.loop || thumbsSwiper.params.virtual && thumbsSwiper.params.virtual.enabled) for (let i = 0; i < thumbsToActivate; i += 1) thumbsSwiper.$wrapperEl.children(`[data-swiper-slide-index="${swiper.realIndex + i}"]`).addClass(thumbActiveClass); else for (let i = 0; i < thumbsToActivate; i += 1) thumbsSwiper.slides.eq(swiper.realIndex + i).addClass(thumbActiveClass);
+                const autoScrollOffset = swiper.params.thumbs.autoScrollOffset;
+                const useOffset = autoScrollOffset && !thumbsSwiper.params.loop;
+                if (swiper.realIndex !== thumbsSwiper.realIndex || useOffset) {
+                    let currentThumbsIndex = thumbsSwiper.activeIndex;
+                    let newThumbsIndex;
+                    let direction;
+                    if (thumbsSwiper.params.loop) {
+                        if (thumbsSwiper.slides.eq(currentThumbsIndex).hasClass(thumbsSwiper.params.slideDuplicateClass)) {
+                            thumbsSwiper.loopFix();
+                            thumbsSwiper._clientLeft = thumbsSwiper.$wrapperEl[0].clientLeft;
+                            currentThumbsIndex = thumbsSwiper.activeIndex;
+                        }
+                        const prevThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).prevAll(`[data-swiper-slide-index="${swiper.realIndex}"]`).eq(0).index();
+                        const nextThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).nextAll(`[data-swiper-slide-index="${swiper.realIndex}"]`).eq(0).index();
+                        if ("undefined" === typeof prevThumbsIndex) newThumbsIndex = nextThumbsIndex; else if ("undefined" === typeof nextThumbsIndex) newThumbsIndex = prevThumbsIndex; else if (nextThumbsIndex - currentThumbsIndex === currentThumbsIndex - prevThumbsIndex) newThumbsIndex = thumbsSwiper.params.slidesPerGroup > 1 ? nextThumbsIndex : currentThumbsIndex; else if (nextThumbsIndex - currentThumbsIndex < currentThumbsIndex - prevThumbsIndex) newThumbsIndex = nextThumbsIndex; else newThumbsIndex = prevThumbsIndex;
+                        direction = swiper.activeIndex > swiper.previousIndex ? "next" : "prev";
+                    } else {
+                        newThumbsIndex = swiper.realIndex;
+                        direction = newThumbsIndex > swiper.previousIndex ? "next" : "prev";
+                    }
+                    if (useOffset) newThumbsIndex += "next" === direction ? autoScrollOffset : -1 * autoScrollOffset;
+                    if (thumbsSwiper.visibleSlidesIndexes && thumbsSwiper.visibleSlidesIndexes.indexOf(newThumbsIndex) < 0) {
+                        if (thumbsSwiper.params.centeredSlides) if (newThumbsIndex > currentThumbsIndex) newThumbsIndex = newThumbsIndex - Math.floor(slidesPerView / 2) + 1; else newThumbsIndex = newThumbsIndex + Math.floor(slidesPerView / 2) - 1; else if (newThumbsIndex > currentThumbsIndex && 1 === thumbsSwiper.params.slidesPerGroup) ;
+                        thumbsSwiper.slideTo(newThumbsIndex, initial ? 0 : void 0);
+                    }
+                }
+            }
+            on("beforeInit", (() => {
+                const {thumbs} = swiper.params;
+                if (!thumbs || !thumbs.swiper) return;
+                init();
+                update(true);
+            }));
+            on("slideChange update resize observerUpdate", (() => {
+                update();
+            }));
+            on("setTransition", ((_s, duration) => {
+                const thumbsSwiper = swiper.thumbs.swiper;
+                if (!thumbsSwiper || thumbsSwiper.destroyed) return;
+                thumbsSwiper.setTransition(duration);
+            }));
+            on("beforeDestroy", (() => {
+                const thumbsSwiper = swiper.thumbs.swiper;
+                if (!thumbsSwiper || thumbsSwiper.destroyed) return;
+                if (swiperCreated) thumbsSwiper.destroy();
+            }));
+            Object.assign(swiper.thumbs, {
+                init,
+                update
+            });
+        }
         function effect_init_effectInit(params) {
             const {effect, swiper, on, setTranslate, setTransition, overwriteParams, perspective, recreateShadows, getEffectParams} = params;
             on("beforeInit", (() => {
@@ -6115,6 +6243,50 @@
                     }));
                 }
                 if (document.querySelector("[data-mousemove-swipe]")) sliderMouseSlideInit();
+            }
+            if (document.querySelector(".product-slider")) {
+                const sliderThumbs = new core(".product-slider__thumbs .swiper-container", {
+                    modules: [ Navigation, Lazy, Thumb ],
+                    direction: "vertical",
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                    navigation: {
+                        nextEl: ".product-slider__next",
+                        prevEl: ".product-slider__prev"
+                    },
+                    freeMode: true,
+                    breakpoints: {
+                        0: {
+                            direction: "horizontal"
+                        },
+                        768: {
+                            direction: "vertical"
+                        }
+                    }
+                });
+                new core(".product-slider__images .swiper-container", {
+                    modules: [ Navigation, Lazy, Thumb ],
+                    direction: "vertical",
+                    slidesPerView: 1,
+                    spaceBetween: 32,
+                    mousewheel: true,
+                    navigation: {
+                        nextEl: ".product-slider__next",
+                        prevEl: ".product-slider__prev"
+                    },
+                    grabCursor: true,
+                    thumbs: {
+                        swiper: sliderThumbs
+                    },
+                    breakpoints: {
+                        0: {
+                            direction: "horizontal"
+                        },
+                        768: {
+                            direction: "vertical"
+                        }
+                    }
+                });
             }
         }
         window.addEventListener("load", (function(e) {
@@ -8073,76 +8245,82 @@ PERFORMANCE OF THIS SOFTWARE.
         const priceFromInput = document.getElementById("price-from");
         const priceToInput = document.getElementById("price-to");
         const priceSliderDiv = document.getElementById("price-slider");
-        priceFromInput.value = 999;
-        priceToInput.value = 999999;
-        nouislider.create(priceSliderDiv, {
-            start: [ 999, 999999 ],
-            connect: true,
-            range: {
-                min: 999,
-                max: 999999
-            }
-        });
-        priceSliderDiv.noUiSlider.on("update", (function(values, handle) {
-            if (0 === handle) priceFromInput.value = Math.round(values[0]);
-            if (1 === handle) priceToInput.value = Math.round(values[1]);
-        }));
-        priceFromInput.addEventListener("change", (function() {
-            priceSliderDiv.noUiSlider.set([ this.value, null ]);
-        }));
-        priceToInput.addEventListener("change", (function() {
-            priceSliderDiv.noUiSlider.set([ null, this.value ]);
-        }));
+        if (priceFromInput && priceToInput && priceSliderDiv) {
+            priceFromInput.value = 999;
+            priceToInput.value = 999999;
+            nouislider.create(priceSliderDiv, {
+                start: [ 999, 999999 ],
+                connect: true,
+                range: {
+                    min: 999,
+                    max: 999999
+                }
+            });
+            priceSliderDiv.noUiSlider.on("update", (function(values, handle) {
+                if (0 === handle) priceFromInput.value = Math.round(values[0]);
+                if (1 === handle) priceToInput.value = Math.round(values[1]);
+            }));
+            priceFromInput.addEventListener("change", (function() {
+                priceSliderDiv.noUiSlider.set([ this.value, null ]);
+            }));
+            priceToInput.addEventListener("change", (function() {
+                priceSliderDiv.noUiSlider.set([ null, this.value ]);
+            }));
+        }
         const lengthFromInput = document.getElementById("length-from");
         const lengthToInput = document.getElementById("length-to");
         const lengthSliderDiv = document.getElementById("length-slider");
-        lengthFromInput.value = 60;
-        lengthToInput.value = 500;
-        nouislider.create(lengthSliderDiv, {
-            start: [ 60, 500 ],
-            connect: true,
-            range: {
-                min: 60,
-                max: 500
-            }
-        });
-        lengthSliderDiv.noUiSlider.on("update", (function(values, handle) {
-            if (0 === handle) lengthFromInput.value = Math.round(values[0]);
-            if (1 === handle) lengthToInput.value = Math.round(values[1]);
-        }));
-        lengthFromInput.addEventListener("change", (function() {
-            lengthSliderDiv.noUiSlider.set([ this.value, null ]);
-        }));
-        lengthToInput.addEventListener("change", (function() {
-            lengthSliderDiv.noUiSlider.set([ null, this.value ]);
-        }));
+        if (lengthFromInput && lengthToInput && lengthSliderDiv) {
+            lengthFromInput.value = 60;
+            lengthToInput.value = 500;
+            nouislider.create(lengthSliderDiv, {
+                start: [ 60, 500 ],
+                connect: true,
+                range: {
+                    min: 60,
+                    max: 500
+                }
+            });
+            lengthSliderDiv.noUiSlider.on("update", (function(values, handle) {
+                if (0 === handle) lengthFromInput.value = Math.round(values[0]);
+                if (1 === handle) lengthToInput.value = Math.round(values[1]);
+            }));
+            lengthFromInput.addEventListener("change", (function() {
+                lengthSliderDiv.noUiSlider.set([ this.value, null ]);
+            }));
+            lengthToInput.addEventListener("change", (function() {
+                lengthSliderDiv.noUiSlider.set([ null, this.value ]);
+            }));
+        }
         const widthFromInput = document.getElementById("width-from");
         const widthToInput = document.getElementById("width-to");
         const widthSliderDiv = document.getElementById("width-slider");
-        widthFromInput.value = 60;
-        widthToInput.value = 500;
-        nouislider.create(widthSliderDiv, {
-            start: [ 60, 500 ],
-            connect: true,
-            range: {
-                min: 60,
-                max: 500
-            }
-        });
-        widthSliderDiv.noUiSlider.on("update", (function(values, handle) {
-            if (0 === handle) widthFromInput.value = Math.round(values[0]);
-            if (1 === handle) widthToInput.value = Math.round(values[1]);
-        }));
-        widthFromInput.addEventListener("change", (function() {
-            widthSliderDiv.noUiSlider.set([ this.value, null ]);
-        }));
-        widthToInput.addEventListener("change", (function() {
-            widthSliderDiv.noUiSlider.set([ null, this.value ]);
-        }));
+        if (widthFromInput && widthToInput && widthSliderDiv) {
+            widthFromInput.value = 60;
+            widthToInput.value = 500;
+            nouislider.create(widthSliderDiv, {
+                start: [ 60, 500 ],
+                connect: true,
+                range: {
+                    min: 60,
+                    max: 500
+                }
+            });
+            widthSliderDiv.noUiSlider.on("update", (function(values, handle) {
+                if (0 === handle) widthFromInput.value = Math.round(values[0]);
+                if (1 === handle) widthToInput.value = Math.round(values[1]);
+            }));
+            widthFromInput.addEventListener("change", (function() {
+                widthSliderDiv.noUiSlider.set([ this.value, null ]);
+            }));
+            widthToInput.addEventListener("change", (function() {
+                widthSliderDiv.noUiSlider.set([ null, this.value ]);
+            }));
+        }
         const searchInput = document.querySelector(".mobile-filter__search-brand-input");
         const brandsFilter = document.querySelector(".mobile-filter__brands-filter");
         const moreBrandsBtn = document.querySelector("._more-brands");
-        searchInput.addEventListener("input", (() => {
+        if (searchInput && brandsFilter) searchInput.addEventListener("input", (() => {
             const searchValue = searchInput.value.toLowerCase();
             const brandLinks = brandsFilter.querySelectorAll("a");
             const visibleBrandLinks = [];
@@ -8158,21 +8336,23 @@ PERFORMANCE OF THIS SOFTWARE.
         const filterBtn = document.querySelector(".filter__main-btn");
         const mobileFilter = document.querySelector(".mobile-filter");
         const closeBtn = document.querySelector(".mobile-filter__close-btn");
-        filterBtn.addEventListener("click", (() => {
-            mobileFilter.classList.toggle("_active");
-            document.body.style.overflow = "hidden";
-        }));
-        closeBtn.addEventListener("click", (() => {
-            mobileFilter.classList.remove("_active");
-            document.body.style.overflow = "visible";
-        }));
-        document.addEventListener("click", (event => {
-            const isClickInside = mobileFilter.contains(event.target) || filterBtn === event.target;
-            if (!isClickInside) {
+        if (filterBtn && mobileFilter && closeBtn) {
+            filterBtn.addEventListener("click", (() => {
+                mobileFilter.classList.toggle("_active");
+                document.body.style.overflow = "hidden";
+            }));
+            closeBtn.addEventListener("click", (() => {
                 mobileFilter.classList.remove("_active");
                 document.body.style.overflow = "visible";
-            }
-        }));
+            }));
+            document.addEventListener("click", (event => {
+                const isClickInside = mobileFilter.contains(event.target) || filterBtn === event.target;
+                if (!isClickInside) {
+                    mobileFilter.classList.remove("_active");
+                    document.body.style.overflow = "visible";
+                }
+            }));
+        }
         window["FLS"] = true;
         isWebp();
         menuInit();

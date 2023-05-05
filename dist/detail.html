@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Detail Page</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<style>
+		.pre-loader {
+			background-color: #fff;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: 999;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+	<script>
+		window.addEventListener('load', function() {
+			document.querySelector('.pre-loader').style.display = 'none';
+			document.querySelector('html').classList.remove("lock");
+		});
+	</script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230505123259">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="pre-loader">
+		<div class="loader">
+			<img src="img/icons/main-logo.svg" alt="">
+		</div>
+	</div>
+	<section class="wrapper">
+		<header class="header" data-scroll="40">
+			<div class="header-top">
+				<div class="header-top__container">
+					<div class="header-top__col">
+						<div class="header-top__city">
+							<svg width="13" height="15">
+								<use xlink:href="img/icons/icons.svg#svg-location"></use>
+							</svg>
+							Ваш город:
+							<a href="#" class="header-top__city-choose">Москва</a>
+						</div>
+						<div class="header-top__menu">
+							<a href="">О фабрике</a>
+							<a href="">Доставка и оплата</a>
+							<a href="">Гарантия</a>
+							<a href="">Дизайнерам, для бизнеса</a>
+							<a href="">Контакты</a>
+						</div>
+					</div>
+					<div class="header-top__col">
+						<div class="header-top__showroom">
+							<b>Шоурумы:</b>
+							<select name="form[]">
+								<option value="1" selected>м. Автозаводская</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</div>
+						<div class="header-top__schedule">
+							с 09:00 до 22:00
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="header-main__container">
+					<div class="header-main__col">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+							<span class="icon-text">Каталог</span>
+						</button>
+						<a href="" class="header-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
+						<div class="header-main__catalog">
+							<button class="header-main__catalog-button btn _blue">
+								<svg width="15" height="17">
+									<use xlink:href="img/icons/icons.svg#svg-catalog"></use>
+								</svg>
+								Каталог
+							</button>
+						</div>
+						<div class="header-main__search" data-da="._mobile-search,1180,0">
+							<form action="" method="" class="header-main__search-form">
+								<input type="text" name="search" placeholder="Поиск по сайту" class="input">
+								<button type="submit" class="button _search-ico"><svg width="17" height="17">
+										<use xlink:href="img/icons/icons.svg#svg-search"></use>
+									</svg></button>
+							</form>
+						</div>
+					</div>
+					<div class="header-main__col _mobile-search">
+						<div class="header-main__buttons">
+							<a href="#" class="header-main__button _profile">
+								<svg width="20" height="26">
+									<use xlink:href="img/icons/icons.svg#svg-profile"></use>
+								</svg>
+							</a>
+							<a href="#" class="header-main__button _heart">
+								<svg width="25" height="24">
+									<use xlink:href="img/icons/icons.svg#svg-heart"></use>
+								</svg>
+								<span class="header-main__button-count">3</span>
+							</a>
+							<a href="#" class="header-main__button _bag">
+								<svg width="22" height="25">
+									<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+								</svg>
+								<span class="header-main__button-count">2</span>
+							</a>
+							<div class="bag-info">
+								<span class="bag-info__price">32 690 ₽ </span>
+								<span class="bag-info__price-parts">4200х6 ₽</span>
+								в рассрочку <br> Доставка 990 ₽ , до бесплатной 4000 ₽
+							</div>
+						</div>
+						<div class="header-main__contact">
+							<a href="tel:+74951542377" class="header-main__phone">+7(495) 154-23-77</a>
+							<button class="header-main__call">Заказать обратный звонок</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-menu mMenu">
+				<div class="header-menu__container">
+					<ul class="header-menu__list">
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link _akciya _svg">
+								<svg width="17" height="17">
+									<use xlink:href="img/icons/icons.svg#svg-akciya"></use>
+								</svg>
+								Акции
+							</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Диваны и кресла</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Шкафы и стеллажи</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Кровати и матрасы</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Столы и стулья</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="" class="header-menu__link">Аксессуары</a>
+						</li>
+						<li class="header-menu__item _tour-3d">
+							<a href="" class="header-menu__link _svg">
+								<img src="img/icons/tour-3d.svg" alt="tour-3d">
+								Записатья на 3D
+							</a>
+						</li>
+						<li class="header-menu__item _svg">
+							<img src="img/icons/sizes.svg" alt="sizes">
+							<select name="form[]" data-class-modif="sizes">
+								<option value="0" selected>Мебель на заказ</option>
+								<option value="1">Пункт №1</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="breadcrumbs __container">
+				<a href="">Главная</a> &mdash;
+				<a href="">Каталог</a> &mdash;
+				<a href="">Диваны и кресла</a> &mdash;
+				<a href="">Диван прямой Малага (Лиссабон) Кантри Грей</a>
+			</section>
+			<section class="__container">
+				<div class="content-section__h1">Диван прямой Малага (Лиссабон) Кантри Грей</div>
+			</section>
+
+			<section class="product-tools __container">
+				<div class="product-tools__left">
+					<div class="tag-list">
+						<div class="product__tag-item tag-list__item">В тренде</div>
+						<div class="product__tag-item tag-list__item _blue">Бестселлер</div>
+					</div>
+					<div class="rating__outer _gap-10">
+						<div class="rating">
+							<a href="" class="rating__star _active">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-star"></use>
+								</svg>
+							</a>
+							<a href="" class="rating__star _active">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-star"></use>
+								</svg>
+							</a>
+							<a href="" class="rating__star _active">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-star"></use>
+								</svg>
+							</a>
+							<a href="" class="rating__star _active">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-star"></use>
+								</svg>
+							</a>
+							<a href="" class="rating__star">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-star"></use>
+								</svg>
+							</a>
+							<span>4.9</span>
+						</div>
+						<a href="" class="product__count-feedback">2 отзывов</a>
+					</div>
+					<a href="" class="lnk-icon _blue">
+						<svg width="15" height="16">
+							<use xlink:href="img/icons/icons.svg#svg-share"></use>
+						</svg>
+						Поделиться
+					</a>
+					<a href="" class="lnk-icon _blue">
+						<svg width="18" height="18">
+							<use xlink:href="img/icons/icons.svg#svg-video"></use>
+						</svg>
+						Есть видео
+					</a>
+				</div>
+				<div class="product-tools__right">
+					<div class="articul">Артикул: 23376728</div>
+					<a href="" class="lnk-icon _blue">
+						<svg width="14" height="14">
+							<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+						</svg>
+						Добавить к сравнению
+					</a>
+				</div>
+			</section>
+			<section class="product-detail __container">
+				<div class="product-detail__body">
+
+					<section class="product-slider slider">
+						<div class="product-slider__flex">
+							<div class="product-slider__col">
+
+								<div class="product-slider__prev">
+									<svg height="8" width="14" style="rotate: 180deg">
+										<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+									</svg>
+								</div>
+								<div class="product-slider__thumbs">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="product-slider__image">
+													<picture><source srcset="img/content/product-big-1.webp" type="image/webp"><img src="img/content/product-big-1.png" alt=""></picture>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product-slider__image">
+													<picture><source srcset="img/content/product-big-2.webp" type="image/webp"><img src="img/content/product-big-2.webp" alt=""></picture>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product-slider__image">
+													<picture><source srcset="img/content/product-big-3.webp" type="image/webp"><img src="img/content/product-big-3.webp" alt=""></picture>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product-slider__image">
+													<picture><source srcset="img/content/product-big-4.webp" type="image/webp"><img src="img/content/product-big-4.webp" alt=""></picture>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product-slider__image">
+													<picture><source srcset="img/content/product-big-5.webp" type="image/webp"><img src="img/content/product-big-5.webp" alt=""></picture>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product-slider__image">
+													<picture><source srcset="img/content/product-big-6.webp" type="image/webp"><img src="img/content/product-big-6.webp" alt=""></picture>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="product-slider__image">
+													<picture><source srcset="img/content/product-big-7.webp" type="image/webp"><img src="img/content/product-big-7.webp" alt=""></picture>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-slider__next">
+									<svg height="8" width="14">
+										<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="product-slider__images">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="product-slider__image">
+												<picture><source srcset="img/content/product-big-1.webp" type="image/webp"><img src="img/content/product-big-1.png" alt=""></picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-slider__image">
+												<picture><source srcset="img/content/product-big-2.webp" type="image/webp"><img src="img/content/product-big-2.webp" alt=""></picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-slider__image">
+												<picture><source srcset="img/content/product-big-3.webp" type="image/webp"><img src="img/content/product-big-3.webp" alt=""></picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-slider__image">
+												<picture><source srcset="img/content/product-big-4.webp" type="image/webp"><img src="img/content/product-big-4.webp" alt=""></picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-slider__image">
+												<picture><source srcset="img/content/product-big-5.webp" type="image/webp"><img src="img/content/product-big-5.webp" alt=""></picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-slider__image">
+												<picture><source srcset="img/content/product-big-6.webp" type="image/webp"><img src="img/content/product-big-6.webp" alt=""></picture>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-slider__image">
+												<picture><source srcset="img/content/product-big-7.webp" type="image/webp"><img src="img/content/product-big-7.webp" alt=""></picture>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+				</div>
+				<div class="product-detail__sidebar">
+					<div class="product-detail__price">
+						<div class="product-detail__old-price">9 370 ₽</div>
+						<div class="product-detail__current-price">6 890 ₽</div>
+						<div class="product-detail__price-economy">
+							<img src="img/icons/economy-green.svg" width="202" height="50">
+							<span class="product-detail__economy-outer">Выгода 1799 руб (4%)</span>
+						</div>
+					</div>
+					<div class="product-detail__location _mt-20 _mb-20">
+						<svg width="14" height="16">
+							<use xlink:href="img/icons/icons.svg#svg-location"></use>
+						</svg>
+						Город:
+						<a href="#" class="product-detail__location-city">Москва</a>
+					</div>
+					<div class="product-detail__delivery-info _mt-20 _mb-20">
+						<svg width="20" height="16">
+							<use xlink:href="img/icons/icons.svg#svg-delivery"></use>
+						</svg>
+						Экспресс-доставка
+						<div class="info-tooltip">
+							<div class="info-tooltip__icon">?</div>
+						</div>
+						привезем за 5 дней <b>700 ₽</b>
+					</div>
+					<div class="product-detail__warranty-info _mt-20 _mb-35">
+						<svg width="16" height="18">
+							<use xlink:href="img/icons/icons.svg#svg-sertificat"></use>
+						</svg>
+						Гарантия фабрики 18 месяцев, возврат 14 дней
+					</div>
+					<div class="product-detail__buy-btns _mb-25-20">
+						<button class="btn _yellow _buy">
+							КУПИТЬ
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+							</svg>
+						</button>
+						<button class="btn _white _border-yellow">
+							Купить в 1 клик
+						</button>
+					</div>
+					<div class="product-detail__credit _mt-25-20 _mb-25-20">
+						<div class="product-detail__credit-inner">
+							<div class="product-detail__credit-price">140 ₽</div>
+							<div class="product-detail__credit-mounth">x 6 месяцев в рассрочку</div>
+						</div>
+					</div>
+					<div class="product-detail__showroom _mt-25-20 _mb-30">
+						<img src="img/icons/showroom.svg" width="21" height="18">
+						Есть в шоуруме в Москве, <a href="">ТЦ Шоколад</a>
+					</div>
+					<div class="product-detail__color _mt-30 _mb-30">
+						<div class="product-detail__color-title _mb-20">Цвет</div>
+						<div class="product-detail__color-inner _mb-20">
+							<button class="product-detail__color-item _navy-green _active"></button>
+							<button class="product-detail__color-item _navy-blue"></button>
+							<button class="product-detail__color-item _blue _only-desktop"></button>
+							<button class="product-detail__color-item _dark-green _only-desktop"></button>
+							<span>+6</span>
+						</div>
+						<div class="product-detail__color-subtitle">Выбранная ткань обивки</div>
+						<a href="#" class="product-detail__color-choosed">Натуральна кожа Suprim Mint</a>
+					</div>
+					<div class="product-detail__sizes _mt-30 _mb-30">
+						<div class="product-detail__sizes-title _mb-20">Размер спального места, см</div>
+						<div class="product-detail__sizes-inner _mb-20">
+							<button class="product-detail__sizes-item _active">140x200</button>
+							<button class="product-detail__sizes-item">160x200</button>
+							<button class="product-detail__sizes-item">180x200</button>
+							<button class="product-detail__sizes-item">200x200</button>
+							<span>+2</span>
+						</div>
+					</div>
+					<div class="product-detail__options _mt-30 _mb-30">
+						<div class="product-detail__options-title">Опции</div>
+						<table class="product-detail__options-table _mt-20 _mb-30">
+							<tr>
+								<td>Цвет обивки</td>
+								<td>
+									<a href="" class="lnk-icon">
+										<svg width="12" height="12" style="fill:#0391a2;">
+											<use xlink:href="img/icons/icons.svg#svg-edit"></use>
+										</svg>
+										не выбрано
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Механизм</td>
+								<td>еврокнижка</td>
+							</tr>
+							<tr>
+								<td>Гарантия</td>
+								<td>18 месяцев</td>
+							</tr>
+							<tr>
+								<td>Срок изготовления</td>
+								<td>7-10 дней</td>
+							</tr>
+						</table>
+						<a href="" class="product-detail__options-all">Все характеристики</a>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-main">
+					<div class="footer-main__column _first">
+						<a href="" class="footer-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
+						<div class="footer-main__phone">
+							<a href="" class="footer-main__phone-number">8 800 222 09 87</a>
+							<span>Бесплатно для жителей России</span>
+						</div>
+						<div class="footer-main__tools">
+							<a href="" class="footer-main__tools-item">
+								<svg width="18" height="19">
+									<use xlink:href="img/icons/icons.svg#svg-setting"></use>
+								</svg>
+								Гуд сервис
+							</a>
+							<a href="" class="footer-main__tools-item">
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#svg-chat"></use>
+								</svg>
+								Написать отзыв
+							</a>
+						</div>
+					</div>
+					<div class="footer-main__column">
+						<div class="footer-main__title">Это Гуд!</div>
+						<div class="footer-main__menu">
+							<a href="" class="footer-main__menu-link">О фабрике</a>
+							<a href="" class="footer-main__menu-link">Блог</a>
+							<a href="" class="footer-main__menu-link">Отзывы о магазине</a>
+							<a href="" class="footer-main__menu-link">Акции</a>
+							<a href="" class="footer-main__menu-link">Оплата и доставка</a>
+							<a href="" class="footer-main__menu-link">Как с нами связаться</a>
+							<a href="" class="footer-main__menu-link">Галарея тканей</a>
+							<a href="" class="footer-main__menu-link">Наши реквизиты</a>
+							<a href="" class="footer-main__menu-link">Мебель в кредит</a>
+
+						</div>
+					</div>
+					<div class="footer-main__column">
+						<div class="footer-main__title">Интернет магазин</div>
+						<a href="tel:+74951542377" class="footer-main__info-item _phone">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+							</svg>
+							+7 (495) 154-23-77
+						</a>
+						<div class="footer-main__info-item _schedule">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-clock"></use>
+							</svg>
+							Ежедневно с 9:30 до 21:30
+						</div>
+						<div class="footer-main__yandex" data-da="._ya-mobile,1180">
+							<picture><source srcset="img/content/yandex.webp" type="image/webp"><img src="img/content/yandex.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="footer-main__column _ya-mobile">
+						<div class="footer-main__title">Шоу-рум</div>
+						<div class="footer-main__info-item _adress">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-location"></use>
+							</svg>
+							ул. Велозаводская, д. 13, стр. 1, здание Велозаводского Рынка, цокольный этаж, павильон 315
+						</div>
+						<a href="tel:+74951542377" class="footer-main__info-item _phone">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+							</svg>
+							+7 (495) 154-23-77
+						</a>
+						<div class="footer-main__info-item _schedule">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-clock"></use>
+							</svg>
+							Ежедневно с 9:30 до 21:30
+						</div>
+
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-bottom__column">© 2008-2023 «Good-Mebel» интернет-магазин мебели</div>
+					<div class="footer-bottom__column"><a href="">Политика конфиденциальности</a></div>
+					<div class="footer-bottom__column _links">
+						<a href="">Публичная оферта</a>
+						<a href="">Карта сайта</a>
+					</div>
+					<div class="footer-bottom__column _socials">
+						<span>Мы в соц.сетях:</span>
+						<a href="" class="social-link">
+							<svg width="14" height="9">
+								<use xlink:href="img/icons/icons.svg#svg-vk"></use>
+							</svg>
+						</a>
+						<a href="" class="social-link">
+							<svg width="14" height="12">
+								<use xlink:href="img/icons/icons.svg#svg-tg"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+		<script src="js/app.min.js?_v=20230505123259"></script>
+</body>
+
+</html>
