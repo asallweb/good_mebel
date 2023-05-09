@@ -2780,6 +2780,10 @@ hr {
           align-items: flex-start;
 }
 
+.product__body._no-padding-left {
+  padding-left: 0 !important;
+}
+
 .product__name-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2937,6 +2941,10 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 17px;
+}
+
+.product__footer._no-padding {
+  padding: 0 !important;
 }
 
 .map {
@@ -4466,6 +4474,8 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .kit__list {
@@ -4473,20 +4483,6 @@ hr {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-}
-
-.kit__summary {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  width: 440px;
-  padding-top: 80px;
-}
-
-.kit__summary-inner {
-  border-radius: 16px;
-  background: #fff;
-  border: 1px solid #e1e1e1;
 }
 
 .kit__head {
@@ -4540,6 +4536,42 @@ hr {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+.kit__slide.swiper-slide-active,
+.kit__slide.swiper-slide-next {
+  position: relative;
+}
+
+.kit__slide.swiper-slide-active::after,
+.kit__slide.swiper-slide-next::after {
+  content: "+";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: #6ebe44;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+  right: -34px;
+  top: 118px;
+  z-index: 1;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+.kit .kit-pagination {
+  width: 100%;
 }
 
 .kit__add-btn {
@@ -4603,12 +4635,23 @@ hr {
   fill: #000;
 }
 
-.kit__slide {
+.kit__summary {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 440px;
+  padding-top: 80px;
+}
+
+.kit__summary-inner {
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
   position: relative;
 }
 
-.kit__slide::after {
-  content: "+";
+.kit__summary-inner::after {
+  content: "=";
   position: absolute;
   width: 55px;
   height: 55px;
@@ -4626,14 +4669,11 @@ hr {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
-  right: -34px;
+  left: -26px;
   top: 118px;
   z-index: 1;
   cursor: pointer;
-}
-
-.kit__slide._no-plus::after {
-  display: none;
+  padding-bottom: 2px;
 }
 
 .swiper {
