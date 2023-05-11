@@ -6428,6 +6428,27 @@
                 }
                 if (document.querySelector("[data-mousemove-swipe]")) sliderMouseSlideInit();
             }
+            if (document.querySelector(".kit__slider")) new core(".kit__slider", {
+                modules: [ Navigation, Pagination, Lazy ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 12,
+                autoHeight: true,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                navigation: {
+                    prevEl: ".kit-button-prev",
+                    nextEl: ".kit-button-next"
+                },
+                pagination: {
+                    el: ".kit-pagination",
+                    clickable: true
+                }
+            });
             if (document.querySelector(".product-slider")) {
                 const sliderThumbs = new core(".product-slider__thumbs .swiper-container", {
                     modules: [ Navigation, Lazy, Thumb ],
@@ -8552,6 +8573,9 @@ PERFORMANCE OF THIS SOFTWARE.
                 var daysLeft = Math.floor(timeLeft / (1e3 * 60 * 60 * 24));
                 var hoursLeft = Math.floor(timeLeft / (1e3 * 60 * 60) % 24);
                 var minutesLeft = Math.floor(timeLeft / (1e3 * 60) % 60);
+                if (daysLeft < 10) daysLeft = "0" + daysLeft;
+                if (hoursLeft < 10) hoursLeft = "0" + hoursLeft;
+                if (minutesLeft < 10) minutesLeft = "0" + minutesLeft;
                 days.innerHTML = daysLeft;
                 hours.innerHTML = hoursLeft;
                 minutes.innerHTML = minutesLeft;
