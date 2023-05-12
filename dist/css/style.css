@@ -1766,7 +1766,7 @@ hr {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;
-  margin: 45px 0;
+  margin: 45px auto;
 }
 
 .text-btns__button {
@@ -2698,7 +2698,7 @@ hr {
 
 .product._max-width-440 {
   width: 100%;
-  max-width: 440px;
+  max-width: 438px;
 }
 
 .product__image {
@@ -4467,6 +4467,7 @@ hr {
 }
 
 .kit {
+  margin: 80px auto;
   padding: 80px 0;
   background: #f6f6f6;
 }

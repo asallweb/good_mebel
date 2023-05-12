@@ -6449,6 +6449,23 @@
                     clickable: true
                 }
             });
+            if (document.querySelector(".feedback-slider__slider")) new core(".feedback-slider__slider", {
+                modules: [ Navigation, Pagination, Lazy ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 12,
+                autoHeight: true,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                pagination: {
+                    el: ".feedback-slider-pagination",
+                    clickable: true
+                }
+            });
             if (document.querySelector(".product-slider")) {
                 const sliderThumbs = new core(".product-slider__thumbs .swiper-container", {
                     modules: [ Navigation, Lazy, Thumb ],
