@@ -6450,7 +6450,7 @@
                 }
             });
             if (document.querySelector(".feedback-slider__slider")) new core(".feedback-slider__slider", {
-                modules: [ Navigation, Pagination, Lazy ],
+                modules: [ Pagination, Lazy ],
                 observer: true,
                 observeParents: true,
                 slidesPerView: "auto",
@@ -6464,6 +6464,23 @@
                 pagination: {
                     el: ".feedback-slider-pagination",
                     clickable: true
+                }
+            });
+            if (document.querySelector(".photo-slider__slider")) new core(".photo-slider__slider", {
+                modules: [ Navigation, Lazy ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 34,
+                autoHeight: true,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                navigation: {
+                    prevEl: ".photo-slider-button-prev",
+                    nextEl: ".photo-slider-button-next"
                 }
             });
             if (document.querySelector(".product-slider")) {
