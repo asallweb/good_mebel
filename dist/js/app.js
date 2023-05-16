@@ -6494,17 +6494,10 @@
                         prevEl: ".product-slider__prev"
                     },
                     freeMode: true,
-                    breakpoints: {
-                        0: {
-                            direction: "horizontal"
-                        },
-                        768: {
-                            direction: "vertical"
-                        }
-                    }
+                    direction: "vertical"
                 });
                 new core(".product-slider__images .swiper-container", {
-                    modules: [ Navigation, Lazy, Thumb ],
+                    modules: [ Navigation, Pagination, Lazy, Thumb ],
                     direction: "vertical",
                     slidesPerView: 1,
                     spaceBetween: 32,
@@ -6512,6 +6505,10 @@
                     navigation: {
                         nextEl: ".product-slider__next",
                         prevEl: ".product-slider__prev"
+                    },
+                    pagination: {
+                        el: ".product-slider__pagination",
+                        clickable: true
                     },
                     grabCursor: true,
                     thumbs: {

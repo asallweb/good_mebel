@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230515153715">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230516121957">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -223,7 +223,7 @@
 							</a>
 							<span>4.9</span>
 						</div>
-						<a href="" class="product__count-feedback">2 отзывов</a>
+						<a href="" class="product__count-feedback"><span class="_only-desktop">2 отзывов</span><span class="_only-mobile">(2)</span></a>
 					</div>
 					<a href="" class="lnk-icon _blue">
 						<svg width="15" height="16">
@@ -238,8 +238,8 @@
 						Есть видео
 					</a>
 				</div>
-				<div class="product-tools__right">
-					<div class="articul">Артикул: 23376728</div>
+				<div class="product-tools__right" data-da=".product-detail__body, 1024, 1">
+					<div class="product-tools__articul">Артикул: 23376728</div>
 					<a href="" class="lnk-icon _blue">
 						<svg width="14" height="14">
 							<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
@@ -254,7 +254,6 @@
 					<section class="product-slider slider">
 						<div class="product-slider__flex">
 							<div class="product-slider__col">
-
 								<div class="product-slider__prev">
 									<svg height="8" width="14" style="rotate: 180deg">
 										<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
@@ -349,13 +348,14 @@
 									</div>
 								</div>
 							</div>
+							<div class="product-slider__pagination swiper-pagination"></div>
 
 						</div>
 					</section>
 					<div class="product-detail__promotions">
 						<div class="product-detail__promotions-title">Участвует в 2 акциях</div>
 						<div class="product-detail__promotions-inner">
-							<div class="promotion-timer" data-date="2023, 07, 29">
+							<a href="" class="promotion-timer _blue" data-date="2023, 07, 29">
 								<div class="promotion-timer__image">
 									<picture><source srcset="img/content/promotion-timer__image-1.webp" type="image/webp"><img src="img/content/promotion-timer__image-1.png" alt=""></picture>
 								</div>
@@ -371,8 +371,8 @@
 									<div class="promotion-timer__timer-date _minutes"></div>
 									<div class="promotion-timer__timer-text">осталось до конца</div>
 								</div>
-							</div>
-							<div class="promotion-timer" data-date="2023, 07, 17">
+							</a>
+							<a href="" class="promotion-timer _green" data-date="2023, 07, 17">
 								<div class="promotion-timer__image">
 									<picture><source srcset="img/content/promotion-timer__image-2.webp" type="image/webp"><img src="img/content/promotion-timer__image-2.png" alt=""></picture>
 								</div>
@@ -388,7 +388,7 @@
 									<div class="promotion-timer__timer-date _minutes"></div>
 									<div class="promotion-timer__timer-text">осталось до конца</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 
@@ -577,12 +577,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="product-detail__sidebar">
+				<div class="product-detail__sidebar" data-da=".product-detail__body, 1024, 2">
 					<div class="product-detail__price">
 						<div class="product-detail__old-price">9 370 ₽</div>
-						<div class="product-detail__current-price">6 890 ₽</div>
+						<div class="product-detail__current-price"><span class="_only-mobile">от</span> 6 890 ₽</div>
 						<div class="product-detail__price-economy">
-							<img src="img/icons/economy-green.svg" width="202" height="50">
+							<img src="img/icons/economy-green.svg">
 							<span class="product-detail__economy-outer">Выгода 1799 руб (4%)</span>
 						</div>
 					</div>
@@ -600,6 +600,10 @@
 						Экспресс-доставка
 						<div class="info-tooltip">
 							<div class="info-tooltip__icon">?</div>
+							<div class="info-tooltip__body">
+								Краткий описательный текст во всплывающем окне в несколько строк
+								<a href="">Подробнее</a>
+							</div>
 						</div>
 						привезем за 5 дней <b>700 ₽</b>
 					</div>
@@ -616,15 +620,15 @@
 								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 							</svg>
 						</button>
-						<button class="btn _white _border-yellow">
+						<button class="product-detail__1click-btn btn">
 							Купить в 1 клик
 						</button>
 					</div>
 					<div class="product-detail__credit _mt-25-20 _mb-25-20">
-						<div class="product-detail__credit-inner">
+						<button class="product-detail__credit-inner">
 							<div class="product-detail__credit-price">140 ₽</div>
 							<div class="product-detail__credit-mounth">x 6 месяцев в рассрочку</div>
-						</div>
+						</button>
 					</div>
 					<div class="product-detail__showroom _mt-25-20 _mb-30">
 						<img src="img/icons/showroom.svg" width="21" height="18">
@@ -635,8 +639,8 @@
 						<div class="product-detail__color-inner _mb-20">
 							<button class="product-detail__color-item _navy-green _active"></button>
 							<button class="product-detail__color-item _navy-blue"></button>
-							<button class="product-detail__color-item _blue _only-desktop"></button>
-							<button class="product-detail__color-item _dark-green _only-desktop"></button>
+							<button class="product-detail__color-item _blue"></button>
+							<button class="product-detail__color-item _dark-green"></button>
 							<span>+6</span>
 						</div>
 						<div class="product-detail__color-subtitle">Выбранная ткань обивки</div>
@@ -658,8 +662,8 @@
 							<tr>
 								<td>Цвет обивки</td>
 								<td>
-									<a href="" class="lnk-icon">
-										<svg width="12" height="12" style="fill:#0391a2;">
+									<a href="" class="lnk-icon _blue">
+										<svg width="12" height="12">
 											<use xlink:href="img/icons/icons.svg#svg-edit"></use>
 										</svg>
 										не выбрано
@@ -1017,367 +1021,371 @@
 					<div class="kit-pagination swiper-pagination"></div>
 				</div>
 			</section>
-			<section class="__container">
-				<div class="content-section__h2">Готовые решения</div>
-			</section>
-			<section class="product-list __container">
-				<div class="product">
-					<div class="product__image">
-						<a href="" class="product__image-inner _height-270-115">
-							<picture><source srcset="img/content/kit-img-1.webp" type="image/webp"><img src="img/content/kit-img-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
-						</a>
-						<button class="product__like-btn like-btn"><svg>
-								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
-							</svg></button>
+			<section class="slider-4items">
+				<div class="__container">
+					<div class="slider-head">
+						<div class="content-section__h2">Готовые решения</div>
 					</div>
-					<div class="product__body">
-						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item">В тренде</div>
-							<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
-						</div>
-						<div class="product__name">
-							<div class="product__name-top">
-								<a href="" class="product__category-name">Название категории</a>
-								<div class="product__articul">Арт. 23376728</div>
-							</div>
-							<a href="">Стул Светло-ЗЕЛЕНЫЙ</a>
-						</div>
-						<div class="product__rating">
-							<div class="rating">
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
-						</div>
-						<div class="product__production-time">
-							<svg class="product__production-svg _check">
-								<use xlink:href="img/icons/icons.svg#svg-check"></use>
-							</svg>
-							В наличии, 2-4 дня
-						</div>
-						<div class="product__technikal-specs">
-							<div data-showmore="size" class="product__technikal-specs">
-								<div data-showmore-content="64" class="product__technikal-specs__content">
-									<table>
-										<tbody>
-											<tr>
-												<td>Обивка:</td>
-												<td>рогожка</td>
-											</tr>
-											<tr>
-												<td>Наполнитель:</td>
-												<td>ДВП, ППУ, поролоновая крошка</td>
-											</tr>
-											<tr>
-												<td>Пружинный блок:</td>
-												<td>нет</td>
-											</tr>
-											<tr>
-												<td>Обивка:</td>
-												<td>рогожка</td>
-											</tr>
-											<tr>
-												<td>Наполнитель:</td>
-												<td>ДВП, ППУ, поролоновая крошка</td>
-											</tr>
-											<tr>
-												<td>Пружинный блок:</td>
-												<td>нет</td>
-											</tr>
-										</tbody>
-									</table>
+					<div class="slider-4items__slider swiper slider-4items__slider-1">
+						<div class="slider-4items__wrapper swiper-wrapper">
+							<div class="slider-4items__slide swiper-slide product _max-width-440">
+								<div class="product__image">
+									<div class="product__image-inner product-swiper _height-270-180">
+										<div class="product-swiper__slider swiper" data-mousemove-swipe="0">
+											<div class="product-swiper__wrapper swiper-wrapper" data-gallery>
+												<a href="img/content/product-15.png" class="product-swiper__slide swiper-slide gallery__image">
+													<picture><source srcset="img/content/product-15.webp" type="image/webp"><img src="img/content/product-15.png" alt="product-2" class="product__image-src swiper-lazy gallery__preview"></picture>
+												</a>
+												<a href="img/content/product-14.png" class="product-swiper__slide swiper-slide gallery__image">
+													<picture><source srcset="img/content/product-14.webp" type="image/webp"><img src="img/content/product-14.png" alt="product-1" class="product__image-src swiper-lazy gallery__preview"></picture>
+												</a>
+												<a href="img/content/kit-img-1.png" class="product-swiper__slide swiper-slide gallery__image">
+													<picture><source srcset="img/content/kit-img-1.webp" type="image/webp"><img src="img/content/kit-img-1.png" alt="product-3" class="product__image-src swiper-lazy  gallery__preview"></picture>
+												</a>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
+									<div class="product__discount-round discount-round">-15%</div>
 								</div>
-								<button hidden data-showmore-button type="button" class="product__technikal-specs__more show-more"><span>Показать еще</span><span>Скрыть</span></button>
-							</div>
-						</div>
-						<div class="product__price">
-							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
-						</div>
-					</div>
-					<div class="product__footer">
-						<button class="btn _yellow _buy">
-							КУПИТЬ
-							<svg>
-								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-				<div class="product">
-					<div class="product__image">
-						<div class="product__image-inner product-swiper _height-270-115">
-							<div class="product-swiper__slider swiper" data-mousemove-swipe="0">
-								<div class="product-swiper__wrapper swiper-wrapper" data-gallery>
-									<a href="img/content/product-14.png" class="product-swiper__slide swiper-slide gallery__image">
-										<picture><source srcset="img/content/product-14.webp" type="image/webp"><img src="img/content/product-14.png" alt="product-1" class="product__image-src swiper-lazy gallery__preview"></picture>
-									</a>
-									<a href="img/content/product-15.png" class="product-swiper__slide swiper-slide gallery__image">
-										<picture><source srcset="img/content/product-15.webp" type="image/webp"><img src="img/content/product-15.png" alt="product-2" class="product__image-src swiper-lazy gallery__preview"></picture>
-									</a>
-									<a href="img/content/kit-img-1.png" class="product-swiper__slide swiper-slide gallery__image">
-										<picture><source srcset="img/content/kit-img-1.webp" type="image/webp"><img src="img/content/kit-img-1.png" alt="product-3" class="product__image-src swiper-lazy  gallery__preview"></picture>
-									</a>
+								<div class="product__body">
+									<div class="product__tag-list tag-list">
+										<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+									</div>
+									<div class="product__name">
+										<div class="product__name-top">
+											<a href="" class="product__category-name">Название категории</a>
+											<div class="product__articul">Арт. 23376728</div>
+										</div>
+										<a href="">Диван прямой Маркус Изумруд</a>
+									</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__technikal-specs">
+										<div data-showmore="size" class="product__technikal-specs">
+											<div data-showmore-content="64" class="product__technikal-specs__content">
+												<table>
+													<tbody>
+														<tr>
+															<td>Обивка:</td>
+															<td>рогожка</td>
+														</tr>
+														<tr>
+															<td>Наполнитель:</td>
+															<td>ДВП, ППУ, поролоновая крошка</td>
+														</tr>
+														<tr>
+															<td>Пружинный блок:</td>
+															<td>нет</td>
+														</tr>
+														<tr>
+															<td>Обивка:</td>
+															<td>рогожка</td>
+														</tr>
+														<tr>
+															<td>Наполнитель:</td>
+															<td>ДВП, ППУ, поролоновая крошка</td>
+														</tr>
+														<tr>
+															<td>Пружинный блок:</td>
+															<td>нет</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<button hidden data-showmore-button type="button" class="product__technikal-specs__more show-more"><span>Показать еще</span><span>Скрыть</span></button>
+										</div>
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+										<span class="product__old-price _mobile-smaller">
+											<svg width="14" height="8">
+												<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+											</svg>
+											32 890 ₽
+										</span>
+										<div class="product__price-economy">
+											<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px" class="_only-desktop">
+											<img src="img/icons/economy-mobile.svg" alt="economy" width="31px" height="15px" class="_only-mobile">
+											<span class="product__economy-outer">
+												<span class="_only-desktop">Выгода 1799 руб (</span>
+												11%
+												<span class="_only-desktop">)</span>
+											</span>
+										</div>
+									</div>
 								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-						</div>
-						<button class="product__like-btn like-btn"><svg>
-								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
-							</svg></button>
-						<div class="product__discount-round discount-round">-15%</div>
-					</div>
-					<div class="product__body">
-						<div class="product__tag-list tag-list">
-						</div>
-						<div class="product__name">
-							<div class="product__name-top">
-								<a href="" class="product__category-name">Название категории</a>
-								<div class="product__articul">Арт. 23376728</div>
-							</div>
-							<a href="">Еще одно название товара на сайте</a>
-						</div>
-						<div class="product__rating">
-							<div class="rating">
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
-						</div>
-						<div class="product__production-time">
-							<svg class="product__production-svg _check">
-								<use xlink:href="img/icons/icons.svg#svg-check"></use>
-							</svg>
-							В наличии, 2-4 дня
-						</div>
-						<div class="product__technikal-specs">
-							<div data-showmore="size" class="product__technikal-specs">
-								<div data-showmore-content="64" class="product__technikal-specs__content">
-									<table>
-										<tbody>
-											<tr>
-												<td>Обивка:</td>
-												<td>рогожка</td>
-											</tr>
-											<tr>
-												<td>Наполнитель:</td>
-												<td>ДВП, ППУ, поролоновая крошка</td>
-											</tr>
-											<tr>
-												<td>Пружинный блок:</td>
-												<td>нет</td>
-											</tr>
-											<tr>
-												<td>Обивка:</td>
-												<td>рогожка</td>
-											</tr>
-											<tr>
-												<td>Наполнитель:</td>
-												<td>ДВП, ППУ, поролоновая крошка</td>
-											</tr>
-											<tr>
-												<td>Пружинный блок:</td>
-												<td>нет</td>
-											</tr>
-										</tbody>
-									</table>
+								<div class="product__footer">
+									<button class="btn _yellow _buy">
+										КУПИТЬ
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
 								</div>
-								<button hidden data-showmore-button type="button" class="product__technikal-specs__more show-more"><span>Показать еще</span><span>Скрыть</span></button>
 							</div>
-						</div>
-						<div class="product__price">
-							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
-							<span class="product__old-price _mobile-smaller">32 890 ₽</span>
-						</div>
-					</div>
-					<div class="product__footer">
-						<button class="btn _yellow _buy _mr-auto">
-							КУПИТЬ
-							<svg>
-								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-				<div class="product">
-					<div class="product__image">
-						<div class="product__image-inner product-swiper _height-270-115">
-							<div class="product-swiper__slider swiper" data-mousemove-swipe="1">
-								<div class="product-swiper__wrapper swiper-wrapper" data-gallery>
-									<a href="img/content/product-15.png" class="product-swiper__slide swiper-slide gallery__image">
-										<picture><source srcset="img/content/product-15.webp" type="image/webp"><img src="img/content/product-15.png" alt="product-2" class="product__image-src swiper-lazy gallery__preview"></picture>
+							<div class="slider-4items__slide swiper-slide product _max-width-440">
+								<div class="product__image">
+									<a href="" class="product__image-inner _height-270-180">
+										<picture><source srcset="img/content/kit-img-1.webp" type="image/webp"><img src="img/content/kit-img-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
 									</a>
-									<a href="img/content/product-14.png" class="product-swiper__slide swiper-slide gallery__image">
-										<picture><source srcset="img/content/product-14.webp" type="image/webp"><img src="img/content/product-14.png" alt="product-1" class="product__image-src swiper-lazy gallery__preview"></picture>
-									</a>
-									<a href="img/content/kit-img-1.png" class="product-swiper__slide swiper-slide gallery__image">
-										<picture><source srcset="img/content/kit-img-1.webp" type="image/webp"><img src="img/content/kit-img-1.png" alt="product-3" class="product__image-src swiper-lazy  gallery__preview"></picture>
-									</a>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
 								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-						</div>
-						<button class="product__like-btn like-btn"><svg>
-								<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
-							</svg></button>
-						<div class="product__discount-round discount-round">-15%</div>
-					</div>
-					<div class="product__body">
-						<div class="product__tag-list tag-list">
-							<div class="product__tag-item tag-list__item _red">Последняя цена</div>
-						</div>
-						<div class="product__name">
-							<div class="product__name-top">
-								<a href="" class="product__category-name">Название категории</a>
-								<div class="product__articul">Арт. 23376728</div>
-							</div>
-							<a href="">Диван прямой Маркус Изумруд</a>
-						</div>
-						<div class="product__rating">
-							<div class="rating">
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star _active">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-								<a href="" class="rating__star">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#svg-star"></use>
-									</svg>
-								</a>
-							</div>
-							<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
-						</div>
-						<div class="product__production-time">
-							<svg class="product__production-svg _check">
-								<use xlink:href="img/icons/icons.svg#svg-check"></use>
-							</svg>
-							В наличии, 2-4 дня
-						</div>
-						<div class="product__technikal-specs">
-							<div data-showmore="size" class="product__technikal-specs">
-								<div data-showmore-content="64" class="product__technikal-specs__content">
-									<table>
-										<tbody>
-											<tr>
-												<td>Обивка:</td>
-												<td>рогожка</td>
-											</tr>
-											<tr>
-												<td>Наполнитель:</td>
-												<td>ДВП, ППУ, поролоновая крошка</td>
-											</tr>
-											<tr>
-												<td>Пружинный блок:</td>
-												<td>нет</td>
-											</tr>
-											<tr>
-												<td>Обивка:</td>
-												<td>рогожка</td>
-											</tr>
-											<tr>
-												<td>Наполнитель:</td>
-												<td>ДВП, ППУ, поролоновая крошка</td>
-											</tr>
-											<tr>
-												<td>Пружинный блок:</td>
-												<td>нет</td>
-											</tr>
-										</tbody>
-									</table>
+								<div class="product__body">
+									<div class="product__tag-list tag-list">
+										<div class="product__tag-item tag-list__item">В тренде</div>
+										<div class="product__tag-item tag-list__item _blue _only-desktop">Бестселлер</div>
+									</div>
+									<div class="product__name">
+										<div class="product__name-top">
+											<a href="" class="product__category-name">Название категории</a>
+											<div class="product__articul">Арт. 23376728</div>
+										</div>
+										<a href="">Стул Светло-ЗЕЛЕНЫЙ</a>
+									</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__technikal-specs">
+										<div data-showmore="size" class="product__technikal-specs">
+											<div data-showmore-content="64" class="product__technikal-specs__content">
+												<table>
+													<tbody>
+														<tr>
+															<td>Обивка:</td>
+															<td>рогожка</td>
+														</tr>
+														<tr>
+															<td>Наполнитель:</td>
+															<td>ДВП, ППУ, поролоновая крошка</td>
+														</tr>
+														<tr>
+															<td>Пружинный блок:</td>
+															<td>нет</td>
+														</tr>
+														<tr>
+															<td>Обивка:</td>
+															<td>рогожка</td>
+														</tr>
+														<tr>
+															<td>Наполнитель:</td>
+															<td>ДВП, ППУ, поролоновая крошка</td>
+														</tr>
+														<tr>
+															<td>Пружинный блок:</td>
+															<td>нет</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<button hidden data-showmore-button type="button" class="product__technikal-specs__more show-more"><span>Показать еще</span><span>Скрыть</span></button>
+										</div>
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+									</div>
 								</div>
-								<button hidden data-showmore-button type="button" class="product__technikal-specs__more show-more"><span>Показать еще</span><span>Скрыть</span></button>
+								<div class="product__footer">
+									<button class="btn _yellow _buy">
+										КУПИТЬ
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+								</div>
 							</div>
-						</div>
-						<div class="product__price">
-							<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
-							<span class="product__old-price _mobile-smaller">
-								<svg width="14" height="8">
-									<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
-								</svg>
-								32 890 ₽
-							</span>
-							<div class="product__price-economy">
-								<img src="img/icons/economy.svg" alt="economy" width="180px" height="26px" class="_only-desktop">
-								<img src="img/icons/economy-mobile.svg" alt="economy" width="31px" height="15px" class="_only-mobile">
-								<span class="product__economy-outer">
-									<span class="_only-desktop">Выгода 1799 руб (</span>
-									11%
-									<span class="_only-desktop">)</span>
-								</span>
+							<div class="slider-4items__slide swiper-slide product _max-width-440">
+								<div class="product__image">
+									<div class="product__image-inner product-swiper _height-270-180">
+										<div class="product-swiper__slider swiper" data-mousemove-swipe="1">
+											<div class="product-swiper__wrapper swiper-wrapper" data-gallery>
+												<a href="img/content/product-14.png" class="product-swiper__slide swiper-slide gallery__image">
+													<picture><source srcset="img/content/product-14.webp" type="image/webp"><img src="img/content/product-14.png" alt="product-1" class="product__image-src swiper-lazy gallery__preview"></picture>
+												</a>
+												<a href="img/content/product-15.png" class="product-swiper__slide swiper-slide gallery__image">
+													<picture><source srcset="img/content/product-15.webp" type="image/webp"><img src="img/content/product-15.png" alt="product-2" class="product__image-src swiper-lazy gallery__preview"></picture>
+												</a>
+												<a href="img/content/kit-img-1.png" class="product-swiper__slide swiper-slide gallery__image">
+													<picture><source srcset="img/content/kit-img-1.webp" type="image/webp"><img src="img/content/kit-img-1.png" alt="product-3" class="product__image-src swiper-lazy  gallery__preview"></picture>
+												</a>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<button class="product__like-btn like-btn"><svg>
+											<use xlink:href="img/icons/icons.svg#svg-heart-2"></use>
+										</svg></button>
+									<div class="product__discount-round discount-round">-15%</div>
+								</div>
+								<div class="product__body">
+									<div class="product__tag-list tag-list">
+									</div>
+									<div class="product__name">
+										<div class="product__name-top">
+											<a href="" class="product__category-name">Название категории</a>
+											<div class="product__articul">Арт. 23376728</div>
+										</div>
+										<a href="">Еще одно название товара на сайте</a>
+									</div>
+									<div class="product__rating">
+										<div class="rating">
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star _active">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+											<a href="" class="rating__star">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-star"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="" class="product__count-feedback"><span class="_only-desktop">25 отзывов</span><span class="_only-mobile">(25)</span></a>
+									</div>
+									<div class="product__production-time">
+										<svg class="product__production-svg _check">
+											<use xlink:href="img/icons/icons.svg#svg-check"></use>
+										</svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="product__technikal-specs">
+										<div data-showmore="size" class="product__technikal-specs">
+											<div data-showmore-content="64" class="product__technikal-specs__content">
+												<table>
+													<tbody>
+														<tr>
+															<td>Обивка:</td>
+															<td>рогожка</td>
+														</tr>
+														<tr>
+															<td>Наполнитель:</td>
+															<td>ДВП, ППУ, поролоновая крошка</td>
+														</tr>
+														<tr>
+															<td>Пружинный блок:</td>
+															<td>нет</td>
+														</tr>
+														<tr>
+															<td>Обивка:</td>
+															<td>рогожка</td>
+														</tr>
+														<tr>
+															<td>Наполнитель:</td>
+															<td>ДВП, ППУ, поролоновая крошка</td>
+														</tr>
+														<tr>
+															<td>Пружинный блок:</td>
+															<td>нет</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<button hidden data-showmore-button type="button" class="product__technikal-specs__more show-more"><span>Показать еще</span><span>Скрыть</span></button>
+										</div>
+									</div>
+									<div class="product__price">
+										<span class="product__curent-price _mobile-smaller">26 890 ₽</span>
+										<span class="product__old-price _mobile-smaller">32 890 ₽</span>
+									</div>
+								</div>
+								<div class="product__footer">
+									<button class="btn _yellow _buy _mr-auto">
+										КУПИТЬ
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="product__footer">
-						<button class="btn _yellow _buy">
-							КУПИТЬ
-							<svg>
-								<use xlink:href="img/icons/icons.svg#svg-bag"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-				<div class="product">
 				</div>
 			</section>
 			<section class="slider-4items">
@@ -1385,15 +1393,15 @@
 					<div class="slider-head">
 						<div class="content-section__h2">Похожие товары</div>
 						<div class="slider-head__navigation">
-							<button type="button" class="swiper-button-prev swiper-button-prev-slider-1"><svg width="12" height="7">
+							<button type="button" class="swiper-button-prev swiper-button-prev-slider-2"><svg width="12" height="7">
 									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
 								</svg></button>
-							<button type="button" class="swiper-button-next swiper-button-next-slider-1"><svg width="12" height="7">
+							<button type="button" class="swiper-button-next swiper-button-next-slider-2"><svg width="12" height="7">
 									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
 								</svg></button>
 						</div>
 					</div>
-					<div class="slider-4items__slider swiper slider-4items__slider-1">
+					<div class="slider-4items__slider swiper slider-4items__slider-2">
 						<div class="slider-4items__wrapper swiper-wrapper">
 							<div class="slider-4items__slide swiper-slide product _max-width-440">
 								<div class="product__image">
@@ -1940,30 +1948,30 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-pagination swiper-pagination-1"></div>
+						<div class="swiper-pagination swiper-pagination-2"></div>
 					</div>
 				</div>
 			</section>
 			<section class="slider-4items">
 				<div class="__container">
-					<div class="slider-head">
-						<div class="content-section__h2 _width-100p _mb-25-20">С этим товаром покупают</div>
-						<div class="slider-head__toggler toggler">
-							<button class="toggler__btn btn _active">Название категории</button>
-							<button class="toggler__btn btn">Прямые диваны</button>
-							<button class="toggler__btn btn">Прямые кожаные диваны</button>
-							<button class="toggler__btn btn">Кухонные прямые диваны</button>
+					<div class="slider-head _tags">
+						<div class="content-section__h2 _mb-25-20">С этим товаром покупают</div>
+						<div class="slider-head__tags tags _min-width-100p ">
+							<button class="tags__btn btn _active">Название категории</button>
+							<button class="tags__btn btn">Прямые диваны</button>
+							<button class="tags__btn btn">Прямые кожаные диваны</button>
+							<button class="tags__btn btn">Кухонные прямые диваны</button>
 						</div>
 						<div class="slider-head__navigation">
-							<button type="button" class="swiper-button-prev swiper-button-prev-slider-2"><svg width="12" height="7">
+							<button type="button" class="swiper-button-prev swiper-button-prev-slider-3"><svg width="12" height="7">
 									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
 								</svg></button>
-							<button type="button" class="swiper-button-next swiper-button-next-slider-2"><svg width="12" height="7">
+							<button type="button" class="swiper-button-next swiper-button-next-slider-3"><svg width="12" height="7">
 									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
 								</svg></button>
 						</div>
 					</div>
-					<div class="slider-4items__slider swiper slider-4items__slider-2">
+					<div class="slider-4items__slider swiper slider-4items__slider-3">
 						<div class="slider-4items__wrapper swiper-wrapper">
 							<div class="slider-4items__slide swiper-slide product _max-width-440">
 								<div class="product__image">
@@ -2510,7 +2518,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-pagination swiper-pagination-2"></div>
+						<div class="swiper-pagination swiper-pagination-3"></div>
 					</div>
 				</div>
 			</section>
@@ -2845,7 +2853,7 @@
 			</div>
 		</footer>
 		</div>
-		<script src="js/app.min.js?_v=20230515153715"></script>
+		<script src="js/app.min.js?_v=20230516121957"></script>
 </body>
 
 </html>
