@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230516121957">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230517150239">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -354,45 +354,47 @@
 					</section>
 					<div class="product-detail__promotions">
 						<div class="product-detail__promotions-title">Участвует в 2 акциях</div>
-						<div class="product-detail__promotions-inner">
-							<a href="" class="promotion-timer _blue" data-date="2023, 07, 29">
-								<div class="promotion-timer__image">
-									<picture><source srcset="img/content/promotion-timer__image-1.webp" type="image/webp"><img src="img/content/promotion-timer__image-1.png" alt=""></picture>
-								</div>
-								<div class="promotion-timer__name">
-									<div class="promotion-timer__title">Весенняя распродажа дачной мебели</div>
-									<div class="promotion-timer__subtitle">Успей купить!</div>
-								</div>
-								<div class="promotion-timer__timer">
-									<div class="promotion-timer__timer-date _days"></div>
-									<span class="promotion-timer__timer-delimeter">:</span>
-									<div class="promotion-timer__timer-date _hours"></div>
-									<span class="promotion-timer__timer-delimeter">:</span>
-									<div class="promotion-timer__timer-date _minutes"></div>
-									<div class="promotion-timer__timer-text">осталось до конца</div>
-								</div>
-							</a>
-							<a href="" class="promotion-timer _green" data-date="2023, 07, 17">
-								<div class="promotion-timer__image">
-									<picture><source srcset="img/content/promotion-timer__image-2.webp" type="image/webp"><img src="img/content/promotion-timer__image-2.png" alt=""></picture>
-								</div>
-								<div class="promotion-timer__name">
-									<div class="promotion-timer__title">Бесплатная доставка в пределах МКАД</div>
-									<div class="promotion-timer__subtitle">Скорее к заказу!</div>
-								</div>
-								<div class="promotion-timer__timer">
-									<div class="promotion-timer__timer-date _days"></div>
-									<span class="promotion-timer__timer-delimeter">:</span>
-									<div class="promotion-timer__timer-date _hours"></div>
-									<span class="promotion-timer__timer-delimeter">:</span>
-									<div class="promotion-timer__timer-date _minutes"></div>
-									<div class="promotion-timer__timer-text">осталось до конца</div>
-								</div>
-							</a>
+						<div class="promotions__slider swiper">
+							<div class="promotions__wrapper swiper-wrapper">
+								<a href="" class="promotion-timer _blue promotions__slide swiper-slide" data-date="2023, 07, 29">
+									<div class="promotion-timer__image">
+										<picture><source srcset="img/content/promotion-timer__image-1.webp" type="image/webp"><img src="img/content/promotion-timer__image-1.png" alt=""></picture>
+									</div>
+									<div class="promotion-timer__name">
+										<div class="promotion-timer__title">Весенняя распродажа дачной мебели</div>
+										<div class="promotion-timer__subtitle">Успей купить!</div>
+									</div>
+									<div class="promotion-timer__timer">
+										<div class="promotion-timer__timer-date _days"></div>
+										<span class="promotion-timer__timer-delimeter">:</span>
+										<div class="promotion-timer__timer-date _hours"></div>
+										<span class="promotion-timer__timer-delimeter">:</span>
+										<div class="promotion-timer__timer-date _minutes"></div>
+										<div class="promotion-timer__timer-text">осталось до конца</div>
+									</div>
+								</a>
+								<a href="" class="promotion-timer _green promotions__slide swiper-slide" data-date="2023, 07, 17">
+									<div class="promotion-timer__image">
+										<picture><source srcset="img/content/promotion-timer__image-2.webp" type="image/webp"><img src="img/content/promotion-timer__image-2.png" alt=""></picture>
+									</div>
+									<div class="promotion-timer__name">
+										<div class="promotion-timer__title">Бесплатная доставка в пределах МКАД</div>
+										<div class="promotion-timer__subtitle">Скорее к заказу!</div>
+									</div>
+									<div class="promotion-timer__timer">
+										<div class="promotion-timer__timer-date _days"></div>
+										<span class="promotion-timer__timer-delimeter">:</span>
+										<div class="promotion-timer__timer-date _hours"></div>
+										<span class="promotion-timer__timer-delimeter">:</span>
+										<div class="promotion-timer__timer-date _minutes"></div>
+										<div class="promotion-timer__timer-text">осталось до конца</div>
+									</div>
+								</a>
+							</div>
+							<div class="promotions__slider-pagination swiper-pagination"></div>
 						</div>
 					</div>
-
-					<div data-tabs="768" data-tabs-animate="500" class="tabs">
+					<div data-tabs data-tabs-animate="500" class="tabs">
 						<nav data-tabs-titles class="tabs__navigation">
 							<button type="button" class="tabs__title _tab-active">Характеристики</button>
 							<button type="button" class="tabs__title">Описание и важная информация</button>
@@ -577,7 +579,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="product-detail__sidebar" data-da=".product-detail__body, 1024, 2">
+				<div class="product-detail__sidebar" data-da=".product-detail__body, 1280, 1">
 					<div class="product-detail__price">
 						<div class="product-detail__old-price">9 370 ₽</div>
 						<div class="product-detail__current-price"><span class="_only-mobile">от</span> 6 890 ₽</div>
@@ -692,7 +694,6 @@
 				<button class="text-btns__button btn _yes">Да</button>
 				<button class="text-btns__button btn _no">Нет</button>
 			</div>
-
 			<section class="kit">
 				<div class="kit__container">
 					<div class="kit__list">
@@ -1008,7 +1009,7 @@
 								<div class="kit__old-price">44 370 ₽</div>
 								<div class="kit__current-price">44 370 ₽</div>
 								<div class="kit__price-economy">
-									<img src="img/icons/economy-green_2.svg" alt="economy" width="180px" height="26px">
+									<img src="img/icons/economy-green_2.svg" alt="economy">
 									<span class="product__economy-outer">
 										Выгода 1799 руб (11%)
 									</span>
@@ -2853,7 +2854,7 @@
 			</div>
 		</footer>
 		</div>
-		<script src="js/app.min.js?_v=20230516121957"></script>
+		<script src="js/app.min.js?_v=20230517150239"></script>
 </body>
 
 </html>

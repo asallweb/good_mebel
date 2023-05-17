@@ -6291,7 +6291,6 @@
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 15,
-                autoHeight: true,
                 preloadImages: false,
                 lazy: {
                     loadPrevNext: true,
@@ -6312,7 +6311,6 @@
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 15,
-                autoHeight: true,
                 preloadImages: false,
                 lazy: {
                     loadPrevNext: true,
@@ -6333,7 +6331,6 @@
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 15,
-                autoHeight: true,
                 preloadImages: false,
                 lazy: {
                     loadPrevNext: true,
@@ -6428,13 +6425,30 @@
                 }
                 if (document.querySelector("[data-mousemove-swipe]")) sliderMouseSlideInit();
             }
+            if (document.querySelector(".promotions__slider")) new core(".promotions__slider", {
+                modules: [ Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                pagination: {
+                    el: ".promotions__slider-pagination",
+                    clickable: true
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1
+                    },
+                    400: {
+                        slidesPerView: "auto"
+                    }
+                }
+            });
             if (document.querySelector(".kit__slider")) new core(".kit__slider", {
                 modules: [ Navigation, Pagination, Lazy ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: "auto",
                 spaceBetween: 12,
-                autoHeight: true,
                 preloadImages: false,
                 lazy: {
                     loadPrevNext: true,
@@ -6447,6 +6461,15 @@
                 pagination: {
                     el: ".kit-pagination",
                     clickable: true
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 2,
+                        spaceBetween: 1
+                    },
+                    1280: {
+                        slidesPerView: 3
+                    }
                 }
             });
             if (document.querySelector(".feedback-slider__slider")) new core(".feedback-slider__slider", {
@@ -6481,6 +6504,14 @@
                 navigation: {
                     prevEl: ".photo-slider-button-prev",
                     nextEl: ".photo-slider-button-next"
+                },
+                breakpoints: {
+                    0: {
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 34
+                    }
                 }
             });
             if (document.querySelector(".product-slider")) {
