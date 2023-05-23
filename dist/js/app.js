@@ -8639,7 +8639,7 @@ PERFORMANCE OF THIS SOFTWARE.
             }));
         }
         var timers = document.querySelectorAll(".promotion-timer");
-        timers.forEach((function(timer) {
+        if (timers) timers.forEach((function(timer) {
             var date = timer.dataset.date;
             date = new Date(date);
             var days = timer.querySelector("._days");
@@ -8662,12 +8662,70 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         }));
         const complectProducts = document.querySelectorAll(".complect-table__product");
-        complectProducts.forEach((function(complectProduct) {
+        if (complectProducts) complectProducts.forEach((function(complectProduct) {
             const complectProductBtn = complectProduct.querySelector(".complect-table__product-toggle");
             complectProductBtn.addEventListener("click", (event => {
                 complectProduct.classList.toggle("_opened");
             }));
         }));
+        const configuratorTypeSwitcher = document.querySelector(".configurator__type-switcher");
+        if (configuratorTypeSwitcher) {
+            const configuratorTypeSwitcherButton = configuratorTypeSwitcher.querySelector(".configurator__type-button");
+            configuratorTypeSwitcherButton.addEventListener("click", (event => {
+                configuratorTypeSwitcher.classList.toggle("_detail");
+                configuratorTypeSwitcher.classList.toggle("_simple");
+            }));
+        }
+        const spareImages = document.querySelectorAll(".configurator__spare-image");
+        if (spareImages) spareImages.forEach((spareImage => {
+            spareImage.addEventListener("mouseover", (() => {
+                const bigImageSrc = spareImage.getAttribute("data-srcbig");
+                const bigImage = document.createElement("img");
+                bigImage.src = bigImageSrc;
+                bigImage.classList.add("configurator__spare-image-big");
+                const spareContainer = spareImage.parentNode;
+                spareContainer.insertBefore(bigImage, spareImage.nextSibling);
+                const spareImageRect = spareImage.getBoundingClientRect();
+                const bigImageRect = bigImage.getBoundingClientRect();
+                const spareImageRight = spareImageRect.right + 10;
+                spareImageRect.left, bigImageRect.width;
+                const windowWidth = window.innerWidth;
+                window.innerHeight;
+                spareContainer.getBoundingClientRect();
+                bigImage.style.opacity = "1";
+                if (spareImageRight + bigImageRect.width <= windowWidth) bigImage.style.left = "calc(100% + 10px)"; else {
+                    bigImage.style.left = "auto";
+                    bigImage.style.right = "calc(100% + 10px)";
+                }
+            }));
+            spareImage.addEventListener("mouseout", (() => {
+                const bigImage = document.querySelector(".configurator__spare-image-big");
+                if (bigImage) bigImage.parentNode.removeChild(bigImage);
+            }));
+        }));
+        const configuratorBtns = document.querySelectorAll(".product-detail__show-configurator");
+        const configurator = document.querySelector(".configurator");
+        const configuratorCloseBtn = document.querySelector(".configurator__close");
+        if (configuratorBtns && configurator && configuratorCloseBtn) {
+            configuratorBtns.forEach((configuratorBtn => {
+                configuratorBtn.addEventListener("click", (event => {
+                    event.preventDefault();
+                    document.body.style.overflow = "hidden";
+                    configurator.classList.add("_active");
+                    document.addEventListener("click", (event => {
+                        const isClickInside = configurator.contains(event.target) || configuratorBtn === event.target;
+                        if (!isClickInside) {
+                            configurator.classList.remove("_active");
+                            document.body.style.overflow = "visible";
+                        }
+                    }));
+                }));
+            }));
+            configuratorCloseBtn.addEventListener("click", (() => {
+                configurator.classList.remove("_active");
+                document.body.style.overflow = "visible";
+            }));
+        }
         window["FLS"] = true;
         isWebp();
         menuInit();
