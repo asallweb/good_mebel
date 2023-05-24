@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230524104020">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230524170958">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -645,7 +645,7 @@
 							<span>+6</span>
 						</div>
 						<div class="product-detail__color-subtitle">Выбранная ткань обивки</div>
-						<a href="#" class="product-detail__color-choosed">Натуральна кожа Suprim Mint</a>
+						<a href="#" class="product-detail__color-choosed product-detail__show-configurator">Натуральна кожа Suprim Mint</a>
 					</div>
 					<div class="product-detail__sizes _mt-30 _mb-30">
 						<div class="product-detail__sizes-title _mb-20">Размер спального места, см</div>
@@ -685,6 +685,385 @@
 							</tr>
 						</table>
 						<a href="" class="product-detail__options-all">Все характеристики</a>
+					</div>
+				</div>
+			</section>
+			<section class="configurator">
+				<div class="configurator__title _only-mobile">
+					Конфигуратор
+					<button class="configurator__close close-btn"></button>
+				</div>
+				<div class="configurator__type">
+					<span>Вид конфигуратора: </span>
+					<div class="configurator__type-switcher _simple">
+						<span class="configurator__type-simple">Простой</span>
+						<button class="configurator__type-button"></button>
+						<span class="configurator__type-detail">Подробный</span>
+					</div>
+				</div>
+				<div data-spollers data-one-spoller class="configurator__spollers spollers">
+					<div class="configurator__item spollers__item">
+						<button type="button" data-spoller class="configurator__item-title spollers__title">
+							<span class="configurator__item-name">
+								Ножки
+								<span class="configurator__item-name-checked">
+									<svg width="7" height="5">
+										<use xlink:href="img/icons/icons.svg#svg-check"></use>
+									</svg>
+								</span>
+							</span>
+							<span class="configurator__item-count-options">3 опции доступно</span>
+						</button>
+						<div class="configurator__item-body spollers__body">
+							<div class="configurator__grid _col-3 _gap-20">
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _height-95">
+										<picture><source srcset="img/content/spare-image-1.webp" type="image/webp"><img src="img/content/spare-image-1.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-name">Название товара</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _height-95 _active">
+										<picture><source srcset="img/content/spare-image-2.webp" type="image/webp"><img src="img/content/spare-image-2.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+									<a href="" class="configurator__spare-price">890 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _height-95">
+										<picture><source srcset="img/content/spare-image-3.webp" type="image/webp"><img src="img/content/spare-image-3.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+									<a href="" class="configurator__spare-price">890 ₽</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="configurator__item spollers__item">
+						<button type="button" data-spoller class="configurator__item-title spollers__title _spoller-active">
+							<span class="configurator__item-name">Тип ткани</span>
+							<span class="configurator__item-count-options">35 опции доступно</span>
+						</button>
+						<div class="configurator__item-body spollers__body">
+							<div class="configurator__search-material">
+								<div class="configurator__search-outer">
+									<input type="text" placeholder="Найти ткань" class="configurator__search-input">
+									<input type="submit" value="" class="configurator__search-submit">
+								</div>
+								<div class="configurator__select-material">
+									<select name="form-1">
+										<option value="1" selected>Материал</option>
+										<option value="2">Материал №2</option>
+										<option value="3">Материал №3</option>
+										<option value="4">Материал №4</option>
+									</select>
+								</div>
+							</div>
+							<div class="configurator__bookmarks">
+								<a href="" class="configurator__bookmarks-link _active"><span>Основной</span> <sup>235</sup></a>
+								<a href="" class="configurator__bookmarks-link"><span>Компаньон</span> <sup>18</sup></a>
+							</div>
+							<div class="configurator__selected-material">
+								<span>Выбрано:</span>
+								<a href="">
+									<picture><source srcset="img/content/material-3-small.webp" type="image/webp"><img src="img/content/material-3-small.png"></picture>
+									Название ткани
+								</a>
+							</div>
+							<div class="configurator__body-subtitle">
+								Velutto - Велютто (велюр)
+							</div>
+							<div class="configurator__grid _col-6 _gap-12 _mb-35">
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-1.webp" type="image/webp"><img src="img/content/material-1.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-2.webp" type="image/webp"><img src="img/content/material-2.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-3.webp" type="image/webp"><img src="img/content/material-3.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-4.webp" type="image/webp"><img src="img/content/material-4.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-5.webp" type="image/webp"><img src="img/content/material-5.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-6.webp" type="image/webp"><img src="img/content/material-6.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-1.webp" type="image/webp"><img src="img/content/material-1.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-2.webp" type="image/webp"><img src="img/content/material-2.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-3.webp" type="image/webp"><img src="img/content/material-3.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-4.webp" type="image/webp"><img src="img/content/material-4.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-5.webp" type="image/webp"><img src="img/content/material-5.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-6.webp" type="image/webp"><img src="img/content/material-6.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-1.webp" type="image/webp"><img src="img/content/material-1.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-2.webp" type="image/webp"><img src="img/content/material-2.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-3.webp" type="image/webp"><img src="img/content/material-3.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-4.webp" type="image/webp"><img src="img/content/material-4.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+							</div>
+							<div class="configurator__body-subtitle">
+								Velutto - Велютто (велюр)
+							</div>
+							<div class="configurator__grid _col-6 _gap-12">
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-1.webp" type="image/webp"><img src="img/content/material-1.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-2.webp" type="image/webp"><img src="img/content/material-2.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-3.webp" type="image/webp"><img src="img/content/material-3.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-4.webp" type="image/webp"><img src="img/content/material-4.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-5.webp" type="image/webp"><img src="img/content/material-5.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-6.webp" type="image/webp"><img src="img/content/material-6.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-1.webp" type="image/webp"><img src="img/content/material-1.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-2.webp" type="image/webp"><img src="img/content/material-2.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-3.webp" type="image/webp"><img src="img/content/material-3.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-4.webp" type="image/webp"><img src="img/content/material-4.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-5.webp" type="image/webp"><img src="img/content/material-5.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-6.webp" type="image/webp"><img src="img/content/material-6.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-1.webp" type="image/webp"><img src="img/content/material-1.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-2.webp" type="image/webp"><img src="img/content/material-2.png" alt="spare-image-2"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-3.webp" type="image/webp"><img src="img/content/material-3.png" alt="spare-image-3"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="img/content/material-1-big.png">
+										<picture><source srcset="img/content/material-4.webp" type="image/webp"><img src="img/content/material-4.png" alt="spare-image-1"></picture>
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="configurator__item spollers__item">
+						<button type="button" data-spoller class="configurator__item-title spollers__title">
+							<span class="configurator__item-name">Размеры</span>
+						</button>
+						<div class="configurator__item-body spollers__body">
+							<div class="mobile-filter__range-subtitle">Длина, см</div>
+							<div class="mobile-filter__range-slider-inputs">
+								от
+								<input type="text" placeholder="0" class="mobile-filter__input">
+								<span style="margin-left: auto;">до</span>
+								<input type="text" placeholder="0" class="mobile-filter__input">
+							</div>
+							<div class="mobile-filter__range-subtitle">Ширина, см</div>
+							<div class="mobile-filter__range-slider-inputs">
+								от
+								<input type="text" placeholder="0" class="mobile-filter__input">
+								<span style="margin-left: auto;">до</span>
+								<input type="text" placeholder="0" class="mobile-filter__input">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="configurator__footer">
+					<div class="configurator__old-price">9 370 ₽</div>
+					<div class="configurator__price">
+						<div class="configurator__current-price">6 890 ₽</div>
+						<div class="configurator__price-economy">
+							<img src="img/icons/economy-green.svg">
+							<span class="configurator__economy-outer">Выгода 1799 руб (4%)</span>
+						</div>
+					</div>
+					<button class="configurator__apply btn _yellow">
+						Применить
+					</button>
+					<button class="configurator__reset btn">
+						Сбросить все
+					</button>
+				</div>
+			</section>
+			<section class="edit-product">
+				<div class="edit-product__title">
+					Изменить товар
+					<button class="edit-product__close close-btn"></button>
+				</div>
+				<div>
+					<div class="edit-product__grid _col-2 _gap-30 _mb-35">
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image" data-srcbig="img/content/material-1-big.png">
+								<picture><source srcset="img/content/edit-product-1.webp" type="image/webp"><img src="img/content/edit-product-1.png" alt="-image-1"></picture>
+							</a>
+							<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+							<a href="" class="edit-product__spare-price ">236 522 ₽</a>
+							<button class="edit-product__selected _active btn _yellow">
+								Выбрано
+								<span>-</span>
+							</button>
+						</div>
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image " data-srcbig="img/content/material-1-big.png">
+								<picture><source srcset="img/content/edit-product-1.webp" type="image/webp"><img src="img/content/edit-product-1.png" alt="-image-2"></picture>
+							</a>
+							<a href="" class="configurator__spare-name">Название товара</a>
+							<a href="" class="edit-product__spare-price ">23 658 ₽</a>
+							<button class="edit-product__selected btn _yellow">
+								Выбрать
+								<span>+</span>
+							</button>
+						</div>
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image" data-srcbig="img/content/material-1-big.png">
+								<picture><source srcset="img/content/edit-product-1.webp" type="image/webp"><img src="img/content/edit-product-1.png" alt="-image-3"></picture>
+							</a>
+							<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+							<a href="" class="edit-product__spare-price ">3 658 ₽</a>
+							<button class="edit-product__selected btn _yellow">
+								Выбрать
+								<span>+</span>
+							</button>
+						</div>
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image" data-srcbig="img/content/material-1-big.png">
+								<picture><source srcset="img/content/edit-product-1.webp" type="image/webp"><img src="img/content/edit-product-1.png" alt="-image-1"></picture>
+							</a>
+							<a href="" class="configurator__spare-name">Название товара</a>
+							<a href="" class="edit-product__spare-price ">236 522 ₽</a>
+							<button class="edit-product__selected btn _yellow">
+								Выбрать
+								<span>+</span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1021,14 +1400,14 @@
 					<div class="kit-pagination swiper-pagination"></div>
 				</div>
 			</section>
-			<section class="slider-4items">
+			<section class="products-slider">
 				<div class="__container">
 					<div class="slider-head">
 						<div class="content-section__h2">Готовые решения</div>
 					</div>
-					<div class="slider-4items__slider swiper slider-4items__slider-1">
-						<div class="slider-4items__wrapper swiper-wrapper">
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+					<div class="products-slider__slider-1 swiper">
+						<div class="products-slider__wrapper swiper-wrapper">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner product-swiper _height-270-180">
 										<div class="product-swiper__slider swiper" data-mousemove-swipe="0">
@@ -1161,7 +1540,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<a href="" class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/kit-img-1.webp" type="image/webp"><img src="img/content/kit-img-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
@@ -1272,7 +1651,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner product-swiper _height-270-180">
 										<div class="product-swiper__slider swiper" data-mousemove-swipe="1">
@@ -1394,7 +1773,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="slider-4items">
+			<section class="products-slider">
 				<div class="__container">
 					<div class="slider-head">
 						<div class="content-section__h2">Похожие товары</div>
@@ -1407,9 +1786,9 @@
 								</svg></button>
 						</div>
 					</div>
-					<div class="slider-4items__slider swiper slider-4items__slider-2">
-						<div class="slider-4items__wrapper swiper-wrapper">
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+					<div class="products-slider__slider-2 swiper">
+						<div class="products-slider__wrapper swiper-wrapper">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
@@ -1515,7 +1894,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-2" class="product__image-src swiper-lazy"></picture>
@@ -1619,7 +1998,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-3" class="product__image-src swiper-lazy"></picture>
@@ -1738,7 +2117,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-14.webp" type="image/webp"><img src="img/content/product-14.png" alt="product-4" class="product__image-src swiper-lazy"></picture>
@@ -1848,7 +2227,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-15.webp" type="image/webp"><img src="img/content/product-15.png" alt="product-5" class="product__image-src swiper-lazy"></picture>
@@ -1954,11 +2333,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-pagination swiper-pagination-2"></div>
+						<div class="swiper-pagination pagination-slider-2"></div>
 					</div>
 				</div>
 			</section>
-			<section class="slider-4items">
+			<section class="products-slider">
 				<div class="__container">
 					<div class="slider-head _tags">
 						<div class="content-section__h2 _mb-25-20">С этим товаром покупают</div>
@@ -1977,9 +2356,9 @@
 								</svg></button>
 						</div>
 					</div>
-					<div class="slider-4items__slider swiper slider-4items__slider-3">
-						<div class="slider-4items__wrapper swiper-wrapper">
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+					<div class="products-slider__slider-3 swiper">
+						<div class="products-slider__wrapper swiper-wrapper">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
@@ -2085,7 +2464,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-6.webp" type="image/webp"><img src="img/content/product-6.png" alt="product-2" class="product__image-src swiper-lazy"></picture>
@@ -2189,7 +2568,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-7.webp" type="image/webp"><img src="img/content/product-7.png" alt="product-3" class="product__image-src swiper-lazy"></picture>
@@ -2308,7 +2687,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-8.webp" type="image/webp"><img src="img/content/product-8.png" alt="product-4" class="product__image-src swiper-lazy"></picture>
@@ -2418,7 +2797,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="slider-4items__slide swiper-slide product _max-width-440">
+							<div class="product swiper-slide  _max-width-440">
 								<div class="product__image">
 									<div class="product__image-inner _height-270-180">
 										<picture><source srcset="img/content/product-9.webp" type="image/webp"><img src="img/content/product-9.png" alt="product-5" class="product__image-src swiper-lazy"></picture>
@@ -2524,7 +2903,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-pagination swiper-pagination-3"></div>
+						<div class="swiper-pagination pagination-slider-3"></div>
 					</div>
 				</div>
 			</section>
@@ -2859,7 +3238,7 @@
 			</div>
 		</footer>
 		</div>
-		<script src="js/app.min.js?_v=20230524104020"></script>
+		<script src="js/app.min.js?_v=20230524170958"></script>
 </body>
 
 </html>

@@ -2372,17 +2372,15 @@ hr {
   display: none;
 }
 
-._header-scroll .header-main__container {
+._header-scroll .header-main {
   position: fixed;
+  height: 85px;
   top: 0;
-  left: 50%;
-  width: 100%;
   z-index: 9;
   background-color: #fff;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 85px;
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+  width: 100%;
 }
 
 ._header-scroll .icon-menu {
@@ -2814,7 +2812,7 @@ hr {
   fill: #FFCA1F;
 }
 
-.slider-4items._grey-bg {
+.products-slider._grey-bg {
   background-color: #f6f6f6;
 }
 
@@ -7211,19 +7209,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1.375rem;
   }
 
-  .slider-4items {
+  .products-slider {
     margin-top: 5rem;
   }
 
-  .slider-4items {
+  .products-slider {
     margin-bottom: 5rem;
   }
 
-  .slider-4items._grey-bg {
+  .products-slider._grey-bg {
     padding-top: 3.75rem;
   }
 
-  .slider-4items._grey-bg {
+  .products-slider._grey-bg {
     padding-bottom: 5rem;
   }
 
@@ -8399,7 +8397,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background-color: transparent;
   }
 
-  ._header-scroll .header-main__container {
+  ._header-scroll .header-main {
     height: 55px;
     bottom: 0;
     top: auto;
@@ -8961,12 +8959,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-right: 15px;
   }
 
-  .slider-4items .__container {
+  .products-slider .__container {
     padding-right: 0;
   }
 
-  .slider-4items .slider-head,
-  .slider-4items .swiper-pagination {
+  .products-slider .slider-head,
+  .products-slider .swiper-pagination {
     padding-right: 15px;
   }
 
@@ -9851,19 +9849,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1rem;
   }
 
-  .slider-4items {
+  .products-slider {
     margin-top: 2.5rem;
   }
 
-  .slider-4items {
+  .products-slider {
     margin-bottom: 2.5rem;
   }
 
-  .slider-4items._grey-bg {
+  .products-slider._grey-bg {
     padding-top: 1.875rem;
   }
 
-  .slider-4items._grey-bg {
+  .products-slider._grey-bg {
     padding-bottom: 2.5rem;
   }
 
@@ -11801,49 +11799,49 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @supports (margin-top: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
-    .slider-4items {
+    .products-slider {
       margin-top: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem );
     }
 }
 
 @supports not (margin-top: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
-    .slider-4items {
+    .products-slider {
       margin-top: calc(2.5rem + 2.5 * (100vw - 20rem) / 94.375);
     }
 }
 
 @supports (margin-bottom: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
-    .slider-4items {
+    .products-slider {
       margin-bottom: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem );
     }
 }
 
 @supports not (margin-bottom: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
-    .slider-4items {
+    .products-slider {
       margin-bottom: calc(2.5rem + 2.5 * (100vw - 20rem) / 94.375);
     }
 }
 
 @supports (padding-top: clamp( 1.875rem , 1.4776490066rem  +  1.9867549669vw , 3.75rem )) {
-    .slider-4items._grey-bg {
+    .products-slider._grey-bg {
       padding-top: clamp( 1.875rem , 1.4776490066rem  +  1.9867549669vw , 3.75rem );
     }
 }
 
 @supports not (padding-top: clamp( 1.875rem , 1.4776490066rem  +  1.9867549669vw , 3.75rem )) {
-    .slider-4items._grey-bg {
+    .products-slider._grey-bg {
       padding-top: calc(1.875rem + 1.875 * (100vw - 20rem) / 94.375);
     }
 }
 
 @supports (padding-bottom: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
-    .slider-4items._grey-bg {
+    .products-slider._grey-bg {
       padding-bottom: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem );
     }
 }
 
 @supports not (padding-bottom: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
-    .slider-4items._grey-bg {
+    .products-slider._grey-bg {
       padding-bottom: calc(2.5rem + 2.5 * (100vw - 20rem) / 94.375);
     }
 }

@@ -6304,7 +6304,7 @@
                     clickable: true
                 }
             });
-            if (document.querySelector(".slider-4items__slider-1")) new core(".slider-4items__slider-1", {
+            if (document.querySelector(".products-slider__slider-1")) new core(".products-slider__slider-1", {
                 modules: [ Navigation, Pagination, Lazy ],
                 observer: true,
                 observeParents: true,
@@ -6320,11 +6320,11 @@
                     nextEl: ".swiper-button-next-slider-1"
                 },
                 pagination: {
-                    el: ".swiper-pagination-1",
+                    el: ".pagination-slider-1",
                     clickable: true
                 }
             });
-            if (document.querySelector(".slider-4items__slider-2")) new core(".slider-4items__slider-2", {
+            if (document.querySelector(".products-slider__slider-2")) new core(".products-slider__slider-2", {
                 modules: [ Navigation, Pagination, Lazy ],
                 observer: true,
                 observeParents: true,
@@ -6340,11 +6340,11 @@
                     nextEl: ".swiper-button-next-slider-2"
                 },
                 pagination: {
-                    el: ".swiper-pagination-2",
+                    el: ".pagination-slider-2",
                     clickable: true
                 }
             });
-            if (document.querySelector(".slider-4items__slider-3")) new core(".slider-4items__slider-3", {
+            if (document.querySelector(".products-slider__slider-3")) new core(".products-slider__slider-3", {
                 modules: [ Navigation, Pagination, Lazy ],
                 observer: true,
                 observeParents: true,
@@ -6360,7 +6360,7 @@
                     nextEl: ".swiper-button-next-slider-3"
                 },
                 pagination: {
-                    el: ".swiper-pagination-3",
+                    el: ".pagination-slider-3",
                     clickable: true
                 }
             });
@@ -6431,7 +6431,7 @@
                             const idAttr = sliderElement.getAttribute("data-mousemove-swipe");
                             const sliderItem = productSwiper[idAttr];
                             const parentElement = targetElement.closest(".product__image");
-                            const sliderLength = sliderItem.slides.length;
+                            const sliderLength = sliderItem ? sliderItem.slides.length : 0;
                             if (sliderLength > 1) {
                                 const sliderWidth = sliderItem.width;
                                 const sliderPath = Math.round(sliderWidth / sliderLength);
