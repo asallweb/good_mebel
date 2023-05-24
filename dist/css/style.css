@@ -5826,13 +5826,13 @@ hr {
 }
 
 .configurator__apply {
-  width: 100%;
+  width: 100% !important;
   font-size: 16px;
   border-radius: 12px;
 }
 
 .configurator__reset {
-  width: 100%;
+  width: 100% !important;
   text-decoration: underline;
   height: 25px;
   margin-top: 15px;
