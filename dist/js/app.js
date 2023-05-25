@@ -6413,8 +6413,13 @@
             });
             if (document.querySelector(".product-swiper__slider")) {
                 const productSwiper = new core(".product-swiper__slider", {
-                    modules: [ EffectFade, Pagination ],
+                    modules: [ EffectFade, Pagination, Lazy ],
                     effect: "fade",
+                    preloadImages: false,
+                    lazy: {
+                        loadPrevNext: true,
+                        loadPrevNextAmount: 1
+                    },
                     fadeEffect: {
                         crossFade: true
                     },
@@ -6538,6 +6543,11 @@
                     direction: "vertical",
                     slidesPerView: 6,
                     spaceBetween: 20,
+                    preloadImages: false,
+                    lazy: {
+                        loadPrevNext: true,
+                        loadPrevNextAmount: 1
+                    },
                     navigation: {
                         nextEl: ".product-slider__next",
                         prevEl: ".product-slider__prev"
@@ -6551,6 +6561,11 @@
                     slidesPerView: 1,
                     spaceBetween: 32,
                     mousewheel: true,
+                    preloadImages: false,
+                    lazy: {
+                        loadPrevNext: true,
+                        loadPrevNextAmount: 1
+                    },
                     navigation: {
                         nextEl: ".product-slider__next",
                         prevEl: ".product-slider__prev"
