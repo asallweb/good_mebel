@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230526105800">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230526120342">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -3331,8 +3331,8 @@
 					</div>
 					<div class="feedback-slider-pagination swiper-pagination"></div>
 				</div>
-				<button class="feedback-slider__all btn _yellow">
-					Смотреть все отзывы
+				<button class="feedback-slider__all btn _yellow" data-popup="#leave-feedback">
+					Написать отзыв
 					<svg width="14" height="8">
 						<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
 					</svg>
@@ -3554,14 +3554,86 @@
 							</span>
 						</div>
 						<div class="popup__form-field _mb-0">
-							<input type="submit" value="Перезвоните мне" class="btn _yellow">
+							<input type="submit" value="Перезвоните мне" class="btn _yellow _fz-16">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="leave-feedback" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text">
+						<div class="popup__title">Оставить отзыв</div>
+						<div class="popup__2col">
+							<div class="popup__form-field">
+								<label>Ваше имя</label>
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="popup__form-field">
+								<label>Ваша оценка</label>
+								<div class="popup__rating rating">
+									<a href="" class="rating__star _active">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#svg-star"></use>
+										</svg>
+									</a>
+									<a href="" class="rating__star _active">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#svg-star"></use>
+										</svg>
+									</a>
+									<a href="" class="rating__star _active">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#svg-star"></use>
+										</svg>
+									</a>
+									<a href="" class="rating__star _active">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#svg-star"></use>
+										</svg>
+									</a>
+									<a href="" class="rating__star">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#svg-star"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="popup__2col">
+							<div class="popup__form-field">
+								<label>Телефон</label>
+								<input type="text" placeholder="+7(" class="phone-validation">
+							</div>
+							<div class="popup__form-field">
+								<label>Е-mail</label>
+								<input type="text" name="" placeholder="Ваш e-mail">
+							</div>
+						</div>
+						<div class="popup__form-field">
+							<textarea placeholder="Ваш отзыв"></textarea>
+						</div>
+
+						<div class="popup__form-accept">
+							<input type="checkbox">
+							<span>
+								Я соглашаюсь на <a href="">обработку персональных данных</a>
+							</span>
+						</div>
+						<div class="popup__2col">
+							<div class="popup__form-field _mb-0">
+								<input type="submit" value="Отправить отзыв" class="btn _yellow _fz-16">
+							</div>
+							<img src="img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		</div>
-		<script src="js/app.min.js?_v=20230526105800"></script>
+		<script src="js/app.min.js?_v=20230526120342"></script>
 </body>
 
 </html>
