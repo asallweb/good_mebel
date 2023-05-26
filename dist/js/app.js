@@ -9043,6 +9043,14 @@ PERFORMANCE OF THIS SOFTWARE.
             for (let i = 0; i < cityLinks.length; i++) cityLinks[i].style.display = "block";
             popupSearchNoResults.style.display = "none";
         }));
+        const phoneInputs = document.querySelectorAll(".phone-validation");
+        phoneInputs.forEach((input => {
+            input.addEventListener("input", (() => {
+                let phoneNumber = input.value;
+                phoneNumber = phoneNumber.replace(/\D/g, "");
+                input.value = phoneNumber;
+            }));
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
