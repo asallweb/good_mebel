@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230525081344">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230526102609">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +48,7 @@
 								<use xlink:href="img/icons/icons.svg#svg-location"></use>
 							</svg>
 							Ваш город:
-							<a href="#" class="header-top__city-choose">Москва</a>
+							<a href="#" data-popup="#city-choose" class="header-top__city-choose">Москва</a>
 						</div>
 						<div class="header-top__menu">
 							<a href="">О фабрике</a>
@@ -126,7 +126,7 @@
 						</div>
 						<div class="header-main__contact">
 							<a href="tel:+74951542377" class="header-main__phone">+7(495) 154-23-77</a>
-							<button class="header-main__call">Заказать обратный звонок</button>
+							<button class="header-main__call" data-popup="#request-call">Заказать обратный звонок</button>
 						</div>
 					</div>
 				</div>
@@ -1736,7 +1736,7 @@
 			<section class="products-slider _grey-bg">
 				<div class="__container">
 					<div class="slider-head">
-						<div class="content-section__h2 _min-width-100p _mb-25-20">Подобрано для вас</div>
+						<div class="content-section__h2 _min-width-100 _mb-25-20">Подобрано для вас</div>
 						<div class="slider-head__toggler toggler">
 							<button class="toggler__btn btn _active">Хиты продаж</button>
 							<button class="toggler__btn btn">Новинки</button>
@@ -4210,8 +4210,89 @@
 				</div>
 			</div>
 		</footer>
+		<div id="city-choose" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text">
+						<div class="popup__title">Укажите свой город</div>
+						<div class="popup__search-form">
+							<input type="text" class="popup__search-input" placeholder="Укажите город">
+							<button type="submit" class="popup__search-submit"><svg width="17" height="17">
+									<use xlink:href="img/icons/icons.svg#svg-search"></use>
+								</svg></button>
+							<button type="submit" class="popup__search-clear close-btn"></button>
+						</div>
+						<div class="popup__search-example">
+							<span>Например:</span>
+							<a href="">Санкт-Петербург</a>
+						</div>
+						<span class="popup__search-noresults">По вашему запросу ничего не найдено</span>
+						<div class="popup__city-list">
+							<a href=""><b>Москва</b></a>
+							<a href="">Санкт-Петербург</a>
+							<a href="">Краснодар</a>
+							<a href="">Благовещенск</a>
+							<a href="">Владимир</a>
+							<a href="">Волгоград</a>
+							<a href="">Воронеж</a>
+							<a href="">Екатеринбург</a>
+							<a href="">Казань</a>
+							<a href="">Калуга</a>
+							<a href="">Комсомольск-на-Амуре</a>
+							<a href="">Махачкала</a>
+							<a href="">Нижний Новгород</a>
+							<a href="">Новосибирск</a>
+							<a href="">Пермь</a>
+							<a href="">Пятигорск</a>
+							<a href="">Ростов-на-Дону</a>
+							<a href="">Рязань</a>
+							<a href="">Сочи</a>
+							<a href="">Тверь</a>
+							<a href="">Тольятти</a>
+							<a href="">Тула</a>
+							<a href="">Тюмень</a>
+							<a href="">Ульяновск</a>
+							<a href="">Уссурийск</a>
+							<a href="">Уфа</a>
+							<a href="">Челябинск</a>
+							<a href="">Якутск</a>
+							<a href="">Ярославль</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="request-call" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content _max-width-450">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text">
+						<div class="popup__title">Закажите звонок</div>
+						<div class="_fz-13 _fw-300 _mb-25-20">Это быстро - мы перезваниваем в течение 5 минут. Режим работы call-центра: c 09:00 до 22:00</div>
+						<div class="popup__form-field">
+							<label>Ваше имя</label>
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="popup__form-field">
+							<label>Телефон</label>
+							<input type="text" placeholder="+7(" class="phone-validation">
+						</div>
+						<div class="popup__form-accept">
+							<input type="checkbox">
+							<span>
+								Я соглашаюсь на <a href="">обработку персональных данных</a>
+							</span>
+						</div>
+						<div class="popup__form-field _mb-0">
+							<input type="submit" value="Перезвоните мне" class="btn _yellow">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230525081344"></script>
+	<script src="js/app.min.js?_v=20230526102609"></script>
 </body>
 
 </html>
