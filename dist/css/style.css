@@ -986,6 +986,13 @@ body::after {
   padding: 12px 15px;
   height: 100px;
   width: 100%;
+  resize: none;
+}
+
+.popup__text .select__title {
+  border-radius: 12px;
+  border: 1px solid #e1dfdf;
+  padding: 9px 0;
 }
 
 .popup__search-input {
@@ -2369,6 +2376,7 @@ hr {
 }
 
 .header-top__city {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2399,6 +2407,69 @@ hr {
 
 .header-top__city-choose:hover {
   color: #0391a2;
+}
+
+.header-top__city-popup {
+  width: 215px;
+  height: 105px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  -webkit-box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.16);
+  padding: 24px 20px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.header-top__city-popup._active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+}
+
+.header-top__city-popup-title {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.header-top__city-popup-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__city-popup-buttons .btn {
+  width: auto;
+  height: 30px;
+  padding: 0 12px;
+  font-weight: 300;
+}
+
+.header-top__city-popup-buttons .btn._white {
+  color: #028c9c;
+}
+
+.header-top__city-popup-buttons .btn._white:hover {
+  color: #028c9c;
 }
 
 .header-top__menu {

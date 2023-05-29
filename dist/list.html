@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230526120342">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230529102107">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,6 +49,13 @@
 							</svg>
 							Ваш город:
 							<a href="#" data-popup="#city-choose" class="header-top__city-choose">Москва</a>
+							<div class="header-top__city-popup _active">
+								<div class="header-top__city-popup-title">Ваш регион: Москва?</div>
+								<div class="header-top__city-popup-buttons">
+									<button class="header-top__city-popup-yes btn _yellow">Да</button>
+									<button class="btn _white" data-popup="#city-choose">Выбрать другой</button>
+								</div>
+							</div>
 						</div>
 						<div class="header-top__menu">
 							<a href="">О фабрике</a>
@@ -4117,13 +4124,11 @@
 							<span>Бесплатно для жителей России</span>
 						</div>
 						<div class="footer-main__tools">
-							<a href="" class="footer-main__tools-item">
-								<svg width="18" height="19">
-									<use xlink:href="img/icons/icons.svg#svg-setting"></use>
-								</svg>
-								Гуд сервис
-							</a>
-							<a href="" class="footer-main__tools-item">
+							<!-- <a href="" class="footer-main__tools-item">
+						<svg width="18" height="19"><use xlink:href="img/icons/icons.svg#svg-setting"></use></svg>
+						Гуд сервис
+					</a> -->
+							<a href="" class="footer-main__tools-item" data-popup="#leave-message">
 								<svg width="20" height="20">
 									<use xlink:href="img/icons/icons.svg#svg-chat"></use>
 								</svg>
@@ -4363,8 +4368,79 @@
 				</div>
 			</div>
 		</div>
+		<div id="leave-message" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text">
+						<div class="popup__title">Отправить сообщение</div>
+						<div class="popup__2col">
+							<div class="popup__form-field">
+								<label>Ваш город</label>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Москва</option>
+									<option value="2">Город №2</option>
+									<option value="3">Город №3</option>
+									<option value="4">Город №4</option>
+								</select>
+							</div>
+							<div class="popup__form-field">
+								<label>Адресат сообщения</label>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Служба поддрежки</option>
+									<option value="2">Опция №2</option>
+									<option value="3">Опция №3</option>
+									<option value="4">Опция №4</option>
+								</select>
+							</div>
+						</div>
+						<div class="popup__2col">
+							<div class="popup__form-field">
+								<label>Ваше имя</label>
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="popup__form-field">
+								<label>Телефон</label>
+								<input type="text" placeholder="+7(" class="phone-validation">
+							</div>
+						</div>
+						<div class="popup__2col">
+							<div class="popup__form-field">
+								<label>Е-mail</label>
+								<input type="text" name="" placeholder="Ваш e-mail">
+							</div>
+							<div class="popup__form-field">
+								<label>Тема сообщения</label>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Вопрос</option>
+									<option value="2">Вопрос №2</option>
+									<option value="3">Вопрос №3</option>
+									<option value="4">Вопрос №4</option>
+								</select>
+							</div>
+						</div>
+						<div class="popup__form-field">
+							<textarea placeholder="Ваше сообщение или вопрос"></textarea>
+						</div>
+
+						<div class="popup__form-accept">
+							<input type="checkbox">
+							<span>
+								Я соглашаюсь на <a href="">обработку персональных данных</a>
+							</span>
+						</div>
+						<div class="popup__2col">
+							<div class="popup__form-field _mb-0">
+								<input type="submit" value="Отправить сообщение" class="btn _yellow _fz-16">
+							</div>
+							<img src="img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230526120342"></script>
+	<script src="js/app.min.js?_v=20230529102107"></script>
 </body>
 
 </html>

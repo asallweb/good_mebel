@@ -9051,6 +9051,11 @@ PERFORMANCE OF THIS SOFTWARE.
                 input.value = phoneNumber;
             }));
         }));
+        const headerTopCityPopup = document.querySelector(".header-top__city-popup");
+        const headerTopCityPopupYes = document.querySelector(".header-top__city-popup-yes");
+        if (headerTopCityPopupYes) headerTopCityPopupYes.addEventListener("click", (() => {
+            headerTopCityPopup.classList.toggle("_active");
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
