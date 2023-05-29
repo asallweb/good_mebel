@@ -8948,10 +8948,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 const spareImageRect = spareImage.getBoundingClientRect();
                 const bigImageRect = bigImage.getBoundingClientRect();
                 const spareImageRight = spareImageRect.right + 10;
-                spareImageRect.left, bigImageRect.width;
                 const windowWidth = window.innerWidth;
-                window.innerHeight;
-                spareContainer.getBoundingClientRect();
                 bigImage.style.opacity = "1";
                 if (spareImageRight + bigImageRect.width <= windowWidth) bigImage.style.left = "calc(100% + 10px)"; else {
                     bigImage.style.left = "auto";
@@ -8963,52 +8960,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 if (bigImage) bigImage.parentNode.removeChild(bigImage);
             }));
         }));
-        const configuratorBtns = document.querySelectorAll(".product-detail__show-configurator");
-        const configurator = document.querySelector(".configurator");
-        const configuratorCloseBtn = document.querySelector(".configurator__close");
-        function closeConfigurator() {
-            configurator.classList.remove("_active");
-            document.body.style.overflow = "visible";
-        }
-        if (configuratorBtns && configurator && configuratorCloseBtn) {
-            configuratorBtns.forEach((configuratorBtn => {
-                configuratorBtn.addEventListener("click", (event => {
-                    event.preventDefault();
-                    document.body.style.overflow = "hidden";
-                    configurator.classList.add("_active");
-                }));
-            }));
-            document.addEventListener("click", (event => {
-                const isClickInside = configurator.contains(event.target) || [ ...configuratorBtns ].some((btn => btn === event.target));
-                if (!isClickInside) closeConfigurator();
-            }));
-            configuratorCloseBtn.addEventListener("click", (() => {
-                closeConfigurator();
-            }));
-        }
-        const editProductBtns = document.querySelectorAll(".show-edit-product");
-        const editProduct = document.querySelector(".edit-product");
-        const editProductCloseBtn = document.querySelector(".edit-product__close");
-        function closeeditProduct() {
-            editProduct.classList.remove("_active");
-            document.body.style.overflow = "visible";
-        }
-        if (editProductBtns && editProduct && editProductCloseBtn) {
-            editProductBtns.forEach((editProductBtn => {
-                editProductBtn.addEventListener("click", (event => {
-                    event.preventDefault();
-                    document.body.style.overflow = "hidden";
-                    editProduct.classList.add("_active");
-                }));
-            }));
-            document.addEventListener("click", (event => {
-                const isClickInsideE = editProduct.contains(event.target) || [ ...editProductBtns ].some((btn => btn === event.target));
-                if (!isClickInsideE) closeeditProduct();
-            }));
-            editProductCloseBtn.addEventListener("click", (() => {
-                closeeditProduct();
-            }));
-        }
         const popupSearchInputCity = document.querySelector(".popup__search-input");
         const popupSearchSubmit = document.querySelector(".popup__search-submit");
         const popupSearchClear = document.querySelector(".popup__search-clear");
