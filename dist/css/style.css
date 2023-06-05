@@ -3626,7 +3626,7 @@ body::after {
   position: fixed;
   height: 85px;
   top: 0;
-  z-index: 9;
+  z-index: 10;
   background-color: #fff;
   -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
           box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
@@ -6748,6 +6748,15 @@ body::after {
 }
 
 .catalog__primary-link._dropdown:hover svg {
+  fill: #0391a2;
+}
+
+.catalog__primary-link._dropdown._active {
+  background-color: transparent !important;
+  color: #0391a2;
+}
+
+.catalog__primary-link._dropdown._active svg {
   fill: #0391a2;
 }
 
