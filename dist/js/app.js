@@ -9067,7 +9067,7 @@ PERFORMANCE OF THIS SOFTWARE.
             const showMenuId = event.target.dataset.showmenuid;
             const menu = document.querySelector(".catalog__secondary");
             const menuInner = document.querySelectorAll(".catalog__secondary-inner");
-            menu.style.display = "block";
+            menu.classList.add("_active");
             menuInner.forEach((block => {
                 block.classList.remove("_active");
                 menuInner.forEach((block => {
@@ -9082,7 +9082,7 @@ PERFORMANCE OF THIS SOFTWARE.
             button.addEventListener("click", (() => {
                 const parent = button.closest(".catalog__secondary-inner");
                 parent.classList.remove("_active");
-                menu.style.display = "none";
+                menu.classList.remove("_active");
             }));
         }));
         document.addEventListener("DOMContentLoaded", (function() {
