@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230529135612">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230605120534">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<section class="wrapper">
-		<header class="header" data-scroll="40">
+		<header class="header" data-scroll="4">
 			<div class="header-top">
 				<div class="header-top__container">
 					<div class="header-top__col">
@@ -84,16 +84,17 @@
 			<div class="header-main">
 				<div class="header-main__container">
 					<div class="header-main__col">
-						<button type="button" class="menu__icon icon-menu">
+						<button type="button" class="icon-menu">
 							<span></span>
 							<span class="icon-text">Каталог</span>
 						</button>
 						<a href="" class="header-main__logo"><img src="img/icons/main-logo.svg" alt=""></a>
 						<div class="header-main__catalog">
-							<button class="header-main__catalog-button btn _blue">
-								<svg width="15" height="17">
+							<button class="header-main__catalog-button show-catalog-btn btn _blue">
+								<svg class="header-main__catalog-button-icon" width="15" height="17">
 									<use xlink:href="img/icons/icons.svg#svg-catalog"></use>
 								</svg>
+								<span class="close-icon"></span>
 								Каталог
 							</button>
 						</div>
@@ -119,7 +120,7 @@
 								</svg>
 								<span class="header-main__button-count">3</span>
 							</a>
-							<a href="#" data-popup="#busket-side" class="header-main__button _bag">
+							<a href="#" data-popup="#busket-modal" class="header-main__button _bag">
 								<svg width="22" height="25">
 									<use xlink:href="img/icons/icons.svg#svg-bag"></use>
 								</svg>
@@ -2863,7 +2864,7 @@
 				</div>
 			</div>
 		</footer>
-		<div id="city-choose" aria-hidden="true" class="popup">
+		<section id="city-choose" aria-hidden="true" class="popup">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="close-btn popup__close"></button>
@@ -2915,8 +2916,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="request-call" aria-hidden="true" class="popup">
+		</section>
+		<section id="request-call" aria-hidden="true" class="popup">
 			<div class="popup__wrapper">
 				<div class="popup__content _max-width-450">
 					<button data-close type="button" class="close-btn popup__close"></button>
@@ -2943,8 +2944,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="leave-feedback" aria-hidden="true" class="popup">
+		</section>
+		<section id="leave-feedback" aria-hidden="true" class="popup">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="close-btn popup__close"></button>
@@ -3015,8 +3016,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="leave-message" aria-hidden="true" class="popup">
+		</section>
+		<section id="leave-message" aria-hidden="true" class="popup">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="close-btn popup__close"></button>
@@ -3086,14 +3087,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<section id="configurator-side" aria-hidden="true" class="popup _side ">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="configurator">
 						<div class="configurator__title _only-mobile">
 							Конфигуратор
-							<button class="configurator__close close-btn"></button>
+							<button data-close type="button" class="popup__close close-btn"></button>
 						</div>
 						<div class="configurator__type">
 							<span>Вид конфигуратора: </span>
@@ -3421,10 +3422,10 @@
 		<section id="edit-product-side" aria-hidden="true" class="popup _side ">
 			<div class="popup__wrapper">
 				<div class="popup__content">
+					<button data-close type="button" class="popup__close close-btn"></button>
 					<div class="edit-product">
 						<div class="edit-product__title">
 							Изменить товар
-							<button class="edit-product__close close-btn"></button>
 						</div>
 						<div>
 							<div class="edit-product__grid _col-2 _gap-30 _mb-35">
@@ -3478,19 +3479,364 @@
 				</div>
 			</div>
 		</section>
-		<section id="busket-side" aria-hidden="true" class="popup _side">
+		<section id="busket-modal" aria-hidden="true" class="popup _side">
 			<div class="popup__wrapper">
 				<div class="popup__content">
-					<div class="busket-side__title">
-						Корзина
-						<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="busket-side">
+						<button data-close type="button" class="popup__close close-btn"></button>
+						<div class="busket-side__title">
+							Корзина
+							<sup>2 товара</sup>
+						</div>
+						<div class="busket-side__body">
+							<div class="busket-side__item">
+								<a href="" class="busket-side__item-image"><picture><source srcset="img/content/busket-side-1.webp" type="image/webp"><img src="img/content/busket-side-1.png" alt=""></picture></a>
+								<div class="busket-side__item-info">
+									<a href="" class="busket-side__item-name">Диван прямой Вита Дизайн 4</a>
+									<div class="busket-side__item-price">
+										<div class="busket-side__current-price">120 690 ₽</div>
+										<div class="busket-side__price-economy">
+											<img src="img/icons/economy-green.svg">
+											<span class="busket-side__economy-outer">- 4%</span>
+										</div>
+										<div class="busket-side__old-price">139 370 ₽</div>
+									</div>
+									<div class="busket-side__tools">
+										<div data-quantity class="quantity">
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<button class="busket-side__remove">
+											<svg width="20" height="21">
+												<use xlink:href="img/icons/icons.svg#svg-remove"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="busket-side__item">
+								<a href="" class="busket-side__item-image"><picture><source srcset="img/content/busket-side-1.webp" type="image/webp"><img src="img/content/busket-side-1.png" alt=""></picture></a>
+								<div class="busket-side__item-info">
+									<a href="" class="busket-side__item-name">Название товара на сайте
+										в несколько строк</a>
+									<div class="busket-side__item-price">
+										<div class="busket-side__current-price">120 690 ₽</div>
+										<div class="busket-side__price-economy">
+											<img src="img/icons/economy-green.svg">
+											<span class="busket-side__economy-outer">- 4%</span>
+										</div>
+										<div class="busket-side__old-price">139 370 ₽</div>
+									</div>
+									<div class="busket-side__tools">
+										<div data-quantity class="quantity">
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<button class="busket-side__remove">
+											<svg width="20" height="21">
+												<use xlink:href="img/icons/icons.svg#svg-remove"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="busket-side__sum-total">
+								<div class="busket-side__sum-total-title">Итого</div>
+								<div class="busket-side__sum-total-delimiter"></div>
+								<div class="busket-side__sum-total-value">120 690 ₽</div>
+							</div>
+							<button class="busket-side__submit btn _yellow">Оформить заказ</button>
+							<button class="busket-side__continue" data-close>Продолжить покупки</button>
+						</div>
+						<div class="busket-side__footer">
+							<div class="slider-head">
+								<div class="content-section__h2">Рекомендуем приобрести</div>
+								<div class="slider-head__navigation">
+									<button type="button" class="swiper-button-prev swiper-button-prev-slider-7"><svg width="12" height="7">
+											<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+										</svg></button>
+									<button type="button" class="swiper-button-next swiper-button-next-slider-7"><svg width="12" height="7">
+											<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+										</svg></button>
+								</div>
+							</div>
+							<div class="products-slider__slider-7 swiper">
+								<div class="products-slider__wrapper swiper-wrapper">
+									<div class="product swiper-slide  _max-width-200">
+										<div class="product__image">
+											<div class="product__image-inner _height-130">
+												<picture><source srcset="img/content/product-1.webp" type="image/webp"><img src="img/content/product-1.png" alt="product-1" class="product__image-src swiper-lazy"></picture>
+											</div>
+										</div>
+										<div class="product__body _pl-0">
+											<div class="product__tag-list tag-list">
+												<div class="product__tag-item tag-list__item">В тренде</div>
+											</div>
+											<div class="product__name">
+												<div class="product__name-top">
+													<a href="" class="product__category-name">Название категории</a>
+												</div>
+												<a href="">Стул Светло-ЗЕЛЕНЫЙ</a>
+											</div>
+											<div class="product__rating">
+												<div class="rating">
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+												</div>
+												<a href="" class="product__count-feedback">(25)</a>
+											</div>
+											<div class="product__price">
+												<span class="product__curent-price">26 890 ₽</span>
+											</div>
+										</div>
+									</div>
+									<div class="product swiper-slide  _max-width-200">
+										<div class="product__image">
+											<div class="product__image-inner _height-130">
+												<picture><source srcset="img/content/product-2.webp" type="image/webp"><img src="img/content/product-2.png" alt="product-2" class="product__image-src swiper-lazy"></picture>
+											</div>
+										</div>
+										<div class="product__body _pl-0">
+											<div class="product__tag-list tag-list"></div>
+											<div class="product__name">
+												<div class="product__name-top">
+													<a href="" class="product__category-name">Название категории</a>
+												</div>
+												<a href="">Диван прямой Лофт (мини) Бирюза</a>
+											</div>
+											<div class="product__rating">
+												<div class="rating">
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+												</div>
+												<a href="" class="product__count-feedback">(25)</a>
+											</div>
+											<div class="product__price">
+												<span class="product__curent-price">26 890 ₽</span>
+											</div>
+										</div>
+									</div>
+									<div class="product swiper-slide  _max-width-200">
+										<div class="product__image">
+											<div class="product__image-inner _height-130">
+												<picture><source srcset="img/content/product-3.webp" type="image/webp"><img src="img/content/product-3.png" alt="product-3" class="product__image-src swiper-lazy"></picture>
+											</div>
+										</div>
+										<div class="product__body _pl-0">
+											<div class="product__tag-list tag-list">
+												<div class="product__tag-item tag-list__item _red">Последняя цена</div>
+											</div>
+											<div class="product__name">
+												<div class="product__name-top">
+													<a href="" class="product__category-name">Название категории</a>
+												</div>
+												<a href="">Диван прямой Маркус Изумруд</a>
+											</div>
+											<div class="product__rating">
+												<div class="rating">
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+												</div>
+												<a href="" class="product__count-feedback">(25)</a>
+											</div>
+											<div class="product__price">
+												<span class="product__curent-price">26 890 ₽</span>
+											</div>
+										</div>
+									</div>
+									<div class="product swiper-slide  _max-width-200">
+										<div class="product__image">
+											<div class="product__image-inner _height-130">
+												<picture><source srcset="img/content/product-4.webp" type="image/webp"><img src="img/content/product-4.png" alt="product-4" class="product__image-src swiper-lazy"></picture>
+											</div>
+										</div>
+										<div class="product__body _pl-0">
+											<div class="product__tag-list tag-list">
+												<div class="product__tag-item tag-list__item _svg-percent">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-percent-in-round"></use>
+													</svg>
+													2 акции
+												</div>
+											</div>
+											<div class="product__name">
+												<div class="product__name-top">
+													<a href="" class="product__category-name">Название категории</a>
+												</div>
+												<a href="">Диван прямой Анита Еллоу</a>
+											</div>
+											<div class="product__rating">
+												<div class="rating">
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+												</div>
+												<a href="" class="product__count-feedback">(25)</a>
+											</div>
+											<div class="product__price">
+												<span class="product__curent-price">26 890 ₽</span>
+											</div>
+										</div>
+									</div>
+									<div class="product swiper-slide  _max-width-200">
+										<div class="product__image">
+											<div class="product__image-inner _height-130">
+												<picture><source srcset="img/content/product-5.webp" type="image/webp"><img src="img/content/product-5.png" alt="product-5" class="product__image-src swiper-lazy"></picture>
+											</div>
+										</div>
+										<div class="product__body _pl-0">
+											<div class="product__tag-list tag-list">
+												<div class="product__tag-item tag-list__item">В тренде</div>
+											</div>
+											<div class="product__name">
+												<div class="product__name-top">
+													<a href="" class="product__category-name">Название категории</a>
+												</div>
+												<a href="">Стул Светло-ЗЕЛЕНЫЙ</a>
+											</div>
+											<div class="product__rating">
+												<div class="rating">
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star _active">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+													<a href="" class="rating__star">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-star"></use>
+														</svg>
+													</a>
+												</div>
+												<a href="" class="product__count-feedback">(25)</a>
+											</div>
+											<div class="product__price">
+												<span class="product__curent-price">26 890 ₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination pagination-slider-7"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		</div>
-		<script src="js/app.min.js?_v=20230529135612"></script>
+		<script src="js/app.min.js?_v=20230605120534"></script>
 </body>
 
 </html>
