@@ -9035,14 +9035,14 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const dropdownMenu = document.querySelector(".catalog__primary-dropdown");
         const dropdownMenuBtn = document.querySelector("._toggle-dropdown");
-        dropdownMenuBtn.addEventListener("click", (function(event) {
+        if (dropdownMenuBtn && dropdownMenu) dropdownMenuBtn.addEventListener("click", (function(event) {
             if (window.innerWidth > 768) {
                 event.preventDefault();
                 dropdownMenu.classList.toggle("_opened");
             }
         }));
         const menuLinks = document.querySelectorAll("[data-showMenuId]");
-        menuLinks.forEach((link => {
+        if (menuLinks) menuLinks.forEach((link => {
             if (window.innerWidth > 768) {
                 if (!link.classList.contains("_toggle-dropdown")) link.addEventListener("mouseover", showMenu);
             } else link.addEventListener("click", showMobileMenu);
@@ -9078,7 +9078,7 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const backButtonList = document.querySelectorAll(".catalog__secondary-back_btn");
         const menu = document.querySelector(".catalog__secondary");
-        backButtonList.forEach((button => {
+        if (backButtonList && menu) backButtonList.forEach((button => {
             button.addEventListener("click", (() => {
                 const parent = button.closest(".catalog__secondary-inner");
                 parent.classList.remove("_active");

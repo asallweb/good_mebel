@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230605120534">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230605133404">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -3835,8 +3835,489 @@
 			</div>
 		</section>
 
+		<nav class="catalog">
+			<div class="__container">
+				<button class="close-btn popup__close close-catalog-btn"></button>
+				<div class="catalog__primary">
+					<div class="catalog__head">
+						<a href="#" data-popup="#city-choose" class="catalog__city">
+							<svg width="13" height="15">
+								<use xlink:href="img/icons/icons.svg#svg-location"></use>
+							</svg>
+							<span>Москва</span>
+						</a>
+						<a href="#" class="catalog__profile">
+							<svg width="10" height="13">
+								<use xlink:href="img/icons/icons.svg#svg-profile"></use>
+							</svg>
+							<span>Личный кабинет</span>
+						</a>
+					</div>
+					<div class="catalog__primary-top-btns">
+						<a href="" class="catalog__primary-link _white _active" data-showMenuId="1">
+							<div class="catalog__primary-link-svg">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="19.058" viewBox="0 0 16 19.058">
+									<defs>
+										<clipPath id="a">
+											<rect width="16" height="19.058" fill="none" />
+										</clipPath>
+									</defs>
+									<g clip-path="url(#a)">
+										<path d="M205.752,17.059h-2.893a1,1,0,0,0,0,2h2.893a3.105,3.105,0,0,0,3.1-3.1V3.1A3.108,3.108,0,0,0,205.747,0l-2.888.013a1,1,0,0,0,0,2L205.752,2a1.1,1.1,0,0,1,1.1,1.1V15.955a1.1,1.1,0,0,1-1.1,1.1Z" transform="translate(-192.855 0)" fill="#ffca1f" />
+										<path d="M.441,32.558A1.039,1.039,0,0,0,1.76,32.4l1.249-1.249V42.377L1.735,41.106a1.014,1.014,0,0,0-1.269-.152A1,1,0,0,0,.3,42.5l1.681,1.679h0a2.88,2.88,0,0,0,1.024.68,2.805,2.805,0,0,0,3-.635L7.73,42.5h0a1,1,0,0,0-.137-1.529,1.04,1.04,0,0,0-1.317.155L5.027,42.377V31.149L6.3,32.423h0a1.014,1.014,0,0,0,1.269.15,1,1,0,0,0,.162-1.544l-1.7-1.681a2.916,2.916,0,0,0-1.024-.677,2.81,2.81,0,0,0-3,.634L.286,31.029a1,1,0,0,0,.155,1.529Z" transform="translate(0.001 -27.212)" fill="#0391a2" />
+									</g>
+								</svg>
+							</div>
+							Мебель на заказ
+						</a>
+						<div class="catalog__primary-dropdown">
+							<a href="" class="catalog__primary-link _toggle-dropdown" data-showMenuId="3">
+								<div class="catalog__primary-link-svg">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="24.609" viewBox="0 0 21.5 24.609">
+										<g transform="translate(-82 -264.696)">
+											<path d="M19.09,18.316,11.426,22.7v-10h0L21.1,7.121a.675.675,0,0,0,.055-1.2L11.1.124a.575.575,0,0,0-.711,0l-10,5.74A.759.759,0,0,0,0,6.52V18.11a.686.686,0,0,0,.328.6l10.059,5.795a.667.667,0,0,0,.711,0l8.684-4.983a.7.7,0,0,0-.692-1.208M10.059,22.7,1.366,17.727v-10L10.059,12.7Zm.711-11.207L2.077,6.52,10.77,1.49l8.638,5.03Z" transform="translate(82 264.695)" fill="#0391a2" />
+											<path d="M458.592,208.484a.668.668,0,0,0-.641.674v6.167a.683.683,0,0,0,1.367,0v-6.13a.723.723,0,0,0-.726-.711" transform="translate(-355.817 65.371)" fill="#f7b905" />
+										</g>
+									</svg>
+								</div>
+								Комнаты
+								<svg width="12" height="9" class="catalog__primary-link-arrow">
+									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+								</svg>
+							</a>
+							<ul class="catalog__primary-dropdown-list">
+								<li>
+									<a href="" class="catalog__primary-link _dropdown" data-showMenuId="1">
+										<div class="catalog__primary-link-svg">
+											<svg width="27" height="22">
+												<use xlink:href="img/icons/icons.svg#svg-menu-icon-9"></use>
+											</svg>
+										</div>
+										Гостиная
+									</a>
+								</li>
+								<li>
+									<a href="" class="catalog__primary-link _dropdown" data-showMenuId="2">
+										<div class="catalog__primary-link-svg">
+											<svg width="22" height="20">
+												<use xlink:href="img/icons/icons.svg#svg-menu-icon-10"></use>
+											</svg>
+										</div>
+										Прихожая
+									</a>
+								</li>
+								<li>
+									<a href="" class="catalog__primary-link _dropdown" data-showMenuId="1">
+										<div class="catalog__primary-link-svg">
+											<svg width="28" height="15">
+												<use xlink:href="img/icons/icons.svg#svg-menu-icon-11"></use>
+											</svg>
+										</div>
+										Спальня
+									</a>
+								</li>
+								<li>
+									<a href="" class="catalog__primary-link _dropdown" data-showMenuId="2">
+										<div class="catalog__primary-link-svg">
+											<svg width="26" height="21">
+												<use xlink:href="img/icons/icons.svg#svg-menu-icon-12"></use>
+											</svg>
+										</div>
+										Кухня
+									</a>
+								</li>
+								<li>
+									<a href="" class="catalog__primary-link _dropdown" data-showMenuId="1">
+										<div class="catalog__primary-link-svg">
+											<svg width="24" height="20">
+												<use xlink:href="img/icons/icons.svg#svg-menu-icon-13"></use>
+											</svg>
+										</div>
+										Детская
+									</a>
+								</li>
+								<li>
+									<a href="" class="catalog__primary-link _dropdown" data-showMenuId="2">
+										<div class="catalog__primary-link-svg">
+											<svg width="26" height="17">
+												<use xlink:href="img/icons/icons.svg#svg-menu-icon-14"></use>
+											</svg>
+										</div>
+										Домашний офис
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="catalog__primary-list">
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="1">
+								<div class="catalog__primary-link-svg">
+									<svg width="30" height="20">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-1"></use>
+									</svg>
+								</div>
+								Диваны и кресла
+							</a>
+						</li>
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="2">
+								<div class="catalog__primary-link-svg">
+									<svg width="22" height="28">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-2"></use>
+									</svg>
+								</div>
+								Шкафы и стелажи
+							</a>
+						</li>
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="1">
+								<div class="catalog__primary-link-svg">
+									<svg width="33" height="23">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-3"></use>
+									</svg>
+								</div>
+								Кровати и матрасы
+							</a>
+						</li>
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="2">
+								<div class="catalog__primary-link-svg">
+									<svg width="33" height="24">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-4"></use>
+									</svg>
+								</div>
+								Комоды и тумбы
+							</a>
+						</li>
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="1">
+								<div class="catalog__primary-link-svg">
+									<svg width="36" height="23">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-5"></use>
+									</svg>
+								</div>
+								Столы и стулья
+							</a>
+						</li>
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="2">
+								<div class="catalog__primary-link-svg">
+									<svg width="30" height="19">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-6"></use>
+									</svg>
+								</div>
+								Садовая мебель
+							</a>
+						</li>
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="1">
+								<div class="catalog__primary-link-svg">
+									<svg width="30" height="30">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-7"></use>
+									</svg>
+								</div>
+								Мебель для детей
+							</a>
+						</li>
+						<li>
+							<a href="" class="catalog__primary-link" data-showMenuId="2">
+								<div class="catalog__primary-link-svg">
+									<svg width="30" height="28">
+										<use xlink:href="img/icons/icons.svg#svg-menu-icon-8"></use>
+									</svg>
+								</div>
+								Аксессуары для дома
+							</a>
+						</li>
+					</ul>
+					<div class="catalog__footer">
+						<ul class="catalog__footer-pages-list">
+							<li><a href="">О фабрике</a></li>
+							<li><a href="">Отзывы о магазине</a></li>
+							<li><a href="">Оплата и доставка</a></li>
+							<li><a href="">Галарея тканей</a></li>
+							<li><a href="">Мебель в кредит</a></li>
+							<li><a href="">Блог</a></li>
+							<li><a href="">Акции</a></li>
+							<li><a href="">Как с нами связаться</a></li>
+							<li><a href="">Наши реквизиты</a></li>
+						</ul>
+						<div class="catalog__footer-title">Интернет магазин</div>
+						<a href="tel:+74951542377" class="footer-main__info-item _phone">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+							</svg>
+							+7 (495) 154-23-77
+						</a>
+						<div class="footer-main__info-item _schedule">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-clock"></use>
+							</svg>
+							Ежедневно с 9:30 до 21:30
+						</div>
+						<div class="catalog__footer-title _mt-25">Шоу-рум</div>
+						<div class="footer-main__info-item _adress">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-location"></use>
+							</svg>
+							ул. Велозаводская, д. 13, стр. 1, здание Велозаводского Рынка, цокольный этаж, павильон 315
+						</div>
+						<a href="tel:+74951542377" class="footer-main__info-item _phone">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+							</svg>
+							+7 (495) 154-23-77
+						</a>
+						<div class="footer-main__info-item _schedule">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-clock"></use>
+							</svg>
+							Ежедневно с 9:30 до 21:30
+						</div>
+						<div class="footer-main__yandex">
+							<picture><source srcset="img/content/yandex.webp" type="image/webp"><img src="img/content/yandex.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<div class="footer-bottom__column">© 2008-2023 «Good-Mebel» интернет-магазин мебели</div>
+						<div class="footer-bottom__column"><a href="">Политика конфиденциальности</a></div>
+						<div class="footer-bottom__column _links">
+							<a href="">Публичная оферта</a>
+							<a href="">Карта сайта</a>
+						</div>
+						<div class="footer-bottom__column _socials">
+							<span>Мы в соц.сетях:</span>
+							<a href="" class="social-link">
+								<svg width="14" height="9">
+									<use xlink:href="img/icons/icons.svg#svg-vk"></use>
+								</svg>
+							</a>
+							<a href="" class="social-link">
+								<svg width="14" height="12">
+									<use xlink:href="img/icons/icons.svg#svg-tg"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__secondary">
+					<div class="catalog__secondary-inner _active" data-catalogID="1">
+						<div class="catalog__secondary-body">
+							<div class="catalog__secondary-title">
+								<button class="catalog__secondary-back_btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+									</svg>
+								</button>
+								Диваны и кресла
+							</div>
+							<div class="catalog__secondary-subtitle">
+								<svg width="17" height="17">
+									<use xlink:href="img/icons/icons.svg#svg-akciya"></use>
+								</svg>
+								Распродажа
+							</div>
+							<div class="catalog__group">
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Диваны по виду</a></li>
+										<li><a href="" class="catalog__link">Прямые диваны</a></li>
+										<li><a href="" class="catalog__link">Угловые диваны</a></li>
+										<li><a href="" class="catalog__link">Модульные диваны</a></li>
+										<li><a href="" class="catalog__link">Диваны-кровати</a></li>
+										<li><a href="" class="catalog__link _all">Все диваны</a></li>
+									</ul>
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Диваны по механизму</a></li>
+										<li><a href="" class="catalog__link">Аккордеон</a></li>
+										<li><a href="" class="catalog__link">Книжка</a></li>
+										<li><a href="" class="catalog__link">Еврокнижка</a></li>
+										<li><a href="" class="catalog__link">Выкатной</a></li>
+										<li><a href="" class="catalog__link _all">Все диваны</a></li>
+									</ul>
+								</div>
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Диваны по назначению</a></li>
+										<li><a href="" class="catalog__link">Офисные диваны</a></li>
+										<li><a href="" class="catalog__link">Детские диваны</a></li>
+										<li><a href="" class="catalog__link">Кухонные диваны</a></li>
+										<li><a href="" class="catalog__link">Кожаные диваны</a></li>
+									</ul>
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Кресла по механизму</a></li>
+										<li><a href="" class="catalog__link">Раскладные</a></li>
+										<li><a href="" class="catalog__link">Аккордеон</a></li>
+									</ul>
+								</div>
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Кресла по виду</a></li>
+										<li><a href="" class="catalog__link">Кресло</a></li>
+										<li><a href="" class="catalog__link">Кресло-кровать</a></li>
+										<li><a href="" class="catalog__link">Кресло-мешок</a></li>
+										<li><a href="" class="catalog__link _all">Все кресла</a></li>
+									</ul>
+								</div>
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Пуфы по виду</a></li>
+										<li><a href="" class="catalog__link">Пуфы по виду</a></li>
+										<li><a href="" class="catalog__link">Пуф</a></li>
+										<li><a href="" class="catalog__link">Банкетка</a></li>
+										<li><a href="" class="catalog__link _all">Все пуфы</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__secondary-side">
+							<a href="" class="catalog__bnr-img"><picture><source srcset="img/content/image-bnr-5.webp" type="image/webp"><img src="img/content/image-bnr-5.png" alt=""></picture></a>
+							<a href="" class="catalog__bnr-img"><picture><source srcset="img/content/image-bnr-4.webp" type="image/webp"><img src="img/content/image-bnr-4.png" alt=""></picture></a>
+						</div>
+					</div>
+					<div class="catalog__secondary-inner" data-catalogID="2">
+						<div class="catalog__secondary-body">
+							<div class="catalog__secondary-title">
+								<button class="catalog__secondary-back_btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+									</svg>
+								</button>
+								Мебель на заказ
+							</div>
+							<div class="catalog__group">
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Кухни</a></li>
+										<li><a href="" class="catalog__link">Название стиля</a></li>
+										<li><a href="" class="catalog__link">Еще одно название</a></li>
+										<li><a href="" class="catalog__link">Третье название</a></li>
+										<li><a href="" class="catalog__link">Четвертое название</a></li>
+										<li><a href="" class="catalog__link _all">Посмотреть все</a></li>
+									</ul>
+								</div>
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Шкафы</a></li>
+										<li><a href="" class="catalog__link">Распашные</a></li>
+										<li><a href="" class="catalog__link">Шкафы-купе</a></li>
+										<li><a href="" class="catalog__link">Гардеробные</a></li>
+										<li><a href="" class="catalog__link">Прихожие</a></li>
+										<li><a href="" class="catalog__link">Стенки</a></li>
+									</ul>
+								</div>
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Комоды и тумбы</a></li>
+									</ul>
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Кровати и матрасы</a></li>
+									</ul>
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Столы и стулья</a></li>
+									</ul>
+								</div>
+								<div class="catalog__group-column">
+									<ul class="catalog__list">
+										<li><a href="" class="catalog__link _title">Диваны и кресла</a></li>
+										</u>
+										<ul class="catalog__list">
+											<li><a href="" class="catalog__link _title">Мягкие панели</a></li>
+										</ul>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__secondary-side">
+							<a href="" class="catalog__bnr-img"><picture><source srcset="img/content/image-bnr-3.webp" type="image/webp"><img src="img/content/image-bnr-3.png" alt=""></picture></a>
+						</div>
+					</div>
+					<div class="catalog__secondary-inner" data-catalogID="3">
+						<div class="catalog__secondary-body">
+							<div class="catalog__secondary-title">
+								<button class="catalog__secondary-back_btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+									</svg>
+								</button>
+								Комнаты
+							</div>
+							<div class="catalog__group">
+								<div class="catalog__group-column">
+									<ul class="catalog__primary-dropdown-list">
+										<li>
+											<a href="" class="catalog__primary-link _dropdown">
+												<div class="catalog__primary-link-svg">
+													<svg width="27" height="22">
+														<use xlink:href="img/icons/icons.svg#svg-menu-icon-9"></use>
+													</svg>
+												</div>
+												Гостиная
+											</a>
+										</li>
+										<li>
+											<a href="" class="catalog__primary-link _dropdown">
+												<div class="catalog__primary-link-svg">
+													<svg width="22" height="20">
+														<use xlink:href="img/icons/icons.svg#svg-menu-icon-10"></use>
+													</svg>
+												</div>
+												Прихожая
+											</a>
+										</li>
+										<li>
+											<a href="" class="catalog__primary-link _dropdown">
+												<div class="catalog__primary-link-svg">
+													<svg width="28" height="15">
+														<use xlink:href="img/icons/icons.svg#svg-menu-icon-11"></use>
+													</svg>
+												</div>
+												Спальня
+											</a>
+										</li>
+										<li>
+											<a href="" class="catalog__primary-link _dropdown">
+												<div class="catalog__primary-link-svg">
+													<svg width="26" height="21">
+														<use xlink:href="img/icons/icons.svg#svg-menu-icon-12"></use>
+													</svg>
+												</div>
+												Кухня
+											</a>
+										</li>
+										<li>
+											<a href="" class="catalog__primary-link _dropdown">
+												<div class="catalog__primary-link-svg">
+													<svg width="24" height="20">
+														<use xlink:href="img/icons/icons.svg#svg-menu-icon-13"></use>
+													</svg>
+												</div>
+												Детская
+											</a>
+										</li>
+										<li>
+											<a href="" class="catalog__primary-link _dropdown">
+												<div class="catalog__primary-link-svg">
+													<svg width="26" height="17">
+														<use xlink:href="img/icons/icons.svg#svg-menu-icon-14"></use>
+													</svg>
+												</div>
+												Домашний офис
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__secondary-side">
+							<a href="" class="catalog__bnr-img"><picture><source srcset="img/content/image-bnr-3.webp" type="image/webp"><img src="img/content/image-bnr-3.png" alt=""></picture></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
 		</div>
-		<script src="js/app.min.js?_v=20230605120534"></script>
+		<script src="js/app.min.js?_v=20230605133404"></script>
 </body>
 
 </html>
