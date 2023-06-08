@@ -6986,6 +6986,25 @@
                     }
                 });
             }
+            if (document.querySelector(".zakaz-sections__slider")) new core(".zakaz-sections__slider", {
+                modules: [ Pagination, Navigation, Lazy ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                navigation: {
+                    prevEl: ".zakaz-sections-prev",
+                    nextEl: ".zakaz-sections-next"
+                },
+                pagination: {
+                    el: ".zakaz-sections-pagination"
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();

@@ -2066,8 +2066,20 @@ hr {
   font-size: 16px;
 }
 
+._fz-20 {
+  font-size: 20px;
+}
+
 ._fw-300 {
   font-weight: 300;
+}
+
+._color-white {
+  color: #fff;
+}
+
+._color-black {
+  color: #000;
 }
 
 body::after {
@@ -3130,7 +3142,7 @@ body::after {
 }
 
 .busket-side__submit {
-  width: 100%;
+  width: 100% !important;
   height: 50px;
   font-size: 16px;
 }
@@ -3146,6 +3158,10 @@ body::after {
 
 .busket-side__footer {
   padding: 30px 0 0 30px;
+}
+
+.busket-side .product__image-inner img {
+  height: 110px;
 }
 
 .busket-side .content-section__h2 {
@@ -6960,6 +6976,108 @@ body::after {
   display: none;
 }
 
+.zakaz-sections__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.zakaz-sections .item {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.zakaz-sections .item._2x2 {
+  -ms-grid-column-span: 2;
+  grid-column: span 2/auto;
+}
+
+.zakaz-sections .item__img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+.zakaz-sections .item__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.zakaz-sections .item__img::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+  opacity: 0.5;
+}
+
+.zakaz-sections .item__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.zakaz-sections .item__count {
+  height: 25px;
+  border-radius: 5px;
+  background: #f7b905;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  color: #000;
+  padding: 0 19px;
+}
+
+.zakaz-sections .item__title {
+  color: #fff;
+  margin-top: auto;
+}
+
+.zakaz-sections .item__title sup {
+  font-weight: 500;
+  color: #0391a2;
+}
+
+.zakaz-sections .item__btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -8898,6 +9016,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .catalog__secondary-title {
     font-size: 1.625rem;
   }
+
+  .zakaz-sections .item__title {
+    font-size: 1.75rem;
+  }
+
+  .zakaz-sections .item__title {
+    margin-bottom: 2.1875rem;
+  }
+
+  .zakaz-sections .item__title sup {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -9626,6 +9756,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @media (max-width: 1080px) {
   .product-slider__images {
     width: 100%;
+  }
+
+  .zakaz-sections .item {
+    -ms-grid-column-span: 2;
+    grid-column: span 2/auto;
+  }
+
+  .zakaz-sections .item__content {
+    padding: 15px;
   }
 }
 
@@ -11741,6 +11880,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .catalog__secondary-title {
     font-size: 1rem;
+  }
+
+  .zakaz-sections .item__title {
+    font-size: 1.25rem;
+  }
+
+  .zakaz-sections .item__title {
+    margin-bottom: 1.25rem;
+  }
+
+  .zakaz-sections .item__title sup {
+    font-size: 0.75rem;
   }
 }
 
@@ -15106,6 +15257,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 1rem , 0.8675496689rem  +  0.6622516556vw , 1.625rem )) {
     .catalog__secondary-title {
       font-size: calc(1rem + 0.625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 1.25rem , 1.1440397351rem  +  0.5298013245vw , 1.75rem )) {
+    .zakaz-sections .item__title {
+      font-size: clamp( 1.25rem , 1.1440397351rem  +  0.5298013245vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.1440397351rem  +  0.5298013245vw , 1.75rem )) {
+    .zakaz-sections .item__title {
+      font-size: calc(1.25rem + 0.5 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 1.0513245033rem  +  0.9933774834vw , 2.1875rem )) {
+    .zakaz-sections .item__title {
+      margin-bottom: clamp( 1.25rem , 1.0513245033rem  +  0.9933774834vw , 2.1875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 1.0513245033rem  +  0.9933774834vw , 2.1875rem )) {
+    .zakaz-sections .item__title {
+      margin-bottom: calc(1.25rem + 0.9375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.6970198675rem  +  0.2649006623vw , 1rem )) {
+    .zakaz-sections .item__title sup {
+      font-size: clamp( 0.75rem , 0.6970198675rem  +  0.2649006623vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6970198675rem  +  0.2649006623vw , 1rem )) {
+    .zakaz-sections .item__title sup {
+      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 94.375);
     }
 }
 }
