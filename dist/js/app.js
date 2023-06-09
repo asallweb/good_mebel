@@ -7005,6 +7005,25 @@
                     el: ".zakaz-sections-pagination"
                 }
             });
+            if (document.querySelector(".projects__slider")) new core(".projects__slider", {
+                modules: [ Pagination, Navigation, Lazy ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                navigation: {
+                    prevEl: ".projects-prev",
+                    nextEl: ".projects-next"
+                },
+                pagination: {
+                    el: ".projects-pagination"
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();

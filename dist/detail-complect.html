@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230608122915">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230609104927">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -3122,7 +3122,7 @@
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="close-btn popup__close"></button>
-					<div class="popup__text">
+					<div class="popup__text form">
 						<div class="popup__title">Укажите свой город</div>
 						<div class="popup__search-form">
 							<input type="text" class="popup__search-input" placeholder="Укажите город">
@@ -3175,24 +3175,24 @@
 			<div class="popup__wrapper">
 				<div class="popup__content _max-width-450">
 					<button data-close type="button" class="close-btn popup__close"></button>
-					<div class="popup__text">
+					<div class="popup__text form">
 						<div class="popup__title">Закажите звонок</div>
 						<div class="_fz-13 _fw-300 _mb-25-20">Это быстро - мы перезваниваем в течение 5 минут. Режим работы call-центра: c 09:00 до 22:00</div>
-						<div class="popup__form-field">
+						<div class="form__form-field">
 							<label>Ваше имя</label>
 							<input type="text" placeholder="Ваше имя">
 						</div>
-						<div class="popup__form-field">
+						<div class="form__form-field">
 							<label>Телефон</label>
 							<input type="text" placeholder="+7(" class="phone-validation">
 						</div>
-						<div class="popup__form-accept">
+						<div class="form__form-accept">
 							<input type="checkbox">
 							<span>
 								Я соглашаюсь на <a href="">обработку персональных данных</a>
 							</span>
 						</div>
-						<div class="popup__form-field _mb-0">
+						<div class="form__form-field _mb-0">
 							<input type="submit" value="Перезвоните мне" class="btn _yellow _fz-16">
 						</div>
 					</div>
@@ -3203,14 +3203,14 @@
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="close-btn popup__close"></button>
-					<div class="popup__text">
+					<div class="popup__text form">
 						<div class="popup__title">Оставить отзыв</div>
-						<div class="popup__2col">
-							<div class="popup__form-field">
+						<div class="form__2col">
+							<div class="form__form-field">
 								<label>Ваше имя</label>
 								<input type="text" placeholder="Ваше имя">
 							</div>
-							<div class="popup__form-field">
+							<div class="form__form-field">
 								<label>Ваша оценка</label>
 								<div class="popup__rating rating">
 									<a href="" class="rating__star _active">
@@ -3241,28 +3241,28 @@
 								</div>
 							</div>
 						</div>
-						<div class="popup__2col">
-							<div class="popup__form-field">
+						<div class="form__2col">
+							<div class="form__form-field">
 								<label>Телефон</label>
 								<input type="text" placeholder="+7(" class="phone-validation">
 							</div>
-							<div class="popup__form-field">
+							<div class="form__form-field">
 								<label>Е-mail</label>
 								<input type="text" name="" placeholder="Ваш e-mail">
 							</div>
 						</div>
-						<div class="popup__form-field">
+						<div class="form__form-field">
 							<textarea placeholder="Ваш отзыв"></textarea>
 						</div>
 
-						<div class="popup__form-accept">
+						<div class="form__form-accept">
 							<input type="checkbox">
 							<span>
 								Я соглашаюсь на <a href="">обработку персональных данных</a>
 							</span>
 						</div>
-						<div class="popup__2col">
-							<div class="popup__form-field _mb-0">
+						<div class="form__2col">
+							<div class="form__form-field _mb-0">
 								<input type="submit" value="Отправить отзыв" class="btn _yellow _fz-16">
 							</div>
 							<img src="img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10">
@@ -3275,10 +3275,10 @@
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<button data-close type="button" class="close-btn popup__close"></button>
-					<div class="popup__text">
+					<div class="popup__text form">
 						<div class="popup__title">Отправить сообщение</div>
-						<div class="popup__2col">
-							<div class="popup__form-field">
+						<div class="form__2col">
+							<div class="form__form-field">
 								<label>Ваш город</label>
 								<select name="form[]" data-class-modif="form">
 									<option value="1" selected>Москва</option>
@@ -3287,7 +3287,7 @@
 									<option value="4">Город №4</option>
 								</select>
 							</div>
-							<div class="popup__form-field">
+							<div class="form__form-field">
 								<label>Адресат сообщения</label>
 								<select name="form[]" data-class-modif="form">
 									<option value="1" selected>Служба поддрежки</option>
@@ -3297,22 +3297,22 @@
 								</select>
 							</div>
 						</div>
-						<div class="popup__2col">
-							<div class="popup__form-field">
+						<div class="form__2col">
+							<div class="form__form-field">
 								<label>Ваше имя</label>
 								<input type="text" placeholder="Ваше имя">
 							</div>
-							<div class="popup__form-field">
+							<div class="form__form-field">
 								<label>Телефон</label>
 								<input type="text" placeholder="+7(" class="phone-validation">
 							</div>
 						</div>
-						<div class="popup__2col">
-							<div class="popup__form-field">
+						<div class="form__2col">
+							<div class="form__form-field">
 								<label>Е-mail</label>
 								<input type="text" name="" placeholder="Ваш e-mail">
 							</div>
-							<div class="popup__form-field">
+							<div class="form__form-field">
 								<label>Тема сообщения</label>
 								<select name="form[]" data-class-modif="form">
 									<option value="1" selected>Вопрос</option>
@@ -3322,18 +3322,18 @@
 								</select>
 							</div>
 						</div>
-						<div class="popup__form-field">
+						<div class="form__form-field">
 							<textarea placeholder="Ваше сообщение или вопрос"></textarea>
 						</div>
 
-						<div class="popup__form-accept">
+						<div class="form__form-accept">
 							<input type="checkbox">
 							<span>
 								Я соглашаюсь на <a href="">обработку персональных данных</a>
 							</span>
 						</div>
-						<div class="popup__2col">
-							<div class="popup__form-field _mb-0">
+						<div class="form__2col">
+							<div class="form__form-field _mb-0">
 								<input type="submit" value="Отправить сообщение" class="btn _yellow _fz-16">
 							</div>
 							<img src="img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10">
@@ -4571,7 +4571,7 @@
 			</div>
 		</nav>
 		</div>
-		<script src="js/app.min.js?_v=20230608122915"></script>
+		<script src="js/app.min.js?_v=20230609104927"></script>
 </body>
 
 </html>
