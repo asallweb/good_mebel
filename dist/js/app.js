@@ -7024,6 +7024,25 @@
                     el: ".projects-pagination"
                 }
             });
+            if (document.querySelector(".manufacturing__slider")) new core(".manufacturing__slider", {
+                modules: [ Pagination, Navigation, Lazy ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 15,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                navigation: {
+                    prevEl: ".manufacturing-prev",
+                    nextEl: ".manufacturing-next"
+                },
+                pagination: {
+                    el: ".manufacturing-pagination"
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
@@ -9522,6 +9541,21 @@ PERFORMANCE OF THIS SOFTWARE.
                 showBtn.classList.toggle("_active");
                 functions_menuClose();
                 bodyLockToggle();
+            }));
+        }));
+        document.addEventListener("DOMContentLoaded", (function() {
+            var youtubeLazyElements = document.querySelectorAll(".youtube-lazy");
+            youtubeLazyElements.forEach((function(element) {
+                element.addEventListener("click", (function() {
+                    var iframe = this.querySelector("iframe");
+                    var preview = this.querySelector(".youtube-lazy-preview");
+                    if (iframe.getAttribute("data-src")) {
+                        iframe.setAttribute("src", iframe.getAttribute("data-src"));
+                        iframe.removeAttribute("data-src");
+                    }
+                    iframe.style.display = "block";
+                    preview.style.display = "none";
+                }));
             }));
         }));
         window["FLS"] = true;
