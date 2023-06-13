@@ -6895,7 +6895,7 @@
                 }
             });
             if (document.querySelector(".feedback-slider__slider")) new core(".feedback-slider__slider", {
-                modules: [ Pagination, Lazy ],
+                modules: [ Pagination, Navigation, Lazy ],
                 observer: true,
                 observeParents: true,
                 slidesPerView: "auto",
@@ -6905,6 +6905,10 @@
                 lazy: {
                     loadPrevNext: true,
                     loadPrevNextAmount: 1
+                },
+                navigation: {
+                    prevEl: ".feedback-slider-prev",
+                    nextEl: ".feedback-slider-next"
                 },
                 pagination: {
                     el: ".feedback-slider-pagination",
@@ -6986,7 +6990,7 @@
                     }
                 });
             }
-            if (document.querySelector(".zakaz-sections__slider")) new core(".zakaz-sections__slider", {
+            if (document.querySelector(".zakaz-mebel__slider")) new core(".zakaz-mebel__slider", {
                 modules: [ Pagination, Navigation, Lazy ],
                 observer: true,
                 observeParents: true,
@@ -6998,11 +7002,11 @@
                     loadPrevNextAmount: 1
                 },
                 navigation: {
-                    prevEl: ".zakaz-sections-prev",
-                    nextEl: ".zakaz-sections-next"
+                    prevEl: ".zakaz-mebel-prev",
+                    nextEl: ".zakaz-mebel-next"
                 },
                 pagination: {
-                    el: ".zakaz-sections-pagination"
+                    el: ".zakaz-mebel-pagination"
                 }
             });
             if (document.querySelector(".projects__slider")) new core(".projects__slider", {
@@ -9547,12 +9551,14 @@ PERFORMANCE OF THIS SOFTWARE.
             var youtubeLazyElements = document.querySelectorAll(".youtube-lazy");
             youtubeLazyElements.forEach((function(element) {
                 element.addEventListener("click", (function() {
+                    var iframeOuter = this.querySelector(".youtube-lazy-content");
                     var iframe = this.querySelector("iframe");
                     var preview = this.querySelector(".youtube-lazy-preview");
                     if (iframe.getAttribute("data-src")) {
                         iframe.setAttribute("src", iframe.getAttribute("data-src"));
                         iframe.removeAttribute("data-src");
                     }
+                    iframeOuter.style.display = "block";
                     iframe.style.display = "block";
                     preview.style.display = "none";
                 }));

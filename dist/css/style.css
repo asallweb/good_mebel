@@ -468,8 +468,13 @@ h6 {
 }
 
 .spollers {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
 }
 
@@ -1547,14 +1552,17 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .toggler__btn {
   width: auto !important;
   font-weight: 500;
-  border: 1px solid transparent;
-  color: #000;
+  border: 1px solid #0391a2;
+  color: rgba(0, 0, 0, 0.5);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .toggler__btn._active {
@@ -1569,6 +1577,7 @@ h6 {
 
 .toggler__btn:hover {
   border-color: #0391a2;
+  background-color: #f5f5f5;
 }
 
 .tags {
@@ -2153,6 +2162,7 @@ hr {
   height: 100%;
   border-radius: 16px;
   overflow: hidden;
+  display: none;
 }
 
 .youtube-lazy-content iframe {
@@ -4458,11 +4468,14 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
   gap: 12px;
   width: 100%;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  font-weight: 300;
+  font-size: 13px;
 }
 
 .product__personal-size:hover {
@@ -6334,6 +6347,10 @@ body::after {
   margin-top: auto;
 }
 
+.feedback-slider._show2slides .feedback-slider__slide {
+  max-width: 100%;
+}
+
 .feedback-slider__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6723,6 +6740,7 @@ body::after {
   z-index: 9;
   top: 125px;
   visibility: hidden;
+  opacity: 0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -6738,6 +6756,7 @@ body::after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  opacity: 1;
 }
 
 ._body-scroll .catalog {
@@ -7012,7 +7031,7 @@ body::after {
   display: none;
 }
 
-.zakaz-sections__grid {
+.zakaz-mebel__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -7020,33 +7039,33 @@ body::after {
   gap: 20px;
 }
 
-.zakaz-sections .item {
+.zakaz-mebel .item {
   border-radius: 16px;
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 
-.zakaz-sections .item._2x2 {
+.zakaz-mebel .item._2x2 {
   -ms-grid-column-span: 2;
   grid-column: span 2/auto;
 }
 
-.zakaz-sections .item__img {
+.zakaz-mebel .item__img {
   width: 100%;
   height: 100%;
   min-height: 200px;
   position: relative;
 }
 
-.zakaz-sections .item__img img {
+.zakaz-mebel .item__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.zakaz-sections .item__img::after {
+.zakaz-mebel .item__img::after {
   content: "";
   width: 100%;
   height: 50%;
@@ -7059,7 +7078,7 @@ body::after {
   opacity: 0.5;
 }
 
-.zakaz-sections .item__content {
+.zakaz-mebel .item__content {
   position: absolute;
   left: 0;
   top: 0;
@@ -7078,7 +7097,7 @@ body::after {
           align-items: flex-start;
 }
 
-.zakaz-sections .item__count {
+.zakaz-mebel .item__count {
   height: 25px;
   border-radius: 5px;
   background: #f7b905;
@@ -7096,17 +7115,17 @@ body::after {
   padding: 0 19px;
 }
 
-.zakaz-sections .item__title {
+.zakaz-mebel .item__title {
   color: #fff;
   margin-top: auto;
 }
 
-.zakaz-sections .item__title sup {
+.zakaz-mebel .item__title sup {
   font-weight: 500;
   color: #0391a2;
 }
 
-.zakaz-sections .item__btn {
+.zakaz-mebel .item__btn {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -7331,6 +7350,32 @@ body::after {
   font-weight: 300;
   line-height: 1.6;
   color: #000;
+}
+
+.spollers-zamer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.spollers-zamer .spollers {
+  color: #000;
+  width: 50%;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.spollers-zamer .zamer {
+  width: 50%;
+}
+
+.zakaz-kitchen__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 15px;
 }
 
 .swiper {
@@ -9232,6 +9277,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 3.75rem;
   }
 
+  .feedback-slider._show2slides .feedback-slider__slide {
+    width: 55.625rem;
+  }
+
   .feedback-slider__title {
     font-size: 2rem;
   }
@@ -9336,15 +9385,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1.625rem;
   }
 
-  .zakaz-sections .item__title {
+  .zakaz-mebel .item__title {
     font-size: 1.75rem;
   }
 
-  .zakaz-sections .item__title {
+  .zakaz-mebel .item__title {
     margin-bottom: 2.1875rem;
   }
 
-  .zakaz-sections .item__title sup {
+  .zakaz-mebel .item__title sup {
     font-size: 1rem;
   }
 
@@ -9434,6 +9483,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .manufacturing__content p {
     margin-bottom: 1.5625rem;
+  }
+
+  .spollers-zamer {
+    margin-top: 5rem;
+  }
+
+  .spollers-zamer {
+    margin-bottom: 6.25rem;
+  }
+
+  .spollers-zamer .spollers {
+    font-size: 0.9375rem;
+  }
+
+  .zakaz-kitchen {
+    margin-top: 2.5rem;
+  }
+
+  .zakaz-kitchen {
+    margin-bottom: 4.375rem;
+  }
+
+  .zakaz-kitchen__grid {
+    margin-bottom: 4.375rem;
   }
 }
 
@@ -10212,12 +10285,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 100%;
   }
 
-  .zakaz-sections .item {
+  .zakaz-mebel .item {
     -ms-grid-column-span: 2;
     grid-column: span 2/auto;
   }
 
-  .zakaz-sections .item__content {
+  .zakaz-mebel .item__content {
     padding: 15px;
   }
 
@@ -10243,6 +10316,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .zamer {
     height: auto;
+  }
+
+  .spollers-zamer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .spollers-zamer .spollers {
+    width: 100%;
+  }
+
+  .spollers-zamer .zamer {
+    width: 100%;
+  }
+
+  .zakaz-kitchen__grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -11291,6 +11384,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .projects__content {
     width: 100%;
+  }
+
+  .zakaz-kitchen__grid {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -12364,6 +12462,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 1.875rem;
   }
 
+  .feedback-slider._show2slides .feedback-slider__slide {
+    width: 17.5rem;
+  }
+
   .feedback-slider__title {
     font-size: 1.125rem;
   }
@@ -12468,15 +12570,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1rem;
   }
 
-  .zakaz-sections .item__title {
+  .zakaz-mebel .item__title {
     font-size: 1.25rem;
   }
 
-  .zakaz-sections .item__title {
+  .zakaz-mebel .item__title {
     margin-bottom: 1.25rem;
   }
 
-  .zakaz-sections .item__title sup {
+  .zakaz-mebel .item__title sup {
     font-size: 0.75rem;
   }
 
@@ -12566,6 +12668,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .manufacturing__content p {
     margin-bottom: 0.9375rem;
+  }
+
+  .spollers-zamer {
+    margin-top: 2.5rem;
+  }
+
+  .spollers-zamer {
+    margin-bottom: 3.125rem;
+  }
+
+  .spollers-zamer .spollers {
+    font-size: 0.875rem;
+  }
+
+  .zakaz-kitchen {
+    margin-top: 1.875rem;
+  }
+
+  .zakaz-kitchen {
+    margin-bottom: 2.5rem;
+  }
+
+  .zakaz-kitchen__grid {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -15640,6 +15766,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+@supports (width: clamp( 17.5rem , 9.4205298013rem  +  40.3973509934vw , 55.625rem )) {
+    .feedback-slider._show2slides .feedback-slider__slide {
+      width: clamp( 17.5rem , 9.4205298013rem  +  40.3973509934vw , 55.625rem );
+    }
+}
+
+@supports not (width: clamp( 17.5rem , 9.4205298013rem  +  40.3973509934vw , 55.625rem )) {
+    .feedback-slider._show2slides .feedback-slider__slide {
+      width: calc(17.5rem + 38.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
 @supports (font-size: clamp( 1.125rem , 0.9395695364rem  +  0.9271523179vw , 2rem )) {
     .feedback-slider__title {
       font-size: clamp( 1.125rem , 0.9395695364rem  +  0.9271523179vw , 2rem );
@@ -15953,37 +16091,37 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @supports (font-size: clamp( 1.25rem , 1.1440397351rem  +  0.5298013245vw , 1.75rem )) {
-    .zakaz-sections .item__title {
+    .zakaz-mebel .item__title {
       font-size: clamp( 1.25rem , 1.1440397351rem  +  0.5298013245vw , 1.75rem );
     }
 }
 
 @supports not (font-size: clamp( 1.25rem , 1.1440397351rem  +  0.5298013245vw , 1.75rem )) {
-    .zakaz-sections .item__title {
+    .zakaz-mebel .item__title {
       font-size: calc(1.25rem + 0.5 * (100vw - 20rem) / 94.375);
     }
 }
 
 @supports (margin-bottom: clamp( 1.25rem , 1.0513245033rem  +  0.9933774834vw , 2.1875rem )) {
-    .zakaz-sections .item__title {
+    .zakaz-mebel .item__title {
       margin-bottom: clamp( 1.25rem , 1.0513245033rem  +  0.9933774834vw , 2.1875rem );
     }
 }
 
 @supports not (margin-bottom: clamp( 1.25rem , 1.0513245033rem  +  0.9933774834vw , 2.1875rem )) {
-    .zakaz-sections .item__title {
+    .zakaz-mebel .item__title {
       margin-bottom: calc(1.25rem + 0.9375 * (100vw - 20rem) / 94.375);
     }
 }
 
 @supports (font-size: clamp( 0.75rem , 0.6970198675rem  +  0.2649006623vw , 1rem )) {
-    .zakaz-sections .item__title sup {
+    .zakaz-mebel .item__title sup {
       font-size: clamp( 0.75rem , 0.6970198675rem  +  0.2649006623vw , 1rem );
     }
 }
 
 @supports not (font-size: clamp( 0.75rem , 0.6970198675rem  +  0.2649006623vw , 1rem )) {
-    .zakaz-sections .item__title sup {
+    .zakaz-mebel .item__title sup {
       font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 94.375);
     }
 }
@@ -16249,6 +16387,78 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (margin-bottom: clamp( 0.9375rem , 0.8050496689rem  +  0.6622516556vw , 1.5625rem )) {
     .manufacturing__content p {
       margin-bottom: calc(0.9375rem + 0.625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-top: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
+    .spollers-zamer {
+      margin-top: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem );
+    }
+}
+
+@supports not (margin-top: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
+    .spollers-zamer {
+      margin-top: calc(2.5rem + 2.5 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 3.125rem , 2.4627483444rem  +  3.3112582781vw , 6.25rem )) {
+    .spollers-zamer {
+      margin-bottom: clamp( 3.125rem , 2.4627483444rem  +  3.3112582781vw , 6.25rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 3.125rem , 2.4627483444rem  +  3.3112582781vw , 6.25rem )) {
+    .spollers-zamer {
+      margin-bottom: calc(3.125rem + 3.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.8617549669rem  +  0.0662251656vw , 0.9375rem )) {
+    .spollers-zamer .spollers {
+      font-size: clamp( 0.875rem , 0.8617549669rem  +  0.0662251656vw , 0.9375rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.8617549669rem  +  0.0662251656vw , 0.9375rem )) {
+    .spollers-zamer .spollers {
+      font-size: calc(0.875rem + 0.0625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-top: clamp( 1.875rem , 1.7425496689rem  +  0.6622516556vw , 2.5rem )) {
+    .zakaz-kitchen {
+      margin-top: clamp( 1.875rem , 1.7425496689rem  +  0.6622516556vw , 2.5rem );
+    }
+}
+
+@supports not (margin-top: clamp( 1.875rem , 1.7425496689rem  +  0.6622516556vw , 2.5rem )) {
+    .zakaz-kitchen {
+      margin-top: calc(1.875rem + 0.625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .zakaz-kitchen {
+      margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .zakaz-kitchen {
+      margin-bottom: calc(2.5rem + 1.875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .zakaz-kitchen__grid {
+      margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .zakaz-kitchen__grid {
+      margin-bottom: calc(2.5rem + 1.875 * (100vw - 20rem) / 94.375);
     }
 }
 }
