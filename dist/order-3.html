@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230614093624">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230614170447">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,7 +109,7 @@
 					</div>
 					<div class="header-main__col _mobile-search">
 						<div class="header-main__buttons">
-							<a href="#" class="header-main__button _profile">
+							<a href="#" data-popup="#login-modal" class="header-main__button _profile">
 								<svg width="20" height="26">
 									<use xlink:href="img/icons/icons.svg#svg-profile"></use>
 								</svg>
@@ -2754,6 +2754,143 @@
 				</div>
 			</div>
 		</section>
+		<section id="login-modal" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content _max-width-450">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text form">
+						<div class="popup__title">Вход в личный кабинет</div>
+						<div class="form__form-field">
+							<label>E-mail</label>
+							<input type="text" placeholder="Ваш E-mail">
+						</div>
+						<div class="form__form-field">
+							<label>Пароль</label>
+							<input type="password" placeholder="Введите пароль">
+							<a href="javascript:void(0);" class="form__blue-lnk" data-close data-popup="#remember-modal">Напомнить пароль</a>
+						</div>
+						<div class="form__form-field _mb-0 _mt-30">
+							<input type="submit" value="Войти на сайт" class="btn _yellow _fz-16">
+							<button class="form__open-registration btn _fz-16 _mt-20" data-close data-popup="#registration-modal">Регистрация</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="remember-modal" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content _max-width-450">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text form">
+						<div class="popup__title">Напомнить пароль</div>
+						<div class="_fz-13 _mb-10">Укажите е-mail, используемый при регистрации. На ваш адрес придет инструкция по восстановлению пароля</div>
+						<div class="form__form-field">
+							<input type="text" placeholder="Ваш E-mail">
+							<a href="javascript:void(0);" class="form__blue-lnk" data-close data-popup="#login-modal">Вход в личный кабинет</a>
+						</div>
+						<div class="form__form-field _mb-0 _mt-30">
+							<input type="submit" value="Отправить" class="btn _yellow _fz-16">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="registration-modal" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text form">
+						<div class="popup__title">Регистрация на сайте</div>
+						<div class="form__form-field">
+							<label>Ваше ФИО</label>
+							<input type="text" placeholder="Введите ФИО">
+						</div>
+						<div class="form__2col">
+							<div class="form__form-field">
+								<label>E-mail</label>
+								<input type="text" placeholder="Ваш E-mail">
+							</div>
+							<div class="form__form-field">
+								<label>Телефон</label>
+								<input type="text" placeholder="+7(" class="phone-validation">
+							</div>
+						</div>
+						<div class="form__2col">
+							<div class="form__form-field">
+								<label>Пароль</label>
+								<input type="password" placeholder="Ваш пароль">
+							</div>
+							<div class="form__form-field">
+								<label>Подтвердить пароль</label>
+								<input type="password" placeholder="Подтвердить пароль">
+							</div>
+						</div>
+						<div class="form__form-accept" style="margin-top: -5px;">
+							<input type="checkbox">
+							<span>
+								Я соглашаюсь на <a href="">обработку персональных данных</a>
+							</span>
+						</div>
+						<div class="form__2col">
+							<input type="submit" value="Зарегистрироваться" class="btn _yellow _fz-16 _w100p">
+							<a href="javascript:void(0);" class="form__blue-lnk _reg-form-btn" data-close data-popup="#login-modal">Вход в личный кабинет</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="credit-modal" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="close-btn popup__close"></button>
+					<div class="popup__text form">
+						<div class="popup__title">Рассрочка 0-0-6</div>
+						<div class="popup__subtitle">Оплата в рассрочку без комиссии и переплат</div>
+						<div class="credit-popup">
+							<div class="credit-popup__list-mounth">
+								<div class="credit-popup__mounth">
+									<button class="credit-popup__mounth-price _active">2 898 ₽</button>
+									<div class="credit-popup__mounth-name">1-й месяц</div>
+								</div>
+								<div class="credit-popup__mounth">
+									<button class="credit-popup__mounth-price">2 898 ₽</button>
+									<div class="credit-popup__mounth-name">2-й месяц</div>
+								</div>
+								<div class="credit-popup__mounth">
+									<button class="credit-popup__mounth-price">2 898 ₽</button>
+									<div class="credit-popup__mounth-name">3-й месяц</div>
+								</div>
+								<div class="credit-popup__mounth">
+									<button class="credit-popup__mounth-price">2 898 ₽</button>
+									<div class="credit-popup__mounth-name">4-й месяц</div>
+								</div>
+								<div class="credit-popup__mounth">
+									<button class="credit-popup__mounth-price">2 898 ₽</button>
+									<div class="credit-popup__mounth-name">5-й месяц</div>
+								</div>
+								<div class="credit-popup__mounth">
+									<button class="credit-popup__mounth-price">2 898 ₽</button>
+									<div class="credit-popup__mounth-name">6-й месяц</div>
+								</div>
+							</div>
+							<div class="credit-popup__content">
+								<div class="credit-popup__title">Разделите стоимость покупки на 6 равных частей</div>
+								<div class="credit-popup__subtitle _fz-13">Соберите корзину на общую сумму от 40 000 до 200 000 ₽ и выберите способ оплаты "В рассрочку 0-0-6" при оформлении заказа"</div>
+								<div class="form__2col">
+									<button class="credit-popup__busket btn _yellow _fz-16">
+										Добавить в корзину
+										<svg width="15" height="17">
+											<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+										</svg>
+									</button>
+									<img src="img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10 _only-desktop">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<nav class="catalog">
 			<div class="__container">
@@ -3237,7 +3374,7 @@
 			</div>
 		</nav>
 		</div>
-		<script src="js/app.min.js?_v=20230614093624"></script>
+		<script src="js/app.min.js?_v=20230614170447"></script>
 </body>
 
 </html>
