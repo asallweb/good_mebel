@@ -2286,7 +2286,7 @@ hr {
 }
 
 .credit-popup__busket {
-  width: 260px;
+  width: 260px !important;
   height: 50px;
 }
 
@@ -10659,7 +10659,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .credit-popup__busket {
-    width: 100%;
+    width: 100% !important;
   }
 
   .popup {
