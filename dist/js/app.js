@@ -6990,25 +6990,54 @@
                     }
                 });
             }
-            if (document.querySelector(".zakaz-mebel__slider")) new core(".zakaz-mebel__slider", {
-                modules: [ Pagination, Navigation, Lazy ],
-                observer: true,
-                observeParents: true,
-                slidesPerView: 1,
-                spaceBetween: 20,
-                preloadImages: false,
-                lazy: {
-                    loadPrevNext: true,
-                    loadPrevNextAmount: 1
-                },
-                navigation: {
-                    prevEl: ".zakaz-mebel-prev",
-                    nextEl: ".zakaz-mebel-next"
-                },
-                pagination: {
-                    el: ".zakaz-mebel-pagination"
-                }
-            });
+            if (document.querySelector(".zakaz-mebel__slider")) {
+                swiper = new core(".zakaz-mebel__slider", {
+                    modules: [ Pagination, Navigation, Lazy ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    preloadImages: false,
+                    lazy: {
+                        loadPrevNext: true,
+                        loadPrevNextAmount: 1
+                    },
+                    navigation: {
+                        prevEl: ".zakaz-mebel-prev",
+                        nextEl: ".zakaz-mebel-next"
+                    },
+                    pagination: {
+                        el: ".zakaz-mebel-pagination"
+                    }
+                });
+                if (window.innerWidth < 768) swiper.destroy();
+                window.addEventListener("resize", (function() {
+                    if (window.innerWidth > 768) {
+                        if (!swiper) swiper = new core(".zakaz-mebel__slider", {
+                            modules: [ Pagination, Navigation, Lazy ],
+                            observer: true,
+                            observeParents: true,
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                            preloadImages: false,
+                            lazy: {
+                                loadPrevNext: true,
+                                loadPrevNextAmount: 1
+                            },
+                            navigation: {
+                                prevEl: ".zakaz-mebel-prev",
+                                nextEl: ".zakaz-mebel-next"
+                            },
+                            pagination: {
+                                el: ".zakaz-mebel-pagination"
+                            }
+                        });
+                    } else if (swiper) {
+                        swiper.destroy();
+                        swiper = null;
+                    }
+                }));
+            }
             if (document.querySelector(".projects__slider")) new core(".projects__slider", {
                 modules: [ Pagination, Navigation, Lazy ],
                 observer: true,
