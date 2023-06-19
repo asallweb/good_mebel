@@ -4449,6 +4449,7 @@ body::after {
 
 .product__count-feedback {
   text-decoration: underline;
+  font-size: 12px;
   color: #0391a2;
 }
 
@@ -4457,6 +4458,7 @@ body::after {
 }
 
 .product__price {
+  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4514,6 +4516,7 @@ body::after {
 }
 
 .product__production-time {
+  font-size: 12px;
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9005,14 +9008,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     gap: 1.25rem;
   }
 
-  .product__count-feedback {
-    font-size: 0.75rem;
-  }
-
-  .product__price {
-    font-size: 0.75rem;
-  }
-
   .product__curent-price {
     font-size: 1.0625rem;
   }
@@ -9042,10 +9037,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .product__price-economy {
-    font-size: 0.75rem;
-  }
-
-  .product__production-time {
     font-size: 0.75rem;
   }
 
@@ -12304,14 +12295,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     gap: 0.75rem;
   }
 
-  .product__count-feedback {
-    font-size: 0.625rem;
-  }
-
-  .product__price {
-    font-size: 0.625rem;
-  }
-
   .product__curent-price {
     font-size: 0.9375rem;
   }
@@ -12342,10 +12325,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .product__price-economy {
     font-size: 0.6875rem;
-  }
-
-  .product__production-time {
-    font-size: 0.625rem;
   }
 
   .product__production-time {
@@ -14907,30 +14886,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem )) {
-    .product__count-feedback {
-      font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem );
-    }
-}
-
-@supports not (font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem )) {
-    .product__count-feedback {
-      font-size: calc(0.625rem + 0.125 * (100vw - 20rem) / 94.375);
-    }
-}
-
-@supports (font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem )) {
-    .product__price {
-      font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem );
-    }
-}
-
-@supports not (font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem )) {
-    .product__price {
-      font-size: calc(0.625rem + 0.125 * (100vw - 20rem) / 94.375);
-    }
-}
-
 @supports (font-size: clamp( 0.9375rem , 0.9110099338rem  +  0.1324503311vw , 1.0625rem )) {
     .product__curent-price {
       font-size: clamp( 0.9375rem , 0.9110099338rem  +  0.1324503311vw , 1.0625rem );
@@ -15024,18 +14979,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 0.6875rem , 0.6742549669rem  +  0.0662251656vw , 0.75rem )) {
     .product__price-economy {
       font-size: calc(0.6875rem + 0.0625 * (100vw - 20rem) / 94.375);
-    }
-}
-
-@supports (font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem )) {
-    .product__production-time {
-      font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem );
-    }
-}
-
-@supports not (font-size: clamp( 0.625rem , 0.5985099338rem  +  0.1324503311vw , 0.75rem )) {
-    .product__production-time {
-      font-size: calc(0.625rem + 0.125 * (100vw - 20rem) / 94.375);
     }
 }
 
