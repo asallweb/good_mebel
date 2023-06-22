@@ -7605,7 +7605,7 @@ body::after {
 }
 
 .basket__promo-btn {
-  width: 100%;
+  width: 100% !important;
   padding: 0 10px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
