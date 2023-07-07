@@ -7076,6 +7076,37 @@
                     el: ".manufacturing-pagination"
                 }
             });
+            if (document.querySelector(".compare__slider")) new core(".compare__slider", {
+                modules: [ Pagination, Navigation, Lazy ],
+                observer: true,
+                observeParents: true,
+                spaceBetween: 0,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                navigation: {
+                    nextEl: ".compare__slider-next"
+                },
+                pagination: {
+                    el: ".compare__slider-pagination"
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1
+                    },
+                    1080: {
+                        slidesPerView: 2
+                    },
+                    1440: {
+                        slidesPerView: 3
+                    },
+                    1800: {
+                        slidesPerView: 4
+                    }
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
