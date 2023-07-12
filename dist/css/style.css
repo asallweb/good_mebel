@@ -2165,6 +2165,10 @@ hr {
   width: 100% !important;
 }
 
+._bdb-yellow {
+  border-bottom: 2px solid #f7bd13;
+}
+
 .form__2col {
   display: -ms-grid;
   display: grid;
