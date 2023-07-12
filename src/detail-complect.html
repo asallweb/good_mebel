@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Detail Page Complect"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<a href="">Каталог</a> &mdash;
+					<a href="">Диваны</a> &mdash;
+					<a href="">Диван прямой Малага (Лиссабон) Кантри Грей</a>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1">Модульная спальня Кливленд-1</div>
+				</section>
+				@@include('html/_product-tools.htm',{})
+				<section class="product-detail __container">
+					<div class="product-detail__body">
+						@@include('html/_product-slider-2.htm',{})
+						@@include('html/_complect-table.htm',{})
+						@@include('html/_tabs.htm',{})
+					</div>
+					<div class="product-detail__sidebar" data-da=".product-detail__body, 1280, 1">
+						<div class="product-detail__price">
+							<div class="product-detail__old-price">139 370 ₽</div>
+							<div class="product-detail__current-price">от 123 456 ₽</div>
+							<div class="product-detail__price-economy">
+								<img src="@img/icons/economy-green.svg">
+								<span class="product-detail__economy-outer">Выгода 4799 руб (10%)</span>
+							</div>
+						</div>
+						<div class="product-detail__sidebar-complect">
+							В комлекте 3 предмета <a href="">посмотреть</a>
+						</div>
+						<div class="product-detail__location _mt-20 _mb-20">
+							<svg width="14" height="16"><use xlink:href="img/icons/icons.svg#svg-location"></use></svg>
+							Город:
+							<a href="#" class="product-detail__location-city">Москва</a>
+						</div>
+						<div class="product-detail__delivery-info _mt-20 _mb-20">
+							<svg width="20" height="16"><use xlink:href="@img/icons/icons.svg#svg-delivery"></use></svg>
+							Экспресс-доставка 
+							<div class="info-tooltip">
+								<div class="info-tooltip__icon">?</div>
+								<div class="info-tooltip__body">
+									Краткий описательный текст во всплывающем окне в несколько строк
+									<a href="">Подробнее</a>
+								</div>
+							</div> 
+							привезем за 5 дней <b>700 ₽</b>
+						</div>
+						<div class="product-detail__warranty-info _mt-20 _mb-20">
+							<svg width="16" height="18"><use xlink:href="@img/icons/icons.svg#svg-sertificat"></use></svg>
+							Гарантия фабрики 18 месяцев, возврат 14 дней
+						</div>
+						<button class="product__personal-size _mb-35">
+							<svg width="14" height="14"><use xlink:href="@img/icons/icons.svg#svg-personal-size"></use></svg>
+							Можно изготовить по своим размерам
+						</button>
+						<div class="product-detail__buy-btns _mb-25-20">
+							<button class="btn _yellow _buy">
+								КУПИТЬ
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+								</svg>
+							</button>
+							<button class="product-detail__1click-btn btn">
+								Купить в 1 клик
+							</button>
+						</div>
+						<div class="product-detail__credit _mt-25-20 _mb-25-20" data-popup="#credit-modal">
+							<button class="product-detail__credit-inner">
+								<div class="product-detail__credit-price">50 000 ₽</div>
+								<div class="product-detail__credit-mounth">x 6 месяцев в рассрочку</div>
+							</button>
+						</div>
+						<div class="product-detail__showroom _mt-25-20 _mb-30">
+							<img src="@img/icons/showroom.svg" width="21" height="18">
+							Есть в шоуруме в Москве, <a href="">ТЦ Шоколад</a>
+						</div>
+						<div class="product-detail__color _mt-30 _mb-30">
+							<div class="product-detail__color-title _mb-20">Цвет фасада</div>
+							<div class="product-detail__color-inner _mb-20">
+								<button class="product-detail__color-item _navy-green _active"></button>
+								<button class="product-detail__color-item _navy-blue"></button>
+								<button class="product-detail__color-item _blue"></button>
+								<button class="product-detail__color-item _dark-green"></button>
+								<span>+165</span>
+							</div>
+							<div class="product-detail__color-subtitle">Выбранный цвет фасада</div>
+							<a href="#" class="product-detail__color-choosed" data-popup="#configurator-side">Дуб молочный</a>
+						</div>
+						<div class="product-detail__color _mt-30 _mb-30">
+							<div class="product-detail__color-title _mb-20">Цвет корпуса</div>
+							<div class="product-detail__color-inner _mb-20">
+								<button class="product-detail__color-item _navy-green _active"></button>
+								<button class="product-detail__color-item _navy-blue"></button>
+								<button class="product-detail__color-item _blue"></button>
+								<button class="product-detail__color-item _dark-green"></button>
+								<span>+165</span>
+							</div>
+							<div class="product-detail__color-subtitle">Выбранный цвет корпуса</div>
+							<a href="#" class="product-detail__color-choosed" data-popup="#configurator-side">Ясень Анкор светлый (ИМ)</a>
+						</div>
+						<div class="product-detail__options _mt-30 _mb-30">
+							<div class="product-detail__options-title">Опции</div>
+							<table class="product-detail__options-table _mt-20 _mb-25-20">
+								<tr>
+									<td>Цвет обивки</td>
+									<td>
+										<a href="" class="lnk-icon _blue">
+											<svg width="12" height="12"><use xlink:href="@img/icons/icons.svg#svg-edit"></use></svg>
+											не выбрано
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Механизм</td>
+									<td>еврокнижка</td>
+								</tr>
+								<tr>
+									<td>Гарантия</td>
+									<td>18 месяцев</td>
+								</tr>
+								<tr>
+									<td>Срок изготовления</td>
+									<td>7-10 дней</td>
+								</tr>
+							</table>
+							<a href="" class="product-detail__options-all">Все характеристики</a>
+						</div>
+					</div>
+				</section>
+				<div class="text-btns __container">
+					Устраивает ли вас полнота предоставленной информации о товаре?
+					<button class="text-btns__button btn _yes">Да</button>
+					<button class="text-btns__button btn _no">Нет</button>
+				</div>
+				@@include('html/_kit.htm',{})
+				<section class="products-slider">
+					<div class="__container">
+						<div class="slider-head">
+							<div class="content-section__h2">Готовые решения</div>
+						</div>
+						<div class="products-slider__slider-1 swiper">
+							<div class="products-slider__wrapper swiper-wrapper">
+								@@include('html/products-list/_product-list-slider-4.htm',{})
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="products-slider">
+					<div class="__container">
+						<div class="slider-head">
+							<div class="content-section__h2">Похожие товары</div>
+							<div class="slider-head__navigation">
+								<button type="button" class="swiper-button-prev swiper-button-prev-slider-2"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+								<button type="button" class="swiper-button-next swiper-button-next-slider-2"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+							</div>
+						</div>
+						<div class="products-slider__slider-2 swiper">
+							<div class="products-slider__wrapper swiper-wrapper">
+								@@include('html/products-list/_product-list-slider-5.htm',{})
+							</div>
+							<div class="swiper-pagination pagination-slider-2"></div>
+						</div>
+					</div>
+				</section>
+				<section class="products-slider">
+					<div class="__container">
+						<div class="slider-head _tags">
+							<div class="content-section__h2 _mb-25-20">С этим товаром покупают</div>
+							<div class="slider-head__tags tags _min-width-100 ">
+								<button class="tags__btn btn _active">Название категории</button>
+								<button class="tags__btn btn">Прямые диваны</button>
+								<button class="tags__btn btn">Прямые кожаные диваны</button>
+								<button class="tags__btn btn">Кухонные прямые диваны</button>
+							</div>
+							<div class="slider-head__navigation">
+								<button type="button" class="swiper-button-prev swiper-button-prev-slider-3"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+								<button type="button" class="swiper-button-next swiper-button-next-slider-3"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+							</div>
+						</div>
+						<div class="products-slider__slider-3 swiper">
+							<div class="products-slider__wrapper swiper-wrapper">
+								@@include('html/products-list/_product-list-slider-6.htm',{})
+							</div>
+							<div class="swiper-pagination pagination-slider-3"></div>
+						</div>
+					</div>
+				</section>
+				@@include('html/_feedback-slider.htm',{})
+				@@include('html/_photo-slider.htm',{})
+				<div class="seo-text content-section __container" data-showmore="size" >
+					<div class="content-section__h2 _mb-30">ИНТЕРНЕТ-МАГАЗИН НЕДОРОГОЙ МЕБЕЛИ В МОСКВЕ</div>
+					<div data-showmore-content="190">
+						<p class="_mb-35">Интернет-магазин «Гуд Мебель» – это недорогая корпусная и мягкая мебель от производителя. В нашем распоряжении собственные фабрики полного цикла, выпускающие диваны и кресла, шкафы и стенки, спальни и прихожие.</p>
+						<p class="_mb-35">Кроме того, на страницах сайта вы найдете большой ассортимент мебели других отечественных производителей. Принимая решение о сотрудничестве с новым партнером, мы стремимся не просто расширить каталог, но и повысить качество поставляемой продукции.</p>
+						<p class="_mb-35">Сделать правильный выбор вам помогут подробные описания товаров и детальные фото. Операторы «Гуд Мебель» в любой момент окажут помощь в проектировании внутреннего наполнения шкафа-купе, помогут с комбинацией обивочных материалов для дивана, проконсультируют по работе сайта и навигации по нему. Посмотреть на понравившуюся модель «в живую», убедиться в ее удобстве, ознакомиться с образцами материалов и ценами можно
+						в шоу-руме по адресу ул. Велозаводская, д. 13, стр. 1, здание Велозаводского Рынка, цокольный этаж, павильон 315 (ст. метро "Автозаводская" или "Дубровка" МЦК). Наш интернет-магазин – мебель отличного качества!</p>
+						<p class="_mb-35">Интернет-магазин «Гуд Мебель» – это недорогая корпусная и мягкая мебель от производителя. В нашем распоряжении собственные фабрики полного цикла, выпускающие диваны и кресла, шкафы и стенки, спальни и прихожие.</p>
+						<p class="_mb-35">Кроме того, на страницах сайта вы найдете большой ассортимент мебели других отечественных производителей. Принимая решение о сотрудничестве с новым партнером, мы стремимся не просто расширить каталог, но и повысить качество поставляемой продукции.</p>
+						<p class="">Сделать правильный выбор вам помогут подробные описания товаров и детальные фото. Операторы «Гуд Мебель» в любой момент окажут помощь в проектировании внутреннего наполнения шкафа-купе, помогут с комбинацией обивочных материалов для дивана, проконсультируют по работе сайта и навигации по нему. Посмотреть на понравившуюся модель «в живую», убедиться в ее удобстве, ознакомиться с образцами материалов и ценами можно
+						в шоу-руме по адресу ул. Велозаводская, д. 13, стр. 1, здание Велозаводского Рынка, цокольный этаж, павильон 315 (ст. метро "Автозаводская" или "Дубровка" МЦК). Наш интернет-магазин – мебель отличного качества!</p>
+					</div>
+					<button hidden data-showmore-button type="button" class="show-more _mt-20"><span>Показать еще</span><span>Скрыть</span></button>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

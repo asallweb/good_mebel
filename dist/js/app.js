@@ -6990,52 +6990,39 @@
                 });
             }
             if (document.querySelector(".zakaz-mebel__slider")) {
-                swiper = new core(".zakaz-mebel__slider", {
-                    modules: [ Pagination, Navigation, Lazy ],
-                    observer: true,
-                    observeParents: true,
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    preloadImages: false,
-                    lazy: {
-                        loadPrevNext: true,
-                        loadPrevNextAmount: 1
-                    },
-                    navigation: {
-                        prevEl: ".zakaz-mebel-prev",
-                        nextEl: ".zakaz-mebel-next"
-                    },
-                    pagination: {
-                        el: ".zakaz-mebel-pagination"
-                    }
-                });
-                if (window.innerWidth < 768) swiper.destroy();
-                window.addEventListener("resize", (function() {
+                let init = false;
+                let swiper = false;
+                function swiperCard() {
                     if (window.innerWidth > 768) {
-                        if (!swiper) swiper = new core(".zakaz-mebel__slider", {
-                            modules: [ Pagination, Navigation, Lazy ],
-                            observer: true,
-                            observeParents: true,
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                            preloadImages: false,
-                            lazy: {
-                                loadPrevNext: true,
-                                loadPrevNextAmount: 1
-                            },
-                            navigation: {
-                                prevEl: ".zakaz-mebel-prev",
-                                nextEl: ".zakaz-mebel-next"
-                            },
-                            pagination: {
-                                el: ".zakaz-mebel-pagination"
-                            }
-                        });
+                        if (!init) {
+                            init = true;
+                            swiper = new core(".zakaz-mebel__slider", {
+                                modules: [ Navigation, Pagination, Lazy ],
+                                observer: true,
+                                observeParents: true,
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                                preloadImages: false,
+                                lazy: {
+                                    loadPrevNext: true,
+                                    loadPrevNextAmount: 1
+                                },
+                                navigation: {
+                                    prevEl: ".zakaz-mebel-prev",
+                                    nextEl: ".zakaz-mebel-next"
+                                },
+                                pagination: {
+                                    el: ".zakaz-mebel-pagination"
+                                }
+                            });
+                        }
                     } else if (swiper) {
-                        swiper.destroy();
-                        swiper = null;
+                        swiper.destroy(true, true);
+                        init = false;
                     }
-                }));
+                }
+                swiperCard();
+                window.addEventListener("resize", swiperCard);
             }
             if (document.querySelector(".projects__slider")) new core(".projects__slider", {
                 modules: [ Pagination, Navigation, Lazy ],
@@ -7255,6 +7242,42 @@
                     var compareHfElement = document.querySelector(".compare-mobile-hf");
                     if (scrollPosition >= 270) compareHfElement.classList.add("_show"); else compareHfElement.classList.remove("_show");
                 }));
+            }
+            if (document.querySelector(".collection-gallery__slider")) {
+                let init = false;
+                let swiper = false;
+                function swiperCard() {
+                    if (window.innerWidth >= 1080) {
+                        if (!init) {
+                            init = true;
+                            swiper = new core(".collection-gallery__slider", {
+                                modules: [ Navigation, Pagination, Lazy ],
+                                observer: true,
+                                observeParents: true,
+                                slidesPerView: "auto",
+                                spaceBetween: 15,
+                                preloadImages: false,
+                                lazy: {
+                                    loadPrevNext: true,
+                                    loadPrevNextAmount: 1
+                                },
+                                navigation: {
+                                    prevEl: ".collection-gallery-prev",
+                                    nextEl: ".collection-gallery-next"
+                                },
+                                pagination: {
+                                    el: ".collection-gallery__slider-pagination",
+                                    clickable: true
+                                }
+                            });
+                        }
+                    } else if (swiper) {
+                        swiper.destroy(true, true);
+                        init = false;
+                    }
+                }
+                swiperCard();
+                window.addEventListener("resize", swiperCard);
             }
         }
         window.addEventListener("load", (function(e) {

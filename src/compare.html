@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Сравнение"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<a href="">Сравнение</a>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1">Сравнение товаров</div>
+				</section>
+				<section class="compare-hf">
+					<div class=" __container">
+						<div class="compare-hf__inner">
+							<div class="compare-hf__slider swiper">
+								<div class="compare-hf__wrapper swiper-wrapper">
+									<div class="compare-hf__slide swiper-slide">
+										<div class="compare-hf__slide-image">
+											<img src="@img/content/compare-hf-1.png" alt="compare-hf-1">
+											<a href="" class="compare-hf__close">
+												<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+											</a>
+										</div>
+										<div class="compare-hf__slide-content">
+											<div class="compare-hf__slide-name">Название товара на сайте</div>
+											<div class="compare-hf__slide-price">6 890 ₽</div>
+										</div>
+									</div>
+									<div class="compare-hf__slide swiper-slide">
+										<div class="compare-hf__slide-image">
+											<img src="@img/content/compare-hf-2.png" alt="compare-hf-2">
+											<a href="" class="compare-hf__close">
+												<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+											</a>
+										</div>
+										<div class="compare-hf__slide-content">
+											<div class="compare-hf__slide-name">Название товара на сайте</div>
+											<div class="compare-hf__slide-price">6 890 ₽</div>
+										</div>
+									</div>
+									<div class="compare-hf__slide swiper-slide">
+										<div class="compare-hf__slide-image">
+											<img src="@img/content/compare-hf-3.png" alt="compare-hf-3">
+											<a href="" class="compare-hf__close">
+												<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+											</a>
+										</div>
+										<div class="compare-hf__slide-content">
+											<div class="compare-hf__slide-name">Название товара на сайте</div>
+											<div class="compare-hf__slide-price">6 890 ₽</div>
+										</div>
+									</div>
+									<div class="compare-hf__slide swiper-slide">
+										<div class="compare-hf__slide-image">
+											<img src="@img/content/compare-hf-4.png" alt="compare-hf-4">
+											<a href="" class="compare-hf__close">
+												<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+											</a>
+										</div>
+										<div class="compare-hf__slide-content">
+											<div class="compare-hf__slide-name">Название товара на сайте</div>
+											<div class="compare-hf__slide-price">6 890 ₽</div>
+										</div>
+									</div>
+									<div class="compare-hf__slide swiper-slide">
+										<div class="compare-hf__slide-image">
+											<img src="@img/content/compare-hf-1.png" alt="compare-hf-1">
+											<a href="" class="compare-hf__close">
+												<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+											</a>
+										</div>
+										<div class="compare-hf__slide-content">
+											<div class="compare-hf__slide-name">Название товара на сайте</div>
+											<div class="compare-hf__slide-price">6 890 ₽</div>
+										</div>
+									</div>
+									<div class="compare-hf__slide swiper-slide">
+										<div class="compare-hf__slide-image">
+											<img src="@img/content/compare-hf-2.png" alt="compare-hf-2">
+											<a href="" class="compare-hf__close">
+												<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+											</a>
+										</div>
+										<div class="compare-hf__slide-content">
+											<div class="compare-hf__slide-name">Название товара на сайте</div>
+											<div class="compare-hf__slide-price">6 890 ₽</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="compare-hf__next swiper-button-next"><svg width="12" height="7"><use xlink:href="img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="compare __container">
+					<div class="compare__sidebar">
+						<div class="compare__category">
+							<div class="compare__category-title">Категория</div>
+							<div class="compare__category-select">
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Все товары</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+							<div class="compare__category-checkbox">
+								<input type="checkbox"> Показать только различия
+							</div>
+							<div class="compare__category-footer">
+								<a href="" class="compare__category-clear">Очистить список</a>
+								<a href="" class="compare__category-logo"><img src="@img/icons/main-logo.svg" alt="" width="108"></a>
+							</div>
+						</div>
+						<div class="compare__properties">
+							<div class="compare__properties-item">Коллекция</div>
+							<div class="compare__properties-item">Цвет</div>
+							<div class="compare__properties-item">Форма</div>
+							<div class="compare__properties-item">Ортопедический</div>
+							<div class="compare__properties-item">Основа матраса</div>
+							<div class="compare__properties-item">Состав (с множ. выбором)</div>
+							<div class="compare__properties-item">Чехол</div>
+							<div class="compare__properties-item">Эффект памяти</div>
+							<div class="compare__properties-item">Вес на место</div>
+							<div class="compare__properties-item">Зима-лето</div>
+							<div class="compare__properties-item">Назначение</div>
+						</div>
+					</div>
+					<div class="compare__list">
+						<div class="compare__slider swiper">
+							<div class="compare__wrapper swiper-wrapper">
+								<div class="compare__slide swiper-slide">
+									<div class="compare__product">
+										<div class="compare__product-head">
+											<div class="compare__product-image">
+												<a href="" class="compare__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare__product-1.png" alt="compare__product-1">
+											</div>
+											<div class="compare__product-title">Название товара на сайте</div>
+											<div class="compare__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare__product-properties">
+											<div class="compare__product-properties-item">
+												Название коллекции
+											</div>
+											<div class="compare__product-properties-item">
+												Желтый
+											</div>
+											<div class="compare__product-properties-item">
+												Название параметра
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												Нет
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												80 кг
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												Отдых
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare__slide swiper-slide">
+									<div class="compare__product">
+										<div class="compare__product-head">
+											<div class="compare__product-image">
+												<a href="" class="compare__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare__product-2.png" alt="compare__product-1">
+											</div>
+											<div class="compare__product-title">Название товара на сайте</div>
+											<div class="compare__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare__product-properties">
+											<div class="compare__product-properties-item">
+												Название коллекции
+											</div>
+											<div class="compare__product-properties-item">
+												Желтый
+											</div>
+											<div class="compare__product-properties-item">
+												Название параметра
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												Нет
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												80 кг
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												Отдых
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare__slide swiper-slide">
+									<div class="compare__product">
+										<div class="compare__product-head">
+											<div class="compare__product-image">
+												<a href="" class="compare__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare__product-3.png" alt="compare__product-1">
+											</div>
+											<div class="compare__product-title">Название товара на сайте</div>
+											<div class="compare__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare__product-properties">
+											<div class="compare__product-properties-item">
+												Название коллекции
+											</div>
+											<div class="compare__product-properties-item">
+												Желтый
+											</div>
+											<div class="compare__product-properties-item">
+												Название параметра
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												Нет
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												80 кг
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												Отдых
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare__slide swiper-slide">
+									<div class="compare__product">
+										<div class="compare__product-head">
+											<div class="compare__product-image">
+												<a href="" class="compare__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare__product-4.png" alt="compare__product-1">
+											</div>
+											<div class="compare__product-title">Название товара на сайте</div>
+											<div class="compare__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare__product-properties">
+											<div class="compare__product-properties-item">
+												Название коллекции
+											</div>
+											<div class="compare__product-properties-item">
+												Желтый
+											</div>
+											<div class="compare__product-properties-item">
+												Название параметра
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												Нет
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												80 кг
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												Отдых
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare__slide swiper-slide">
+									<div class="compare__product">
+										<div class="compare__product-head">
+											<div class="compare__product-image">
+												<a href="" class="compare__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare__product-1.png" alt="compare__product-1">
+											</div>
+											<div class="compare__product-title">Название товара на сайте</div>
+											<div class="compare__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare__product-properties">
+											<div class="compare__product-properties-item">
+												Название коллекции
+											</div>
+											<div class="compare__product-properties-item">
+												Желтый
+											</div>
+											<div class="compare__product-properties-item">
+												Название параметра
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												Нет
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												80 кг
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												Отдых
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare__slide swiper-slide">
+									<div class="compare__product">
+										<div class="compare__product-head">
+											<div class="compare__product-image">
+												<a href="" class="compare__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare__product-2.png" alt="compare__product-1">
+											</div>
+											<div class="compare__product-title">Название товара на сайте</div>
+											<div class="compare__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare__product-properties">
+											<div class="compare__product-properties-item">
+												Название коллекции
+											</div>
+											<div class="compare__product-properties-item">
+												Желтый
+											</div>
+											<div class="compare__product-properties-item">
+												Название параметра
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												—
+											</div>
+											<div class="compare__product-properties-item">
+												Нет
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												80 кг
+											</div>
+											<div class="compare__product-properties-item">
+												Да
+											</div>
+											<div class="compare__product-properties-item">
+												Отдых
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="compare__slider-pagination swiper-pagination"></div>
+					</div>
+				</section>
+				<section class="compare-mobile-hf">
+					<div class="compare-mobile-hf__inner">
+						<div class="compare-mobile-hf__slider swiper compare-mobile-hf-1">
+							<div class="compare-mobile-hf__pagination _compare-mobile-hf-1-pagination"></div>
+							<div class="compare-mobile-hf__wrapper swiper-wrapper">
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-1.png" alt="compare-mobile-hf-1">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара на сайте</div>
+										<div class="compare-mobile-hf__slide-price">6 890 ₽</div>
+									</div>
+								</div>
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-2.png" alt="compare-mobile-hf-2">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара</div>
+										<div class="compare-mobile-hf__slide-price">2 890 ₽</div>
+									</div>
+								</div>
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-1.png" alt="compare-mobile-hf-1">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара на сайте</div>
+										<div class="compare-mobile-hf__slide-price">6 890 ₽</div>
+									</div>
+								</div>
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-2.png" alt="compare-mobile-hf-2">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара</div>
+										<div class="compare-mobile-hf__slide-price">2 890 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="compare-mobile-hf__slider swiper compare-mobile-hf-2">
+							<div class="compare-mobile-hf__pagination _compare-mobile-hf-2-pagination"></div>
+							<div class="compare-mobile-hf__wrapper swiper-wrapper">
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-1.png" alt="compare-mobile-hf-1">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара на сайте</div>
+										<div class="compare-mobile-hf__slide-price">6 890 ₽</div>
+									</div>
+								</div>
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-2.png" alt="compare-mobile-hf-2">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара</div>
+										<div class="compare-mobile-hf__slide-price">2 890 ₽</div>
+									</div>
+								</div>
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-1.png" alt="compare-mobile-hf-1">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара на сайте</div>
+										<div class="compare-mobile-hf__slide-price">6 890 ₽</div>
+									</div>
+								</div>
+								<div class="compare-mobile-hf__slide swiper-slide">
+									<div class="compare-mobile-hf__slide-image">
+										<img src="@img/content/compare-mobile-hf-2.png" alt="compare-mobile-hf-2">
+										<a href="" class="compare-mobile-hf__close">
+											<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+										</a>
+									</div>
+									<div class="compare-mobile-hf__slide-content">
+										<div class="compare-mobile-hf__slide-name">Название товара</div>
+										<div class="compare-mobile-hf__slide-price">2 890 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="compare-mobile __container">
+					<div class="compare-mobile__category">
+						<div class="compare-mobile__category-select">
+							<select name="form[]" data-class-modif="form">
+								<option value="1" selected>Все товары</option>
+								<option value="2">Пункт №1</option>
+								<option value="3">Пункт №2</option>
+								<option value="4">Пункт №3</option>
+							</select>
+						</div>
+						<div class="compare-mobile__category-checkbox">
+							<input type="checkbox"> Показать только различия
+						</div>
+					</div>
+					<div class="compare-mobile__list">
+						<div class="compare-mobile__slider swiper _compare-mobile-1">
+							<div class="compare-mobile__pagination _compare-mobile-1-pagination"></div>
+							<div class="compare-mobile__wrapper swiper-wrapper">
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-1.png" alt="compare-mobile__product-1">
+											</div>
+											<div class="compare-mobile__product-title">Название товара на сайте</div>
+											<div class="compare-mobile__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Коллекция
+												</div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Цвет
+												</div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Ортопедический
+												</div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-2.png" alt="compare-mobile__product-2">
+											</div>
+											<div class="compare-mobile__product-title">Название товара</div>
+											<div class="compare-mobile__product-price">2 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Коллекция
+												</div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Цвет
+												</div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Ортопедический
+												</div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-1.png" alt="compare-mobile__product-1">
+											</div>
+											<div class="compare-mobile__product-title">Название товара на сайте</div>
+											<div class="compare-mobile__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Коллекция
+												</div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Цвет
+												</div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Ортопедический
+												</div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-2.png" alt="compare-mobile__product-2">
+											</div>
+											<div class="compare-mobile__product-title">Название товара</div>
+											<div class="compare-mobile__product-price">2 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Коллекция
+												</div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Цвет
+												</div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle">
+													Ортопедический
+												</div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="compare-mobile__slider swiper _compare-mobile-2">
+							<div class="compare-mobile__pagination _compare-mobile-2-pagination"></div>
+							<div class="compare-mobile__wrapper swiper-wrapper">
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-1.png" alt="compare-mobile__product-1">
+											</div>
+											<div class="compare-mobile__product-title">Название товара на сайте</div>
+											<div class="compare-mobile__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-2.png" alt="compare-mobile__product-2">
+											</div>
+											<div class="compare-mobile__product-title">Название товара</div>
+											<div class="compare-mobile__product-price">2 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-1.png" alt="compare-mobile__product-1">
+											</div>
+											<div class="compare-mobile__product-title">Название товара на сайте</div>
+											<div class="compare-mobile__product-price">6 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="compare-mobile__slide swiper-slide">
+									<div class="compare-mobile__product">
+										<div class="compare-mobile__product-head">
+											<div class="compare-mobile__product-image">
+												<a href="" class="compare-mobile__product-close">
+													<svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-filter-choose-close"></use></svg>
+												</a>
+												<img src="@img/content/compare-mobile__product-2.png" alt="compare-mobile__product-2">
+											</div>
+											<div class="compare-mobile__product-title">Название товара</div>
+											<div class="compare-mobile__product-price">2 890 ₽</div>
+										</div>
+										<div class="compare-mobile__product-properties">
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Название коллекции
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Желтый
+											</div>
+											<div class="compare-mobile__product-properties-item">
+												<div class="compare-mobile__product-properties-subtitle"></div>
+												Да
+											</div>
+										</div>
+										<button class="btn _yellow _buy">
+											КУПИТЬ
+											<svg><use xlink:href="img/icons/icons.svg#svg-bag"></use></svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

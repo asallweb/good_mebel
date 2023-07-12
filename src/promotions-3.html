@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Акция внутри без товаров"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<a href="">Акции</a> &mdash;
+					<a href="">Весенняя распродажа дачной мебели</a>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1 _border-bottom _mb-60-30">Название очередной акции</div>
+					<section class="promotion">
+						<div class="promotion__content">
+							<div class="promotion__data">c 2 - 25 мая 2023 г.</div>
+							<div class="promotion__description">Опрокидывание мебели может привести к серьёзным телесным повреждениям. Рекомендуем зафиксировать изделие к стене для предотвращения его опрокидывания. Материалы стен различаются, поэтому крепежные средства не прилагаются. Используйте крепежные средства, подходящие для материала стен в Вашем доме. </div>
+							<a href="" class="show-more _mb-60-30">Вернуться назад</a>
+							<div class="promotion-timer _white _pt-30 _pb-30" data-date="2023, 09, 29">
+								<div class="promotion-timer__name">
+									<div class="promotion-timer__title _fz-15 _fw-500">До конца акции
+										осталось:</div>
+								</div>
+								<div class="promotion-timer__timer">
+									<div class="promotion-timer__timer-date _days"></div>
+									<span class="promotion-timer__timer-delimeter">:</span>
+									<div class="promotion-timer__timer-date _hours"></div>
+									<span class="promotion-timer__timer-delimeter">:</span>
+									<div class="promotion-timer__timer-date _minutes"></div>
+								</div>
+							</div>
+						</div>
+						<div class="promotion__image">
+							<img src="@img/content/promotion-2.png" alt="promotion-2" class="promotion__image-src">
+							<img src="@img/content/promotion-icon-2.png" alt="promotion-icon-2" class="promotion__image-icon" style="top: 3%; left: 3%;">
+						</div>
+					</section>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

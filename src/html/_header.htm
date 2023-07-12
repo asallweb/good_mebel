@@ -1,0 +1,134 @@
+<header class="header" data-scroll="4" >
+	<div class="header-top">
+		<div class="header-top__container">
+			<div class="header-top__col">
+				<div class="header-top__city">
+					<svg width="13" height="15"><use xlink:href="@img/icons/icons.svg#svg-location"></use></svg>
+					Ваш город:
+					<a href="#" data-popup="#city-choose" class="header-top__city-choose">Москва</a>
+					<div class="header-top__city-popup _active">
+						<div class="header-top__city-popup-title">Ваш регион: Москва?</div>
+						<div class="header-top__city-popup-buttons">
+							<button class="header-top__city-popup-yes btn _yellow">Да</button>
+							<button class="btn _white" data-popup="#city-choose">Выбрать другой</button>
+						</div>
+					</div>
+				</div>
+				<div class="header-top__menu">
+					<a href="">О фабрике</a>
+					<a href="">Доставка и оплата</a>
+					<a href="">Гарантия</a>
+					<a href="">Дизайнерам, для бизнеса</a>
+					<a href="">Контакты</a>
+				</div>
+			</div>
+			<div class="header-top__col">
+				<div class="header-top__showroom">
+					<b>Шоурумы:</b>
+					<select name="form[]">
+						<option value="1" selected>м. Автозаводская</option>
+						<option value="2">Пункт №2</option>
+						<option value="3">Пункт №3</option>
+						<option value="4">Пункт №4</option>
+					</select>
+				</div>
+				<div class="header-top__schedule">
+					с 09:00 до 22:00 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-main">
+		<div class="header-main__container">
+			<div class="header-main__col">
+				<button type="button" class="icon-menu">
+					<span></span>
+					<span class="icon-text">Каталог</span>
+				</button>
+				<a href="" class="header-main__logo"><img src="@img/icons/main-logo.svg" alt=""></a>
+				<div class="header-main__catalog">
+					<button class="header-main__catalog-button show-catalog-btn btn _blue">
+						<svg class="header-main__catalog-button-icon" width="15" height="17"><use xlink:href="@img/icons/icons.svg#svg-catalog"></use></svg>
+						<span class="close-icon"></span>
+						Каталог
+					</button>
+				</div>
+				<div class="header-main__search" data-da="._mobile-search,1180,0">
+					<form action="" method="" class="header-main__search-form">
+						<input type="text" name="search" placeholder="Поиск по сайту" class="input">
+						<button type="submit" class="button _search-ico"><svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-search"></use></svg></button>
+					</form>
+				</div>
+			</div>
+			<div class="header-main__col _mobile-search">
+				<div class="header-main__buttons">
+					<a href="#" data-popup="#login-modal" class="header-main__button _profile">
+						<svg width="20" height="26"><use xlink:href="@img/icons/icons.svg#svg-profile"></use></svg>
+					</a>
+					<a href="#" class="header-main__button _heart">
+						<svg width="25" height="24"><use xlink:href="@img/icons/icons.svg#svg-heart"></use></svg>
+						<span class="header-main__button-count">3</span>
+					</a>
+					<a href="#" data-popup="#busket-modal" class="header-main__button _bag">
+						<svg width="22" height="25"><use xlink:href="@img/icons/icons.svg#svg-bag"></use></svg>
+						<span class="header-main__button-count">2</span>
+					</a>
+					<div class="bag-info">
+						<span class="bag-info__price">32 690 ₽ </span> 
+						<span class="bag-info__price-parts">4200х6  ₽</span>
+						в рассрочку <br> Доставка 990 ₽ , до бесплатной 4000 ₽ 
+					</div>
+				</div>
+				<div class="header-main__contact">
+					<a href="tel:+74951542377" class="header-main__phone">+7(495) 154-23-77</a>
+					<button class="header-main__call" data-popup="#request-call">Заказать обратный звонок</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-menu mMenu">
+		<div class="header-menu__container">
+			<ul class="header-menu__list">
+				<li class="header-menu__item">
+					<a href="" class="header-menu__link _akciya _svg">
+						<svg width="17" height="17">
+							<use xlink:href="@img/icons/icons.svg#svg-akciya"></use>
+						</svg>
+						Акции
+					</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="" class="header-menu__link">Диваны и кресла</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="" class="header-menu__link">Шкафы и стеллажи</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="" class="header-menu__link">Кровати и матрасы</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="" class="header-menu__link">Столы и стулья</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="" class="header-menu__link">Аксессуары</a>
+				</li>
+				<li class="header-menu__item _tour-3d">
+					<a href="" class="header-menu__link _svg">
+						<img src="@img/icons/tour-3d.svg" alt="tour-3d">
+						Записатья на 3D
+					</a>
+				</li>
+				<li class="header-menu__item _svg">
+					<img src="@img/icons/sizes.svg" alt="sizes">
+					<select name="form[]" data-class-modif="sizes">
+						<option value="0" selected>Мебель на заказ</option>
+						<option value="1">Пункт №1</option>
+						<option value="2">Пункт №2</option>
+						<option value="3">Пункт №3</option>
+						<option value="4">Пункт №4</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>

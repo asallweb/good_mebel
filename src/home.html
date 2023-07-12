@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				@@include('html/_main-slider.htm',{})
+				<div class="content-section __container">
+					<div class="content-section__h2">Хорошая мебель с фабрики - к вам в дом</div>
+				</div>
+				@@include('html/_categories-grid.htm',{})
+				<div class="content-section __container">
+					<div class="content-section__h2 _mb-25-20">Мебель на заказ - для тех, кто выходит за рамки стандартов.</div>
+					<div class="content-section__text">
+						Фабрика мебели GOOD расположена в г.Владимир. На площади свыше 5000 м2 для вас рпботают болеет 300 человек. Без компромиссов подходим к качеству и выбору материалов. Массив дуба, фанера березы, натуральный шпон, премиальные высокоэластичные пены, стойкие к износу ткани - долговечность кроется в деталях. Процессы, требующие точности, автоматизированы. Наши мастера вкладывают в каждый предмет мебели душевное тепло и долю уникальной неповторимости - в лучших традициях мебельных фабрик европы и скандинавии.
+					</div>
+				</div>
+				@@include('html/products-list/_mebel-zakaz.htm',{})
+				<section class="products-slider">
+					<div class="__container">
+						<div class="slider-head">
+							<div class="content-section__h2">Хиты интернет продаж</div>
+							<div class="slider-head__navigation">
+								<button type="button" class="swiper-button-prev swiper-button-prev-slider-1"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+								<button type="button" class="swiper-button-next swiper-button-next-slider-1"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+							</div>
+						</div>
+						<div class="products-slider__slider-1 swiper">
+							<div class="products-slider__wrapper swiper-wrapper">
+								@@include('html/products-list/_product-list-slider-1.htm',{})
+							</div>
+							<div class="swiper-pagination pagination-slider-1"></div>
+						</div>
+					</div>
+				</section>
+				<section class="products-slider">
+					<div class="__container">
+						<div class="slider-head">
+							<div class="content-section__h2">GOOD рекомендует</div>
+							<div class="slider-head__navigation">
+								<button type="button" class="swiper-button-prev swiper-button-prev-slider-2"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+								<button type="button" class="swiper-button-next swiper-button-next-slider-2"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+							</div>
+						</div>
+						<div class="products-slider__slider-2 swiper">
+							<div class="products-slider__wrapper swiper-wrapper">
+								@@include('html/products-list/_product-list-slider-2.htm',{})
+							</div>
+							<div class="swiper-pagination pagination-slider-2"></div>
+						</div>
+					</div>
+				</section>
+				<section class="products-slider">
+					<div class="__container">
+						<div class="slider-head">
+							<div class="content-section__h2">Каталог новинок</div>
+							<div class="slider-head__navigation">
+								<button type="button" class="swiper-button-prev swiper-button-prev-slider-3"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+								<button type="button" class="swiper-button-next swiper-button-next-slider-3"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+							</div>
+						</div>
+						<div class="products-slider__slider-3 swiper">
+							<div class="products-slider__wrapper swiper-wrapper">
+								@@include('html/products-list/_product-list-slider-3.htm',{})
+							</div>
+							<div class="swiper-pagination pagination-slider-3"></div>
+						</div>
+					</div>
+				</section>
+				<div class="content-section __container _mb-25-20">
+					<div class="content-section__h2 _mb-25-20">Шоурумы «Гуд Мебель»</div>
+					<div class="toggler">
+						<button class="toggler__btn btn _active">На Автозаводской</button>
+						<button class="toggler__btn btn">В Реутове</button>
+					</div>
+				</div>
+				@@include('html/_map.htm',{})
+				<div class="content-section __container _mb-25-20">
+					<div class="content-section__h2 _mb-25-20">ИНТЕРНЕТ-МАГАЗИН НЕДОРОГОЙ МЕБЕЛИ В МОСКВЕ</div>
+					<div class="content-section__text">
+						<p> Интернет-магазин «Гуд Мебель» – это недорогая корпусная и мягкая мебель от производителя. В нашем распоряжении собственные фабрики полного цикла, выпускающие диваны и кресла, шкафы и стенки, спальни и прихожие.</p>
+						<br>
+						<p>Кроме того, на страницах сайта вы найдете большой ассортимент мебели других отечественных производителей. Принимая решение о сотрудничестве с новым партнером, мы стремимся не просто расширить каталог, но и повысить качество поставляемой продукции.</p>
+						<br>
+						<p>Сделать правильный выбор вам помогут подробные описания товаров и детальные фото. Операторы «Гуд Мебель» в любой момент окажут помощь в проектировании внутреннего наполнения шкафа-купе, помогут с комбинацией обивочных материалов для дивана, проконсультируют по работе сайта и навигации по нему. Посмотреть на понравившуюся модель «в живую», убедиться в ее удобстве, ознакомиться с образцами материалов и ценами можно в шоу-руме по адресу ул. Велозаводская, д. 13, стр. 1, здание Велозаводского Рынка, цокольный этаж, павильон 315 (ст. метро "Автозаводская" или "Дубровка" МЦК). Наш интернет-магазин – мебель отличного качества!</p>
+						<br>
+						<a href="" class="content-section__link">Чиать полностью</a>
+					</div>
+				</div>
+				<div class="content-section __container">
+					<div class="content-section__h2">ПРЕИМУЩЕСТВА ГУД МЕБЕЛЬ</div>
+				</div>
+				@@include('html/_advantages.htm',{})
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Мягкая мебель на заказ"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<a href="">Мягкая мебель на заказ</a>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1">Мягкая мебель на заказ <sup>825 товаров</sup></div>
+				</section>
+				<section class="category-list __container">
+					<div class="category-list__outer">
+						<div class="category-list__slider swiper">
+							<div class="category-list__wrapper swiper-wrapper">
+								<a href="" class="category-list__item category-list__slide swiper-slide">
+									<svg width="55" height="29"><use xlink:href="@img/icons/icons.svg#svg-category_1"></use></svg>
+									Прямые диваны
+								</a>
+								<a href="" class="category-list__item category-list__slide swiper-slide">
+									<img src="@img/icons/category_2.svg" alt="category-icon-2" width="71" height="30">
+									Распродажа
+								</a>
+								<a href="" class="category-list__item category-list__slide swiper-slide">
+									<svg width="63" height="32"><use xlink:href="@img/icons/icons.svg#svg-category_3"></use></svg>
+									Угловые диваны
+								</a>
+								<a href="" class="category-list__item category-list__slide swiper-slide">
+									<svg width="37" height="29"><use xlink:href="@img/icons/icons.svg#svg-category_4"></use></svg>
+									Кресла
+								</a>
+								<a href="" class="category-list__item category-list__slide swiper-slide">
+									<svg width="34" height="21"><use xlink:href="@img/icons/icons.svg#svg-category_5"></use></svg>
+									Пуфы
+								</a>
+								<a href="" class="category-list__item category-list__slide swiper-slide">
+									<svg width="56" height="31"><use xlink:href="@img/icons/icons.svg#svg-category_6"></use></svg>
+									Кушетки
+								</a>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="swiper-button-next category-list__slider-next-button"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+				</section>
+				<div class="__container"><hr /></div>
+				@@include('html/_filter-items-slider.htm',{})
+				@@include('html/_tags.htm',{})
+				<section class="product-list __container">
+					@@include('html/products-list/_product-list-16items-2.htm',{})
+				</section>
+				<section class="__container">
+					<button class="btn load-more">Показать еще</button>
+					<div class="pagging">
+						<a href="" class="pagging__arrow _not-active _prev">
+							<svg width="13" height="11">
+								<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+							</svg>
+							<span class="_only-desktop">НАЗАД</span>
+						</a>
+						<ul class="pagging__list">
+							<li>
+								<a href="" class="pagging__item _active">1</a>
+							</li>
+							<li>
+								<a href="" class="pagging__item">2</a>
+							</li>
+							<li>
+								<a href="" class="pagging__item">3</a>
+							</li>
+							<li class="_only-desktop">
+								<a href="" class="pagging__item">4</a>
+							</li>
+							<li class="_only-desktop">
+								<a href="" class="pagging__item">5</a>
+							</li>
+							<li>
+								<span class="pagging__item _no-bg">...</span>
+							</li>
+							<li>
+								<a href="" class="pagging__item">35</a>
+							</li>
+						</ul>
+						<a href="" class="pagging__arrow _next">
+							<span class="_only-desktop">ДАЛЕЕ</span>
+							<svg width="13" height="11">
+								<use xlink:href="img/icons/icons.svg#svg-btn-arrow"></use>
+							</svg>
+						</a>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

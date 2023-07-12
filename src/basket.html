@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Корзина"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<a href="">Корзина</a>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1">Корзина <sup>2 товара</sup></div>
+				</section>
+				<section class="basket __container">
+					<div class="basket__body">
+						<div class="basket__list">
+							<div class="basket__product">
+								<div class="basket__product-image"><img src="@img/content/basket__product-image-1.png" alt="basket__product-image-1"></div>
+								<div class="basket__product-body">
+									<div class="basket__product-title">Диван прямой Вита Дизайн 4</div>
+									<div class="basket__product-line">Цвет: <span class="basket__product-color" style="background-color: #d49b25;"></span> <span class="_color-black">Название цвета</span></div>
+									<div class="basket__product-line">Подъемный механизм: <span class="_color-black">Да</span></div>
+									<div class="basket__product-line">Размер спального места: <span class="_color-black">140x200</span></div>
+								</div>
+								<div class="basket__product-footer">
+									<div class="basket__product-count">
+										<div data-quantity="" class="quantity">
+											<button data-quantity-minus="" type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus="" type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+									</div>
+									<div class="product__production-time _mt-10 _mb-10">
+										<svg class="product__production-svg _check"><use xlink:href="img/icons/icons.svg#svg-check"></use></svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="basket__product-price">
+										<div class="basket__product-price-inner">
+											<div class="basket__product-price-current">10 690 ₽</div>
+											<div class="basket__product-price-old">9 370 ₽</div>
+										</div>
+										<div class="product-detail__price-economy">
+											<img src="img/icons/economy-green.svg">
+											<span class="product-detail__economy-outer">
+											 <span class="_only-desktop">Выгода 1799 руб</span>	(-4%)
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="basket__product-remove">
+									<button>
+										Удалить
+										<svg width="15" height="16"><use xlink:href="@img/icons/icons.svg#svg-remove"></use></svg>
+									</button>
+								</div>
+							</div>
+							<div class="basket__product">
+								<div class="basket__product-image"><img src="@img/content/basket__product-image-2.png" alt="basket__product-image-2"></div>
+								<div class="basket__product-body">
+									<div class="basket__product-title">Диван угловой Мэдисон Люкс Плюш Браун</div>
+									<div class="basket__product-line">Цвет: <span class="basket__product-color" style="background-color: #d49b25;"></span> <span class="_color-black">Название цвета</span></div>
+									<div class="basket__product-line">Подъемный механизм: <span class="_color-black">Да</span></div>
+									<div class="basket__product-line">Размер спального места: <span class="_color-black">140x200</span></div>
+								</div>
+								<div class="basket__product-footer">
+									<div class="basket__product-count">
+										<div data-quantity="" class="quantity">
+											<button data-quantity-minus="" type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus="" type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+									</div>
+									<div class="product__production-time _mt-10 _mb-10">
+										<svg class="product__production-svg _check"><use xlink:href="img/icons/icons.svg#svg-check"></use></svg>
+										В наличии, 2-4 дня
+									</div>
+									<div class="basket__product-price">
+										<div class="basket__product-price-inner">
+											<div class="basket__product-price-current">10 690 ₽</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__product-remove">
+									<button>
+										Удалить
+										<svg width="15" height="16"><use xlink:href="@img/icons/icons.svg#svg-remove"></use></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- <section class="products-slider">
+							<div class="slider-head">
+								<div class="content-section__h2">Рекомендуем приобрести</div>
+								<div class="slider-head__navigation">
+									<button type="button" class="swiper-button-prev swiper-button-prev-slider-1"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+									<button type="button" class="swiper-button-next swiper-button-next-slider-1"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+								</div>
+							</div>
+							<div class="products-slider__slider-1 swiper">
+								<div class="products-slider__wrapper swiper-wrapper">
+									@@include('html/products-list/_product-list-slider-8.htm',{})
+								</div>
+								<div class="swiper-pagination pagination-slider-1"></div>
+							</div>
+						</section> -->
+						<section class="ordering" data-da=".basket,1180">
+							<div class="ordering__head">
+								<div class="ordering__title">Оформление заказа</div>
+								<div class="ordering__subname">
+									<div class="ordering__subname-icon"><svg width="11" height="15"><use xlink:href="@img/icons/icons.svg#svg-flash"></use></svg></div>
+									<div>
+										Вы можете воспользоваться <a href="">экспресс-оформлением заказа</a> или заполгнить полную форму
+									</div>
+								</div>
+							</div>
+							<div class="ordering__methods">
+								<div class="ordering__subtitle">Способ оплаты</div>
+								<div class="ordering__methods-list">
+									<a href="" class="ordering__methods-item">
+										<div class="ordering__methods-image">
+											<img src="@img/icons/methods-wallet.svg" alt="">
+										</div>
+										<div class="ordering__methods-name">Наличными</div>
+									</a>
+									<a href="" class="ordering__methods-item">
+										<div class="ordering__methods-image">
+											<img src="@img/icons/methods-calendar.svg" alt="">
+										</div>
+										<div class="ordering__methods-name">В рассрочку</div>
+									</a>
+									<a href="" class="ordering__methods-item">
+										<div class="ordering__methods-image">
+											<img src="@img/icons/methods-discount.svg" alt="">
+										</div>
+										<div class="ordering__methods-name">В кредит</div>
+									</a>
+									<a href="" class="ordering__methods-item _active">
+										<div class="ordering__methods-image">
+											<img src="@img/icons/methods-document.svg" alt="">
+										</div>
+										<div class="ordering__methods-name">Банковской картой</div>
+									</a>
+									<a href="" class="ordering__methods-item">
+										<div class="ordering__methods-image">
+											<img src="@img/icons/methods-document-2.svg" alt="">
+										</div>
+										<div class="ordering__methods-name">По счету</div>
+									</a>
+									<a href="" class="ordering__methods-item">
+										<div class="ordering__methods-image">
+											<img src="@img/icons/methods-paper.svg" alt="">
+										</div>
+										<div class="ordering__methods-name">Перевод</div>
+									</a>
+								</div>
+								<p class="_color-black _fw-500 _mt-40">Заказ будет оплачен карто по терминалу у водителя</p>
+							</div>
+							<div class="ordering__form form">
+								<div class="ordering__subtitle">Контактные данные</div>
+								<div class="form__form-field _mb-20">
+									<label>Ваше имя</label>
+									<input type="text" placeholder="Ваше имя">
+								</div>
+								<div class="form__2col">
+									<div class="form__form-field _mb-20">
+										<label>Телефон</label>
+										<input type="text" placeholder="+7(" class="phone-validation">
+									</div>
+									<div class="form__form-field _mb-20">
+										<label>Е-mail</label>
+										<input type="text" name="" placeholder="Ваш e-mail">
+									</div>
+								</div>
+								<div class="form__form-field">
+									<label>Адрес доставки</label>
+									<textarea placeholder="Укажите адрес доставки"></textarea>
+								</div>
+								<div class="form__2col">
+									<div class="form__form-accept">
+										<input type="checkbox">
+										<span>
+											Я соглашаюсь на <a href="">обработку персональных данных</a>
+										</span>
+									</div>
+									<div class="form__form-accept">
+										<input type="checkbox">
+										<span>
+											Я соглашаюсь на <a href="">Условиями публичной оферты</a>
+										</span>
+									</div>
+								</div>
+								<div class="form__2col">
+									<div class="form__form-field _mb-0">
+										<input type="submit" value="Отправить заказ" class="btn _yellow _fz-16">
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="basket__sidebar">
+						<div class="basket__sidebar-inner">
+							<div class="basket__sidebar-list">
+								<div class="basket__sidebar-title">Ваш заказ</div>
+								<div class="basket__line">
+									<div class="basket__line-name">2 товара</div>
+									<div class="basket__line-dots"></div>
+									<div class="basket__line-value"><b>22 000 ₽</b></div>
+								</div>
+								<div class="basket__line">
+									<div class="basket__line-name">Итоговая выгода</div>
+									<div class="basket__line-dots"></div>
+									<div class="basket__line-value"><span class="_color-green">- 3 956 ₽</span> (14%)</div>
+								</div>
+								<div class="basket__line">
+									<div class="basket__line-name">Доставка</div>
+									<div class="basket__line-dots"></div>
+									<div class="basket__line-value"><b>700 ₽</b></div>
+								</div>
+								<div class="basket__line">
+									<div class="basket__line-name"><span class="_color-blue _fw-300">Москва и МО</span></div>
+								</div>
+								<div class="basket__line _mt-30">
+									<div class="basket__line-name _fz-22">Итого</div>
+									<div class="basket__line-dots" style="margin-top: 4px;"></div>
+									<div class="basket__line-value _fz-22"><b>10 780 ₽</b></div>
+								</div>
+							</div>
+							<div class="basket__exspress">
+								<div class="basket__exspress-title">Экспресс-оформление</div>
+								<div class="basket__exspress-text">Мы ценим ваше время! Отправьте номер телефона, остальные данные будут согласованы с менеджером по телефону</div>
+								<div class="form">
+									<div class="form__form-field _mb-10"><input type="text" placeholder="+7(" class="phone-validation"></div>
+									<div class="form__form-field"><input type="submit" value="Отправить заказ" class="btn _yellow _fz-16"></div>
+								</div>
+							</div>
+						</div>
+						<div class="basket__sidebar-promo">
+							<button class="basket__promo-btn btn _white">
+								<img src="@img/icons/basket-promo.svg">
+								Промо-код или сертификат
+								<span><svg width="6" height="10" viewBox="0 0 6.86 12"><path d="M4.792,6,.252,1.462A.858.858,0,0,1,1.466.251L6.611,5.391a.856.856,0,0,1,.025,1.182L1.47,11.75A.858.858,0,0,1,.255,10.539Z" fill="#fff"/></svg></span>
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

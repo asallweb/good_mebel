@@ -1,0 +1,54 @@
+.pagging {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include adaptiveValue("margin-top", 40, 20);
+	@include adaptiveValue("margin-bottom", 40, 20);
+	// .pagging__arrow
+	&__arrow {
+		font-size: 13px;
+		color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		&._prev{
+			svg{
+				rotate: (180deg);
+			}
+		}
+		&._not-active{
+			opacity: 0.3;
+		}
+	}
+	// .pagging__list
+	&__list {
+		display: flex;
+		gap: 13px;
+		@include adaptiveValue("margin-right", 70, 30);
+		@include adaptiveValue("margin-left", 70, 30);
+	}
+	// .pagging__item
+	&__item {
+		@include adaptiveValue("width", 45, 35);
+		@include adaptiveValue("height", 45, 35);
+		border-radius: 50%;
+		background: #eee;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 13px;
+		text-align: left;
+		color: #000;
+		&:hover{
+			opacity: 0.8;
+		}
+		&._active {
+			background-color: #0391a2;
+			color: #fff;
+		}
+		&._no-bg{
+			background-color: transparent;
+		}
+	}
+}

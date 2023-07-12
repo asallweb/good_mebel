@@ -1,0 +1,825 @@
+<section id="city-choose" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Укажите свой город</div>
+				<div class="popup__search-form">
+					<input type="text" class="popup__search-input" placeholder="Укажите город">
+					<button type="submit" class="popup__search-submit"><svg width="17" height="17"><use xlink:href="@img/icons/icons.svg#svg-search"></use></svg></button>
+					<button type="submit" class="popup__search-clear close-btn"></button>
+				</div>
+				<div class="popup__search-example">
+					<span>Например:</span>
+					<a href="">Санкт-Петербург</a>
+				</div>
+				<span class="popup__search-noresults">По вашему запросу ничего не найдено</span>
+				<div class="popup__city-list">
+					<a href=""><b>Москва</b></a>
+					<a href="">Санкт-Петербург</a>
+					<a href="">Краснодар</a>
+					<a href="">Благовещенск</a>
+					<a href="">Владимир</a>
+					<a href="">Волгоград</a>
+					<a href="">Воронеж</a>
+					<a href="">Екатеринбург</a>
+					<a href="">Казань</a>
+					<a href="">Калуга</a>
+					<a href="">Комсомольск-на-Амуре</a>
+					<a href="">Махачкала</a>
+					<a href="">Нижний Новгород</a>
+					<a href="">Новосибирск</a>
+					<a href="">Пермь</a>
+					<a href="">Пятигорск</a>
+					<a href="">Ростов-на-Дону</a>
+					<a href="">Рязань</a>
+					<a href="">Сочи</a>
+					<a href="">Тверь</a>
+					<a href="">Тольятти</a>
+					<a href="">Тула</a>
+					<a href="">Тюмень</a>
+					<a href="">Ульяновск</a>
+					<a href="">Уссурийск</a>
+					<a href="">Уфа</a>
+					<a href="">Челябинск</a>
+					<a href="">Якутск</a>
+					<a href="">Ярославль</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="request-call" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content _max-width-450">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Закажите звонок</div>
+				<div class="_fz-13 _fw-300 _mb-25-20">Это быстро - мы перезваниваем в течение 5 минут. Режим работы call-центра: c 09:00 до 22:00</div>
+				<div class="form__form-field">
+					<label>Ваше имя</label>
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="form__form-field">
+					<label>Телефон</label>
+					<input type="text" placeholder="+7(" class="phone-validation">
+				</div>
+				<div class="form__form-accept">
+					<input type="checkbox">
+					<span>
+						Я соглашаюсь на <a href="">обработку персональных данных</a>
+					</span>
+				</div>
+				<div class="form__form-field _mb-0">
+					<input type="submit" value="Перезвоните мне" class="btn _yellow _fz-16">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="leave-feedback" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Оставить отзыв</div>
+				<div class="form__2col">
+					<div class="form__form-field">
+						<label>Ваше имя</label>
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="form__form-field">
+						<label>Ваша оценка</label>
+						<div class="popup__rating rating">
+							<a href="" class="rating__star _active">
+								<svg width="20" height="20"><use xlink:href="img/icons/icons.svg#svg-star"></use></svg>
+							</a>
+							<a href="" class="rating__star _active">
+								<svg width="20" height="20"><use xlink:href="img/icons/icons.svg#svg-star"></use></svg>
+							</a>
+							<a href="" class="rating__star _active">
+								<svg width="20" height="20"><use xlink:href="img/icons/icons.svg#svg-star"></use></svg>
+							</a>
+							<a href="" class="rating__star _active">
+								<svg width="20" height="20"><use xlink:href="img/icons/icons.svg#svg-star"></use></svg>
+							</a>
+							<a href="" class="rating__star">
+								<svg width="20" height="20"><use xlink:href="img/icons/icons.svg#svg-star"></use></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="form__2col">
+					<div class="form__form-field">
+						<label>Телефон</label>
+						<input type="text" placeholder="+7(" class="phone-validation">
+					</div>
+					<div class="form__form-field">
+						<label>Е-mail</label>
+						<input type="text" name="" placeholder="Ваш e-mail">
+					</div>
+				</div>
+				<div class="form__form-field">
+					<textarea placeholder="Ваш отзыв"></textarea>
+				</div>
+
+				<div class="form__form-accept">
+					<input type="checkbox">
+					<span>
+						Я соглашаюсь на <a href="">обработку персональных данных</a>
+					</span>
+				</div>
+				<div class="form__2col">
+					<div class="form__form-field _mb-0">
+						<input type="submit" value="Отправить отзыв" class="btn _yellow _fz-16">
+					</div>
+					<img src="@img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="leave-message" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Отправить сообщение</div>
+				<div class="form__2col">
+					<div class="form__form-field">
+						<label>Ваш город</label>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Москва</option>
+							<option value="2">Город №2</option>
+							<option value="3">Город №3</option>
+							<option value="4">Город №4</option>
+						</select>
+					</div>
+					<div class="form__form-field">
+						<label>Адресат сообщения</label>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Служба поддрежки</option>
+							<option value="2">Опция №2</option>
+							<option value="3">Опция №3</option>
+							<option value="4">Опция №4</option>
+						</select>
+					</div>
+				</div>
+				<div class="form__2col">
+					<div class="form__form-field">
+						<label>Ваше имя</label>
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="form__form-field">
+						<label>Телефон</label>
+						<input type="text" placeholder="+7(" class="phone-validation">
+					</div>
+				</div>
+				<div class="form__2col">
+					<div class="form__form-field">
+						<label>Е-mail</label>
+						<input type="text" name="" placeholder="Ваш e-mail">
+					</div>
+					<div class="form__form-field">
+						<label>Тема сообщения</label>
+						<select name="form[]" data-class-modif="form">
+							<option value="1" selected>Вопрос</option>
+							<option value="2">Вопрос №2</option>
+							<option value="3">Вопрос №3</option>
+							<option value="4">Вопрос №4</option>
+						</select>
+					</div>
+				</div>
+				<div class="form__form-field">
+					<textarea placeholder="Ваше сообщение или вопрос"></textarea>
+				</div>
+				<div class="form__form-accept">
+					<input type="checkbox">
+					<span>
+						Я соглашаюсь на <a href="">обработку персональных данных</a>
+					</span>
+				</div>
+				<div class="form__2col">
+					<div class="form__form-field _mb-0">
+						<input type="submit" value="Отправить сообщение" class="btn _yellow _fz-16">
+					</div>
+					<img src="@img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="configurator-side" aria-hidden="true" class="popup _side ">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="configurator">
+				<div class="configurator__title _only-mobile">
+					Конфигуратор
+					<button data-close type="button" class="popup__close close-btn"></button>
+				</div>
+				<div class="configurator__type">
+					<span>Вид конфигуратора: </span>
+					<div class="configurator__type-switcher _simple">
+						<span class="configurator__type-simple">Простой</span>
+						<button class="configurator__type-button"></button>
+						<span class="configurator__type-detail">Подробный</span>
+					</div>
+				</div>
+				<div data-spollers data-one-spoller class="configurator__spollers spollers">
+					<div class="configurator__item spollers__item">
+						<button type="button" data-spoller class="configurator__item-title spollers__title">
+							<span class="configurator__item-name">
+								Ножки
+								<span class="configurator__item-name-checked">
+									<svg width="7" height="5"><use xlink:href="@img/icons/icons.svg#svg-check"></use></svg>
+								</span>
+							</span>
+							<span class="configurator__item-count-options">3 опции доступно</span>
+						</button>
+						<div class="configurator__item-body spollers__body">
+							<div class="configurator__grid _col-3 _gap-20">
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _height-95">
+										<img src="@img/content/spare-image-1.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-name">Название товара</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _height-95 _active">
+										<img src="@img/content/spare-image-2.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+									<a href="" class="configurator__spare-price">890 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _height-95">
+										<img src="@img/content/spare-image-3.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+									<a href="" class="configurator__spare-price">890 ₽</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="configurator__item spollers__item">
+						<button type="button" data-spoller class="configurator__item-title spollers__title _spoller-active">
+							<span class="configurator__item-name">Тип ткани</span>
+							<span class="configurator__item-count-options">35 опции доступно</span>
+						</button>
+						<div class="configurator__item-body spollers__body">
+							<div class="configurator__search-material">
+								<div class="configurator__search-outer">
+									<input type="text" placeholder="Найти ткань" class="configurator__search-input">
+									<input type="submit" value="" class="configurator__search-submit">
+								</div>
+								<div class="configurator__select-material">
+									<select name="form-1">
+										<option value="1" selected>Материал</option>
+										<option value="2">Материал №2</option>
+										<option value="3">Материал №3</option>
+										<option value="4">Материал №4</option>
+									</select>
+								</div>
+							</div>
+							<div class="configurator__bookmarks">
+								<a href="" class="configurator__bookmarks-link _active"><span>Основной</span> <sup>235</sup></a>
+								<a href="" class="configurator__bookmarks-link"><span>Компаньон</span> <sup>18</sup></a>
+							</div>
+							<div class="configurator__selected-material">
+								<span>Выбрано:</span>
+								<a href="">
+									<img src="@img/content/material-3-small.png">
+									Название ткани
+								</a>
+							</div>
+							<div class="configurator__body-subtitle">
+								Velutto - Велютто (велюр)
+							</div>
+							<div class="configurator__grid _col-6 _gap-12 _mb-35">
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-1.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-2.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-3.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-4.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-5.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-6.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-1.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-2.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-3.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-4.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-5.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-6.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-1.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-2.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-3.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-4.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+							</div>
+							<div class="configurator__body-subtitle">
+								Velutto - Велютто (велюр)
+							</div>
+							<div class="configurator__grid _col-6 _gap-12">
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-1.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-2.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-3.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-4.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-5.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-6.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-1.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-2.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-3.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-4.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-5.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-6.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-1.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image _active" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-2.png" alt="spare-image-2">
+									</a>
+									<a href="" class="configurator__spare-price _tac">23 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-3.png" alt="spare-image-3">
+									</a>
+									<a href="" class="configurator__spare-price _tac">3 658 ₽</a>
+								</div>
+								<div class="configurator__spare">
+									<a href="#" class="configurator__spare-image" data-srcbig="@img/content/material-1-big.png">
+										<img src="@img/content/material-4.png" alt="spare-image-1">
+									</a>
+									<a href="" class="configurator__spare-price _tac">236 522 ₽</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="configurator__item spollers__item">
+						<button type="button" data-spoller class="configurator__item-title spollers__title">
+							<span class="configurator__item-name">Размеры</span>
+						</button>
+						<div class="configurator__item-body spollers__body">
+							<div class="mobile-filter__range-subtitle">Длина,  см</div>
+							<div class="mobile-filter__range-slider-inputs">
+								от 
+								<input type="text" placeholder="0" class="mobile-filter__input">
+								<span style="margin-left: auto;">до</span>
+								<input type="text" placeholder="0" class="mobile-filter__input">
+							</div>
+							<div class="mobile-filter__range-subtitle">Ширина,  см</div>
+							<div class="mobile-filter__range-slider-inputs">
+								от 
+								<input type="text" placeholder="0" class="mobile-filter__input">
+								<span style="margin-left: auto;">до</span>
+								<input type="text" placeholder="0" class="mobile-filter__input">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="configurator__footer">
+					<div class="configurator__old-price">9 370 ₽</div>
+					<div class="configurator__price">
+						<div class="configurator__current-price">6 890 ₽</div>
+						<div class="configurator__price-economy">
+							<img src="img/icons/economy-green.svg">
+							<span class="configurator__economy-outer">Выгода 1799 руб (4%)</span>
+						</div>
+					</div>
+					<button class="configurator__apply btn _yellow">
+						Применить
+					</button>
+					<button class="configurator__reset btn">
+						Сбросить все
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="edit-product-side" aria-hidden="true" class="popup _side ">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close close-btn"></button>
+			<div class="edit-product">
+				<div class="edit-product__title">
+					Изменить товар
+				</div>
+				<div>
+					<div class="edit-product__grid _col-2 _gap-30 _mb-35">
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image" data-srcbig="@img/content/material-1-big.png">
+								<img src="@img/content/edit-product-1.png" alt="-image-1">
+							</a>
+							<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+							<a href="" class="edit-product__spare-price ">236 522 ₽</a>
+							<button class="edit-product__selected _active btn _yellow">
+								Выбрано
+								<span>-</span>
+							</button>
+						</div>
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image " data-srcbig="@img/content/material-1-big.png">
+								<img src="@img/content/edit-product-1.png" alt="-image-2">
+							</a>
+							<a href="" class="configurator__spare-name">Название товара</a>
+							<a href="" class="edit-product__spare-price ">23 658 ₽</a>
+							<button class="edit-product__selected btn _yellow">
+								Выбрать
+								<span>+</span>
+							</button>
+						</div>
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image" data-srcbig="@img/content/material-1-big.png">
+								<img src="@img/content/edit-product-1.png" alt="-image-3">
+							</a>
+							<a href="" class="configurator__spare-name">Еще одно название в несколько строк</a>
+							<a href="" class="edit-product__spare-price ">3 658 ₽</a>
+							<button class="edit-product__selected btn _yellow">
+								Выбрать
+								<span>+</span>
+							</button>
+						</div>
+						<div class="edit-product__spare">
+							<a href="#" class="edit-product__spare-image" data-srcbig="@img/content/material-1-big.png">
+								<img src="@img/content/edit-product-1.png" alt="-image-1">
+							</a>
+							<a href="" class="configurator__spare-name">Название товара</a>
+							<a href="" class="edit-product__spare-price ">236 522 ₽</a>
+							<button class="edit-product__selected btn _yellow">
+								Выбрать
+								<span>+</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="busket-modal" aria-hidden="true" class="popup _side">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="busket-side">
+				<button data-close type="button" class="popup__close close-btn"></button>
+				<div class="busket-side__title">
+					Корзина
+					<sup>2 товара</sup>
+				</div>
+				<div class="busket-side__body">
+					<div class="busket-side__item">
+						<a href="" class="busket-side__item-image"><img src="@img/content/busket-side-1.png" alt=""></a>
+						<div class="busket-side__item-info">
+							<a href="" class="busket-side__item-name">Диван прямой Вита Дизайн 4</a>
+							<div class="busket-side__item-price">
+								<div class="busket-side__current-price">120 690 ₽</div>
+								<div class="busket-side__price-economy">
+									<img src="img/icons/economy-green.svg">
+									<span class="busket-side__economy-outer">- 4%</span>
+								</div>
+								<div class="busket-side__old-price">139 370 ₽</div>
+							</div>
+							<div class="busket-side__tools">
+								<div data-quantity class="quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<button class="busket-side__remove">
+									<svg width="20" height="21"><use xlink:href="@img/icons/icons.svg#svg-remove"></use></svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="busket-side__item">
+						<a href="" class="busket-side__item-image"><img src="@img/content/busket-side-1.png" alt=""></a>
+						<div class="busket-side__item-info">
+							<a href="" class="busket-side__item-name">Название товара на сайте 
+								в несколько строк</a>
+							<div class="busket-side__item-price">
+								<div class="busket-side__current-price">120 690 ₽</div>
+								<div class="busket-side__price-economy">
+									<img src="img/icons/economy-green.svg">
+									<span class="busket-side__economy-outer">- 4%</span>
+								</div>
+								<div class="busket-side__old-price">139 370 ₽</div>
+							</div>
+							<div class="busket-side__tools">
+								<div data-quantity class="quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<button class="busket-side__remove">
+									<svg width="20" height="21"><use xlink:href="@img/icons/icons.svg#svg-remove"></use></svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="busket-side__sum-total">
+						<div class="busket-side__sum-total-title">Итого</div>
+						<div class="busket-side__sum-total-delimiter"></div>
+						<div class="busket-side__sum-total-value">120 690 ₽</div>
+					</div>
+					<button class="busket-side__submit btn _yellow">Оформить заказ</button>
+					<button class="busket-side__continue" data-close>Продолжить покупки</button>
+				</div>
+				<div class="busket-side__footer">
+						<div class="slider-head">
+							<div class="content-section__h2">Рекомендуем приобрести</div>
+							<div class="slider-head__navigation">
+								<button type="button" class="swiper-button-prev swiper-button-prev-slider-7"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+								<button type="button" class="swiper-button-next swiper-button-next-slider-7"><svg width="12" height="7"><use xlink:href="@img/icons/icons.svg#svg-select-arrow"></use></svg></button>
+							</div>
+						</div>
+						<div class="products-slider__slider-7 swiper">
+							<div class="products-slider__wrapper swiper-wrapper">
+								@@include('products-list/_product-list-slider-7.htm',{})
+							</div>
+							<div class="swiper-pagination pagination-slider-7"></div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="login-modal" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content _max-width-450">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Вход в личный кабинет</div>
+				<div class="form__form-field">
+					<label>E-mail</label>
+					<input type="text" placeholder="Ваш E-mail">
+				</div>
+				<div class="form__form-field">
+					<label>Пароль</label>
+					<input type="password" placeholder="Введите пароль">
+					<a href="javascript:void(0);" class="form__blue-lnk" data-close data-popup="#remember-modal">Напомнить пароль</a>
+				</div>
+				<div class="form__form-field _mb-0 _mt-30">
+					<input type="submit" value="Войти на сайт" class="btn _yellow _fz-16">
+					<button class="form__open-registration btn _fz-16 _mt-20" data-close data-popup="#registration-modal">Регистрация</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="remember-modal" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content _max-width-450">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Напомнить пароль</div>
+				<div class="_fz-13 _mb-10">Укажите е-mail, используемый при регистрации. На ваш адрес придет инструкция по восстановлению пароля</div>
+				<div class="form__form-field">
+					<input type="text" placeholder="Ваш E-mail">
+					<a href="javascript:void(0);" class="form__blue-lnk" data-close data-popup="#login-modal">Вход в личный кабинет</a>
+				</div>
+				<div class="form__form-field _mb-0 _mt-30">
+					<input type="submit" value="Отправить" class="btn _yellow _fz-16">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="registration-modal" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Регистрация на сайте</div>
+				<div class="form__form-field">
+					<label>Ваше ФИО</label>
+					<input type="text" placeholder="Введите ФИО">
+				</div>
+				<div class="form__2col">
+					<div class="form__form-field">
+						<label>E-mail</label>
+						<input type="text" placeholder="Ваш E-mail">
+					</div>
+					<div class="form__form-field">
+						<label>Телефон</label>
+						<input type="text" placeholder="+7(" class="phone-validation">
+					</div>
+				</div>
+				<div class="form__2col">
+					<div class="form__form-field">
+						<label>Пароль</label>
+						<input type="password" placeholder="Ваш пароль">
+					</div>
+					<div class="form__form-field">
+						<label>Подтвердить пароль</label>
+						<input type="password" placeholder="Подтвердить пароль">
+					</div>
+				</div>
+				<div class="form__form-accept" style="margin-top: -5px;">
+					<input type="checkbox">
+					<span>
+						Я соглашаюсь на <a href="">обработку персональных данных</a>
+					</span>
+				</div>
+				<div class="form__2col">
+					<input type="submit" value="Зарегистрироваться" class="btn _yellow _fz-16 _w100p">
+					<a href="javascript:void(0);" class="form__blue-lnk _reg-form-btn" data-close data-popup="#login-modal">Вход в личный кабинет</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="credit-modal" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="close-btn popup__close"></button>
+			<div class="popup__text form">
+				<div class="popup__title">Рассрочка 0-0-6</div>
+				<div class="popup__subtitle">Оплата в рассрочку без комиссии и переплат</div>
+				<div class="credit-popup">
+					<div class="credit-popup__list-mounth">
+						<div class="credit-popup__mounth">
+							<button class="credit-popup__mounth-price _active">2 898 ₽</button>
+							<div class="credit-popup__mounth-name">1-й месяц</div>
+						</div>
+						<div class="credit-popup__mounth">
+							<button class="credit-popup__mounth-price">2 898 ₽</button>
+							<div class="credit-popup__mounth-name">2-й месяц</div>
+						</div>
+						<div class="credit-popup__mounth">
+							<button class="credit-popup__mounth-price">2 898 ₽</button>
+							<div class="credit-popup__mounth-name">3-й месяц</div>
+						</div>
+						<div class="credit-popup__mounth">
+							<button class="credit-popup__mounth-price">2 898 ₽</button>
+							<div class="credit-popup__mounth-name">4-й месяц</div>
+						</div>
+						<div class="credit-popup__mounth">
+							<button class="credit-popup__mounth-price">2 898 ₽</button>
+							<div class="credit-popup__mounth-name">5-й месяц</div>
+						</div>
+						<div class="credit-popup__mounth">
+							<button class="credit-popup__mounth-price">2 898 ₽</button>
+							<div class="credit-popup__mounth-name">6-й месяц</div>
+						</div>
+					</div>
+					<div class="credit-popup__content">
+						<div class="credit-popup__title">Разделите стоимость покупки на 6 равных частей</div>
+						<div class="credit-popup__subtitle _fz-13">Соберите корзину на общую сумму от 40 000 до 200 000 ₽ и выберите способ оплаты "В рассрочку 0-0-6" при оформлении заказа"</div>
+						<div class="form__2col">
+							<button class="credit-popup__busket btn _yellow _fz-16">
+								Добавить в корзину
+								<svg width="15" height="17"> <use xlink:href="@img/icons/icons.svg#svg-bag"></use> </svg>
+							</button>
+							<img src="@img/icons/main-logo.svg" alt="logo" width="142" class="_ml-auto _mt-10 _only-desktop">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
