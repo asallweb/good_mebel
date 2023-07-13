@@ -1,1 +1,41 @@
 // Тут будут стили после 12.07.2023
+.rooms{
+	margin-top: 40px;
+	@include adaptiveValue("margin-bottom", 70, 40);
+	&__grid{
+		display: flex;
+		flex-wrap: wrap;
+		@include adaptiveValue("gap", 25, 15);
+	}
+	&__item{
+		@include adaptiveValue("padding", 15, 10);
+		@include adaptiveValue("width", 235, 162);
+		@include adaptiveValue("height", 235, 160);
+		@include adaptiveValue("font-size", 15, 13);
+		border-radius: 16px;
+		background: #f8f8f8;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		text-align: center;
+		color: #000;
+		transition: all 0.3s;
+		&:hover{
+			filter: grayscale(1);
+		}
+	}
+	&__item-img{
+		@include adaptiveValue("width", 156, 101);
+		@include adaptiveValue("height", 112, 73);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}

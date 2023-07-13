@@ -8624,6 +8624,67 @@ body::after {
   color: #a1a1a1;
 }
 
+.rooms {
+  margin-top: 40px;
+}
+
+.rooms__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rooms__item {
+  border-radius: 16px;
+  background: #f8f8f8;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  color: #000;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.rooms__item:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.rooms__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rooms__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -10913,6 +10974,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .collection-gallery {
     margin-bottom: 5rem;
+  }
+
+  .rooms {
+    margin-bottom: 4.375rem;
+  }
+
+  .rooms__grid {
+    gap: 1.5625rem;
+  }
+
+  .rooms__item {
+    padding: 0.9375rem;
+  }
+
+  .rooms__item {
+    width: 14.6875rem;
+  }
+
+  .rooms__item {
+    height: 14.6875rem;
+  }
+
+  .rooms__item {
+    font-size: 0.9375rem;
+  }
+
+  .rooms__item-img {
+    width: 9.75rem;
+  }
+
+  .rooms__item-img {
+    height: 7rem;
   }
 }
 
@@ -14444,6 +14537,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .collection-gallery {
     margin-bottom: 2.5rem;
+  }
+
+  .rooms {
+    margin-bottom: 2.5rem;
+  }
+
+  .rooms__grid {
+    gap: 0.9375rem;
+  }
+
+  .rooms__item {
+    padding: 0.625rem;
+  }
+
+  .rooms__item {
+    width: 10.125rem;
+  }
+
+  .rooms__item {
+    height: 10rem;
+  }
+
+  .rooms__item {
+    font-size: 0.8125rem;
+  }
+
+  .rooms__item-img {
+    width: 6.3125rem;
+  }
+
+  .rooms__item-img {
+    height: 4.5625rem;
   }
 }
 
@@ -18762,6 +18887,102 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (margin-bottom: clamp( 2.5rem , 1.9701986755rem  +  2.6490066225vw , 5rem )) {
     .collection-gallery {
       margin-bottom: calc(2.5rem + 2.5 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .rooms {
+      margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .rooms {
+      margin-bottom: calc(2.5rem + 1.875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (gap: clamp( 0.9375rem , 0.8050496689rem  +  0.6622516556vw , 1.5625rem )) {
+    .rooms__grid {
+      gap: clamp( 0.9375rem , 0.8050496689rem  +  0.6622516556vw , 1.5625rem );
+    }
+}
+
+@supports not (gap: clamp( 0.9375rem , 0.8050496689rem  +  0.6622516556vw , 1.5625rem )) {
+    .rooms__grid {
+      gap: calc(0.9375rem + 0.625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (padding: clamp( 0.625rem , 0.5587748344rem  +  0.3311258278vw , 0.9375rem )) {
+    .rooms__item {
+      padding: clamp( 0.625rem , 0.5587748344rem  +  0.3311258278vw , 0.9375rem );
+    }
+}
+
+@supports not (padding: clamp( 0.625rem , 0.5587748344rem  +  0.3311258278vw , 0.9375rem )) {
+    .rooms__item {
+      padding: calc(0.625rem + 0.3125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (width: clamp( 10.125rem , 9.1581125828rem  +  4.8344370861vw , 14.6875rem )) {
+    .rooms__item {
+      width: clamp( 10.125rem , 9.1581125828rem  +  4.8344370861vw , 14.6875rem );
+    }
+}
+
+@supports not (width: clamp( 10.125rem , 9.1581125828rem  +  4.8344370861vw , 14.6875rem )) {
+    .rooms__item {
+      width: calc(10.125rem + 4.5625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (height: clamp( 10rem , 9.0066225166rem  +  4.9668874172vw , 14.6875rem )) {
+    .rooms__item {
+      height: clamp( 10rem , 9.0066225166rem  +  4.9668874172vw , 14.6875rem );
+    }
+}
+
+@supports not (height: clamp( 10rem , 9.0066225166rem  +  4.9668874172vw , 14.6875rem )) {
+    .rooms__item {
+      height: calc(10rem + 4.6875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 0.8125rem , 0.7860099338rem  +  0.1324503311vw , 0.9375rem )) {
+    .rooms__item {
+      font-size: clamp( 0.8125rem , 0.7860099338rem  +  0.1324503311vw , 0.9375rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.8125rem , 0.7860099338rem  +  0.1324503311vw , 0.9375rem )) {
+    .rooms__item {
+      font-size: calc(0.8125rem + 0.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (width: clamp( 6.3125rem , 5.5840231788rem  +  3.642384106vw , 9.75rem )) {
+    .rooms__item-img {
+      width: clamp( 6.3125rem , 5.5840231788rem  +  3.642384106vw , 9.75rem );
+    }
+}
+
+@supports not (width: clamp( 6.3125rem , 5.5840231788rem  +  3.642384106vw , 9.75rem )) {
+    .rooms__item-img {
+      width: calc(6.3125rem + 3.4375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (height: clamp( 4.5625rem , 4.0459437086rem  +  2.582781457vw , 7rem )) {
+    .rooms__item-img {
+      height: clamp( 4.5625rem , 4.0459437086rem  +  2.582781457vw , 7rem );
+    }
+}
+
+@supports not (height: clamp( 4.5625rem , 4.0459437086rem  +  2.582781457vw , 7rem )) {
+    .rooms__item-img {
+      height: calc(4.5625rem + 2.4375 * (100vw - 20rem) / 94.375);
     }
 }
 }
