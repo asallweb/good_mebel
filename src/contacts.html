@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Контакты"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<span>Контакты</span>
+				</section>
+				<section class="content-section __container _mt-30">
+					<div class="content-section__h1 _mb-35">Контактная информация</div>
+					<div class="toggler">
+						<button class="toggler__btn btn">Магазин 1</button>
+						<button class="toggler__btn btn _active">Магазин 2</button>
+						<button class="toggler__btn btn">Магазин 3</button>
+					</div>
+				</section>
+				@@include('html/_map.htm',{})
+				<div class="content-section __container _mb-25-20">
+					<div class="content-section__h2 _mb-25-20">ИНТЕРНЕТ-МАГАЗИН НЕДОРОГОЙ МЕБЕЛИ В МОСКВЕ</div>
+					<div class="content-section__text">
+						<p> Интернет-магазин «Гуд Мебель» – это недорогая корпусная и мягкая мебель от производителя. В нашем распоряжении собственные фабрики полного цикла, выпускающие диваны и кресла, шкафы и стенки, спальни и прихожие.</p>
+						<br>
+						<p>Кроме того, на страницах сайта вы найдете большой ассортимент мебели других отечественных производителей. Принимая решение о сотрудничестве с новым партнером, мы стремимся не просто расширить каталог, но и повысить качество поставляемой продукции.</p>
+						<br>
+						<p>Сделать правильный выбор вам помогут подробные описания товаров и детальные фото. Операторы «Гуд Мебель» в любой момент окажут помощь в проектировании внутреннего наполнения шкафа-купе, помогут с комбинацией обивочных материалов для дивана, проконсультируют по работе сайта и навигации по нему. Посмотреть на понравившуюся модель «в живую», убедиться в ее удобстве, ознакомиться с образцами материалов и ценами можно в шоу-руме по адресу ул. Велозаводская, д. 13, стр. 1, здание Велозаводского Рынка, цокольный этаж, павильон 315 (ст. метро "Автозаводская" или "Дубровка" МЦК). Наш интернет-магазин – мебель отличного качества!</p>
+						<br>
+						<a href="" class="content-section__link">Чиать полностью</a>
+					</div>
+				</div>
+				<div class="content-section __container">
+					<div class="content-section__h2">ПРЕИМУЩЕСТВА ГУД МЕБЕЛЬ</div>
+				</div>
+				@@include('html/_advantages.htm',{})
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

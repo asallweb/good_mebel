@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Способы оплаты"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<span>Способы оплаты</span>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1 _mb-35">Способы оплаты</div>
+					<div class="toggler">
+						<button class="toggler__btn btn">Доставка</button>
+						<button class="toggler__btn btn _active">Оплата</button>
+						<button class="toggler__btn btn">Гарантия и возврат</button>
+					</div>
+				</section>
+				<section class="payment-types __container">
+					<div class="payment-types__title">В нашем интернет-магазине есть несколько способов оплаты:</div>
+					<div class="payment-types__list">
+						<div class="payment-types__item">
+							<div class="payment-types__item-content">
+								<div class="payment-types__item-name">Наличными курьеру</div>
+								<div class="payment-types__item-text">Курьер доставляет Вам товар, а Вы тщательно осматриваете заказ, после чего производите оплату. Курьер предоставит товарный и кассовый чеки. Данный способ оплаты товара доступен для Москвы и Московской области.</div>
+							</div>
+							<div class="payment-types__item-image">
+								<img src="@img/icons/methods-wallet.svg" alt="Наличными курьеру">
+							</div>
+						</div>
+						<div class="payment-types__item">
+							<div class="payment-types__item-content">
+								<div class="payment-types__item-name">Покупка в кредит</div>
+								<div class="payment-types__item-text">После согласования состава заказа с нашим оператором, подается заявка на кредит. Далее Вам следует дождаться звонка кредитного специалиста. После утверждения заявки, договор на подпись доставят Вам на дом, что значительно сэкономит Ваше время.</div>
+							</div>
+							<div class="payment-types__item-image">
+								<img src="@img/icons/methods-discount.svg" alt="Покупка в кредит">
+							</div>
+						</div>
+						<div class="payment-types__item">
+							<div class="payment-types__item-content">
+								<div class="payment-types__item-name">В рассрочку</div>
+								<div class="payment-types__item-text">Курьер доставляет Вам товар, а Вы тщательно осматриваете заказ, после чего производите оплату. Курьер предоставит товарный и кассовый чеки. Данный способ оплаты товара доступен для Москвы и Московской области.</div>
+							</div>
+							<div class="payment-types__item-image">
+								<img src="@img/icons/methods-calendar.svg" alt="В рассрочку">
+							</div>
+						</div>
+						<div class="payment-types__item">
+							<div class="payment-types__item-content">
+								<div class="payment-types__item-name">Банковской картой</div>
+								<div class="payment-types__item-text">Курьер доставляет Вам товар, а Вы тщательно осматриваете заказ, после чего производите оплату. Курьер предоставит товарный и кассовый чеки. Данный способ оплаты товара доступен для Москвы и Московской области.</div>
+							</div>
+							<div class="payment-types__item-image">
+								<img src="@img/icons/methods-document.svg" alt="Банковской картой">
+							</div>
+						</div>
+						<div class="payment-types__item">
+							<div class="payment-types__item-content">
+								<div class="payment-types__item-name">По счету</div>
+								<div class="payment-types__item-text">После согласования состава заказа с нашим оператором, подается заявка на кредит. Далее Вам следует дождаться звонка кредитного специалиста. После утверждения заявки, договор на подпись доставят Вам на дом, что значительно сэкономит Ваше время.</div>
+							</div>
+							<div class="payment-types__item-image">
+								<img src="@img/icons/methods-document-2.svg" alt="По счету">
+							</div>
+						</div>
+						<div class="payment-types__item">
+							<div class="payment-types__item-content">
+								<div class="payment-types__item-name">Перевод</div>
+								<div class="payment-types__item-text">Для осуществления оплаты потребуется выслать менеджеру необходимые реквизиты. Данный способ оплаты предусмотрен для физических и юридических лиц в любом регионе России. По факту оплаты вместе с заказом Вам будут предоставлены все необходимые документы.</div>
+							</div>
+							<div class="payment-types__item-image">
+								<img src="@img/icons/methods-paper.svg" alt="Перевод">
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="content-section __container">
+					<div class="content-section__h2">ПРЕИМУЩЕСТВА ГУД МЕБЕЛЬ</div>
+				</div>
+				@@include('html/_advantages.htm',{})
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

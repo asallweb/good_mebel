@@ -39,3 +39,65 @@
 		}
 	}
 }
+.payment-types {
+	@include adaptiveValue("padding-top", 60, 40);
+	@include adaptiveValue("margin-top", 40, 25);
+	@include adaptiveValue("margin-bottom", 80, 40);
+	border-top: 1px solid #cbcbcb;
+	&__title {
+		font-size: 20px;
+		color: #000;
+		@include adaptiveValue("margin-bottom", 40, 25);
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+	&__item {
+		@include adaptiveValue("padding", 30, 15);
+		border-radius: 16px;
+		background: rgba(255, 255, 255, 0);
+		border: 1px solid #e1e1e1;
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	&__item-name {
+		@include adaptiveValue("margin-top", 15, 5);
+		font-weight: 500;
+		font-size: 17px;
+		color: #000;
+		margin-bottom: 15px;
+	}
+	&__item-text {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 26px;
+		color: #000;
+	}
+	&__item-image {
+		width: 95px;
+		height: 95px;
+		background: #f6f6f6;
+		border-radius: 50%;
+		align-self: flex-end;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@media (max-width: 1280px) {
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (max-width: $mobile) {
+		&__list {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__item {
+			flex-direction: column;
+		}
+	}
+}
