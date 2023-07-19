@@ -8807,7 +8807,7 @@ body::after {
 }
 
 .warranty__quality-btn {
-  width: 220px;
+  width: 220px !important;
   height: 54px;
   font-size: 16px;
   color: #000;
@@ -8825,7 +8825,7 @@ body::after {
 }
 
 .warranty__quality-button {
-  width: 100%;
+  width: 100% !important;
   height: 46px;
   border-radius: 23px;
   padding: 0 10px;
