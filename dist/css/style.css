@@ -8749,6 +8749,299 @@ body::after {
           justify-content: center;
 }
 
+.warranty {
+  border-top: 1px solid #cbcbcb;
+}
+
+.warranty__documents-quality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.warranty__documents-title {
+  line-height: 1.5;
+  color: #000;
+}
+
+.warranty__documents-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 15px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.warranty__documents-link:hover {
+  color: #0391A2;
+}
+
+.warranty__documents-link img {
+  width: 17px;
+  height: 19px;
+  margin-top: -2px;
+}
+
+.warranty__quality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.warranty__quality-left {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #e1e1e1;
+}
+
+.warranty__quality-title {
+  line-height: 1.5;
+  color: #000;
+}
+
+.warranty__quality-btn {
+  width: 220px;
+  height: 54px;
+  font-size: 16px;
+  color: #000;
+}
+
+.warranty__quality-right {
+  border-radius: 16px;
+  background: #42acb9;
+  position: relative;
+}
+
+.warranty__quality-percent img {
+  width: 100%;
+  height: auto;
+}
+
+.warranty__quality-button {
+  width: 100%;
+  height: 46px;
+  border-radius: 23px;
+  padding: 0 10px;
+}
+
+.warranty__quality-icon {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.warranty__shop {
+  border-top: 1px solid #cbcbcb;
+  margin-top: 100px;
+}
+
+.warranty__shop-title {
+  color: #000;
+}
+
+.warranty__shop-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.warranty__shop-item {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+.warranty__shop-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.warranty__shop-for {
+  line-height: 1.5;
+  color: #000;
+}
+
+.warranty__shop-image {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.warranty__shop-image img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.warranty__shop-2cols {
+  border-bottom: 1px solid #cbcbcb;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 26px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.warranty__shop-2cols-title {
+  font-size: 20px;
+  color: #000;
+}
+
+.warranty__content {
+  border-bottom: 1px solid #cbcbcb;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.warranty__content p {
+  margin-bottom: 20px;
+}
+
+.warranty__content a {
+  color: #0391a2;
+}
+
+.warranty__content a:hover {
+  text-decoration: underline;
+}
+
+.warranty__content-title {
+  color: #232323;
+  margin-bottom: 30px;
+}
+
+.warranty__content-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.warranty__content-item {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #e1e1e1;
+  padding: 50px 30px 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.warranty__content-item-content {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.warranty__content-item-content ul li {
+  padding-left: 6px;
+  margin-bottom: 10px;
+}
+
+.warranty__content-item-content ul li::before {
+  content: "•";
+  color: #5c99b5;
+  font-weight: bold;
+  display: inline-block;
+  width: 6px;
+  margin-left: -6px;
+  margin-right: 5px;
+}
+
+.warranty__content-item-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.warranty__content-item-image {
+  width: 95px;
+  height: 95px;
+  background: #f6f6f6;
+  border-radius: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.warranty__content-download {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 30px 0 0;
+}
+
+.warranty__content-attention {
+  font-size: 13px;
+  color: #000;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -9647,6 +9940,62 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .basket__product-count .quantity {
     max-width: 11.875rem;
+  }
+
+  .warranty__documents {
+    padding-top: 1.875rem;
+  }
+
+  .warranty__quality-left {
+    padding-top: 5rem;
+  }
+
+  .warranty__quality-left {
+    padding-bottom: 5rem;
+  }
+
+  .warranty__quality-left {
+    padding-left: 4.375rem;
+  }
+
+  .warranty__quality-left {
+    padding-right: 4.375rem;
+  }
+
+  .warranty__quality-left {
+    width: 36.25rem;
+  }
+
+  .warranty__quality-left {
+    height: 21.5625rem;
+  }
+
+  .warranty__quality-right {
+    width: 19.375rem;
+  }
+
+  .warranty__quality-right {
+    height: 21.5625rem;
+  }
+
+  .warranty__quality-right {
+    padding-top: 4.375rem;
+  }
+
+  .warranty__quality-right {
+    padding-left: 2.5rem;
+  }
+
+  .warranty__quality-right {
+    padding-right: 2.5rem;
+  }
+
+  .warranty__shop-item {
+    padding: 2.5rem;
+  }
+
+  .warranty__shop-image {
+    width: 15.625rem;
   }
 }
 
@@ -11095,6 +11444,110 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .payment-types__item-name {
     margin-top: 0.9375rem;
   }
+
+  .warranty {
+    padding-top: 3.75rem;
+  }
+
+  .warranty {
+    margin-top: 2.5rem;
+  }
+
+  .warranty__documents-quality {
+    gap: 5rem;
+  }
+
+  .warranty__documents-title {
+    margin-bottom: 2.375rem;
+  }
+
+  .warranty__documents-title {
+    font-size: 1.25rem;
+  }
+
+  .warranty__documents-item {
+    margin-bottom: 1.5625rem;
+  }
+
+  .warranty__quality-title {
+    font-size: 1.25rem;
+  }
+
+  .warranty__quality-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .warranty__quality-percent {
+    margin-bottom: 1.625rem;
+  }
+
+  .warranty__quality-button {
+    font-size: 1rem;
+  }
+
+  .warranty__shop {
+    padding-top: 3.125rem;
+  }
+
+  .warranty__shop {
+    margin-bottom: 4.375rem;
+  }
+
+  .warranty__shop-title {
+    font-size: 2rem;
+  }
+
+  .warranty__shop-title {
+    margin-bottom: 1.875rem;
+  }
+
+  .warranty__shop-count {
+    margin-bottom: 1.5rem;
+  }
+
+  .warranty__shop-for {
+    font-size: 1.25rem;
+  }
+
+  .warranty__shop-2cols {
+    margin-top: 4.375rem;
+  }
+
+  .warranty__shop-2cols {
+    margin-bottom: 4.375rem;
+  }
+
+  .warranty__shop-2cols {
+    padding-bottom: 3.75rem;
+  }
+
+  .warranty__shop-2cols {
+    gap: 2.5rem;
+  }
+
+  .warranty__shop-2cols p {
+    margin-bottom: 1.875rem;
+  }
+
+  .warranty__shop-2cols-title {
+    margin-bottom: 1.875rem;
+  }
+
+  .warranty__content {
+    margin-top: 3.75rem;
+  }
+
+  .warranty__content {
+    margin-bottom: 3.75rem;
+  }
+
+  .warranty__content {
+    padding-bottom: 3.75rem;
+  }
+
+  .warranty__content-title {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -11402,6 +11855,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 80em) {
+  .warranty__shop-item {
+    padding: 0.9375rem;
+  }
+
+  .warranty__shop-image {
+    width: 8.75rem;
+  }
+}
+
 @media (max-width: 1270px) {
   .tooltip__body {
     scale: 0.7;
@@ -11411,6 +11874,37 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .tooltip__item._open-right .tooltip__body {
     left: auto;
     right: -30px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .warranty__documents-quality {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .warranty__quality-left {
+    height: auto !important;
+    width: calc(100vw - 300px) !important;
+  }
+
+  .warranty__quality-right {
+    height: auto !important;
+    width: 300px !important;
+    min-height: 300px;
+    padding-bottom: 100px !important;
+  }
+
+  .warranty__shop-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .warranty__content-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -14687,11 +15181,165 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .payment-types__item-name {
     margin-top: 0.3125rem;
   }
+
+  .warranty {
+    padding-top: 2.5rem;
+  }
+
+  .warranty {
+    margin-top: 1.25rem;
+  }
+
+  .warranty__documents-quality {
+    gap: 1.875rem;
+  }
+
+  .warranty__documents-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .warranty__documents-title {
+    font-size: 1.125rem;
+  }
+
+  .warranty__documents-item {
+    margin-bottom: 0.9375rem;
+  }
+
+  .warranty__quality-title {
+    font-size: 1.125rem;
+  }
+
+  .warranty__quality-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .warranty__quality-percent {
+    margin-bottom: 0.9375rem;
+  }
+
+  .warranty__quality-button {
+    font-size: 0.875rem;
+  }
+
+  .warranty__shop {
+    padding-top: 1.875rem;
+  }
+
+  .warranty__shop {
+    margin-bottom: 2.5rem;
+  }
+
+  .warranty__shop-title {
+    font-size: 1.5rem;
+  }
+
+  .warranty__shop-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .warranty__shop-count {
+    margin-bottom: 0.9375rem;
+  }
+
+  .warranty__shop-for {
+    font-size: 1rem;
+  }
+
+  .warranty__shop-2cols {
+    margin-top: 2.5rem;
+  }
+
+  .warranty__shop-2cols {
+    margin-bottom: 2.5rem;
+  }
+
+  .warranty__shop-2cols {
+    padding-bottom: 1.875rem;
+  }
+
+  .warranty__shop-2cols {
+    gap: 1.5625rem;
+  }
+
+  .warranty__shop-2cols p {
+    margin-bottom: 0.9375rem;
+  }
+
+  .warranty__shop-2cols-title {
+    margin-bottom: 0.9375rem;
+  }
+
+  .warranty__content {
+    margin-top: 2.5rem;
+  }
+
+  .warranty__content {
+    margin-bottom: 2.5rem;
+  }
+
+  .warranty__content {
+    padding-bottom: 2.5rem;
+  }
+
+  .warranty__content-title {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 87.5em) {
   .basket__product-count .quantity {
     max-width: 6.25rem;
+  }
+}
+
+@media (max-width: 77.5em) {
+  .warranty__documents {
+    padding-top: 0.0000000625rem;
+  }
+
+  .warranty__quality-left {
+    padding-top: 1.875rem;
+  }
+
+  .warranty__quality-left {
+    padding-bottom: 1.25rem;
+  }
+
+  .warranty__quality-left {
+    padding-left: 1.5625rem;
+  }
+
+  .warranty__quality-left {
+    padding-right: 1.5625rem;
+  }
+
+  .warranty__quality-left {
+    width: 25.375rem;
+  }
+
+  .warranty__quality-left {
+    height: 18.75rem;
+  }
+
+  .warranty__quality-right {
+    width: 16.25rem;
+  }
+
+  .warranty__quality-right {
+    height: 18.75rem;
+  }
+
+  .warranty__quality-right {
+    padding-top: 1.875rem;
+  }
+
+  .warranty__quality-right {
+    padding-left: 1.5625rem;
+  }
+
+  .warranty__quality-right {
+    padding-right: 1.5625rem;
   }
 }
 
@@ -14849,6 +15497,61 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .warranty__quality {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .warranty__quality-left {
+    width: 100% !important;
+  }
+
+  .warranty__quality-right {
+    width: 100% !important;
+  }
+
+  .warranty__shop-list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .warranty__shop-count span {
+    margin-right: 7px !important;
+  }
+
+  .warranty__shop-image {
+    width: 100px !important;
+  }
+
+  .warranty__shop-2cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .warranty__content-list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .warranty__content-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .warranty__content-item-content {
+    min-height: 0;
+  }
+
+  .warranty__content-attention {
+    margin-top: 20px;
   }
 }
 
@@ -19186,6 +19889,318 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
       margin-top: calc(0.3125rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
+
+@supports (padding-top: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty {
+      padding-top: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem );
+    }
+}
+
+@supports not (padding-top: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty {
+      padding-top: calc(2.5rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-top: clamp( 1.25rem , 0.9850993377rem  +  1.3245033113vw , 2.5rem )) {
+    .warranty {
+      margin-top: clamp( 1.25rem , 0.9850993377rem  +  1.3245033113vw , 2.5rem );
+    }
+}
+
+@supports not (margin-top: clamp( 1.25rem , 0.9850993377rem  +  1.3245033113vw , 2.5rem )) {
+    .warranty {
+      margin-top: calc(1.25rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (gap: clamp( 1.875rem , 1.2127483444rem  +  3.3112582781vw , 5rem )) {
+    .warranty__documents-quality {
+      gap: clamp( 1.875rem , 1.2127483444rem  +  3.3112582781vw , 5rem );
+    }
+}
+
+@supports not (gap: clamp( 1.875rem , 1.2127483444rem  +  3.3112582781vw , 5rem )) {
+    .warranty__documents-quality {
+      gap: calc(1.875rem + 3.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 1.011589404rem  +  1.1920529801vw , 2.375rem )) {
+    .warranty__documents-title {
+      margin-bottom: clamp( 1.25rem , 1.011589404rem  +  1.1920529801vw , 2.375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 1.011589404rem  +  1.1920529801vw , 2.375rem )) {
+    .warranty__documents-title {
+      margin-bottom: calc(1.25rem + 1.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 1.0985099338rem  +  0.1324503311vw , 1.25rem )) {
+    .warranty__documents-title {
+      font-size: clamp( 1.125rem , 1.0985099338rem  +  0.1324503311vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0985099338rem  +  0.1324503311vw , 1.25rem )) {
+    .warranty__documents-title {
+      font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.8050496689rem  +  0.6622516556vw , 1.5625rem )) {
+    .warranty__documents-item {
+      margin-bottom: clamp( 0.9375rem , 0.8050496689rem  +  0.6622516556vw , 1.5625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.8050496689rem  +  0.6622516556vw , 1.5625rem )) {
+    .warranty__documents-item {
+      margin-bottom: calc(0.9375rem + 0.625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 1.0985099338rem  +  0.1324503311vw , 1.25rem )) {
+    .warranty__quality-title {
+      font-size: clamp( 1.125rem , 1.0985099338rem  +  0.1324503311vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0985099338rem  +  0.1324503311vw , 1.25rem )) {
+    .warranty__quality-title {
+      font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 0.9850993377rem  +  1.3245033113vw , 2.5rem )) {
+    .warranty__quality-title {
+      margin-bottom: clamp( 1.25rem , 0.9850993377rem  +  1.3245033113vw , 2.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 0.9850993377rem  +  1.3245033113vw , 2.5rem )) {
+    .warranty__quality-title {
+      margin-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.7918046358rem  +  0.7284768212vw , 1.625rem )) {
+    .warranty__quality-percent {
+      margin-bottom: clamp( 0.9375rem , 0.7918046358rem  +  0.7284768212vw , 1.625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.7918046358rem  +  0.7284768212vw , 1.625rem )) {
+    .warranty__quality-percent {
+      margin-bottom: calc(0.9375rem + 0.6875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.8485099338rem  +  0.1324503311vw , 1rem )) {
+    .warranty__quality-button {
+      font-size: clamp( 0.875rem , 0.8485099338rem  +  0.1324503311vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.8485099338rem  +  0.1324503311vw , 1rem )) {
+    .warranty__quality-button {
+      font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , 1.6100993377rem  +  1.3245033113vw , 3.125rem )) {
+    .warranty__shop {
+      padding-top: clamp( 1.875rem , 1.6100993377rem  +  1.3245033113vw , 3.125rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 1.6100993377rem  +  1.3245033113vw , 3.125rem )) {
+    .warranty__shop {
+      padding-top: calc(1.875rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .warranty__shop {
+      margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .warranty__shop {
+      margin-bottom: calc(2.5rem + 1.875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 1.5rem , 1.3940397351rem  +  0.5298013245vw , 2rem )) {
+    .warranty__shop-title {
+      font-size: clamp( 1.5rem , 1.3940397351rem  +  0.5298013245vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.3940397351rem  +  0.5298013245vw , 2rem )) {
+    .warranty__shop-title {
+      font-size: calc(1.5rem + 0.5 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 1.1175496689rem  +  0.6622516556vw , 1.875rem )) {
+    .warranty__shop-title {
+      margin-bottom: clamp( 1.25rem , 1.1175496689rem  +  0.6622516556vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 1.1175496689rem  +  0.6622516556vw , 1.875rem )) {
+    .warranty__shop-title {
+      margin-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.818294702rem  +  0.5960264901vw , 1.5rem )) {
+    .warranty__shop-count {
+      margin-bottom: clamp( 0.9375rem , 0.818294702rem  +  0.5960264901vw , 1.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.818294702rem  +  0.5960264901vw , 1.5rem )) {
+    .warranty__shop-count {
+      margin-bottom: calc(0.9375rem + 0.5625 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.9470198675rem  +  0.2649006623vw , 1.25rem )) {
+    .warranty__shop-for {
+      font-size: clamp( 1rem , 0.9470198675rem  +  0.2649006623vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.9470198675rem  +  0.2649006623vw , 1.25rem )) {
+    .warranty__shop-for {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-top: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .warranty__shop-2cols {
+      margin-top: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem );
+    }
+}
+
+@supports not (margin-top: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .warranty__shop-2cols {
+      margin-top: calc(2.5rem + 1.875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .warranty__shop-2cols {
+      margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.5rem , 2.1026490066rem  +  1.9867549669vw , 4.375rem )) {
+    .warranty__shop-2cols {
+      margin-bottom: calc(2.5rem + 1.875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 1.4776490066rem  +  1.9867549669vw , 3.75rem )) {
+    .warranty__shop-2cols {
+      padding-bottom: clamp( 1.875rem , 1.4776490066rem  +  1.9867549669vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.4776490066rem  +  1.9867549669vw , 3.75rem )) {
+    .warranty__shop-2cols {
+      padding-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (gap: clamp( 1.5625rem , 1.3638245033rem  +  0.9933774834vw , 2.5rem )) {
+    .warranty__shop-2cols {
+      gap: clamp( 1.5625rem , 1.3638245033rem  +  0.9933774834vw , 2.5rem );
+    }
+}
+
+@supports not (gap: clamp( 1.5625rem , 1.3638245033rem  +  0.9933774834vw , 2.5rem )) {
+    .warranty__shop-2cols {
+      gap: calc(1.5625rem + 0.9375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem )) {
+    .warranty__shop-2cols p {
+      margin-bottom: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem )) {
+    .warranty__shop-2cols p {
+      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem )) {
+    .warranty__shop-2cols-title {
+      margin-bottom: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.7388245033rem  +  0.9933774834vw , 1.875rem )) {
+    .warranty__shop-2cols-title {
+      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-top: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty__content {
+      margin-top: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem );
+    }
+}
+
+@supports not (margin-top: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty__content {
+      margin-top: calc(2.5rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty__content {
+      margin-bottom: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty__content {
+      margin-bottom: calc(2.5rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (padding-bottom: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty__content {
+      padding-bottom: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 2.5rem , 2.2350993377rem  +  1.3245033113vw , 3.75rem )) {
+    .warranty__content {
+      padding-bottom: calc(2.5rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 1.5rem , 1.3940397351rem  +  0.5298013245vw , 2rem )) {
+    .warranty__content-title {
+      font-size: clamp( 1.5rem , 1.3940397351rem  +  0.5298013245vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.3940397351rem  +  0.5298013245vw , 2rem )) {
+    .warranty__content-title {
+      font-size: calc(1.5rem + 0.5 * (100vw - 20rem) / 94.375);
+    }
+}
 }
 
 @media (min-width: 73.75em) and (max-width: 112.5em) {
@@ -19768,6 +20783,178 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (max-width: clamp( 6.25rem , -13.4375rem  +  22.5vw , 11.875rem )) {
     .basket__product-count .quantity {
       max-width: calc(6.25rem + 5.625 * (100vw - 87.5rem) / 25);
+    }
+}
+}
+
+@media (min-width: 77.5em) and (max-width: 112.5em) {
+@supports (padding-top: clamp( 0.0000000625rem , -4.1517855134rem  +  5.3571426786vw , 1.875rem )) {
+    .warranty__documents {
+      padding-top: clamp( 0.0000000625rem , -4.1517855134rem  +  5.3571426786vw , 1.875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.0000000625rem , -4.1517855134rem  +  5.3571426786vw , 1.875rem )) {
+    .warranty__documents {
+      padding-top: calc(0.0000000625rem + 1.8749999375 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , -5.0446428571rem  +  8.9285714286vw , 5rem )) {
+    .warranty__quality-left {
+      padding-top: clamp( 1.875rem , -5.0446428571rem  +  8.9285714286vw , 5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , -5.0446428571rem  +  8.9285714286vw , 5rem )) {
+    .warranty__quality-left {
+      padding-top: calc(1.875rem + 3.125 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.25rem , -7.0535714286rem  +  10.7142857143vw , 5rem )) {
+    .warranty__quality-left {
+      padding-bottom: clamp( 1.25rem , -7.0535714286rem  +  10.7142857143vw , 5rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.25rem , -7.0535714286rem  +  10.7142857143vw , 5rem )) {
+    .warranty__quality-left {
+      padding-bottom: calc(1.25rem + 3.75 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (padding-left: clamp( 1.5625rem , -4.6651785714rem  +  8.0357142857vw , 4.375rem )) {
+    .warranty__quality-left {
+      padding-left: clamp( 1.5625rem , -4.6651785714rem  +  8.0357142857vw , 4.375rem );
+    }
+}
+
+@supports not (padding-left: clamp( 1.5625rem , -4.6651785714rem  +  8.0357142857vw , 4.375rem )) {
+    .warranty__quality-left {
+      padding-left: calc(1.5625rem + 2.8125 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (padding-right: clamp( 1.5625rem , -4.6651785714rem  +  8.0357142857vw , 4.375rem )) {
+    .warranty__quality-left {
+      padding-right: clamp( 1.5625rem , -4.6651785714rem  +  8.0357142857vw , 4.375rem );
+    }
+}
+
+@supports not (padding-right: clamp( 1.5625rem , -4.6651785714rem  +  8.0357142857vw , 4.375rem )) {
+    .warranty__quality-left {
+      padding-right: calc(1.5625rem + 2.8125 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (width: clamp( 25.375rem , 1.2946428571rem  +  31.0714285714vw , 36.25rem )) {
+    .warranty__quality-left {
+      width: clamp( 25.375rem , 1.2946428571rem  +  31.0714285714vw , 36.25rem );
+    }
+}
+
+@supports not (width: clamp( 25.375rem , 1.2946428571rem  +  31.0714285714vw , 36.25rem )) {
+    .warranty__quality-left {
+      width: calc(25.375rem + 10.875 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (height: clamp( 18.75rem , 12.5223214286rem  +  8.0357142857vw , 21.5625rem )) {
+    .warranty__quality-left {
+      height: clamp( 18.75rem , 12.5223214286rem  +  8.0357142857vw , 21.5625rem );
+    }
+}
+
+@supports not (height: clamp( 18.75rem , 12.5223214286rem  +  8.0357142857vw , 21.5625rem )) {
+    .warranty__quality-left {
+      height: calc(18.75rem + 2.8125 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (width: clamp( 16.25rem , 9.3303571429rem  +  8.9285714286vw , 19.375rem )) {
+    .warranty__quality-right {
+      width: clamp( 16.25rem , 9.3303571429rem  +  8.9285714286vw , 19.375rem );
+    }
+}
+
+@supports not (width: clamp( 16.25rem , 9.3303571429rem  +  8.9285714286vw , 19.375rem )) {
+    .warranty__quality-right {
+      width: calc(16.25rem + 3.125 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (height: clamp( 18.75rem , 12.5223214286rem  +  8.0357142857vw , 21.5625rem )) {
+    .warranty__quality-right {
+      height: clamp( 18.75rem , 12.5223214286rem  +  8.0357142857vw , 21.5625rem );
+    }
+}
+
+@supports not (height: clamp( 18.75rem , 12.5223214286rem  +  8.0357142857vw , 21.5625rem )) {
+    .warranty__quality-right {
+      height: calc(18.75rem + 2.8125 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , -3.6607142857rem  +  7.1428571429vw , 4.375rem )) {
+    .warranty__quality-right {
+      padding-top: clamp( 1.875rem , -3.6607142857rem  +  7.1428571429vw , 4.375rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , -3.6607142857rem  +  7.1428571429vw , 4.375rem )) {
+    .warranty__quality-right {
+      padding-top: calc(1.875rem + 2.5 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (padding-left: clamp( 1.5625rem , -0.5133928571rem  +  2.6785714286vw , 2.5rem )) {
+    .warranty__quality-right {
+      padding-left: clamp( 1.5625rem , -0.5133928571rem  +  2.6785714286vw , 2.5rem );
+    }
+}
+
+@supports not (padding-left: clamp( 1.5625rem , -0.5133928571rem  +  2.6785714286vw , 2.5rem )) {
+    .warranty__quality-right {
+      padding-left: calc(1.5625rem + 0.9375 * (100vw - 77.5rem) / 35);
+    }
+}
+
+@supports (padding-right: clamp( 1.5625rem , -0.5133928571rem  +  2.6785714286vw , 2.5rem )) {
+    .warranty__quality-right {
+      padding-right: clamp( 1.5625rem , -0.5133928571rem  +  2.6785714286vw , 2.5rem );
+    }
+}
+
+@supports not (padding-right: clamp( 1.5625rem , -0.5133928571rem  +  2.6785714286vw , 2.5rem )) {
+    .warranty__quality-right {
+      padding-right: calc(1.5625rem + 0.9375 * (100vw - 77.5rem) / 35);
+    }
+}
+}
+
+@media (min-width: 80em) and (max-width: 112.5em) {
+@supports (padding: clamp( 0.9375rem , -2.9086538462rem  +  4.8076923077vw , 2.5rem )) {
+    .warranty__shop-item {
+      padding: clamp( 0.9375rem , -2.9086538462rem  +  4.8076923077vw , 2.5rem );
+    }
+}
+
+@supports not (padding: clamp( 0.9375rem , -2.9086538462rem  +  4.8076923077vw , 2.5rem )) {
+    .warranty__shop-item {
+      padding: calc(0.9375rem + 1.5625 * (100vw - 80rem) / 32.5);
+    }
+}
+
+@supports (width: clamp( 8.75rem , -8.1730769231rem  +  21.1538461538vw , 15.625rem )) {
+    .warranty__shop-image {
+      width: clamp( 8.75rem , -8.1730769231rem  +  21.1538461538vw , 15.625rem );
+    }
+}
+
+@supports not (width: clamp( 8.75rem , -8.1730769231rem  +  21.1538461538vw , 15.625rem )) {
+    .warranty__shop-image {
+      width: calc(8.75rem + 6.875 * (100vw - 80rem) / 32.5);
     }
 }
 }
