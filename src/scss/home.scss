@@ -3476,6 +3476,9 @@
 	@include adaptiveValue("margin-top", 100, 40);
 	@include adaptiveValue("margin-bottom", 100, 40);
 	display: flex;
+	&._mb-40{
+		@include adaptiveValue("margin-bottom", 40, 30);
+	}
 	.akciya{
 		width: 50%;
 	}
@@ -3505,7 +3508,6 @@
 	background: url('../img/content/akciya_bg.png') right 30px center no-repeat #0391a2;
 	background-size: contain;
 	padding: 70px 50px;
-	height: 460px;
 	border-radius: 16px;
 	&__uptitle{
 		height: 35px;
@@ -3523,19 +3525,22 @@
 		line-height: 28px;
 		color: #fff;
 		margin-bottom: 50px;
+		&._mb-25{
+			margin-bottom: 25px;
+		}
 	}
 	li{
-		background: url('../img/icons/list-style.svg') left top no-repeat;
+		background: url('../img/icons/list-style.svg') left top 5px no-repeat;
 		background-size: 24px 24px;
 		font-weight: 300;
 		font-size: 18px;
+		line-height: 1.4;
 		color: #fff;
 		margin-bottom: 10px;
 		padding: 4px 0 10px 45px;
 	}
 	@media (max-width: 1280px) {
 		padding: 40px 25px;
-		height: 330px;
 		&__uptitle{
 			height: 30px;
 			border-radius: 15px;
@@ -3567,7 +3572,6 @@
 	}
 }
 .zamer{
-	height: 460px;
 	padding: 80px;
 	border-radius: 16px;
 	background: #f5f5f5;
@@ -3578,7 +3582,6 @@
 	}
 	@media (max-width: 1280px) {
 		padding: 40px 25px;
-		height: 330px;
 		&__title{
 			font-size: 18px;
 			margin-bottom: 20px;

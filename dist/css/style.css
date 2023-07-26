@@ -7357,7 +7357,6 @@ body::after {
 .akciya {
   background-size: contain;
   padding: 70px 50px;
-  height: 460px;
   border-radius: 16px;
 }
 
@@ -7384,18 +7383,22 @@ body::after {
   margin-bottom: 50px;
 }
 
+.akciya__title._mb-25 {
+  margin-bottom: 25px;
+}
+
 .akciya li {
-  background: url("../img/icons/list-style.svg") left top no-repeat;
+  background: url("../img/icons/list-style.svg") left top 5px no-repeat;
   background-size: 24px 24px;
   font-weight: 300;
   font-size: 18px;
+  line-height: 1.4;
   color: #fff;
   margin-bottom: 10px;
   padding: 4px 0 10px 45px;
 }
 
 .zamer {
-  height: 460px;
   padding: 80px;
   border-radius: 16px;
   background: #f5f5f5;
@@ -11224,6 +11227,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 6.25rem;
   }
 
+  .akciya-zamer._mb-40 {
+    margin-bottom: 2.5rem;
+  }
+
   .steps {
     margin-top: 6.25rem;
   }
@@ -11908,7 +11915,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .akciya {
     padding: 40px 25px;
-    height: 330px;
   }
 
   .akciya__uptitle {
@@ -11933,7 +11939,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .zamer {
     padding: 40px 25px;
-    height: 330px;
   }
 
   .zamer__title {
@@ -15010,6 +15015,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .akciya-zamer {
     margin-bottom: 2.5rem;
+  }
+
+  .akciya-zamer._mb-40 {
+    margin-bottom: 1.875rem;
   }
 
   .steps {
@@ -19206,6 +19215,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (margin-bottom: clamp( 2.5rem , 1.7052980132rem  +  3.9735099338vw , 6.25rem )) {
     .akciya-zamer {
       margin-bottom: calc(2.5rem + 3.75 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.7425496689rem  +  0.6622516556vw , 2.5rem )) {
+    .akciya-zamer._mb-40 {
+      margin-bottom: clamp( 1.875rem , 1.7425496689rem  +  0.6622516556vw , 2.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.7425496689rem  +  0.6622516556vw , 2.5rem )) {
+    .akciya-zamer._mb-40 {
+      margin-bottom: calc(1.875rem + 0.625 * (100vw - 20rem) / 94.375);
     }
 }
 
