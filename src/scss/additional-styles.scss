@@ -494,3 +494,236 @@
 		}
 	}
 }
+.blog-tags{
+	display: flex;
+	overflow-x: auto;
+	gap: 10px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	&__item{
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 18px;
+		border: 1px solid #e1dfdf;
+		height: 45px;
+		border-radius: 22.5px;
+		font-size: 13px;
+		color: #000;
+		transition: all 0.3s;
+		&:hover{
+			border-color: #0391A2;
+		}
+		&._blog-detail{
+			height: 30px;
+			padding: 0 14px;
+			font-size: 12px;
+		}
+	}
+}
+.blog{
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	&._bd-grey{
+		border-bottom: 1px solid #cbcbcb;
+		padding-bottom: 80px;
+		margin-bottom: 80px;
+	}
+	&__item{
+		display: flex;
+		gap: 40px;
+	}
+	&__item-image{
+		border-radius: 16px;
+		overflow: hidden;
+		@include adaptiveValue("width", 500, 345);
+		flex-shrink: 0;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__item-content{
+		display: flex;
+		flex-direction: column;
+	}
+	&__item-title{
+		font-size: 20px;
+		line-height: 1.4;
+		color: #000;
+		margin-bottom: 15px;
+	}
+	&__item-date{
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 1.6;
+		color: #8f8f8f;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-bottom: 25px;
+		svg{
+			fill: #8f8f8f;
+			width: 15px;
+			height: 15px;
+		}
+		&._mb-0{
+			margin-bottom: 0;
+		}
+	}
+	&__item-text{
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 1.6;
+		color: #000;
+		margin-bottom: 30px;
+	}
+	&__item-detail{
+		@include adaptiveValue("width", 160, 120);
+		margin-bottom: 20px;
+	}
+	&__item-tags-list{
+		margin-top: auto;
+		display: flex;
+		gap: 10px;
+		overflow-x: auto;
+		padding-bottom: 10px;
+	}
+	&__item-tag{
+		font-size: 12px;
+		color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 15px;
+		border: 1px solid #e1dfdf;
+		transition: all 0.3s;
+		padding: 0 14px;
+		height: 30px;
+		flex-shrink: 0;
+		&:hover{
+			border-color: #0391A2;
+		}
+	}
+	@media (max-width: 1280px) {
+		&__item{
+			flex-direction: column;
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+.blog-list{
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+.blog-sidebar{
+	@include adaptiveValue("width", 400, 345);
+	flex-shrink: 0;
+	@media (max-width: 768px) {
+		margin: 0 auto;
+	}
+}
+.blog-subscribe{
+	width: 100%;
+	border-radius: 16px;
+	background: #f6f6f6;
+	border: 1px solid #e1e1e1;
+	@include adaptiveValue("padding-top", 50, 30);
+	@include adaptiveValue("padding-bottom", 50, 30);
+	@include adaptiveValue("padding-left", 40, 20);
+	@include adaptiveValue("padding-right", 40, 20);
+	&__title{
+		font-size: 17px;
+		color: #000;
+		margin-bottom: 14px;
+	}
+	&__subtitle{
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 1.6;
+		color: #635858;
+		margin-bottom: 20px;
+	}
+}
+.blog-socials{
+	@include adaptiveValue("padding", 40, 20);
+	@include adaptiveValue("height", 125, 100);
+	width: 100%;
+	border-radius: 16px;
+	background: #f6f6f6;
+	border: 1px solid #e1e1e1;
+	display: flex;
+	align-items: center;
+	font-size: 17px;
+	color: #000;
+	span{
+		margin-right: 10px;
+	}
+	.social-link{
+		flex-shrink: 0;
+	}
+}
+.blog-detail{
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #000;
+	&__subtitle {
+		font-size: 20px;
+		color: #000;
+		margin: 20px 0;
+	}
+	img{
+		width: 100%;
+		height: auto;
+		margin-bottom: 40px;
+	}
+	p{
+		margin-bottom: 40px;
+	}
+	ul li {
+		padding-left: 6px;
+		margin-bottom: 10px;
+	}
+	ul li::before {
+		content: "\2022";
+		color: #5c99b5;
+		font-weight: bold;
+		display: inline-block;
+		width: 6px;
+		margin-left: -6px;
+		margin-right: 5px;
+	}
+	.show-more{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.similar-posts{
+	margin: 80px auto;
+	padding-top: 80px;
+	border-top: 1px solid #cbcbcb;
+	&__slide{
+		img{
+			@include adaptiveValue("width", 440, 340);
+			height: 286px;
+			border-radius: 16px;
+			object-fit: cover;
+			margin-bottom: 30px;
+		}
+	}
+	&__title{
+		font-size: 15px;
+		line-height: 1.6;
+		color: #000;
+		margin-bottom: 22px;
+		display: block;
+	}
+}

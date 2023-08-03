@@ -688,6 +688,27 @@ function initSliders() {
 		swiperCard();
 		window.addEventListener("resize", swiperCard);
 	}
+	if (document.querySelector('.similar-posts__slider')) {
+		new Swiper('.similar-posts__slider', { 
+			modules: [Pagination, Navigation, Lazy],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 'auto',
+			spaceBetween: 15,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				loadPrevNextAmount: 1,
+			},
+			navigation: {
+				prevEl: '.similar-posts-prev',
+				nextEl: '.similar-posts-next',
+			},
+			pagination: {
+				el: '.similar-posts-pagination',
+			}
+		});
+	}
 }
 function initSlidersScroll() {
 	let sliderScrollItems = document.querySelectorAll('.swiper_scroll');

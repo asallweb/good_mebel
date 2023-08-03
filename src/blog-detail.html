@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Блог детально"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<section class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<a href="">Блог</a> &mdash;
+					<span>Маленькая кухня в квартире: плюсы и минусы</span>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1 _mb-35 _border-bottom">
+						Маленькая кухня в квартире: плюсы и минусы
+						<div class="blog__item-date _mt-20 _mb-0">
+							<svg><use xlink:href="@img/icons/icons.svg#svg-clock"></use></svg>
+							29 июля 2023 г.
+						</div>
+					</div>
+				</section>
+				<div class="blog-tags __container ">
+					<a href="" class="blog-tags__item _blog-detail">Интерьер</a>
+					<a href="" class="blog-tags__item _blog-detail">Как выбрать</a>
+					<a href="" class="blog-tags__item _blog-detail">Мягкая мебель</a>
+				</div>
+				<section class="blog _bd-grey __container">
+					<div class="blog-detail">
+						<img src="@img/content/blog-img-4.png" alt="">
+						<p> Согласно статистическим данным, более половины граждан нашей страны сталкивается с проблемой неудачной планировки жилищных апартаментов, и наиболее распространённая проблема – наличие маленькой кухни, чаще всего размером 6х6 или даже 5х5. Как правило, обустройство таких помещений связывается с большими трудностями и сложностью реализации, а также крайней степенью непрактичности и неудобством. Однако важно понять, что эта комната не обязательно будет тесной и душной, если подойти к делу с умом и правильно оценить перспективы. </p>
+						<div class="blog-detail__subtitle">Кухня Вашей мечты – обновлённая реальность</div>
+						<p>Существует множество простых и одновременно эффективных способов визуально расширить пространство, благодаря которым даже самую небольшую кухню можно превратить в любимое домашнее место для всей семьи. Золотое правило ремонта в таких помещениях гласит: чтобы добиться лучшего результата, необходимо разработать хороший план и понять, что маленькая кухня – вовсе не проклятие, как склонны считать владельцы квартир старой проектировки. </p>
+						<p>Начнём с того, что первым и одним из ключевых моментов оформления кухни малых размеров является составление по-настоящему эргономичного проекта дизайнерского интерьера, приобрётшего широкое распространение в последние годы благодаря простоте реализации под руководством опытных специалистов и появлению на строительном рынке широкого выбора мебельного ассортимента. Но здесь тоже существуют свои законы и последовательность действий.</p>
+						<img src="@img/content/blog-img-5.png" alt="">
+						<div class="blog-detail__subtitle">Шаг 1: Подбор цветовой гаммы и установка правильного освещения</div>
+						<p>Как известно, наиболее популярным и в то же время крайне простым способом визуального расширения границ помещения является игра света и цвета. Это несложный, но эффективный приём, достигаемый различным образом:</p>
+						<ul>
+							<li>Стоит использовать сплошные зеркальные покрытия, отлично отражающие свет и зрительно увеличивающие пространство;</li>
+							<li>Лучше отдавать предпочтение светлым тонам или контрастным сочетаниям с преобладанием яркой, насыщенной палитры;</li>
+							<li>Необходимо также устанавливать хорошее освещение, как натуральное, так и искусственное – начиная с больших окон и заканчивая многочисленными светильниками, софитами и светодиодными лампами; </li>
+							<li>Следует стараться правильно распределять теневые и тёмные акценты интерьера, позволяющие углубить восприятие обстановки и сделать её более эффектной.</li>
+						</ul>
+						<a href="" class="show-more _fz-15">Вернуться назад</a>
+					</div>
+					<div class="blog-sidebar">
+						<div class="blog-subscribe">
+							<div class="blog-subscribe__title">СЛЕДИТЕ ЗА НОВОСТЯМИ!</div>
+							<div class="blog-subscribe__subtitle">Узнавайте об акциях и специальных предложениях вовремя!</div>
+							<form class="form">
+								<div class="form__form-field _mb-10"><input type="text" placeholder="Ваш e-mail"></div>
+								<div class="form__form-field _mb-0"><input type="submit" class="btn _yellow _fz-16" value="Подписаться"></div>
+							</form>
+						</div>
+						<div class="blog-socials _socials">
+							<span>Мы в соц.сетях:</span>
+							<a href="" class="social-link">
+								<svg width="14" height="9">
+									<use xlink:href="img/icons/icons.svg#svg-vk"></use>
+								</svg>
+							</a>
+							<a href="" class="social-link">
+								<svg width="14" height="12">
+									<use xlink:href="img/icons/icons.svg#svg-tg"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="__container">
+					<div class="content-section__h1">Товары из статьи</div>
+				</section>
+				<section class="product-list __container">
+					@@include('html/products-list/_product-list-16items-2.htm',{})
+				</section>
+				<section class="similar-posts __container">
+					<div class="slider-head">
+						<div class="projects__title">Похожие статьи</div>
+						<div class="slider-head__navigation">
+							<button type="button" class="swiper-button-prev similar-posts-prev swiper-button-disabled" disabled=""><svg width="12" height="7">
+									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+								</svg></button>
+							<button type="button" class="swiper-button-next similar-posts-next"><svg width="12" height="7">
+									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+								</svg></button>
+						</div>
+					</div>
+					<div class="similar-posts__slider swiper">
+						<div class="similar-posts__wrapper swiper-wrapper">
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-6.png" alt="">
+								<a href="" class="similar-posts__title">Механизмы трансформации диванов</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-7.png" alt="">
+								<a href="" class="similar-posts__title">Маленькая кухня в квартире: плюсы и минусы</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-8.png" alt="">
+								<a href="" class="similar-posts__title">Как ухаживать за корпусной мебелью</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-9.png" alt="">
+								<a href="" class="similar-posts__title">Маленькая кухня в квартире: плюсы и минусы</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-6.png" alt="">
+								<a href="" class="similar-posts__title">Механизмы трансформации диванов</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-7.png" alt="">
+								<a href="" class="similar-posts__title">Маленькая кухня в квартире: плюсы и минусы</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-8.png" alt="">
+								<a href="" class="similar-posts__title">Как ухаживать за корпусной мебелью</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+							<div class="similar-posts__slide swiper-slide">
+								<img src="@img/content/blog-img-9.png" alt="">
+								<a href="" class="similar-posts__title">Маленькая кухня в квартире: плюсы и минусы</a>
+								<div class="blog__item-tags-list">
+									<a href="" class="blog__item-tag">Интерьер</a>
+									<a href="" class="blog__item-tag">Как выбрать</a>
+									<a href="" class="blog__item-tag">Мягкая мебель</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination similar-posts-pagination"></div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
