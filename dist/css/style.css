@@ -6557,6 +6557,19 @@ body::after {
   max-width: 100%;
 }
 
+.feedback-slider._no-slider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.feedback-slider._no-slider .feedback-slider__slide {
+  width: 100%;
+  max-width: 100%;
+}
+
 .feedback-slider__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9406,6 +9419,40 @@ body::after {
   display: block;
 }
 
+.reviews-page__add-feedback {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  height: 45px;
+}
+
+.reviews-page__recommendations {
+  border-top: 1px solid #cbcbcb;
+}
+
+.reviews-page__recommendations-title {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 22px;
+}
+
+.reviews-page__recommendations-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-page__recommendations-body img {
+  width: auto;
+  height: auto;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -12000,6 +12047,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .similar-posts__slide img {
     width: 27.5rem;
   }
+
+  .reviews-page__add-feedback {
+    width: 13.75rem;
+  }
+
+  .reviews-page__recommendations {
+    padding-top: 2.8125rem;
+  }
+
+  .reviews-page__recommendations {
+    margin-top: 3.125rem;
+  }
+
+  .reviews-page__recommendations {
+    margin-bottom: 3.4375rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -13618,6 +13681,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .feedback-slider__all {
     width: 100% !important;
+  }
+
+  .feedback-slider._no-slider {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .photo-slider__slide {
@@ -15848,6 +15916,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .similar-posts__slide img {
     width: 21.25rem;
   }
+
+  .reviews-page__add-feedback {
+    width: 10rem;
+  }
+
+  .reviews-page__recommendations {
+    padding-top: 1.875rem;
+  }
+
+  .reviews-page__recommendations {
+    margin-top: 1.875rem;
+  }
+
+  .reviews-page__recommendations {
+    margin-bottom: 2.1875rem;
+  }
 }
 
 @media (max-width: 87.5em) {
@@ -16128,6 +16212,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     border: 1px solid #e1e1e1;
     max-width: 100%;
     margin-top: 15px;
+  }
+
+  .reviews-page__add-feedback {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-top: 15px;
+    width: 100% !important;
   }
 }
 
@@ -21039,6 +21131,54 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (width: clamp( 21.25rem , 19.9254966887rem  +  6.6225165563vw , 27.5rem )) {
     .similar-posts__slide img {
       width: calc(21.25rem + 6.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (width: clamp( 10rem , 9.2052980132rem  +  3.9735099338vw , 13.75rem )) {
+    .reviews-page__add-feedback {
+      width: clamp( 10rem , 9.2052980132rem  +  3.9735099338vw , 13.75rem );
+    }
+}
+
+@supports not (width: clamp( 10rem , 9.2052980132rem  +  3.9735099338vw , 13.75rem )) {
+    .reviews-page__add-feedback {
+      width: calc(10rem + 3.75 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , 1.6763245033rem  +  0.9933774834vw , 2.8125rem )) {
+    .reviews-page__recommendations {
+      padding-top: clamp( 1.875rem , 1.6763245033rem  +  0.9933774834vw , 2.8125rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , 1.6763245033rem  +  0.9933774834vw , 2.8125rem )) {
+    .reviews-page__recommendations {
+      padding-top: calc(1.875rem + 0.9375 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-top: clamp( 1.875rem , 1.6100993377rem  +  1.3245033113vw , 3.125rem )) {
+    .reviews-page__recommendations {
+      margin-top: clamp( 1.875rem , 1.6100993377rem  +  1.3245033113vw , 3.125rem );
+    }
+}
+
+@supports not (margin-top: clamp( 1.875rem , 1.6100993377rem  +  1.3245033113vw , 3.125rem )) {
+    .reviews-page__recommendations {
+      margin-top: calc(1.875rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.1875rem , 1.9225993377rem  +  1.3245033113vw , 3.4375rem )) {
+    .reviews-page__recommendations {
+      margin-bottom: clamp( 2.1875rem , 1.9225993377rem  +  1.3245033113vw , 3.4375rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.1875rem , 1.9225993377rem  +  1.3245033113vw , 3.4375rem )) {
+    .reviews-page__recommendations {
+      margin-bottom: calc(2.1875rem + 1.25 * (100vw - 20rem) / 94.375);
     }
 }
 }
