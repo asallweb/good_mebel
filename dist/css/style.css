@@ -9653,6 +9653,106 @@ body::after {
   height: auto;
 }
 
+.thanks {
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
+}
+
+.thanks._night {
+  background: #020707;
+  color: #fff;
+  padding: 60px 0 120px;
+  margin-top: 40px;
+}
+
+.thanks__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75px;
+}
+
+.thanks__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 840px;
+          flex: 0 1 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thanks__change {
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 15px;
+  color: #0391a2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.thanks__change:hover {
+  text-decoration: none;
+}
+
+.thanks__time {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.thanks__time-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.thanks__time-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #e1dfdf;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thanks__time-btn:hover {
+  background: #0391a2;
+  border: 1px solid #0391a2;
+}
+
+.thanks p {
+  margin-bottom: 30px;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -12262,6 +12362,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .reviews-page__recommendations {
     margin-bottom: 3.4375rem;
+  }
+
+  .thanks__btn {
+    width: 16.25rem;
+  }
+
+  .thanks__btn {
+    font-size: 1rem;
   }
 }
 
@@ -16167,6 +16275,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .reviews-page__recommendations {
     margin-bottom: 2.1875rem;
   }
+
+  .thanks__btn {
+    width: 15rem;
+  }
+
+  .thanks__btn {
+    font-size: 0.9375rem;
+  }
 }
 
 @media (max-width: 87.5em) {
@@ -16487,6 +16603,35 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .delivery__body table td {
     padding: 10px 15px;
     height: 40px;
+  }
+
+  .thanks {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .thanks__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .thanks__content {
+    display: block;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+
+  .thanks__image {
+    text-align: center;
+  }
+
+  .thanks__image img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -21446,6 +21591,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (margin-bottom: clamp( 2.1875rem , 1.9225993377rem  +  1.3245033113vw , 3.4375rem )) {
     .reviews-page__recommendations {
       margin-bottom: calc(2.1875rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (width: clamp( 15rem , 14.7350993377rem  +  1.3245033113vw , 16.25rem )) {
+    .thanks__btn {
+      width: clamp( 15rem , 14.7350993377rem  +  1.3245033113vw , 16.25rem );
+    }
+}
+
+@supports not (width: clamp( 15rem , 14.7350993377rem  +  1.3245033113vw , 16.25rem )) {
+    .thanks__btn {
+      width: calc(15rem + 1.25 * (100vw - 20rem) / 94.375);
+    }
+}
+
+@supports (font-size: clamp( 0.9375rem , 0.9242549669rem  +  0.0662251656vw , 1rem )) {
+    .thanks__btn {
+      font-size: clamp( 0.9375rem , 0.9242549669rem  +  0.0662251656vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.9375rem , 0.9242549669rem  +  0.0662251656vw , 1rem )) {
+    .thanks__btn {
+      font-size: calc(0.9375rem + 0.0625 * (100vw - 20rem) / 94.375);
     }
 }
 }
