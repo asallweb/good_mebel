@@ -9815,6 +9815,13 @@ PERFORMANCE OF THIS SOFTWARE.
                 }));
             }));
         }));
+        document.addEventListener("DOMContentLoaded", (function() {
+            const cookieBlock = document.querySelector(".cookie");
+            const hideButton = document.querySelector(".cookie__btn");
+            hideButton.addEventListener("click", (function() {
+                cookieBlock.style.display = "none";
+            }));
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
