@@ -4316,8 +4316,12 @@ body::after {
   height: 104px;
 }
 
-.categories-grid__item:hover .categories-grid__icon {
-  fill: #FFCA1F;
+.categories-grid__icon._hovered {
+  display: none;
+}
+
+.categories-grid__item:hover .categories-grid__icon._hovered {
+  display: block;
 }
 
 .products-slider._grey-bg {

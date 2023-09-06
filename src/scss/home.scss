@@ -282,8 +282,11 @@
 			width: 52px;
 			height: 104px;
 		}
-		.categories-grid__item:hover &{
-			fill: #FFCA1F;
+		&._hovered{
+			display: none;
+		}
+		.categories-grid__item:hover &._hovered{
+			display: block;
 		}
 	}
 	@media (min-width: 1181px) {
