@@ -966,19 +966,31 @@
 		color: #fff;
 		padding: 60px 0 120px;
 		margin-top: 40px;
+		@include adaptiveValue("margin-bottom", -100, -40);
 	}
-	&__container{
+	&__inner{
 		display: flex;
+		gap: 56px;
+	}
+	&__content-outer{
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
 		gap: 75px;
 	}
 	&__content{
-		flex: 0 1 840px;
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		padding-top: 50px;
+	}
+	&__image{
+		flex: 1;
 	}
 	&__btn{
 		@include adaptiveValue("width", 260, 240);
+		height: 50px;
 		@include adaptiveValue("font-size", 16, 15);
 	}
 	&__change{
@@ -1023,24 +1035,134 @@
 	p{
 		margin-bottom: 30px;
 	}
+	&__sidebar{
+		flex: 0 0 400px;
+	}
+	&._night .basket{
+		background-color: #fff;
+		border-radius: 10px;
+		border: 1px solid #707070;
+		overflow: hidden;
+		padding: 0 30px;
+	}
+	@media (max-width: 1480px) {
+		&__image{
+			text-align: center;
+			img{
+				max-width: 320px;
+				width: 100%;
+				height: auto;
+			}
+		}
+		&__sidebar{
+			flex: 0 0 320px;
+			max-width: 320px;
+			margin: 0 auto;
+		}
+	}
+	@media (max-width: 1080px) {
+		&__inner{
+			flex-direction: column;
+			gap: 30px;
+		}
+		&__content{
+			padding-top: 0;
+		}
+	}
 	@media (max-width: $mobile) {
 		font-size: 15px;
 		line-height: 20px;
-		&__container{
+		&__content-outer{
 			flex-direction: column-reverse;
+			align-items: center;
+			text-align: center;
 			gap: 30px;
 		}
 		&__content{
 			display: block;
 			flex-basis: auto;
 		}
+		&__btn{
+			margin: 0 auto;
+		}
 		&__image{
-			text-align: center;
 			img{
 				max-width: 220px;
-				width: 100%;
-				height: auto;
 			}
+		}
+		& .basket{
+			order: -1;
+		}
+		&._night .basket{
+			padding: 0 10px;
+		}
+		&._night .basket__product-image{
+			width: 240px;
+		}
+	}
+}
+.qr-code{
+	border-radius: 16px;
+	background: #f6f6f6;
+	border: 1px solid #e1e1e1;
+	padding: 30px 40px;
+	._night &{
+		background: #020707;
+	}
+	&__title{
+		font-size: 22px;
+		text-align: left;
+		color: #000;
+		margin-bottom: 26px;
+		._night &{
+			color: #fff;
+		}
+	}
+	&__image{
+		border-radius: 10px;
+		background: #fff;
+		padding: 20px;
+		margin-bottom: 22px;
+		img{
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+	&__banking{
+		width: 100% !important;
+		height: 50px;
+		@include adaptiveValue("font-size", 16, 15);
+		margin-bottom: 20px;
+	}
+	&__disclaimer{
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 18px;
+		text-align: center;
+		color: #616161;
+		._night &{
+			color: #c9c9c9;
+		}
+	}
+	&__payment{
+		border-radius: 16px;
+		background: #f6f6f6;
+		border: 1px solid #e1e1e1;
+		padding: 20px 40px;
+		._night &{
+			background: #020707;
+		}
+	}
+	&__pay{
+		width: 100% !important;
+		@include adaptiveValue("font-size", 16, 15);
+		height: 65px;
+	}
+	@media (max-width: 1480px) {
+		padding: 10px 15px;
+		&__payment{
+			padding: 10px 15px;
 		}
 	}
 }
