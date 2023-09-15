@@ -1199,3 +1199,20 @@
 		border-top: 1px solid #e1e1e1;
 	}
 }
+.sortAndTags{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.select_list__sorting{
+	@include adaptiveValue("min-width", 175, 160);
+	.select__title{
+		border-color: #f7b905;
+		border-radius: 15px;
+		color: #000;
+		font-size: 12px;
+	}
+	@media (max-width: 768px) {
+		display: none !important;
+	}
+}

@@ -26,7 +26,7 @@
 			document.querySelector('html').classList.remove("lock");
 		});
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230912152230">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230915110301">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -732,13 +732,20 @@
 					<button class="btn _yellow">ПРИМЕНИТЬ</button>
 				</div>
 			</section>
-			<section class="tags-buttons __container">
-				<button class="btn tags-buttons__item">На ножках</button>
-				<button class="btn tags-buttons__item">Недорогие</button>
-				<button class="btn tags-buttons__item">Прямые диваны</button>
-				<button class="btn tags-buttons__item">Прямые кожаные диваны</button>
-				<button class="btn tags-buttons__item">Кухонные прямые диваны</button>
-				<button class="btn tags-buttons__item">Ортопедические</button>
+			<section class="sortAndTags __container">
+				<select name="form[]" data-class-modif="list__sorting">
+					<option value="1" selected>Сначала популярные</option>
+					<option value="2">Самые дешевые</option>
+					<option value="3">Самые дорогие</option>
+				</select>
+				<section class="tags-buttons">
+					<button class="btn tags-buttons__item">На ножках</button>
+					<button class="btn tags-buttons__item">Недорогие</button>
+					<button class="btn tags-buttons__item">Прямые диваны</button>
+					<button class="btn tags-buttons__item">Прямые кожаные диваны</button>
+					<button class="btn tags-buttons__item">Кухонные прямые диваны</button>
+					<button class="btn tags-buttons__item">Ортопедические</button>
+				</section>
 			</section>
 			<section class="choosed-filters __container">
 				<div class="choosed-filters__item">
@@ -5808,7 +5815,7 @@
 			</div>
 		</nav>
 	</section>
-	<script src="js/app.min.js?_v=20230912152230"></script>
+	<script src="js/app.min.js?_v=20230915110301"></script>
 </body>
 
 </html>

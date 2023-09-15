@@ -145,7 +145,7 @@
 		&__slide-image{
 			width: 100%;
 			padding: 20px 40px;
-			height: 190px;	
+			height: 190px;
 			img{
 				width: auto;
 				height: auto;
@@ -1082,7 +1082,7 @@
 	}
 	&__main-btn{
 		height: 45px;
-		@include adaptiveValue("width", 150, 160);
+		@include adaptiveValue("width", 175, 160);
 		border-radius: 22.5px;
 		gap: 8px;
 		flex-shrink: 0;
@@ -1567,7 +1567,7 @@
 	align-items: center;
 	overflow-x: auto;
 	gap: 10px;
-	margin: 20px auto 10px;
+	margin: 20px 0 10px;
 	padding-bottom: 10px;
 	&__item{
 		overflow: hidden;
@@ -1686,7 +1686,7 @@
 		border: 1px solid #e1e1e1;
 		cursor: pointer;
 	}
-	.swiper-slide-thumb-active{ 
+	.swiper-slide-thumb-active{
 		.product-slider__image{
 			border-color: #0391a2;
 		}
@@ -4324,7 +4324,7 @@
 	@media (max-width: 768px) {
 		grid-template-columns: repeat(1, 1fr);
 		.promotion-item {
-			
+
 		}
 	}
 }

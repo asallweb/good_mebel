@@ -134,7 +134,14 @@
 				</section>
 				<div class="__container"><hr /></div>
 				@@include('html/_filter-items-slider.htm',{})
-				@@include('html/_tags.htm',{})
+				<section class="sortAndTags __container">
+					<select name="form[]" data-class-modif="list__sorting">
+						<option value="1" selected>Сначала популярные</option>
+						<option value="2">Самые дешевые</option>
+						<option value="3">Самые дорогие</option>
+					</select>
+					@@include('html/_tags.htm',{})
+				</section>
 				@@include('html/_filter-items-selected.htm',{})
 				<section class="product-list __container">
 					@@include('html/products-list/_product-list-8items.htm',{})
