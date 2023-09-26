@@ -15303,6 +15303,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 100%;
     height: 180px;
   }
+
+  .cabinet__section-offer-button button {
+    width: 125px !important;
+  }
 }
 
 @media (max-width: 48em) {
