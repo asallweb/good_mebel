@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Список акций</title>
+	<title>Личный кабинет</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -38,7 +38,7 @@
 			<img src="img/icons/main-logo.svg" alt="">
 		</div>
 	</div>
-	<section class="wrapper">
+	<div class="wrapper">
 		<header class="header" data-scroll="4">
 			<div class="header-top">
 				<div class="header-top__container">
@@ -188,69 +188,208 @@
 		<main class="page">
 			<section class="breadcrumbs __container">
 				<a href="">Главная</a> &mdash;
-				<a href="">Акции</a>
+				<span>Личный кабинет</span>
 			</section>
-			<section class="__container">
-				<div class="content-section__h1 _border-bottom _mb-60-30">Акции и специальные предложения</div>
-				<div class="promotion-list">
-					<div class="promotion-item">
-						<div class="promotion-item__image">
-							<picture><source srcset="img/content/promotion-item-1.webp" type="image/webp"><img src="img/content/promotion-item-1.png" alt="promotion-item-1" class="promotion-item__image-src"></picture>
-							<picture><source srcset="img/content/promotion-item-icon-1.webp" type="image/webp"><img src="img/content/promotion-item-icon-1.png" alt="promotion-item-1" class="promotion-item__image-icon" style="top: 10px; right: 10px;"></picture>
+			<section class="cabinet __container">
+				<div class="cabinet__heading _bd-grey">
+					<div class="content-section__h1 _mb-0">
+						Здравствуйте, Станислав!
+					</div>
+					<button class="cabinet__log-in-out">
+						<img src="img/icons/logout.svg" alt="Выход">
+						Выход
+					</button>
+				</div>
+				<div class="cabinet__confirm">
+					<div class="cabinet__confirm-message">
+						<div class="cabinet__confirm-message-image">
+							<img src="img/icons/attention-icon.svg" alt="confirm-message" width="60" height="53">
 						</div>
-						<div class="promotion-item__content">
-							<div class="promotion-item__data">c 2 - 25 мая</div>
-							<div class="promotion-item__title">Весенняя распродажа дачной мебели</div>
-							<div class="promotion-item__description">Краткий описательный текст про акцию на сайте в несколько строк для пояснения</div>
-							<a href="" class="promotion-item__button btn _yellow">Подробнее</a>
+						<div>
+							<div class="cabinet__confirm-message-title">
+								Пожалуйста подтвердите вашу электронную почту
+							</div>
+							<div class="cabinet__confirm-message-subtitle">
+								Ссылка для подтверждение отправлено на 58850000@gmail.com
+							</div>
 						</div>
 					</div>
-					<div class="promotion-item">
-						<div class="promotion-item__image">
-							<picture><source srcset="img/content/promotion-item-2.webp" type="image/webp"><img src="img/content/promotion-item-2.png" alt="promotion-item-2" class="promotion-item__image-src"></picture>
-							<picture><source srcset="img/content/promotion-item-icon-2.webp" type="image/webp"><img src="img/content/promotion-item-icon-2.png" alt="promotion-item-2" class="promotion-item__image-icon" style="left: 18px; bottom: 18px;"></picture>
+					<div class="cabinet__confirm-send">
+						<div class="cabinet__confirm-send-question">Не нашли письмо?</div>
+						<a href="" class="cabinet__confirm-send-again">Отправить повторно</a>
+					</div>
+					<div class="cabinet__confirm-bonus">
+						<button class="cabinet__confirm-bonus-button">
+							<img src="img/icons/star-in-round.svg" alt="bonus">
+							+ 100 бонусов за подтверждение
+						</button>
+					</div>
+				</div>
+				<div class="cabinet__list-sections">
+					<div class="cabinet__section">
+						<div class="cabinet__section-head">
+							<div class="cabinet__section-head-image">
+								<img src="img/icons/cabinet-star.svg" alt="">
+							</div>
+							<div class="cabinet__section-head-name">Ваши бонусы</div>
+							<a href="" class="cabinet__section-head-link">История</a>
 						</div>
-						<div class="promotion-item__content">
-							<div class="promotion-item__data">c 2 - 25 мая</div>
-							<div class="promotion-item__title">Еще один заголовок на сайте</div>
-							<div class="promotion-item__description">Краткий описательный текст про акцию на сайте в несколько строк для пояснения</div>
-							<a href="" class="promotion-item__button btn _yellow">Подробнее</a>
+						<div class="cabinet__section-bonus">
+							<div class="cabinet__section-bonus-line">
+								<div class="cabinet__section-bonus-count _active">
+									1 250
+								</div>
+								<div class="cabinet__section-bonus-text">
+									Доступно для оплаты
+								</div>
+							</div>
+							<div class="cabinet__section-bonus-line">
+								<div class="cabinet__section-bonus-count">
+									3 270
+								</div>
+								<div class="cabinet__section-bonus-text">
+									Будет начислено
+									<div class="info-tooltip" style="top: -2px;">
+										<div class="info-tooltip__icon">?</div>
+										<div class="info-tooltip__body">
+											Краткий описательный текст во всплывающем окне в несколько строк
+											<a href="">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="promotion-item">
-						<div class="promotion-item__image">
-							<picture><source srcset="img/content/promotion-item-3.webp" type="image/webp"><img src="img/content/promotion-item-3.png" alt="promotion-item-3" class="promotion-item__image-src"></picture>
-							<picture><source srcset="img/content/promotion-item-icon-3.webp" type="image/webp"><img src="img/content/promotion-item-icon-3.png" alt="promotion-item-3" class="promotion-item__image-icon" style="left: 30px; top: 0;"></picture>
+					<div class="cabinet__section">
+						<div class="cabinet__section-head">
+							<div class="cabinet__section-head-image">
+								<img src="img/icons/cabinet-list.svg" alt="">
+							</div>
+							<div class="cabinet__section-head-name">Заказы</div>
+							<a href="" class="cabinet__section-head-link">История</a>
 						</div>
-						<div class="promotion-item__content">
-							<div class="promotion-item__data">c 2 - 25 мая</div>
-							<div class="promotion-item__title">Весенняя распродажа дачной мебели</div>
-							<div class="promotion-item__description">Краткий описательный текст про акцию на сайте в несколько строк для пояснения</div>
-							<a href="" class="promotion-item__button btn _yellow">Подробнее</a>
+						<div class="cabinet__section-orders">
+							<div class="cabinet__section-orders-line">
+								<div class="cabinet__section-orders-col">06.09.2023</div>
+								<div class="cabinet__section-orders-col">Доставка на 08.09.2023</div>
+								<div class="cabinet__section-orders-col _ml-auto">2 товара</div>
+								<div class="cabinet__section-orders-col _fw-400">2 190 ₽</div>
+							</div>
+							<div class="cabinet__section-orders-line">
+								<div class="cabinet__section-orders-col">02.08.2023</div>
+								<div class="cabinet__section-orders-col">Доставка на 04.08.2023</div>
+								<div class="cabinet__section-orders-col _ml-auto">1 товара</div>
+								<div class="cabinet__section-orders-col _fw-400">24 290 ₽</div>
+							</div>
 						</div>
 					</div>
-					<div class="promotion-item">
-						<div class="promotion-item__image">
-							<picture><source srcset="img/content/promotion-item-4.webp" type="image/webp"><img src="img/content/promotion-item-4.png" alt="promotion-item-4" class="promotion-item__image-src"></picture>
-							<picture><source srcset="img/content/promotion-item-icon-4.webp" type="image/webp"><img src="img/content/promotion-item-icon-4.png" alt="promotion-item-4" class="promotion-item__image-icon" style="left: 30px; top: 30px;"></picture>
+					<div class="cabinet__section">
+						<div class="cabinet__section-head">
+							<div class="cabinet__section-head-image">
+								<img src="img/icons/cabinet-profile.svg" alt="">
+							</div>
+							<div class="cabinet__section-head-name">Профиль</div>
+							<a href="" class="cabinet__section-head-link">Изменить</a>
 						</div>
-						<div class="promotion-item__content">
-							<div class="promotion-item__data">c 2 - 25 мая</div>
-							<div class="promotion-item__title">Еще один заголовок на сайте</div>
-							<div class="promotion-item__description">Краткий описательный текст про акцию на сайте в несколько строк для пояснения</div>
-							<a href="" class="promotion-item__button btn _yellow">Подробнее</a>
+						<div class="cabinet__section-profile">
+							<div class="cabinet__section-profile-name">
+								Станислав Архангельский
+							</div>
+							<div class="cabinet__section-profile-line">
+								588500@gmail.com
+							</div>
+							<div class="cabinet__section-profile-line">
+								+7(905) 588-50-00
+								<button class="cabinet__log-in-out">
+									<img src="img/icons/logout.svg" alt="Выход">
+									Выход
+								</button>
+							</div>
 						</div>
 					</div>
-					<div class="promotion-item">
-						<div class="promotion-item__image">
-							<picture><source srcset="img/content/promotion-item-5.webp" type="image/webp"><img src="img/content/promotion-item-5.png" alt="promotion-item-5" class="promotion-item__image-src"></picture>
-							<picture><source srcset="img/content/promotion-item-icon-5.webp" type="image/webp"><img src="img/content/promotion-item-icon-5.png" alt="promotion-item-5" class="promotion-item__image-icon" style="right: 25px; top: 35px;"></picture>
+					<div class="cabinet__section">
+						<div class="cabinet__section-head">
+							<div class="cabinet__section-head-image">
+								<img src="img/icons/cabinet-discount.svg" alt="">
+							</div>
+							<div class="cabinet__section-head-name">Предложения <span class="_only-desktop"> для вас</span></div>
+							<a href="" class="cabinet__section-head-link">Посмотреть все</a>
 						</div>
-						<div class="promotion-item__content">
-							<div class="promotion-item__data">c 2 - 25 мая</div>
-							<div class="promotion-item__title">Весенняя распродажа дачной мебели</div>
-							<div class="promotion-item__description">Краткий описательный текст про акцию на сайте в несколько строк для пояснения</div>
-							<a href="" class="promotion-item__button btn _yellow">Подробнее</a>
+						<div class="cabinet__section-offer">
+							<div class="cabinet__section-offer__slider swiper">
+								<div class="cabinet__section-offer__wrapper swiper-wrapper">
+									<div class="cabinet__section-offer__slide swiper-slide">
+										<div class="cabinet__section-offer-image">
+											<picture><source srcset="img/content/cabinet-offer__slide-image.webp" type="image/webp"><img src="img/content/cabinet-offer__slide-image.png" alt=""></picture>
+										</div>
+										<div class="cabinet__section-offer-content">
+											<div class="cabinet__section-offer-name">
+												Диван прямой Вита Дизайн 4
+											</div>
+											<div class="basket__product-price">
+												<div class="basket__product-price-inner">
+													<div class="basket__product-price-current">10 690 ₽</div>
+													<div class="basket__product-price-old">9 370 ₽</div>
+												</div>
+												<div class="product-detail__price-economy">
+													<img src="img/icons/economy-green.svg">
+													<span class="product-detail__economy-outer">
+														<span class="_only-desktop">Выгода 1799 руб</span> (-4%)
+													</span>
+												</div>
+											</div>
+											<div class="cabinet__section-offer-button">
+												<button class="btn _yellow _buy">
+													КУПИТЬ
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="cabinet__section-offer__slide swiper-slide">
+										<div class="cabinet__section-offer-image">
+											<picture><source srcset="img/content/cabinet-offer__slide-image.webp" type="image/webp"><img src="img/content/cabinet-offer__slide-image.png" alt=""></picture>
+										</div>
+										<div class="cabinet__section-offer-content">
+											<div class="cabinet__section-offer-name">
+												Диван прямой Вита
+											</div>
+											<div class="basket__product-price">
+												<div class="basket__product-price-inner">
+													<div class="basket__product-price-current">15 690 ₽</div>
+													<div class="basket__product-price-old">12 370 ₽</div>
+												</div>
+												<div class="product-detail__price-economy">
+													<img src="img/icons/economy-green.svg">
+													<span class="product-detail__economy-outer">
+														<span class="_only-desktop">Выгода 3799 руб</span> (-4%)
+													</span>
+												</div>
+											</div>
+											<div class="cabinet__section-offer-button">
+												<button class="btn _yellow _buy">
+													КУПИТЬ
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-bag"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="cabinet__section-offer-prev swiper-button-prev">
+								<svg width="12" height="7">
+									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+								</svg>
+							</button>
+							<button type="button" class="cabinet__section-offer-next swiper-button-next">
+								<svg width="12" height="7">
+									<use xlink:href="img/icons/icons.svg#svg-select-arrow"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -1948,8 +2087,8 @@
 				</div>
 			</div>
 		</nav>
-	</section>
-	<script src="js/app.min.js?_v=20230926175035"></script>
+		</section>
+		<script src="js/app.min.js?_v=20230926175035"></script>
 </body>
 
 </html>

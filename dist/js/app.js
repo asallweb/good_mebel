@@ -7298,6 +7298,22 @@
                     el: ".similar-posts-pagination"
                 }
             });
+            if (document.querySelector(".cabinet__section-offer__slider")) new core(".cabinet__section-offer__slider", {
+                modules: [ Navigation, Lazy ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 15,
+                preloadImages: false,
+                lazy: {
+                    loadPrevNext: true,
+                    loadPrevNextAmount: 1
+                },
+                navigation: {
+                    prevEl: ".cabinet__section-offer-prev",
+                    nextEl: ".cabinet__section-offer-next"
+                }
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
