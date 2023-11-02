@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Личный кабинет - Заказ"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<span>Личный кабинет</span>
+				</section>
+				<section class="cabinet __container">
+					<div class="cabinet__heading _bd-grey">
+						<div class="content-section__h1 _mb-0">
+							Заказ № 234-56-77
+						</div>
+						<button class="cabinet__log-in-out">
+							<img src="@img/icons/logout.svg" alt="Выход">
+							Выход
+						</button>
+					</div>
+					<div class="cabinet__wrapper-sidebar">
+						<div class="cabinet__content">
+							<div class="basket__product">
+								<div class="basket__product-image"><img src="@img/content/basket__product-image-1.png" alt="basket__product-image-1"></div>
+								<div class="basket__product-body">
+									<div class="basket__product-title">Диван прямой Вита Дизайн 4</div>
+									<div class="basket__product-line">Цвет: <span class="basket__product-color" style="background-color: #d49b25;"></span> <span class="_color-black">Название цвета</span></div>
+									<div class="basket__product-line">Подъемный механизм: <span class="_color-black">Да</span></div>
+									<div class="basket__product-line">Размер спального места: <span class="_color-black">140x200</span></div>
+								</div>
+								<div class="basket__product-footer">
+									<div class="basket__product-count">
+										<b>Количество: 1  шт.</b>
+									</div>
+									<div class="basket__product-price">
+										<div class="basket__product-price-inner">
+											<div class="basket__product-price-current">10 690 ₽</div>
+											<div class="basket__product-price-old">9 370 ₽</div>
+										</div>
+										<div class="product-detail__price-economy">
+											<img src="img/icons/economy-green.svg">
+											<span class="product-detail__economy-outer">
+											<span class="_only-desktop">Выгода 1799 руб</span>	(-4%)
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__product">
+								<div class="basket__product-image"><img src="@img/content/basket__product-image-1.png" alt="basket__product-image-1"></div>
+								<div class="basket__product-body">
+									<div class="basket__product-title">Диван прямой Вита Дизайн 4</div>
+									<div class="basket__product-line">Цвет: <span class="basket__product-color" style="background-color: #d49b25;"></span> <span class="_color-black">Название цвета</span></div>
+									<div class="basket__product-line">Подъемный механизм: <span class="_color-black">Да</span></div>
+									<div class="basket__product-line">Размер спального места: <span class="_color-black">140x200</span></div>
+								</div>
+								<div class="basket__product-footer">
+									<div class="basket__product-count">
+										<b>Количество: 1  шт.</b>
+									</div>
+									<div class="basket__product-price">
+										<div class="basket__product-price-inner">
+											<div class="basket__product-price-current">10 690 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cabinet__order-footer">
+								<div class="cabinet__order-summ basket__sidebar-list">
+									<div class="basket__line">
+										<div class="basket__line-name">2 товара</div>
+										<div class="basket__line-dots"></div>
+										<div class="basket__line-value"><b>22 000 ₽</b></div>
+									</div>
+									<div class="basket__line">
+										<div class="basket__line-name">Итоговая выгода</div>
+										<div class="basket__line-dots"></div>
+										<div class="basket__line-value"><span class="_color-green">- 3 956 ₽</span> (14%)</div>
+									</div>
+									<div class="basket__line">
+										<div class="basket__line-name">Доставка</div>
+										<div class="basket__line-dots"></div>
+										<div class="basket__line-value"><b>700 ₽</b></div>
+									</div>
+									<div class="basket__line">
+										<div class="basket__line-name"><span class="_color-blue _fw-300">Москва и МО</span></div>
+									</div>
+									<div class="basket__line _mt-30">
+										<div class="basket__line-name _fz-20">Итого</div>
+										<div class="basket__line-dots" style="margin-top: 4px;"></div>
+										<div class="basket__line-value _fz-20"><b>10 780 ₽</b></div>
+									</div>
+								</div>
+								<div class="cabinet__order-buttons">
+									<input type="submit" class="btn _yellow _w100p _mb-20" value="Повторить заказ">
+									<input type="submit" class="btn _grey _w100p" value="Отменить заказ">
+								</div>
+							</div>
+						</div>
+						<div class="cabinet__sidebar" data-da=".cabinet, 980, 1">
+							<div class="cabinet__sidebar-line"></div>
+							<a href="" class="cabinet__sidebar-link">Личный кабинет</a>
+							<a href="" class="cabinet__sidebar-link">Бонусы</a>
+							<a href="" class="cabinet__sidebar-link _active">История заказов</a>
+							<a href="" class="cabinet__sidebar-link">Профиль</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</section>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

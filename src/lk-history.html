@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Личный кабинет - История заказов"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<span>Личный кабинет</span>
+				</section>
+				<section class="cabinet __container">
+					<div class="cabinet__heading _bd-grey">
+						<div class="content-section__h1 _mb-0">
+							История заказов
+						</div>
+						<button class="cabinet__log-in-out">
+							<img src="@img/icons/logout.svg" alt="Выход">
+							Выход
+						</button>
+					</div>
+					<div class="cabinet__wrapper-sidebar">
+						<div class="cabinet__content">
+							<div class="cabinet__table-outer">
+								<table class="cabinet__table">
+									<thead>
+										<tr>
+											<td>Дата заказа</td>
+											<td>Номер заказа</td>
+											<td>Кол-во товаров</td>
+											<td>Сумма заказа</td>
+											<td>Статус заказа</td>
+											<td></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>06.09.2023</td>
+											<td>№ 234-56-77</td>
+											<td>2 шт.</td>
+											<td><b>2 190  ₽</b></td>
+											<td>Заказ выполнен</td>
+											<td><a href="">Подробнее</a></td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>№ 234-56-77</td>
+											<td>2 шт.</td>
+											<td><b>2 190  ₽</b></td>
+											<td style="color: #00000080;">Заказ отменен</td>
+											<td><a href="">Подробнее</a></td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>№ 234-56-77</td>
+											<td>2 шт.</td>
+											<td><b>2 190  ₽</b></td>
+											<td>Заказ выполнен</td>
+											<td><a href="">Подробнее</a></td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>№ 234-56-77</td>
+											<td>2 шт.</td>
+											<td><b>2 190  ₽</b></td>
+											<td style="color: #00000080;">Заказ отменен</td>
+											<td><a href="">Подробнее</a></td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>№ 234-56-77</td>
+											<td>2 шт.</td>
+											<td><b>2 190  ₽</b></td>
+											<td>Заказ выполнен</td>
+											<td><a href="">Подробнее</a></td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>№ 234-56-77</td>
+											<td>2 шт.</td>
+											<td><b>2 190  ₽</b></td>
+											<td style="color: #00000080;">Заказ отменен</td>
+											<td><a href="">Подробнее</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="cabinet__sidebar" data-da=".cabinet, 980, 1">
+							<div class="cabinet__sidebar-line"></div>
+							<a href="" class="cabinet__sidebar-link">Личный кабинет</a>
+							<a href="" class="cabinet__sidebar-link">Бонусы</a>
+							<a href="" class="cabinet__sidebar-link _active">История заказов</a>
+							<a href="" class="cabinet__sidebar-link">Профиль</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</section>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

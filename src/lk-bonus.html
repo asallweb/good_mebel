@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Личный кабинет"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<span>Личный кабинет</span>
+				</section>
+				<section class="cabinet __container">
+					<div class="cabinet__heading _mb-0">
+						<div class="content-section__h1 _mb-0">
+							Ваши бонусы
+						</div>
+						<button class="cabinet__log-in-out">
+							<img src="@img/icons/logout.svg" alt="Выход">
+							Выход
+						</button>
+					</div>
+					<div class="toggler _bd-grey _pb-30 _mb-30">
+						<button class="toggler__btn btn _active">Все</button>
+						<button class="toggler__btn btn">Зачисления</button>
+						<button class="toggler__btn btn">Списание</button>
+					</div>
+					<div class="cabinet__wrapper-sidebar">
+						<div class="cabinet__content">
+							<div class="cabinet__bonus-count _mb-35">
+								<div class="cabinet__bonus-count-item">
+									<span class="_color">1 250</span>
+									Доступно для оплаты
+								</div>
+								<div class="cabinet__bonus-count-item">
+									<span>3 270</span>
+									Будет начислено
+									<div class="info-tooltip">
+										<div class="info-tooltip__icon">?</div>
+										<div class="info-tooltip__body">
+											Краткий описательный текст во всплывающем окне в несколько строк
+											<a href="">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cabinet__table-outer">
+								<table class="cabinet__table">
+									<thead>
+										<tr>
+											<td>Дата операции</td>
+											<td>Операция</td>
+											<td>Бонусы</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>06.09.2023</td>
+											<td>Зачисление бонусов по заказу <a href="">№ 234-56-77</a></td>
+											<td>
+												<div class="cabinet__table-count">
+													<img src="@img/icons/like.svg"> + 1 690 бонусов
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>Зачисление бонусов по заказу <a href="">№ 234-56-77</a></td>
+											<td>
+												<div class="cabinet__table-count">
+													<img src="@img/icons/like.svg"> + 1 690 бонусов
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>Зачисление бонусов по заказу <a href="">№ 234-56-77</a></td>
+											<td>
+												<div class="cabinet__table-count">
+													<img src="@img/icons/like.svg"> + 1 690 бонусов
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>06.09.2023</td>
+											<td>Зачисление бонусов по заказу <a href="">№ 234-56-77</a></td>
+											<td>
+												<div class="cabinet__table-count">
+													<img src="@img/icons/like.svg"> + 1 690 бонусов
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="cabinet__sidebar" data-da=".cabinet, 980, 1">
+							<div class="cabinet__sidebar-line"></div>
+							<a href="" class="cabinet__sidebar-link">Личный кабинет</a>
+							<a href="" class="cabinet__sidebar-link _active">Бонусы</a>
+							<a href="" class="cabinet__sidebar-link">История заказов</a>
+							<a href="" class="cabinet__sidebar-link">Профиль</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</section>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

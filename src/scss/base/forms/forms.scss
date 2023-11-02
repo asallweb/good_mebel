@@ -1,4 +1,12 @@
 .form {
+	&__title{
+		font-size: 22px;
+		color: #000;
+		margin-bottom: 25px;
+	}
+	&__form-field{
+		margin-bottom: 20px;
+	}
 	&__row {
 	}
 	&__column {

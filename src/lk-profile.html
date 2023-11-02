@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Личный кабинет - Профиль"
+	})
+	<body>
+		<div class="pre-loader">
+			<div class="loader">
+				<img src="@img/icons/main-logo.svg" alt="">
+			</div>
+		</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="breadcrumbs __container">
+					<a href="">Главная</a> &mdash;
+					<span>Личный кабинет</span>
+				</section>
+				<section class="cabinet __container">
+					<div class="cabinet__heading _bd-grey">
+						<div class="content-section__h1 _mb-0">
+							Профиль
+						</div>
+						<button class="cabinet__log-in-out">
+							<img src="@img/icons/logout.svg" alt="Выход">
+							Выход
+						</button>
+					</div>
+					<div class="cabinet__wrapper-sidebar">
+						<div class="cabinet__content">
+							<div class="cabinet__form form">
+								<div class="form__title">Контактные данные</div>
+								<div class="form__form-field">
+									<label>Ваше ФИО</label>
+									<input type="text" placeholder="Введите ФИО" value="Алексей Клопков">
+								</div>
+								<div class="form__2col">
+									<div class="form__form-field">
+										<label>Телефон</label>
+										<input type="text" placeholder="+7(" class="phone-validation" value="+7(909) 645-4456">
+									</div>
+									<div class="form__form-field">
+										<label>E-mail</label>
+										<input type="text" placeholder="Ваш E-mail" value="alex@hmail.com">
+									</div>
+								</div>
+								<div class="form__form-field">
+									<label>Адрес доставки</label>
+									<textarea placeholder="Адрес доставки">г. Королев, ул. Пионерская д.30, к.6, подъезд 5, этаж 8, кв. 333</textarea>
+								</div>
+								<div class="form__2col">
+									<input type="submit" value="Cохранить изменения" class="btn _fz-16 _w100p" style="opacity: 0.5; background-color: #eee;">
+								</div>
+								<div class="form__title _mt-30">Изменение пароля</div>
+								<div class="form__2col">
+									<div class="form__form-field">
+										<label>Старый пароль</label>
+										<input type="password" placeholder="Веведите старый пароль">
+									</div>
+									<div class="form__form-field">
+										<a href="" class="cabinet__form-link">Не помню пароль</a>
+									</div>
+								</div>
+								<div class="form__2col">
+									<div class="form__form-field">
+										<label>Новый пароль</label>
+										<input type="password" placeholder="Веведите новый пароль">
+									</div>
+									<div class="form__form-field">
+										<label>Подтвердить новый пароль</label>
+										<input type="password" placeholder="Подтвердить новый пароль">
+									</div>
+								</div>
+								<div class="form__2col">
+									<input type="submit" value="Cохранить пароль" class="btn _fz-16 _w100p _yellow">
+								</div>
+							</div>
+						</div>
+						<div class="cabinet__sidebar" data-da=".cabinet, 980, 1">
+							<div class="cabinet__sidebar-line"></div>
+							<a href="" class="cabinet__sidebar-link">Личный кабинет</a>
+							<a href="" class="cabinet__sidebar-link">Бонусы</a>
+							<a href="" class="cabinet__sidebar-link">История заказов</a>
+							<a href="" class="cabinet__sidebar-link _active">Профиль</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_popup.htm',{})
+			@@include('html/_catalog.htm',{})
+		</section>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
